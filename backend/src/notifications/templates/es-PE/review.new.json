@@ -1,0 +1,9 @@
+{
+  "title": "Nueva reseña recibida",
+  "body": "Un cliente envió una nueva reseña.",
+  "channels": [
+    "in_app",
+    "push"
+  ],
+  "critical": false
+}

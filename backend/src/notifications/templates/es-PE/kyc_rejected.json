@@ -1,0 +1,9 @@
+{
+  "title": "Tus documentos KYC necesitan actualización",
+  "body": "Tu solicitud KYC no fue aprobada. Motivo: {{reason}}. Actualiza los documentos y envíalos de nuevo.",
+  "channels": [
+    "in_app",
+    "push"
+  ],
+  "critical": true
+}

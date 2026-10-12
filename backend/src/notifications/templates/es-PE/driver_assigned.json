@@ -1,0 +1,9 @@
+{
+  "title": "Repartidor en camino",
+  "body": "El repartidor {{driverName}} aceptó el pedido #{{orderCode}} y está en camino a recogerlo.",
+  "channels": [
+    "in_app",
+    "push"
+  ],
+  "critical": false
+}

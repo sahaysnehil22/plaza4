@@ -49,7 +49,7 @@ export class OrdersController {
   @Get('orders/delivery-pricing')
   @Roles('customer')
   getDeliveryPricing() {
-    return { baseDeliveryFeeVnd: this.deliveryPricing.getBaseDeliveryFeeVnd() }
+    return { baseDeliveryFeePen: this.deliveryPricing.getBaseDeliveryFeePen() }
   }
 
   @Get('orders/:id')

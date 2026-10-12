@@ -24,7 +24,7 @@ describe('OrdersController — Restaurant', () => {
     createRestaurantOrderMessage: jest.fn().mockResolvedValue({ id: 'message-1', content: 'Ready' }),
   }
   const mockDeliveryPricing = {
-    getBaseDeliveryFeeVnd: jest.fn().mockReturnValue(15_000),
+    getBaseDeliveryFeePen: jest.fn().mockReturnValue(15_000),
   }
 
   const mockRedis = {
@@ -59,8 +59,8 @@ describe('OrdersController — Restaurant', () => {
   })
 
   it('returns configured delivery pricing for customer checkout UI', () => {
-    expect(controller.getDeliveryPricing()).toEqual({ baseDeliveryFeeVnd: 15_000 })
-    expect(mockDeliveryPricing.getBaseDeliveryFeeVnd).toHaveBeenCalled()
+    expect(controller.getDeliveryPricing()).toEqual({ baseDeliveryFeePen: 15_000 })
+    expect(mockDeliveryPricing.getBaseDeliveryFeePen).toHaveBeenCalled()
   })
 
   it('should update order status as restaurant', async () => {

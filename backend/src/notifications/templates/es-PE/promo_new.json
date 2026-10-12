@@ -1,0 +1,9 @@
+{
+  "title": "Nueva promoción para ti",
+  "body": "Obtén {{discount}} de descuento con el código {{promoCode}}. Válido hasta el {{expiresAt}}. ¡Pide ahora!",
+  "channels": [
+    "in_app",
+    "push"
+  ],
+  "critical": false
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Cuenta verificada",
+  "body": "Tu cuenta de repartidor fue verificada con éxito. Ya puedes empezar a aceptar pedidos.",
+  "channels": [
+    "in_app",
+    "push",
+    "sms"
+  ],
+  "critical": true
+}

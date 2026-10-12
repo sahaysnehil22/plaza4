@@ -12,7 +12,7 @@ describe('TemplateLoader', () => {
     expect(rendered.supportedChannels.length).toBeGreaterThan(0)
   })
 
-  it.each(['vi', 'en', 'ja'] as const)('renders the review notification template for %s', (locale) => {
+  it.each(['es', 'vi', 'en', 'ja'] as const)('renders the review notification template for %s', (locale) => {
     const loader = new TemplateLoader()
 
     const rendered = loader.render('review.new', {}, locale)
@@ -25,7 +25,7 @@ describe('TemplateLoader', () => {
   it('fails closed when the notification template is missing', () => {
     const loader = new TemplateLoader()
 
-    expect(() => loader.render('missing.production.event', {}, 'vi')).toThrow(InternalServerErrorException)
-    expect(() => loader.render('missing.production.event', {}, 'vi')).toThrow('NOTIFICATION_TEMPLATE_NOT_FOUND')
+    expect(() => loader.render('missing.production.event', {}, 'es')).toThrow(InternalServerErrorException)
+    expect(() => loader.render('missing.production.event', {}, 'es')).toThrow('NOTIFICATION_TEMPLATE_NOT_FOUND')
   })
 })

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Quản lý vòng đời đơn hàng FoodFlow từ tạo → giao → hoàn tiền. State machine 14 trạng thái với advisory lock chống race, cancellation policy theo actor (customer/restaurant/admin), partial fulfillment, refund qua BullMQ, auto-timeout processor. Gọi bởi: customer mobile, restaurant web, admin web, dispatch service (driver assign), payments (refund flow).
+Quản lý vòng đời đơn hàng Plaza 4 từ tạo → giao → hoàn tiền. State machine 14 trạng thái với advisory lock chống race, cancellation policy theo actor (customer/restaurant/admin), partial fulfillment, refund qua BullMQ, auto-timeout processor. Gọi bởi: customer mobile, restaurant web, admin web, dispatch service (driver assign), payments (refund flow).
 
 ## API surface
 

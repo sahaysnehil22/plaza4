@@ -5,8 +5,8 @@ import { ConfigService } from '@nestjs/config'
 export class DeliveryPricingService {
   constructor(private readonly config: ConfigService) {}
 
-  getBaseDeliveryFeeVnd(): number {
-    const fee = this.config.get<number>('DELIVERY_BASE_FEE_VND')
+  getBaseDeliveryFeePen(): number {
+    const fee = this.config.get<number>('DELIVERY_BASE_FEE_PEN')
     if (typeof fee !== 'number' || !Number.isInteger(fee) || fee < 0) {
       throw new ServiceUnavailableException('DELIVERY_PRICING_NOT_CONFIGURED')
     }

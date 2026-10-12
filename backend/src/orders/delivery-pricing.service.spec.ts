@@ -8,7 +8,7 @@ describe('DeliveryPricingService', () => {
       get: jest.fn().mockReturnValue(18_000),
     } as unknown as ConfigService)
 
-    expect(service.getBaseDeliveryFeeVnd()).toBe(18_000)
+    expect(service.getBaseDeliveryFeePen()).toBe(18_000)
   })
 
   it('fails closed when delivery pricing is not configured', () => {
@@ -16,8 +16,8 @@ describe('DeliveryPricingService', () => {
       get: jest.fn().mockReturnValue(undefined),
     } as unknown as ConfigService)
 
-    expect(() => service.getBaseDeliveryFeeVnd()).toThrow(ServiceUnavailableException)
-    expect(() => service.getBaseDeliveryFeeVnd()).toThrow('DELIVERY_PRICING_NOT_CONFIGURED')
+    expect(() => service.getBaseDeliveryFeePen()).toThrow(ServiceUnavailableException)
+    expect(() => service.getBaseDeliveryFeePen()).toThrow('DELIVERY_PRICING_NOT_CONFIGURED')
   })
 
   it('rejects non-integer delivery fees', () => {
@@ -25,6 +25,6 @@ describe('DeliveryPricingService', () => {
       get: jest.fn().mockReturnValue(15_000.5),
     } as unknown as ConfigService)
 
-    expect(() => service.getBaseDeliveryFeeVnd()).toThrow(ServiceUnavailableException)
+    expect(() => service.getBaseDeliveryFeePen()).toThrow(ServiceUnavailableException)
   })
 })

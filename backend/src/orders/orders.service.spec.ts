@@ -21,7 +21,7 @@ describe('OrdersService', () => {
   let mockCancellationService: { assertCanCancel: jest.Mock }
   let mockPaymentsService: { processPayment: jest.Mock }
   let mockPromotionsService: { claimInTransaction: jest.Mock }
-  let mockDeliveryPricingService: { getBaseDeliveryFeeVnd: jest.Mock }
+  let mockDeliveryPricingService: { getBaseDeliveryFeePen: jest.Mock }
   let mockRedis: { get: jest.Mock; set: jest.Mock; del: jest.Mock }
   let mockTx: {
     $executeRaw: jest.Mock
@@ -83,7 +83,7 @@ describe('OrdersService', () => {
       claimInTransaction: jest.fn().mockResolvedValue({ discountAmount: 0 }),
     }
     mockDeliveryPricingService = {
-      getBaseDeliveryFeeVnd: jest.fn().mockReturnValue(15_000),
+      getBaseDeliveryFeePen: jest.fn().mockReturnValue(15_000),
     }
     mockRedis = {
       get: jest.fn().mockResolvedValue(null),
@@ -364,7 +364,7 @@ describe('OrdersService', () => {
       await service.placeOrder(userId, { addressId: 'address-1', paymentMethod: PaymentMethodDto.cash })
 
       expect(mockPromotionsService.claimInTransaction).not.toHaveBeenCalled()
-      expect(mockDeliveryPricingService.getBaseDeliveryFeeVnd).toHaveBeenCalledTimes(1)
+      expect(mockDeliveryPricingService.getBaseDeliveryFeePen).toHaveBeenCalledTimes(1)
       expect(mockPaymentsService.processPayment).toHaveBeenCalledWith('order-new', 115000, 'cash')
       expect(mockTx.cartItem.deleteMany).toHaveBeenCalledWith({ where: { cartId: 'cart-1' } })
       expect(mockTx.cart.delete).toHaveBeenCalledWith({ where: { id: 'cart-1' } })

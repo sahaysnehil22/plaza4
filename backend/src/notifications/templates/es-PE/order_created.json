@@ -1,0 +1,9 @@
+{
+  "title": "Pedido creado con éxito",
+  "body": "Tu pedido #{{orderCode}} fue creado. Total: S/ {{total}}. En espera de confirmación del restaurante.",
+  "channels": [
+    "in_app",
+    "push"
+  ],
+  "critical": false
+}

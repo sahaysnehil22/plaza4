@@ -6,6 +6,7 @@ import type { Locale } from '../../common/types/locale.types'
 export type { Locale }
 
 const LOCALE_DIR_MAP: Record<Locale, string> = {
+  es: 'es-PE',
   vi: 'vi-VN',
   en: 'en-US',
   ja: 'ja-JP',
@@ -34,7 +35,7 @@ export class TemplateLoader {
   render(
     eventType: string,
     vars: Record<string, string> = {},
-    lang: Locale = 'vi',
+    lang: Locale = 'es',
   ): RenderedTemplate {
     const tpl = this.getTemplate(eventType, lang)
     return {
@@ -51,7 +52,7 @@ export class TemplateLoader {
       return this.cache.get(cacheKey)!
     }
 
-    const dir = LOCALE_DIR_MAP[lang] ?? LOCALE_DIR_MAP.vi
+    const dir = LOCALE_DIR_MAP[lang] ?? LOCALE_DIR_MAP.es
     const filePath = path.join(this.templateRoot, dir, `${eventType}.json`)
     try {
       const raw = fs.readFileSync(filePath, 'utf-8')
@@ -59,9 +60,9 @@ export class TemplateLoader {
       this.cache.set(cacheKey, tpl)
       return tpl
     } catch {
-      // Fall back to vi-VN if requested locale file is missing
-      if (lang !== 'vi') {
-        return this.getTemplate(eventType, 'vi')
+      // Fall back to es-PE if requested locale file is missing
+      if (lang !== 'es') {
+        return this.getTemplate(eventType, 'es')
       }
       this.logger.error(`Template not found for event: ${eventType}`)
       throw new InternalServerErrorException('NOTIFICATION_TEMPLATE_NOT_FOUND')

@@ -1,0 +1,11 @@
+{
+  "title": "Pedido cancelado",
+  "body": "El pedido #{{orderCode}} fue cancelado. Motivo: {{reason}}. Si ya pagaste, el reembolso se procesará en 3 a 5 días hábiles.",
+  "channels": [
+    "in_app",
+    "push",
+    "email",
+    "sms"
+  ],
+  "critical": true
+}

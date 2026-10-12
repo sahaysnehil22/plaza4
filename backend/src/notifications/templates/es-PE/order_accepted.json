@@ -1,0 +1,9 @@
+{
+  "title": "Pedido confirmado",
+  "body": "{{restaurantName}} confirmó el pedido #{{orderCode}}. Tiempo estimado de preparación: {{prepTime}} minutos.",
+  "channels": [
+    "in_app",
+    "push"
+  ],
+  "critical": false
+}

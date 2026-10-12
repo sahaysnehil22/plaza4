@@ -1,0 +1,10 @@
+{
+  "title": "Pedido entregado",
+  "body": "El pedido #{{orderCode}} fue entregado. ¡Gracias por usar Plaza 4! Por favor déjanos una reseña.",
+  "channels": [
+    "in_app",
+    "push",
+    "email"
+  ],
+  "critical": false
+}
