@@ -25,14 +25,14 @@
     "restaurantOnly": "Bảng điều khiển này chỉ dành cho tài khoản nhà hàng."
   },
   "sidebar": {
-    "brand": "FoodFlow Nhà hàng",
+    "brand": "Plaza 4 Nhà hàng",
     "defaultName": "Nhà hàng",
     "manage": "Quản lý",
     "collapse": "Thu gọn thanh bên",
     "expand": "Mở rộng thanh bên",
     "navigation": "Điều hướng nhà hàng",
     "openNavigation": "Mở menu nhà hàng",
-    "mobileTitle": "Menu FoodFlow nhà hàng",
+    "mobileTitle": "Menu Plaza 4 nhà hàng",
     "mobileDescription": "Chọn khu vực để quản lý nhà hàng của bạn",
     "settingsGroup": "Cài đặt",
     "settingsGeneral": "Chung",
@@ -176,7 +176,7 @@
       "mapErrorTitle": "Không tải được bản đồ giao hàng",
       "mapErrorDescription": "Không tải được dữ liệu nền bản đồ mở. Kiểm tra kết nối mạng rồi thử lại.",
       "driverMarkerLabel": "Vị trí GPS hiện tại của shipper",
-      "telemetryUnavailable": "Chưa có GPS shipper hoặc tuyến đường thật. FoodFlow sẽ không tự bịa ETA.",
+      "telemetryUnavailable": "Chưa có GPS shipper hoặc tuyến đường thật. Plaza 4 sẽ không tự bịa ETA.",
       "noSnapshotDescription": "Tracking sẽ xuất hiện khi backend ghi nhận shipper và telemetry thật.",
       "etaLabel": "ETA",
       "etaMinutes": "{minutes} phút",
@@ -515,14 +515,15 @@
     }
   },
   "metadata": {
-    "title": "FoodFlow Nhà hàng",
-    "titleTemplate": "%s | FoodFlow Nhà hàng",
-    "description": "Quản lý đơn hàng, thực đơn, doanh thu và vận hành nhà hàng trên FoodFlow."
+    "title": "Plaza 4 Nhà hàng",
+    "titleTemplate": "%s | Plaza 4 Nhà hàng",
+    "description": "Quản lý đơn hàng, thực đơn, doanh thu và vận hành nhà hàng trên Plaza 4."
   },
   "localeSwitcher": {
     "triggerAria": "Đổi ngôn ngữ. Ngôn ngữ hiện tại: {language}",
     "menuAria": "Chọn ngôn ngữ",
     "languages": {
+      "es": "Tiếng Tây Ban Nha",
       "vi": "Tiếng Việt",
       "en": "Tiếng Anh",
       "ja": "Tiếng Nhật"
@@ -1043,8 +1044,8 @@
       "typeTitle": "Loại khuyến mãi",
       "percentValue": "Phần trăm giảm *",
       "fixedValue": "Số tiền giảm *",
-      "maxDiscount": "Giảm tối đa (VND)",
-      "minOrder": "Đơn tối thiểu (VND)",
+      "maxDiscount": "Giảm tối đa (PEN)",
+      "minOrder": "Đơn tối thiểu (PEN)",
       "appliesToTitle": "Áp dụng cho",
       "appliesTo": {
         "all": "Tất cả",
@@ -1155,7 +1156,7 @@
       "channels": {
         "in_app": {
           "label": "Trong ứng dụng",
-          "description": "Hiển thị khuyến mãi trong các màn khách hàng của FoodFlow."
+          "description": "Hiển thị khuyến mãi trong các màn khách hàng của Plaza 4."
         },
         "push": {
           "label": "Thông báo đẩy",
@@ -1337,7 +1338,7 @@
   "chatbot": {
     "open": "Mở trợ lý AI",
     "close": "Đóng chat",
-    "title": "Trợ lý FoodFlow",
+    "title": "Trợ lý Plaza 4",
     "subtitle": "Hỏi về đơn hàng, hỗ trợ hoặc bảng điều khiển",
     "placeholder": "Nhập tin nhắn...",
     "send": "Gửi",

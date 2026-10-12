@@ -10,7 +10,7 @@ import { StaffScheduleGrid } from '@/components/staff/staff-schedule-grid';
 import { useStaffManagement } from '@/hooks/use-staff-management';
 import type { StaffRole } from '@/lib/types';
 
-const dateLocales: Record<string, string> = { en: 'en-US', ja: 'ja-JP', vi: 'vi-VN' };
+const dateLocales: Record<string, string> = { en: 'en-US', ja: 'ja-JP', vi: 'es-PE' };
 
 export default function StaffPage() {
   const t = useTranslations('staff');
@@ -115,7 +115,7 @@ export default function StaffPage() {
                     <p className="mt-1 text-xs text-gray-600">
                       {t('pendingInvites.meta', {
                         role: t(`roles.${invite.role}`),
-                        date: new Date(invite.expiresAt).toLocaleDateString(dateLocales[locale] ?? 'vi-VN'),
+                        date: new Date(invite.expiresAt).toLocaleDateString(dateLocales[locale] ?? 'es-PE'),
                       })}
                     </p>
                   </div>

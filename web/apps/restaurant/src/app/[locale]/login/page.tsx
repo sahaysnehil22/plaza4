@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from '@/navigation';
 import { useTranslations } from 'next-intl';
-import { FoodFlowLogo } from '@foodflow/ui/foodflow-logo';
+import { Plaza4Logo } from '@plaza4/ui/plaza4-logo';
 import { Eye, EyeOff, AlertCircle } from 'lucide-react';
 import { api } from '@/lib/api';
 import { useAuth } from '@/lib/auth-provider';
@@ -53,7 +53,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
-          <FoodFlowLogo showWordmark={false} markClassName="h-16 w-16" className="mb-4 justify-center" />
+          <Plaza4Logo showWordmark={false} markClassName="h-16 w-16" className="mb-4 justify-center" />
           <h1 className="text-2xl font-bold text-gray-900">{t('title')}</h1>
           <p className="text-sm text-gray-500 mt-1">{t('description')}</p>
         </div>

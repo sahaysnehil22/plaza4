@@ -6,12 +6,12 @@ const shouldUseStandaloneOutput =
   process.env.NEXT_OUTPUT_STANDALONE === 'true' ||
   (process.env.NEXT_OUTPUT_STANDALONE !== 'false' && process.platform !== 'win32');
 const shouldEnableDevApiRewrite =
-  process.env.FOODFLOW_ENABLE_DEV_API_REWRITE === 'true' && process.env.NODE_ENV !== 'production';
+  process.env.PLAZA4_ENABLE_DEV_API_REWRITE === 'true' && process.env.NODE_ENV !== 'production';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   ...(shouldUseStandaloneOutput ? { output: 'standalone' } : {}),
-  transpilePackages: ['@foodflow/i18n', '@foodflow/ui'],
+  transpilePackages: ['@plaza4/i18n', '@plaza4/ui'],
   ...(shouldEnableDevApiRewrite
     ? {
         async rewrites() {

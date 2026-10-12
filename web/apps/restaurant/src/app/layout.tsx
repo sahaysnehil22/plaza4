@@ -8,24 +8,24 @@ import { resolveRestaurantMetadataBase } from '@/lib/metadata-url'
 export const metadata: Metadata = {
   metadataBase: resolveRestaurantMetadataBase(),
   title: {
-    template: '%s | FoodFlow Restaurant',
-    default: 'FoodFlow Restaurant',
+    template: '%s | Plaza 4 Restaurant',
+    default: 'Plaza 4 Restaurant',
   },
-  description: 'FoodFlow merchant workspace for orders, menu, promotions, revenue, staff, insights, and customer replies',
+  description: 'Plaza 4 merchant workspace for orders, menu, promotions, revenue, staff, insights, and customer replies',
   manifest: '/site.webmanifest',
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/foodflow-mark.svg', type: 'image/svg+xml', sizes: 'any' },
+      { url: '/plaza4-mark.svg', type: 'image/svg+xml', sizes: 'any' },
     ],
   },
   openGraph: {
-    title: 'FoodFlow Restaurant',
-    description: 'FoodFlow merchant workspace',
+    title: 'Plaza 4 Restaurant',
+    description: 'Plaza 4 merchant workspace',
     type: 'website',
-    images: [{ url: '/foodflow-mark.svg', width: 512, height: 512, alt: 'FoodFlow Restaurant mark' }],
+    images: [{ url: '/plaza4-mark.svg', width: 512, height: 512, alt: 'Plaza 4 Restaurant mark' }],
   },
-  twitter: { card: 'summary', title: 'FoodFlow Restaurant', images: ['/foodflow-mark.svg'] },
+  twitter: { card: 'summary', title: 'Plaza 4 Restaurant', images: ['/plaza4-mark.svg'] },
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

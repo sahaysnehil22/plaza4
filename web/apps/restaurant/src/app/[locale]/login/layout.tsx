@@ -10,7 +10,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'common' });
   return {
     title: t('login'),
-    description: 'Sign in to manage your restaurant on FoodFlow',
+    description: 'Sign in to manage your restaurant on Plaza 4',
     robots: { index: false, follow: false },
   };
 }
