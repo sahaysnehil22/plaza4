@@ -15,7 +15,7 @@ import {
   type Messaging,
 } from 'firebase-admin/messaging'
 
-const FCM_APP_NAME = 'foodflow-fcm'
+const FCM_APP_NAME = 'plaza4-fcm'
 
 export const FCM_MESSAGING_CLIENT = 'FCM_MESSAGING_CLIENT'
 

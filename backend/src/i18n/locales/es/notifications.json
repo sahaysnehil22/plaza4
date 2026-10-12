@@ -1,0 +1,1 @@
+{"driver_delay_body":"El pedido {orderId} tiene un retraso de {delayMinutes} minutos","driver_delay_title":"Alerta de retraso en la entrega","order_update_body":"Pedido {orderId}: {event}","order_update_title":"Actualización de tu pedido"}

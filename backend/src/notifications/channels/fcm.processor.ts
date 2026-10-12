@@ -79,7 +79,7 @@ export class FcmProcessor extends WorkerHost {
       notification: { title, body },
       android: {
         notification: {
-          channelId: 'foodflow_notifications',
+          channelId: 'plaza4_notifications',
           sound: 'default',
         },
       },

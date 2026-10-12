@@ -16,7 +16,7 @@ export class MenuService {
       where: { userId },
     })
     if (!profile) {
-      throw new ForbiddenException('User does not own a restaurant')
+      throw new ForbiddenException('El usuario no tiene un restaurante')
     }
     return profile.restaurantId
   }
@@ -44,7 +44,7 @@ export class MenuService {
         },
       },
     })
-    if (!restaurant) throw new NotFoundException('Restaurant not found')
+    if (!restaurant) throw new NotFoundException('Restaurante no encontrado')
     return restaurant
   }
 
@@ -74,7 +74,7 @@ export class MenuService {
       where: { id: itemId, restaurantId },
       include: { category: true, options: { include: { values: true } } },
     })
-    if (!item) throw new NotFoundException('Menu item not found')
+    if (!item) throw new NotFoundException('Producto no encontrado')
     return this.serializeMenuItem(item)
   }
 
@@ -102,7 +102,7 @@ export class MenuService {
       where: { id: categoryId },
     })
     if (!category || category.restaurantId !== restaurantId) {
-      throw new NotFoundException('Category not found')
+      throw new NotFoundException('Categoría no encontrada')
     }
     if (dto.parentId !== undefined && dto.parentId !== null) {
       await this.assertParentCategoryOwned(restaurantId, dto.parentId)
@@ -134,7 +134,7 @@ export class MenuService {
       where: { id: categoryId },
     })
     if (!category || category.restaurantId !== restaurantId) {
-      throw new NotFoundException('Category not found')
+      throw new NotFoundException('Categoría no encontrada')
     }
     await this.prisma.category.delete({ where: { id: categoryId } })
   }
@@ -180,7 +180,7 @@ export class MenuService {
       where: { id: itemId },
     })
     if (!item || item.restaurantId !== restaurantId) {
-      throw new NotFoundException('Menu item not found')
+      throw new NotFoundException('Producto no encontrado')
     }
 
     const nextCategoryId = dto.categoryId || dto.category
@@ -242,7 +242,7 @@ export class MenuService {
       where: { id: itemId },
     })
     if (!item || item.restaurantId !== restaurantId) {
-      throw new NotFoundException('Menu item not found')
+      throw new NotFoundException('Producto no encontrado')
     }
     await this.prisma.menuItem.delete({ where: { id: itemId } })
   }
@@ -253,7 +253,7 @@ export class MenuService {
       where: { id: itemId },
     })
     if (!item || item.restaurantId !== restaurantId) {
-      throw new NotFoundException('Menu item not found')
+      throw new NotFoundException('Producto no encontrado')
     }
     const updated = await this.prisma.menuItem.update({
       where: { id: itemId },

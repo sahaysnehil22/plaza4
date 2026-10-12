@@ -8,7 +8,7 @@ import { NotificationsService } from './notifications.service'
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const request = require('supertest') as typeof import('supertest')
 
-const USER = { sub: 'user-1', role: 'customer', email: 'user@foodflow.test' }
+const USER = { sub: 'user-1', role: 'customer', email: 'user@plaza4.test' }
 const TOKEN = 'fcm-token-with-at-least-twenty-characters'
 const REGISTRATION_ID = 'f508652a-4f6a-4fa8-93e1-86bbbfa7ebea'
 

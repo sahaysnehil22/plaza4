@@ -33,7 +33,7 @@ export interface DriverDailyEarning {
 
 export interface DriverEarningsSummary {
   period: '7d' | '30d' | '90d'
-  totalVnd: number
+  totalPen: number
   tripCount: number
   avgPerTrip: number
   byDay: DriverDailyEarning[]
@@ -339,13 +339,13 @@ export class DriversService {
       const day = byDate.get(date) ?? { amount: 0, tripCount: 0 }
       return { date, amount: day.amount, tripCount: day.tripCount }
     })
-    const totalVnd = byDay.reduce((sum, day) => sum + day.amount, 0)
+    const totalPen = byDay.reduce((sum, day) => sum + day.amount, 0)
     const tripCount = byDay.reduce((sum, day) => sum + day.tripCount, 0)
     return {
       period: normalizedPeriod,
-      totalVnd,
+      totalPen,
       tripCount,
-      avgPerTrip: tripCount > 0 ? Math.round(totalVnd / tripCount) : 0,
+      avgPerTrip: tripCount > 0 ? Math.round(totalPen / tripCount) : 0,
       byDay,
     }
   }

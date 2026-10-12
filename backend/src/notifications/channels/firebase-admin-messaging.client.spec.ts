@@ -27,8 +27,8 @@ const mockGetMessaging = jest.mocked(getMessaging)
 
 describe('FirebaseAdminMessagingClient', () => {
   const firebaseApp = {
-    name: 'foodflow-fcm',
-    options: { projectId: 'foodflow-production' },
+    name: 'plaza4-fcm',
+    options: { projectId: 'plaza4-production' },
   }
   const messaging = { sendEach: jest.fn() }
   const adcCredential = { getAccessToken: jest.fn() }
@@ -49,27 +49,27 @@ describe('FirebaseAdminMessagingClient', () => {
   })
 
   it('uses ADC with an explicit target project ID when no service account JSON is supplied', async () => {
-    const config = configFor({ FCM_PROJECT_ID: 'foodflow-production' })
+    const config = configFor({ FCM_PROJECT_ID: 'plaza4-production' })
     const client = new FirebaseAdminMessagingClient(config)
 
     await client.sendEach(messages)
 
     expect(mockApplicationDefault).toHaveBeenCalledWith()
     expect(mockInitializeApp).toHaveBeenCalledWith(
-      { credential: adcCredential, projectId: 'foodflow-production' },
-      'foodflow-fcm',
+      { credential: adcCredential, projectId: 'plaza4-production' },
+      'plaza4-fcm',
     )
     expect(messaging.sendEach).toHaveBeenCalledWith(messages)
   })
 
   it('uses a parsed service account from secret-managed JSON instead of ADC', async () => {
     const serviceAccount = {
-      project_id: 'foodflow-production',
-      client_email: 'fcm@foodflow-production.iam.gserviceaccount.com',
+      project_id: 'plaza4-production',
+      client_email: 'fcm@plaza4-production.iam.gserviceaccount.com',
       private_key: 'not-a-real-key',
     }
     const config = configFor({
-      FCM_PROJECT_ID: 'foodflow-production',
+      FCM_PROJECT_ID: 'plaza4-production',
       FCM_SERVICE_ACCOUNT_JSON: JSON.stringify(serviceAccount),
     })
     const client = new FirebaseAdminMessagingClient(config)
@@ -84,7 +84,7 @@ describe('FirebaseAdminMessagingClient', () => {
     expect(() => new FirebaseAdminMessagingClient(configFor({})).sendEach(messages))
       .toThrow('FCM_PROJECT_ID is not configured')
     expect(() => new FirebaseAdminMessagingClient(configFor({
-      FCM_PROJECT_ID: 'foodflow-production',
+      FCM_PROJECT_ID: 'plaza4-production',
       FCM_SERVICE_ACCOUNT_JSON: '{invalid-json}',
     })).sendEach(messages)).toThrow('FCM_SERVICE_ACCOUNT_JSON is invalid')
   })

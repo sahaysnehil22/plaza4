@@ -12,7 +12,7 @@ import * as path from 'path'
  *   1. ?lang= query param   (QueryResolver)
  *   2. Accept-Language header (AcceptLanguageResolver)
  *   3. lang cookie           (CookieResolver)
- * Falls back to 'vi' when no resolver matches.
+ * Falls back to 'es' when no resolver matches.
  *
  * Locale JSON files live at src/i18n/locales/{lang}/{namespace}.json
  * Translation key format: '{namespace}.{key}'  e.g. 'errors.promotion_not_found'
@@ -20,7 +20,7 @@ import * as path from 'path'
 @Module({
   imports: [
     I18nModule.forRoot({
-      fallbackLanguage: 'vi',
+      fallbackLanguage: 'es',
       loaderOptions: {
         // __dirname at runtime = dist/i18n → locales at dist/i18n/locales/
         path: path.join(__dirname, 'locales'),

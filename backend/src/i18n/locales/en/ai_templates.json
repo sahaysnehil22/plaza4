@@ -1,6 +1,6 @@
 {
-  "greeting": "Hello! I'm FoodFlow AI Assistant 🍜. How can I help you today?",
-  "thank_you": "Thank you for using FoodFlow! Enjoy your meal 😊",
+  "greeting": "Hello! I'm Plaza 4 AI Assistant 🍜. How can I help you today?",
+  "thank_you": "Thank you for using Plaza 4! Enjoy your meal 😊",
   "fallback": "Sorry, I'm unable to process your request right now.",
   "service_unavailable": "Sorry, the service is busy. Please try again in a few minutes 🙏",
   "refund_eligible": "Order {orderId} is eligible for a refund of {amount}. Would you like to proceed?",

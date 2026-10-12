@@ -31,7 +31,7 @@ describe('HealthController', () => {
   beforeEach(async () => {
     jest.clearAllMocks()
     mockSupabaseGetBucket.mockResolvedValue({
-      data: { id: 'foodflow-production' },
+      data: { id: 'plaza4-production' },
       error: null,
     })
     mockPrisma = { $queryRaw: jest.fn().mockResolvedValue([{ '1': 1 }]) }
@@ -42,7 +42,7 @@ describe('HealthController', () => {
         if (key === 'MINIO_PORT') return 9000
         if (key === 'MINIO_ACCESS_KEY') return 'minioadmin'
         if (key === 'MINIO_SECRET_KEY') return 'minioadmin'
-        if (key === 'MINIO_BUCKET') return 'foodflow'
+        if (key === 'MINIO_BUCKET') return 'plaza4'
         return null
       }),
     }
@@ -83,7 +83,7 @@ describe('HealthController', () => {
       if (key === 'MINIO_PORT') return 9000
       if (key === 'MINIO_ACCESS_KEY') return 'minioadmin'
       if (key === 'MINIO_SECRET_KEY') return 'minioadmin'
-      if (key === 'MINIO_BUCKET') return 'foodflow'
+      if (key === 'MINIO_BUCKET') return 'plaza4'
       return null
     })
     const res = { status: jest.fn().mockReturnThis(), json: jest.fn() }
@@ -172,7 +172,7 @@ describe('HealthController', () => {
     mockConfig.get.mockImplementation((key: string) => {
       if (key === 'NODE_ENV') return 'production'
       if (key === 'MINIO_PORT') return 9000
-      if (key === 'MINIO_BUCKET') return 'foodflow'
+      if (key === 'MINIO_BUCKET') return 'plaza4'
       return undefined
     })
     const res = { status: jest.fn().mockReturnThis(), json: jest.fn() }
@@ -192,9 +192,9 @@ describe('HealthController', () => {
   it('checks Supabase Storage instead of MinIO when configured', async () => {
     mockConfig.get.mockImplementation((key: string) => {
       if (key === 'STORAGE_PROVIDER') return 'supabase'
-      if (key === 'SUPABASE_URL') return 'https://foodflow.supabase.co'
+      if (key === 'SUPABASE_URL') return 'https://plaza4.supabase.co'
       if (key === 'SUPABASE_SERVICE_ROLE_KEY') return 'service-role-key'
-      if (key === 'SUPABASE_STORAGE_BUCKET') return 'foodflow-production'
+      if (key === 'SUPABASE_STORAGE_BUCKET') return 'plaza4-production'
       return null
     })
     const res = { status: jest.fn().mockReturnThis(), json: jest.fn() }
@@ -203,11 +203,11 @@ describe('HealthController', () => {
 
     expect(Client).not.toHaveBeenCalled()
     expect(createClient).toHaveBeenCalledWith(
-      'https://foodflow.supabase.co',
+      'https://plaza4.supabase.co',
       'service-role-key',
       { auth: { persistSession: false, autoRefreshToken: false } },
     )
-    expect(mockSupabaseGetBucket).toHaveBeenCalledWith('foodflow-production')
+    expect(mockSupabaseGetBucket).toHaveBeenCalledWith('plaza4-production')
     expect(res.status).toHaveBeenCalledWith(200)
     expect(res.json.mock.calls[0][0].components.storage).toMatchObject({
       provider: 'supabase',
@@ -218,9 +218,9 @@ describe('HealthController', () => {
   it('returns 200 degraded when only Supabase Storage is down', async () => {
     mockConfig.get.mockImplementation((key: string) => {
       if (key === 'STORAGE_PROVIDER') return 'supabase'
-      if (key === 'SUPABASE_URL') return 'https://foodflow.supabase.co'
+      if (key === 'SUPABASE_URL') return 'https://plaza4.supabase.co'
       if (key === 'SUPABASE_SERVICE_ROLE_KEY') return 'service-role-key'
-      if (key === 'SUPABASE_STORAGE_BUCKET') return 'foodflow-production'
+      if (key === 'SUPABASE_STORAGE_BUCKET') return 'plaza4-production'
       return null
     })
     mockSupabaseGetBucket.mockResolvedValueOnce({

@@ -51,7 +51,7 @@ describe('FcmProcessor', () => {
         token: 'valid-token',
         notification: { title: 'Order accepted', body: 'Your order is being prepared' },
         android: {
-          notification: { channelId: 'foodflow_notifications', sound: 'default' },
+          notification: { channelId: 'plaza4_notifications', sound: 'default' },
         },
         apns: { payload: { aps: { sound: 'default' } } },
         data: { eventType: 'order_accepted', retry: '2', nested: '{"id":"order-1"}' },

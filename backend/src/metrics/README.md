@@ -25,4 +25,4 @@ npx jest metrics
 
 - **Metric cardinality blowup:** Check Grafana for series count >10k per metric. Common cause: unbounded label (user_id). Audit `MetricsService.recordHttpRequest` to ensure labels are bounded enums only.
 - **Scrape timeout:** If `/metrics` >5s response, registry too large. Reset via container restart; investigate metric leak.
-- **Missing data in dashboard:** Check Prometheus targets at `:9090/targets`. Ensure `foodflow-backend` job up. Verify network reachability between Prometheus and backend.
+- **Missing data in dashboard:** Check Prometheus targets at `:9090/targets`. Ensure `plaza4-backend` job up. Verify network reachability between Prometheus and backend.

@@ -1,6 +1,6 @@
 {
-  "greeting": "Xin chào! Tôi là FoodFlow AI Assistant 🍜. Tôi có thể giúp gì cho bạn hôm nay?",
-  "thank_you": "Cảm ơn bạn đã sử dụng FoodFlow! Chúc bạn ngon miệng 😊",
+  "greeting": "Xin chào! Tôi là Plaza 4 AI Assistant 🍜. Tôi có thể giúp gì cho bạn hôm nay?",
+  "thank_you": "Cảm ơn bạn đã sử dụng Plaza 4! Chúc bạn ngon miệng 😊",
   "fallback": "Xin lỗi, tôi chưa thể xử lý yêu cầu này ngay lúc này.",
   "service_unavailable": "Xin lỗi, dịch vụ đang bận. Vui lòng thử lại sau ít phút 🙏",
   "refund_eligible": "Đơn hàng {orderId} đủ điều kiện hoàn tiền {amount}đ. Bạn có muốn tiến hành không?",

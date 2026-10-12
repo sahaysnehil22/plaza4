@@ -57,7 +57,7 @@ export class SmtpProcessor extends WorkerHost {
 
     try {
       const info = await transporter.sendMail({
-        from: this.config.get<string>('SMTP_FROM') ?? 'noreply@foodflow.vn',
+        from: this.config.get<string>('SMTP_FROM') ?? 'noreply@plaza4.pe',
         to: email,
         subject: title,
         html: this.renderHtml(full_name, title, body),
@@ -102,10 +102,10 @@ export class SmtpProcessor extends WorkerHost {
     return `
       <div style="font-family:sans-serif;max-width:600px;margin:auto;padding:24px">
         <h2 style="color:#e65100">${safeSubject}</h2>
-        <p>Xin chào ${safeName},</p>
+        <p>Hola ${safeName},</p>
         <p>${safeContent}</p>
         <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-        <p style="color:#999;font-size:12px">FoodFlow — Giao đồ ăn nhanh tại Việt Nam</p>
+        <p style="color:#999;font-size:12px">Plaza 4 — Delivery de comida rápido en Perú</p>
       </div>
     `.trim()
   }

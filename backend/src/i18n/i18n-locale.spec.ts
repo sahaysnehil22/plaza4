@@ -32,14 +32,14 @@ const REQUIRED_NOTIFICATION_KEYS = [
 ]
 
 describe('i18n locale catalog', () => {
-  it.each(['vi', 'en', 'ja'])('has all service error keys for %s', (lang) => {
+  it.each(['es', 'vi', 'en', 'ja'])('has all service error keys for %s', (lang) => {
     const errors = loadLocaleNamespace(lang, 'errors')
     for (const key of REQUIRED_ERROR_KEYS) {
       expect(errors[key]).toEqual(expect.any(String))
     }
   })
 
-  it.each(['vi', 'en', 'ja'])('has all notification keys for %s', (lang) => {
+  it.each(['es', 'vi', 'en', 'ja'])('has all notification keys for %s', (lang) => {
     const notifications = loadLocaleNamespace(lang, 'notifications')
     for (const key of REQUIRED_NOTIFICATION_KEYS) {
       expect(notifications[key]).toEqual(expect.any(String))
@@ -77,7 +77,7 @@ describe('I18nModule locale resolution chain', () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: [
         I18nModule.forRoot({
-          fallbackLanguage: 'vi',
+          fallbackLanguage: 'es',
           loaderOptions: {
             path: path.join(__dirname, 'locales'),
             watch: false,

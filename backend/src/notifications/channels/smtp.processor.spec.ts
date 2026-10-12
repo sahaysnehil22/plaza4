@@ -29,7 +29,7 @@ describe('SmtpProcessor', () => {
     transporter.sendMail.mockRejectedValue(new Error('SMTP unavailable'))
     const processor = new SmtpProcessor(
       prisma as unknown as PrismaService,
-      configFor({ SMTP_HOST: 'smtp.foodflow.test' }),
+      configFor({ SMTP_HOST: 'smtp.plaza4.test' }),
       redis as never,
       twilioQueue as never,
     )
@@ -62,7 +62,7 @@ describe('SmtpProcessor', () => {
     transporter.sendMail.mockRejectedValue(new Error('SMTP unavailable'))
     const processor = new SmtpProcessor(
       prisma as unknown as PrismaService,
-      configFor({ SMTP_HOST: 'smtp.foodflow.test' }),
+      configFor({ SMTP_HOST: 'smtp.plaza4.test' }),
       redis as never,
       twilioQueue as never,
     )
@@ -85,7 +85,7 @@ describe('SmtpProcessor', () => {
     transporter.sendMail.mockResolvedValue({ messageId: 'message-1' })
     const processor = new SmtpProcessor(
       prisma as unknown as PrismaService,
-      configFor({ SMTP_HOST: 'smtp.foodflow.test' }),
+      configFor({ SMTP_HOST: 'smtp.plaza4.test' }),
       redis as never,
       twilioQueue as never,
     )
