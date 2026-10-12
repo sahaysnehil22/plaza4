@@ -21,7 +21,7 @@
   "noAccount": "アカウントをお持ちでない方",
   "registerLink": "登録",
   "registerAsDriver": "ドライバーとして登録",
-  "driverLoginTitle": "FoodFlow Driver",
+  "driverLoginTitle": "Plaza 4 Driver",
   "driverLoginSubtitle": "ログインして配達依頼の受付を開始",
   "driverLoginInvalidCredentials": "メールアドレスまたはパスワードが正しくありません。",
   "driverLoginUnavailable": "現在ログインできません。もう一度お試しください。",
@@ -31,7 +31,7 @@
 
   "registerTitle": "登録",
   "registerCreateAccount": "新しいアカウントを作成",
-  "registerSubtitle": "FoodFlowを始めるには情報を入力してください",
+  "registerSubtitle": "Plaza 4を始めるには情報を入力してください",
   "fullNameLabel": "氏名",
   "fullNameHint": "氏名を入力してください",
   "fullNameRequired": "氏名を入力してください",
@@ -112,7 +112,7 @@
   "favoritesSubtitle": "お気に入りの料理一覧",
   "support": "サポート",
   "supportSubtitle": "ヘルプセンター",
-  "aboutApp": "FoodFlowについて",
+  "aboutApp": "Plaza 4について",
   "aboutSubtitle": "バージョン 1.0.0",
   "logout": "ログアウト",
   "logoutConfirm": "ログアウトしてもよろしいですか？",
@@ -169,6 +169,11 @@
   "cartDiscountLabel": "割引",
   "cartGrandTotal": "合計",
   "cartViewCart": "カートを見る",
+  "cartAddedItem": "カートに{name}を追加しました",
+  "@cartAddedItem": {
+    "description": "Snackbar shown when an item is added to the cart",
+    "placeholders": { "name": { "type": "String" } }
+  },
   "cartDelete": "削除",
 
   "checkoutTitle": "チェックアウト",
@@ -475,7 +480,7 @@
   "driverHistoryDeliveryFee": "配達料",
 
   "locationPermissionTitle": "位置情報へのアクセスを許可",
-  "locationPermissionSubtitle": "FoodFlowは近くのレストランを探し、正確に配達するためにあなたの位置情報が必要です。",
+  "locationPermissionSubtitle": "Plaza 4は近くのレストランを探し、正確に配達するためにあなたの位置情報が必要です。",
   "locationPermissionAllow": "許可する",
   "locationPermissionManual": "住所を手動で入力",
 
@@ -537,7 +542,7 @@
   "onboardingSkip": "スキップ",
   "onboardingNext": "次へ",
   "onboardingGetStarted": "始める",
-  "onboardingWelcomeTitle": "FoodFlowへようこそ",
+  "onboardingWelcomeTitle": "Plaza 4へようこそ",
   "onboardingWelcomeSubtitle": "お気に入りのグルメを注文、素早くお届け",
   "onboardingLocationTitle": "近くのレストランを探す",
   "onboardingLocationSubtitle": "位置情報を許可して近くの最高のレストランを見つけましょう",
@@ -587,7 +592,7 @@
   "referralShareCode": "コードを共有",
   "referralShareFailed": "共有シートを開けませんでした。もう一度お試しください。",
   "referralShareSheetTitle": "紹介コードを共有",
-  "referralShareMessage": "FoodFlowの初回注文で特典を受け取るにはコード {code} を使ってください！",
+  "referralShareMessage": "Plaza 4の初回注文で特典を受け取るにはコード {code} を使ってください！",
   "@referralShareMessage": {
     "placeholders": { "code": { "type": "String" } }
   },
@@ -657,7 +662,7 @@
   "driver_onboarding_agreement_accept": "同意して続ける",
   "driver_onboarding_agreement_submit": "申請を送信",
   "driver_onboarding_agreement_note": "申請は24〜48時間以内に審査されます。承認されたら通知が届きます。",
-  "driver_onboarding_agreement_terms": "1. FoodFlow 配達パートナーサービス\n\nFoodFlow の配達パートナーとして登録することで、承認された稼働エリアで配達サービスを提供することに同意します。\n\n2. 要件\n\n• 有効な運転免許証と必要な車両書類を維持すること。\n• 登録プロフィールに一致する安全で保険加入済みの車両を使用すること。\n• プロとしての対応、適切な評価、交通法規の遵守を維持すること。\n• 顧客、店舗、注文情報を機密として扱うこと。\n\n3. 報酬と精算\n\n報酬は完了した注文、距離、インセンティブ、承認済み調整に基づいて計算されます。週次精算は FoodFlow に保存された銀行口座へ支払われます。\n\n4. 行動基準\n\n配達パートナーは顧客、店舗、サポート担当者に対して礼儀正しく行動する必要があります。不正、乱用、危険な配達、虚偽報告はアカウント停止または終了の対象になります。\n\n5. 終了\n\nFoodFlow は、本規約、安全規則、法的要件に違反した場合、アクセスを一時停止または終了できます。",
+  "driver_onboarding_agreement_terms": "1. Plaza 4 配達パートナーサービス\n\nPlaza 4 の配達パートナーとして登録することで、承認された稼働エリアで配達サービスを提供することに同意します。\n\n2. 要件\n\n• 有効な運転免許証と必要な車両書類を維持すること。\n• 登録プロフィールに一致する安全で保険加入済みの車両を使用すること。\n• プロとしての対応、適切な評価、交通法規の遵守を維持すること。\n• 顧客、店舗、注文情報を機密として扱うこと。\n\n3. 報酬と精算\n\n報酬は完了した注文、距離、インセンティブ、承認済み調整に基づいて計算されます。週次精算は Plaza 4 に保存された銀行口座へ支払われます。\n\n4. 行動基準\n\n配達パートナーは顧客、店舗、サポート担当者に対して礼儀正しく行動する必要があります。不正、乱用、危険な配達、虚偽報告はアカウント停止または終了の対象になります。\n\n5. 終了\n\nPlaza 4 は、本規約、安全規則、法的要件に違反した場合、アクセスを一時停止または終了できます。",
   "driver_onboarding_agreement_failed": "規約への同意を保存できませんでした。もう一度お試しください。",
   "driver_incentives_title": "インセンティブ",
   "driver_incentives_active": "進行中",
@@ -733,7 +738,7 @@
   "driver_tip_customer_prefix": "顧客",
   "driver_tip_picker_title": "チップ金額を選択",
   "driver_tip_custom_title": "または別の金額を入力",
-  "driver_tip_custom_hint": "金額を入力（VND）",
+  "driver_tip_custom_hint": "金額を入力（PEN）",
   "driver_tip_skip": "スキップ",
   "driver_tip_confirm": "確認",
   "driver_tip_success_snackbar": "チップ報告を保存しました",
@@ -853,7 +858,7 @@
   "helpFaqLateDeliveryQ": "注文が遅れている場合はどうすれば？",
   "helpFaqLateDeliveryA": "チャットサポートにご連絡いただければ、ドライバーに直接確認いたします。",
   "helpFaqPaymentMethodsQ": "利用可能な支払い方法は？",
-  "helpFaqPaymentMethodsA": "現在、代金引換とFoodFlow電子ウォレットに対応しています。",
+  "helpFaqPaymentMethodsA": "現在、代金引換とPlaza 4電子ウォレットに対応しています。",
   "helpFaqTopUpWalletQ": "ウォレットにチャージするには？",
   "helpFaqTopUpWalletA": "「プロフィール」→「ウォレット」→「チャージ」をタップし、希望金額を選択してください。",
   "helpFaqAddAddressQ": "配送先住所を追加するには？",
@@ -861,7 +866,7 @@
   "helpFaqMissingOrderQ": "注文を受け取っていない場合は？",
   "helpFaqMissingOrderA": "ドライバーが配達完了とマークしたのに受け取っていない場合は、すぐにサポートにご連絡ください。",
   "helpFaqRewardPointsQ": "ポイントはどのように貯まりますか？",
-  "helpFaqRewardPointsA": "ポイント残高は確認済みのロイヤルティ台帳から計算されます。獲得特典や紹介特典はFoodFlowで記録された後に表示されます。",
+  "helpFaqRewardPointsA": "ポイント残高は確認済みのロイヤルティ台帳から計算されます。獲得特典や紹介特典はPlaza 4で記録された後に表示されます。",
   "helpFaqTrackOrderQ": "注文をリアルタイムで追跡するには？",
   "helpFaqTrackOrderA": "注文後、「注文」→アクティブな注文を選択→「追跡」をタップしてください。"
 }
