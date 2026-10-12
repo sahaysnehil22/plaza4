@@ -71,7 +71,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get registerAsDriver => 'Đăng ký làm tài xế';
 
   @override
-  String get driverLoginTitle => 'FoodFlow Driver';
+  String get driverLoginTitle => 'Plaza 4 Driver';
 
   @override
   String get driverLoginSubtitle => 'Đăng nhập để bắt đầu nhận đơn giao hàng';
@@ -102,7 +102,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get registerCreateAccount => 'Tạo tài khoản mới';
 
   @override
-  String get registerSubtitle => 'Điền thông tin để bắt đầu sử dụng FoodFlow';
+  String get registerSubtitle => 'Điền thông tin để bắt đầu sử dụng Plaza 4';
 
   @override
   String get fullNameLabel => 'Họ và tên';
@@ -335,7 +335,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get supportSubtitle => 'Trung tâm trợ giúp';
 
   @override
-  String get aboutApp => 'Về FoodFlow';
+  String get aboutApp => 'Về Plaza 4';
 
   @override
   String get aboutSubtitle => 'Phiên bản 1.0.0';
@@ -483,6 +483,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get cartViewCart => 'Xem giỏ hàng';
+
+  @override
+  String cartAddedItem(String name) {
+    return 'Đã thêm $name vào giỏ hàng';
+  }
 
   @override
   String get cartDelete => 'Xóa';
@@ -1217,7 +1222,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get locationPermissionSubtitle =>
-      'FoodFlow cần vị trí của bạn để tìm nhà hàng gần nhất và giao hàng chính xác hơn.';
+      'Plaza 4 cần vị trí của bạn để tìm nhà hàng gần nhất và giao hàng chính xác hơn.';
 
   @override
   String get locationPermissionAllow => 'Cho phép';
@@ -1381,7 +1386,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get onboardingGetStarted => 'Bắt đầu ngay';
 
   @override
-  String get onboardingWelcomeTitle => 'Chào mừng đến FoodFlow';
+  String get onboardingWelcomeTitle => 'Chào mừng đến Plaza 4';
 
   @override
   String get onboardingWelcomeSubtitle =>
@@ -1513,7 +1518,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String referralShareMessage(String code) {
-    return 'Dùng mã $code để nhận ưu đãi khi đặt đơn đầu tiên trên FoodFlow!';
+    return 'Dùng mã $code để nhận ưu đãi khi đặt đơn đầu tiên trên Plaza 4!';
   }
 
   @override
@@ -1698,7 +1703,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get driver_onboarding_agreement_terms =>
-      '1. Dịch vụ tài xế FoodFlow\n\nKhi đăng ký làm tài xế FoodFlow, bạn đồng ý cung cấp dịch vụ giao hàng trong khu vực hoạt động đã được duyệt.\n\n2. Yêu cầu\n\n• Có giấy phép lái xe và giấy tờ phương tiện hợp lệ.\n• Sử dụng phương tiện an toàn, được bảo hiểm và đúng hồ sơ đăng ký.\n• Duy trì thái độ chuyên nghiệp, điểm đánh giá phù hợp và tuân thủ luật giao thông.\n• Bảo mật thông tin khách hàng, nhà hàng và đơn hàng.\n\n3. Thu nhập và thanh toán\n\nThu nhập được tính từ đơn hoàn thành, khoảng cách, ưu đãi và điều chỉnh đã được duyệt. Thanh toán hàng tuần qua tài khoản ngân hàng đã lưu trên FoodFlow.\n\n4. Hành vi và tiêu chuẩn\n\nTài xế phải lịch sự với khách hàng, nhà hàng và bộ phận hỗ trợ. Gian lận, lạm dụng, giao hàng không an toàn hoặc báo cáo sai có thể khiến tài khoản bị tạm ngưng hoặc chấm dứt.\n\n5. Chấm dứt\n\nFoodFlow có quyền tạm ngưng hoặc chấm dứt quyền truy cập nếu bạn vi phạm điều khoản, quy tắc an toàn hoặc yêu cầu pháp lý.';
+      '1. Dịch vụ tài xế Plaza 4\n\nKhi đăng ký làm tài xế Plaza 4, bạn đồng ý cung cấp dịch vụ giao hàng trong khu vực hoạt động đã được duyệt.\n\n2. Yêu cầu\n\n• Có giấy phép lái xe và giấy tờ phương tiện hợp lệ.\n• Sử dụng phương tiện an toàn, được bảo hiểm và đúng hồ sơ đăng ký.\n• Duy trì thái độ chuyên nghiệp, điểm đánh giá phù hợp và tuân thủ luật giao thông.\n• Bảo mật thông tin khách hàng, nhà hàng và đơn hàng.\n\n3. Thu nhập và thanh toán\n\nThu nhập được tính từ đơn hoàn thành, khoảng cách, ưu đãi và điều chỉnh đã được duyệt. Thanh toán hàng tuần qua tài khoản ngân hàng đã lưu trên Plaza 4.\n\n4. Hành vi và tiêu chuẩn\n\nTài xế phải lịch sự với khách hàng, nhà hàng và bộ phận hỗ trợ. Gian lận, lạm dụng, giao hàng không an toàn hoặc báo cáo sai có thể khiến tài khoản bị tạm ngưng hoặc chấm dứt.\n\n5. Chấm dứt\n\nPlaza 4 có quyền tạm ngưng hoặc chấm dứt quyền truy cập nếu bạn vi phạm điều khoản, quy tắc an toàn hoặc yêu cầu pháp lý.';
 
   @override
   String get driver_onboarding_agreement_failed =>
@@ -2202,7 +2207,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpFaqPaymentMethodsA =>
-      'Hiện tại chúng tôi chấp nhận tiền mặt khi nhận hàng và ví điện tử FoodFlow.';
+      'Hiện tại chúng tôi chấp nhận tiền mặt khi nhận hàng và ví điện tử Plaza 4.';
 
   @override
   String get helpFaqTopUpWalletQ => 'Làm thế nào để nạp tiền vào ví?';
@@ -2231,7 +2236,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpFaqRewardPointsA =>
-      'Số điểm được tính từ sổ cái điểm thưởng đã xác nhận. Ưu đãi tích điểm hoặc giới thiệu sẽ hiển thị sau khi FoodFlow ghi nhận.';
+      'Số điểm được tính từ sổ cái điểm thưởng đã xác nhận. Ưu đãi tích điểm hoặc giới thiệu sẽ hiển thị sau khi Plaza 4 ghi nhận.';
 
   @override
   String get helpFaqTrackOrderQ => 'Làm sao để theo dõi đơn hàng real-time?';
