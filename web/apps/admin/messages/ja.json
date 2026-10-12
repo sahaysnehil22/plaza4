@@ -25,7 +25,7 @@
       "discountSettings": "割引設定",
       "type": "種類 *",
       "discountPercentage": "割引率 (%) *",
-      "discountAmount": "割引額 (VND) *",
+      "discountAmount": "割引額 (PEN) *",
       "conditions": "適用条件と上限",
       "perUserLimit": "ユーザーごとの上限",
       "maxUsage": "合計使用回数（無制限の場合は空欄）",
@@ -125,9 +125,9 @@
     }
   },
   "login": {
-    "title": "FoodFlow Admin",
+    "title": "Plaza 4 Admin",
     "description": "システムを管理するためにログインしてください",
-    "emailPlaceholder": "admin@foodflow.com",
+    "emailPlaceholder": "admin@plaza4.com",
     "adminOnly": "このダッシュボードは管理者のみ利用できます。",
     "rememberMe": "ログイン状態を保持する",
     "forgotPassword": "パスワードをお忘れですか？",
@@ -138,19 +138,19 @@
   },
   "forgotPassword": {
     "title": "パスワードをリセット",
-    "description": "FoodFlowアカウントに登録されている管理者メールを入力してください。",
-    "emailPlaceholder": "admin@foodflow.com",
+    "description": "Plaza 4アカウントに登録されている管理者メールを入力してください。",
+    "emailPlaceholder": "admin@plaza4.com",
     "submit": "リセット手順を送信",
     "submitting": "手順を送信中...",
     "successTitle": "受信箱を確認してください",
     "successDescription": "アカウントが存在し、メール配信が設定されている場合、リセット手順が送信されます。",
-    "neutralNotice": "セキュリティのため、FoodFlowはメールアドレスの存在有無を明かしません。",
+    "neutralNotice": "セキュリティのため、Plaza 4はメールアドレスの存在有無を明かしません。",
     "backToLogin": "ログインに戻る",
     "error": "パスワードリセットをリクエストできませんでした。もう一度お試しください。"
   },
   "resetPassword": {
     "title": "新しいパスワードを作成",
-    "description": "FoodFlowメールに記載された安全なワンタイムリンクを使用してください。",
+    "description": "Plaza 4メールに記載された安全なワンタイムリンクを使用してください。",
     "newPassword": "新しいパスワード",
     "confirmPassword": "パスワード確認",
     "passwordPlaceholder": "8文字以上",
@@ -175,17 +175,18 @@
     "accountMenu": "アカウントメニューを開く",
     "switchLanguage": "言語を切り替える",
     "languages": {
+      "es": "スペイン語",
       "vi": "ベトナム語",
       "en": "英語",
       "ja": "日本語"
     }
   },
   "sidebar": {
-    "brand": "FoodFlow",
+    "brand": "Plaza 4",
     "adminBadge": "管理",
     "logout": "ログアウト",
     "navigation": "管理ナビゲーション",
-    "mobileTitle": "FoodFlow管理メニュー",
+    "mobileTitle": "Plaza 4管理メニュー",
     "mobileDescription": "プラットフォームを管理するエリアを選択します"
   },
   "breadcrumb": {
@@ -206,7 +207,7 @@
   },
   "overview": {
     "title": "概要",
-    "description": "FoodFlowシステムの活動概要",
+    "description": "Plaza 4システムの活動概要",
     "todayOrders": "本日の注文",
     "todayRevenue": "本日の売上",
     "totalOrders": "総注文数",
@@ -842,7 +843,7 @@
   },
   "settings": {
     "title": "システム設定",
-    "description": "FoodFlowプラットフォームの設定",
+    "description": "Plaza 4プラットフォームの設定",
     "save": "設定を保存",
     "saving": "保存中...",
     "saveError": "設定を保存できません",
@@ -1093,7 +1094,7 @@
     }
   },
   "aiMonitor": {
-    "title": "FoodFlow AIモニター",
+    "title": "Plaza 4 AIモニター",
     "description": "DeepSeekチャットボットの設定と実テレメトリの利用可否を監視します",
     "loadErrorTitle": "AIモニターを読み込めません",
     "loadErrorDescription": "バックエンド接続を確認するか、数秒後に再試行してください。",
@@ -1132,7 +1133,7 @@
     "configurationRequiredDescription": "プラットフォーム管理者はローテーション済みの DEEPSEEK_API_KEY をサーバー側のシークレットストアに追加し、再デプロイ後に実際のチャット要求を検証する必要があります。この画面やソース管理にキーを貼り付けないでください。",
     "telemetrySourceNote": "トークン数とレイテンシは実際のプロバイダー要求後にのみ記録されます。",
     "refresh": "更新",
-    "costUnavailableDescription": "コストはプロバイダーの請求データを接続するまで利用できません。FoodFlow はトークンから推定しません。"
+    "costUnavailableDescription": "コストはプロバイダーの請求データを接続するまで利用できません。Plaza 4 はトークンから推定しません。"
   },
   "analytics": {
     "title": "分析",
@@ -1373,7 +1374,7 @@
     "retry": "再試行",
     "sePayDescription": "決済インテントと署名付きWebhookの設定",
     "aiChatbot": "DeepSeek AIチャットボット",
-    "aiChatbotDescription": "FoodFlowカスタマーサポート向けの直接LLMランタイム",
+    "aiChatbotDescription": "Plaza 4カスタマーサポート向けの直接LLMランタイム",
     "pushNotifications": "Firebase Cloud Messaging",
     "fcmDescription": "サーバー側プッシュ通知プロバイダー",
     "outboundWebhooks": "アウトバウンドWebhook",
@@ -1395,7 +1396,7 @@
   },
   "settingsBranding": {
     "title": "ブランド設定",
-    "description": "FoodFlowのビジュアルアイデンティティをカスタマイズ",
+    "description": "Plaza 4のビジュアルアイデンティティをカスタマイズ",
     "save": "ブランド設定を保存",
     "saving": "保存中...",
     "brandIdentity": "ブランドアイデンティティ",
@@ -1551,7 +1552,7 @@
   "chatbot": {
     "open": "AIアシスタントを開く",
     "close": "チャットを閉じる",
-    "title": "FoodFlowアシスタント",
+    "title": "Plaza 4アシスタント",
     "subtitle": "注文・サポート・ダッシュボードについて質問",
     "placeholder": "メッセージを入力...",
     "send": "送信",
