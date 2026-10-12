@@ -1,0 +1,1364 @@
+{
+  "promotionTargeting": {
+    "loading": "Calculating alcance de la audiencia",
+    "error": "El alcance de la audiencia no está disponible temporalmente.",
+    "retry": "Reintentar",
+    "empty": "Sin clientes elegibles en este audience",
+    "estimate": "Alcance estimado: {count} clientes",
+    "audiences": {
+      "all": "Todos clientes",
+      "new": "Clientes nuevos (30 días)",
+      "vip": "VIP clientes",
+      "lapsed": "Inactivo clientes (30+ días)",
+      "segment": "Saved segmento",
+      "order_history": "Clientes por historial de pedidos"
+    }
+  },
+  "login": {
+    "title": "Gerente del restaurante",
+    "description": "Iniciar sesión a manage tu pedidos y menú",
+    "emailPlaceholder": "restaurante@correo electrónico.com",
+    "loginButton": "Iniciar sesión",
+    "loggingIn": "Iniciando sesión...",
+    "showPassword": "Mostrar contraseña",
+    "hidePassword": "Ocultar contraseña",
+    "restaurantOnly": "Este panel solo está disponible para cuentas de restaurante."
+  },
+  "sidebar": {
+    "brand": "Plaza 4 Restaurante",
+    "defaultName": "Restaurante",
+    "manage": "Manage",
+    "collapse": "Contraer barra lateral",
+    "expand": "Expandir barra lateral",
+    "navigation": "Navegación del restaurante",
+    "openNavigation": "Abrir menú del restaurante",
+    "mobileTitle": "Plaza 4 menú del restaurante",
+    "mobileDescription": "Elegir un zona a manage tu restaurante",
+    "settingsGroup": "Ajustes",
+    "settingsGeneral": "General",
+    "settingsProfile": "Perfil",
+    "settingsHours": "Horario de atención",
+    "logout": "Cerrar sesión"
+  },
+  "dashboard": {
+    "title": "Resumen",
+    "description": "Desempeño del negocio para el últimos 7 días",
+    "loadError": "No se pudo cargar restaurante resumen.",
+    "retry": "Reintentar",
+    "emptyTitle": "Sin resumen datos",
+    "emptyDescription": "Los datos aparecen cuando el backend devuelve pedidos, ingresos y análisis reales.",
+    "last7Days": "Últimos 7 días",
+    "recentOrders": "Pedidos recientes",
+    "viewAll": "Ver todos",
+    "noRecentOrders": "Sin pedidos recientes",
+    "itemCount": "{count} productos",
+    "unknownTime": "Unknown",
+    "status": {
+      "created": "Created",
+      "pendingPayment": "Pendiente pago",
+      "paid": "Pagado",
+      "restaurantPending": "Confirmación pendiente",
+      "restaurantAccepted": "Confirmado",
+      "preparing": "En preparación",
+      "readyForPickup": "Listo para recojo",
+      "driverAssigned": "Repartidor assigned",
+      "pickedUp": "Picked arriba",
+      "delivering": "Entregando",
+      "delivered": "Entregado",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "refunded": "Reembolsado"
+    }
+  },
+  "orders": {
+    "title": "Pedidos",
+    "description": "Gestionar y process incoming pedidos",
+    "queueTitle": "Cola de pedidos",
+    "loading": "Cargando...",
+    "orderCount": "{count, plural, one {# pedido} other {# pedidos}}",
+    "loadError": "No se pudo cargar pedidos.",
+    "refresh": "Actualizar",
+    "retry": "Reintentar",
+    "soundOn": "Turn sound en",
+    "soundOff": "Turn sound off",
+    "emptyColumn": "Sin pedidos",
+    "columns": {
+      "pending": "Nuevo",
+      "preparing": "En preparación",
+      "ready": "Listo"
+    },
+    "statusActions": {
+      "reject": "Rechazar",
+      "confirm": "Confirmar",
+      "startCooking": "Empezar a cocinar",
+      "complete": "Complete",
+      "updateError": "No se pudo actualizar estado del pedido."
+    },
+    "queueCard": {
+      "newBadge": "Nuevo",
+      "moreItems": "+{count, plural, one {# producto más} other {# productos más}}",
+      "total": "Total",
+      "unknownTime": "Unknown",
+      "table": "Tabla {tableNumber}"
+    },
+    "newOrder": "Nuevo Pedido",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "markReady": "Marcar listo",
+    "confirmReject": "¿seguro que quieres rechazar este pedido??",
+    "noOrders": "Sin pedidos",
+    "queueEmpty": "Cola es vacío"
+  },
+  "orderDetail": {
+    "title": "Pedido Detalle",
+    "description": "Detallado información del pedido",
+    "heading": "Pedido {code}",
+    "loadError": "No se pudo cargar detalles del pedido.",
+    "errorTitle": "No se pudo cargar detalles del pedido.",
+    "notFoundTitle": "Pedido no encontrado",
+    "notFoundDescription": "Este pedido no existe o no está disponible para tu restaurante.",
+    "back": "Volver",
+    "retry": "Reintentar",
+    "backToOrders": "Volver a pedidos",
+    "timelineTitle": "Estado del pedido",
+    "itemsTitle": "Productos pedidos",
+    "total": "Total",
+    "noteLabel": "Nota:",
+    "customerTitle": "Información del cliente",
+    "customerNameLabel": "Nombre del cliente",
+    "phoneLabel": "Número de teléfono",
+    "addressLabel": "Dirección",
+    "tableLabel": "Número de mesa",
+    "tableValue": "Tabla {tableNumber}",
+    "metaTitle": "Información del pedido",
+    "codeLabel": "Código del pedido",
+    "orderedAtLabel": "Ordered",
+    "unknownTime": "Unknown",
+    "itemCountLabel": "Productos",
+    "status": {
+      "restaurant_pending": "En espera de confirmación",
+      "restaurant_accepted": "Confirmado",
+      "preparing": "En preparación",
+      "ready_for_pickup": "Listo para recojo",
+      "driver_assigned": "Repartidor assigned",
+      "picked_up": "Picked arriba",
+      "delivering": "Entregando",
+      "delivered": "Entregado",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "refunded": "Reembolsado"
+    },
+    "actions": {
+      "accept": "Aceptar",
+      "reject": "Rechazar",
+      "startPreparing": "Empezar a preparar",
+      "readyForPickup": "Listo para recojo",
+      "rejectReason": "Rechazo motivo",
+      "reason": "Motivo",
+      "confirm": "Confirmar",
+      "cancel": "Cancelar",
+      "actionFailed": "Acción fallido"
+    },
+    "prepTime": {
+      "title": "Preparation hora",
+      "minutes": "{minutes} min",
+      "customPlaceholder": "Personalizado (minutos)",
+      "set": "Set"
+    },
+    "tracking": {
+      "title": "En vivo entrega rastreo",
+      "description": "Sigue al repartidor asignado con la ruta y telemetría del backend.",
+      "mapRegionLabel": "En vivo pedido rastreo mapa",
+      "refresh": "Actualizar",
+      "loading": "Cargando rastreo en vivo...",
+      "loadError": "No se pudo cargar rastreo en vivo.",
+      "mapLoading": "Cargando el mapa de entregas...",
+      "mapErrorTitle": "Mapa de entregas es no disponible",
+      "mapErrorDescription": "No se pudieron cargar las teselas de OpenMapTiles. Revisa la conexión de red e inténtalo de nuevo.",
+      "driverMarkerLabel": "Actual repartidor Posición GPS",
+      "telemetryUnavailable": "Aún no se registró GPS ni ruta real del repartidor. Plaza 4 no inventará un ETA.",
+      "noSnapshotDescription": "El rastreo aparecerá cuando el backend registre la asignación del repartidor y su telemetría.",
+      "etaLabel": "ETA",
+      "etaMinutes": "{minutes} min",
+      "etaUnavailable": "No disponible hasta que exista telemetría enrutada",
+      "routePhaseLabel": "Ruta fase",
+      "driverLocationLabel": "Repartidor GPS",
+      "locationAvailable": "En vivo ubicación disponible",
+      "locationUnavailable": "En espera para real repartidor GPS",
+      "customerAddressLabel": "Dirección del cliente",
+      "routeAvailable": "La geometría de la ruta viene del proveedor Directions/OSRM del backend.",
+      "routeUnavailable": "Aún no hay geometría de ruta; el mapa se actualizará cuando el backend la provea.",
+      "driverLocationUpdated": "Repartidor ubicación updated: {time}",
+      "unavailable": "No disponible",
+      "connection": {
+        "connecting": "Connecting",
+        "connected": "En vivo",
+        "disconnected": "Reconnecting"
+      },
+      "phase": {
+        "pickup": "Repartidor a restaurante",
+        "dropoff": "Repartidor a cliente"
+      }
+    }
+  },
+  "menu": {
+    "title": "Menú",
+    "description": "Gestionar productos del menú y categorías",
+    "addItem": "Agregar Producto",
+    "editItem": "Editar Producto",
+    "deleteItem": "Eliminar Producto",
+    "noItems": "Sin productos",
+    "category": "Categoría",
+    "price": "Precio",
+    "available": "Disponible",
+    "unavailable": "Agotado",
+    "board": {
+      "summary": "{items, plural, one {# producto} other {# productos}} · {categories, plural, one {# categoría} other {# categorías}}",
+      "loadError": "No se pudo cargar menú.",
+      "updateError": "No se pudo actualizar producto estado.",
+      "retry": "Reintentar",
+      "searchPlaceholder": "Buscar productos del menú...",
+      "emptyTitle": "Sin productos del menú",
+      "emptyDescription": "Agregar el primero producto a tu menú",
+      "searchEmpty": "Sin productos match “{query}”"
+    },
+    "categoryAccordion": {
+      "itemCount": "{count, plural, one {# producto} other {# productos}}",
+      "empty": "Sin productos en este categoría"
+    },
+    "row": {
+      "dragHandle": "Drag a volver a pedir",
+      "noDescription": "Sin descripción",
+      "availableTitle": "Disponible — click a pausar",
+      "unavailableTitle": "Paused — click a vender",
+      "available": "En stock",
+      "unavailable": "Out"
+    },
+    "availability": {
+      "title": "Disponibilidad",
+      "modes": {
+        "always": "Siempre disponible",
+        "scheduled": "Por hora window",
+        "hidden": "Oculto"
+      },
+      "from": "Desde",
+      "to": "A"
+    },
+    "bulkActions": {
+      "selectedCount": "{count, plural, one {# producto seleccionado} other {# productos seleccionados}}",
+      "selectAll": "Seleccionar todas",
+      "show": "Mostrar",
+      "hide": "Ocultar",
+      "moveCategory": "Move categoría",
+      "delete": "Eliminar"
+    },
+    "photoUpload": {
+      "label": "Producto foto",
+      "previewAria": "Producto del menú foto vista previa",
+      "removeAria": "Quitar producto del menú foto",
+      "upload": "Subir foto"
+    },
+    "newPage": {
+      "title": "Agregar nuevo producto",
+      "description": "Agregar un producto a el restaurante menú",
+      "back": "Volver a menú",
+      "submitError": "No se pudo agregar el producto. Por favor inténtalo de nuevo."
+    },
+    "editPage": {
+      "title": "Editar producto",
+      "description": "Actualizar producto del menú información",
+      "back": "Volver a menú",
+      "loadError": "No se pudo cargar el producto.",
+      "contractError": "A la respuesta del producto le faltan campos editables obligatorios",
+      "saveError": "No se pudo guardar. por favor inténtalo de nuevo.",
+      "categoryPlaceholder": "E.g. Platos de fondo",
+      "cancel": "Cancelar",
+      "save": "Guardar cambios",
+      "allergens": {
+        "label": "Alérgenos",
+        "options": {
+          "gluten": "Gluten",
+          "dairy": "Lácteos",
+          "eggs": "Huevos",
+          "nuts": "Frutos secos",
+          "peanuts": "Maní",
+          "soy": "Soya",
+          "fish": "Pescado",
+          "shellfish": "Mariscos"
+        }
+      }
+    },
+    "form": {
+      "formAria": "Formulario de detalles del producto",
+      "name": "Nombre del producto *",
+      "namePlaceholder": "E.g. rare beef pho",
+      "description": "Descripción",
+      "descriptionPlaceholder": "Breve descripción de este producto...",
+      "price": "Precio *",
+      "category": "Categoría",
+      "selectCategory": "Seleccionar categoría",
+      "addCategory": "Agregar",
+      "customCategoryPlaceholder": "Ingresar un nuevo categoría",
+      "imageUrl": "Imagen URL",
+      "imagePreview": "Producto del menú imagen vista previa",
+      "saving": "Guardando...",
+      "update": "Actualizar",
+      "create": "Agregar producto",
+      "categories": {
+        "appetizers": "Entradas",
+        "main": "Platos de fondo",
+        "soup": "Sopa",
+        "salad": "Ensalada",
+        "drinks": "Bebidas",
+        "dessert": "Postre",
+        "combo": "Combo"
+      },
+      "errors": {
+        "nameRequired": "Por favor ingresar el producto nombre",
+        "nameTooShort": "El nombre del producto debe tener al menos 2 caracteres",
+        "nameTooLong": "Nombre del producto no puede exceed 100 caracteres",
+        "descriptionTooLong": "Descripción no puede exceed 500 caracteres",
+        "priceInvalid": "Por favor ingresar un válido precio",
+        "categoryRequired": "Por favor elegir una categoría",
+        "imageInvalid": "Imagen debe use un válido HTTP o HTTPS URL",
+        "optionsLimit": "Cada producto puede tener hasta 5 grupos de opciones",
+        "optionNameRequired": "Ingresar un nombre para cada grupo de opciones",
+        "optionChoiceRequired": "Cada grupo de opciones necesita al menos una opción",
+        "choicesLimit": "Cada grupo de opciones puede tener hasta 10 opciones",
+        "choiceNameRequired": "Ingresar un nombre para cada opción",
+        "choicePriceInvalid": "Recargo de la opción no puede ser negative"
+      },
+      "options": {
+        "title": "Producto opciones ({count}/{max})",
+        "addOption": "Agregar opción",
+        "maxOptions": "Arriba a {max} opciones",
+        "optionName": "Nombre de la opción",
+        "optionNamePlaceholder": "E.g. Tamaño",
+        "type": "Tipo",
+        "single": "Elegir one",
+        "multi": "Elegir multiple",
+        "required": "Obligatorio",
+        "choices": "Opciones ({count}/{max})",
+        "addChoice": "Agregar opción",
+        "choiceNamePlaceholder": "Nombre de la opción",
+        "priceDeltaPlaceholder": "Cargo extra"
+      }
+    },
+    "categoriesPage": {
+      "title": "Categorías",
+      "description": "Gestionar producto del menú categorías",
+      "back": "Volver a menú",
+      "add": "Agregar categoría",
+      "loadError": "No se pudo cargar categorías.",
+      "deleteError": "Eliminar fallido",
+      "createError": "No se pudo agregar categoría.",
+      "updateError": "Actualizar fallido",
+      "deleteConfirm": "Eliminar este categoría?",
+      "addDialogTitle": "Agregar nuevo categoría",
+      "editDialogTitle": "Editar categoría",
+      "icon": "Ícono",
+      "categoryName": "Nombre de la categoría",
+      "categoryPlaceholder": "E.g. Platos de fondo",
+      "cancel": "Cancelar",
+      "save": "Guardar"
+    },
+    "categoryTree": {
+      "itemCount": "{count, plural, one {# producto} other {# productos}}",
+      "hide": "Ocultar",
+      "show": "Mostrar",
+      "addCategory": "+ Agregar categoría"
+    }
+  },
+  "menuNew": {
+    "title": "Agregar Nuevo Producto",
+    "description": "Agregar un nuevo producto a tu menú"
+  },
+  "revenue": {
+    "title": "Ingresos",
+    "description": "Restaurante ingresos estadísticas",
+    "today": "Hoy",
+    "week": "Este semana",
+    "month": "Este mes",
+    "totalOrders": "Pedidos totales",
+    "totalRevenue": "Ingresos totales",
+    "avgOrderValue": "Ticket promedio",
+    "avgPerDay": "Valor prom./día",
+    "promotionTotal": "Total promoción",
+    "orderCount": "{count} pedidos",
+    "industryAverage": "Prom. del sector: {amount}",
+    "revenueShare": "{pct}% de los ingresos",
+    "revenueForPeriod": "Ingresos {period}",
+    "currentPeriod": "Actual periodo",
+    "drillDown": {
+      "title": "Detalles de ingresos",
+      "empty": "Sin movimientos en este rango de fechas",
+      "columns": {
+        "date": "Fecha",
+        "orders": "Pedidos",
+        "gross": "Bruto",
+        "discount": "Descuento",
+        "net": "Neto",
+        "avgOrder": "Pedido prom.",
+        "newReturning": "Nuevo/Returning"
+      }
+    },
+    "completedOrdersDescription": "Analysis desde completado pedidos",
+    "loadErrorTitle": "No se pudo cargar ingresos.",
+    "loadError": "No se pudo cargar datos de ingresos.",
+    "dataUnavailable": "Datos no disponible aún.",
+    "retry": "Reintentar",
+    "periodAria": "Rango de fechas",
+    "periodLabel": "Último {days} días",
+    "exportFilename": "ingresos-{days}-días",
+    "loading": "Cargando datos de ingresos...",
+    "periods": {
+      "last7": "7 días",
+      "last30": "30 días",
+      "last90": "90 días"
+    },
+    "benchmark": {
+      "title": "Referencia del sector",
+      "updatedAt": "Updated: {date}",
+      "cohortSource": "Comparado con una cohorte anónima de {count} restaurantes similares.",
+      "platformSource": "Menos de 10 restaurantes similares calificaron; se usa un agregado anónimo de la plataforma ({count} restaurantes).",
+      "averageOrderValue": "Ticket promedio",
+      "averageOrderValueProgress": "Ticket promedio frente a la referencia",
+      "repeatRate": "Tasa de recompra",
+      "repeatRateProgress": "Tasa de recompra frente a la referencia",
+      "industryAverage": "Promedio de referencia: {value}",
+      "refreshCadence": "Datos es refreshed quarterly"
+    },
+    "categoryMix": {
+      "title": "Ingresos por categoría",
+      "empty": "Sin ingresos por categoría",
+      "chartAria": "Ingresos por categoría gráfico, total {total}",
+      "total": "total",
+      "legendValue": "{amount} · {pct}%"
+    },
+    "hourly": {
+      "title": "Ingresos por hora",
+      "empty": "Sin ingresos por hora",
+      "chartAria": "Ingresos por hora bar gráfico",
+      "tooltip": "{hour}:00: {amount} ({count} pedidos)",
+      "peak": "Horas pico",
+      "offPeak": "Horas valle",
+      "tableCaption": "Datos de ingresos por hora",
+      "hourLabel": "{hour}:00",
+      "columns": {
+        "hour": "Hora",
+        "revenue": "Ingresos",
+        "orders": "Pedidos"
+      }
+    },
+    "paymentMethods": {
+      "title": "Métodos de pago",
+      "empty": "Sin pago datos",
+      "value": "{amount} · {pct}%",
+      "progressAria": "Ingresos pagado con {method}",
+      "methods": {
+        "cash": "Cash",
+        "card": "Tarjeta",
+        "wallet": "Billetera electrónica",
+        "sepay": "SePay",
+        "vnpay": "VNPay"
+      }
+    },
+    "sources": {
+      "title": "Fuentes de pedidos",
+      "empty": "Sin pedido-fuente datos",
+      "value": "{amount} · {pct}%",
+      "sources": {
+        "organic": "Organic",
+        "promotion": "Promoción",
+        "referral": "Referral",
+        "search": "Buscar"
+      }
+    },
+    "comparison": {
+      "title": "Comparación",
+      "lastWeek": "Anterior periodo",
+      "lastMonth": "Mismo periodo 30 días earlier",
+      "insufficientData": "Insufficient datos",
+      "unavailable": "No disponible"
+    },
+    "export": {
+      "button": "Exportar reporte",
+      "csv": "Exportar CSV",
+      "excel": "Exportar Excel",
+      "menuAria": "Reporte exportar formats",
+      "emptyDisabled": "Ahí es no datos a exportar",
+      "defaultFilename": "ingresos"
+    },
+    "daily": {
+      "empty": "Sin ingresos en este periodo",
+      "chartAria": "Ingresos diarios gráfico",
+      "tooltip": "{date}: {amount} ({count} pedidos)",
+      "tableCaption": "Datos de ingresos diarios",
+      "columns": {
+        "date": "Fecha",
+        "revenue": "Ingresos",
+        "orders": "Pedidos"
+      }
+    }
+  },
+  "shared": {
+    "dateRange": {
+      "startDate": "Fecha de inicio",
+      "endDate": "Fecha de fin",
+      "presetsAria": "Rangos rápidos",
+      "presets": {
+        "last7": "7 días",
+        "last30": "30 días",
+        "last90": "90 días",
+        "last365": "365 días"
+      }
+    }
+  },
+  "metadata": {
+    "title": "Plaza 4 Restaurante",
+    "titleTemplate": "%s | Restaurante Plaza 4",
+    "description": "Gestiona pedidos, menús, ingresos y operaciones de tu restaurante con Plaza 4."
+  },
+  "localeSwitcher": {
+    "triggerAria": "Cambiar idioma. Idioma actual: {language}",
+    "menuAria": "Selector de idioma",
+    "languages": {
+      "es": "Español",
+      "vi": "Vietnamita",
+      "en": "Inglés",
+      "ja": "Japonés"
+    }
+  },
+  "rootStates": {
+    "loading": {
+      "label": "Cargando panel del restaurante..."
+    },
+    "globalError": {
+      "title": "Error del sistema",
+      "description": "Ocurrió un error crítico. Recarga la página o contacta a soporte si el problema continúa.",
+      "reload": "Recargar página"
+    },
+    "notFound": {
+      "title": "Página no encontrada",
+      "description": "La página solicitada no existe o se movió. Revisa la dirección.",
+      "backToDashboard": "Volver al resumen"
+    }
+  },
+  "routeErrors": {
+    "retry": "Reintentar",
+    "reference": "Reference: {reference}",
+    "analytics": {
+      "title": "No se pudo cargar analítica.",
+      "description": "Datos de analítica temporalmente no disponible. Inténtalo de nuevo."
+    },
+    "insights": {
+      "title": "No se pudo cargar análisis.",
+      "description": "El análisis del negocio no está disponible temporalmente. Inténtalo de nuevo."
+    },
+    "login": {
+      "title": "No se pudo abrir iniciar sesión.",
+      "description": "La página de inicio de sesión tuvo un problema temporal. Inténtalo de nuevo."
+    },
+    "menuEdit": {
+      "title": "No se pudo editar este producto.",
+      "description": "Detalles del producto temporalmente no disponibles. Inténtalo de nuevo."
+    },
+    "menuCategories": {
+      "title": "No se pudo cargar categorías.",
+      "description": "Las categorías del menú no están disponibles temporalmente. Inténtalo de nuevo."
+    },
+    "menu": {
+      "title": "No se pudo cargar el menú.",
+      "description": "Datos del menú temporalmente no disponible. Inténtalo de nuevo."
+    },
+    "menuNew": {
+      "title": "No se pudo agregar un producto.",
+      "description": "El formulario de nuevo producto tuvo un problema temporal. Inténtalo de nuevo."
+    },
+    "notifications": {
+      "title": "No se pudo cargar notificaciones.",
+      "description": "Notificaciones temporalmente no disponibles. Inténtalo de nuevo."
+    },
+    "orderDetail": {
+      "title": "No se pudo cargar detalles del pedido.",
+      "description": "Detalles del pedido temporalmente no disponibles. Inténtalo de nuevo."
+    },
+    "orders": {
+      "title": "No se pudo cargar pedidos.",
+      "description": "La lista de pedidos temporalmente no disponible. Inténtalo de nuevo."
+    },
+    "promotions": {
+      "title": "No se pudo cargar promociones.",
+      "description": "Promociones temporalmente no disponibles. Inténtalo de nuevo."
+    },
+    "promotionNew": {
+      "title": "No se pudo abrir la promoción builder.",
+      "description": "El creador de promociones tuvo un problema temporal. Inténtalo de nuevo."
+    },
+    "revenue": {
+      "title": "No se pudo cargar ingresos.",
+      "description": "Datos de ingresos temporalmente no disponible. Inténtalo de nuevo."
+    },
+    "reviews": {
+      "title": "No se pudo cargar reseñas.",
+      "description": "Reseñas temporalmente no disponibles. Inténtalo de nuevo."
+    },
+    "settings": {
+      "title": "No se pudo cargar ajustes.",
+      "description": "Los ajustes del restaurante no están disponibles temporalmente. Inténtalo de nuevo."
+    },
+    "settingsHours": {
+      "title": "No se pudo cargar horario de atención.",
+      "description": "El horario de atención no está disponible temporalmente. Inténtalo de nuevo."
+    },
+    "settingsProfile": {
+      "title": "No se pudo cargar el perfil.",
+      "description": "El perfil del restaurante no está disponible temporalmente. Inténtalo de nuevo."
+    },
+    "staff": {
+      "title": "No se pudo cargar personal.",
+      "description": "La lista del personal temporalmente no disponible. Inténtalo de nuevo."
+    },
+    "root": {
+      "title": "Algo salió mal",
+      "description": "No pudimos completar esta solicitud. Por favor inténtalo de nuevo."
+    }
+  },
+  "reviews": {
+    "title": "Reseñas de clientes",
+    "description": "Ver y respond a reseñas de clientes",
+    "dashboard": {
+      "loadError": "No se pudo cargar reseñas.",
+      "submitError": "No se pudo enviar respuesta.",
+      "avgRating": "Promedio calificación",
+      "totalReviews": "Total reseñas",
+      "fiveStarRate": "tasa de 5 estrellas",
+      "responseRate": "Tasa de respuesta",
+      "filterLabel": "Filtrar:",
+      "all": "Todos",
+      "commentOnly": "Con comentarios solo",
+      "empty": "Sin reseñas",
+      "restaurantReply": "Restaurante respuesta",
+      "replyPlaceholder": "Escribe una respuesta...",
+      "sendReplyAria": "Enviar reseña respuesta",
+      "ratingAria": "{rating} out de 5 estrellas",
+      "starFilterAria": "Filtrar por {rating} estrellas",
+      "orderBadge": "#{orderId}"
+    },
+    "card": {
+      "dishLabel": "Producto: {dishName}",
+      "photoAria": "Revisar foto {index}",
+      "restaurantReply": "Respuesta del restaurante",
+      "reply": "Respuesta",
+      "unknownTime": "Unknown",
+      "ratingAria": "{rating} out de 5 estrellas"
+    },
+    "filters": {
+      "all": "Todos",
+      "sortLabel": "Ordenar:",
+      "ratingAria": "{rating} estrellas",
+      "sort": {
+        "newest": "Más recientes",
+        "oldest": "Más antiguos",
+        "lowest": "Lowest calificación"
+      }
+    },
+    "replyModal": {
+      "title": "Respuesta a reseña",
+      "description": "Tu respuesta será ser shown publicly",
+      "required": "Por favor ingresar una respuesta",
+      "tooLong": "Respuestas puede ser arriba a 500 caracteres",
+      "sendError": "No se pudo enviar respuesta.",
+      "placeholder": "Ingresar tu respuesta...",
+      "count": "{count}/{max}",
+      "cancel": "Cancelar",
+      "submit": "Enviar respuesta",
+      "submitting": "Enviando..."
+    },
+    "errorBoundary": {
+      "title": "No se pudo cargar reseñas.",
+      "description": "Algo salió mal. Inténtalo de nuevo más tarde.",
+      "retry": "Reintentar"
+    }
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "description": "Ver notificaciones del sistema",
+    "loading": "Cargando notificaciones...",
+    "loadError": "No se pudo cargar notificaciones.",
+    "markReadError": "No se pudo actualizar leído estado.",
+    "retry": "Reintentar",
+    "justNow": "Ahora mismo",
+    "hoursAgo": "{count} horas atrás",
+    "unreadCount": "{count} no leído notificaciones",
+    "allRead": "Todos leído",
+    "markAllRead": "Marcar todas como leídas",
+    "empty": "Sin notificaciones",
+    "tabs": {
+      "all": "Todos",
+      "order": "Pedidos",
+      "message": "Mensajes",
+      "system": "Sistema",
+      "stock": "Stock"
+    }
+  },
+  "staff": {
+    "title": "Gestión del personal",
+    "description": "Gestiona personal, permisos y horarios de trabajo",
+    "loading": "Cargando personal...",
+    "loadError": "No se pudo cargar lista del personal.",
+    "actionError": "No se pudo guardar personal cambios.",
+    "retry": "Reintentar",
+    "dismissError": "Dismiss error",
+    "permissionsTitle": "Permisos",
+    "permissionEditorTitle": "Permisos para {name}",
+    "permissionEditorDescription": "Elige las capacidades a las que accede este miembro del personal.",
+    "ownerPermissionsLocked": "Los permisos del propietario siempre están activos y no se pueden cambiar aquí.",
+    "permissionToggleMember": "Interruptor {capability} permiso para {member}",
+    "savePermissions": "Guardar permisos",
+    "savingPermissions": "Guardando...",
+    "manageMember": "Gestionar {name}",
+    "selectMember": "Seleccionar un miembro del personal para gestionar permisos y turnos.",
+    "roles": {
+      "owner": "Propietario",
+      "manager": "Gerente",
+      "kitchen": "Cocina",
+      "cashier": "Cajero",
+      "viewer": "Visor"
+    },
+    "capabilities": {
+      "orders": "Pedidos",
+      "menu": "Menú",
+      "reports": "Reportes",
+      "settings": "Ajustes",
+      "staff": "Personal",
+      "promotions": "Promociones"
+    },
+    "status": {
+      "active": "Activo",
+      "blocked": "Bloqueado"
+    },
+    "table": {
+      "title": "Personal ({count})",
+      "actions": "Acciones del personal",
+      "empty": "No se encontraron miembros del personal",
+      "editMember": "Gestionar {name}",
+      "columns": {
+        "member": "Personal",
+        "role": "Rol",
+        "permissions": "Permisos",
+        "status": "Estado",
+        "joined": "Joined"
+      }
+    },
+    "invite": {
+      "action": "+ Crear invitación",
+      "title": "Crear invitación de personal",
+      "description": "Crea una invitación pendiente para uno o más correos del personal",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "personal@example.com",
+      "add": "Agregar",
+      "cancel": "Cancelar",
+      "send": "Crear invitación",
+      "sending": "Creando...",
+      "invalidEmail": "Inválido correo electrónico",
+      "duplicateEmail": "Correo electrónico tiene ya sido added",
+      "emptyEmail": "Agregar en menos 1 correo electrónico",
+      "sendError": "No se pudo crear invitación.",
+      "removeEmail": "Quitar correo electrónico {email}"
+    },
+    "pendingInvites": {
+      "title": "Pendiente invitaciones ({count})",
+      "meta": "Rol: {role} · Expires {date}"
+    },
+    "schedule": {
+      "title": "Horario de trabajo",
+      "description": "Selecciona bloques por hora en la semana actual. Los cambios se guardan de inmediato.",
+      "assigned": "Assigned",
+      "empty": "Vacío",
+      "toggleSlot": "Interruptor turno en {day} en {hour}",
+      "days": {
+        "mon": "Lun",
+        "tue": "Mar",
+        "wed": "Mié",
+        "thu": "Jue",
+        "fri": "Vie",
+        "sat": "Sáb",
+        "sun": "Dom"
+      }
+    }
+  },
+  "settings": {
+    "title": "Ajustes",
+    "description": "Configura tu restaurante",
+    "profile": "Perfil del restaurante",
+    "hours": "Horario de atención",
+    "general": "Ajustes generales",
+    "overview": {
+      "title": "Ajustes del restaurante",
+      "description": "Gestiona el perfil, las imágenes y el horario de atención desde pantallas dedicadas.",
+      "profileDescription": "Actualiza la información pública, imágenes, tipos de cocina y ajustes operativos.",
+      "profileAction": "Abrir perfil",
+      "hoursDescription": "Sincroniza el horario real con el backend y muestra el estado de guardado.",
+      "hoursAction": "Abrir horario de atención"
+    },
+    "profileForm": {
+      "title": "Perfil del restaurante",
+      "description": "Información shown a clientes",
+      "loadError": "No se pudo cargar perfil del restaurante.",
+      "uploadError": "No se pudo subir la imagen. por favor inténtalo de nuevo.",
+      "saveSuccess": "Perfil del restaurante saved",
+      "saveError": "No se pudo guardar perfil del restaurante.",
+      "basic": {
+        "title": "Basic información",
+        "name": "Nombre del restaurante",
+        "description": "Descripción",
+        "address": "Dirección",
+        "phone": "Número de teléfono"
+      },
+      "operations": {
+        "title": "Operations",
+        "minOrder": "Pedido mínimo (PEN)",
+        "acceptingOrders": "Accepting pedidos",
+        "acceptingOrdersDescription": "Activa para mostrar el restaurante y aceptar pedidos nuevos"
+      },
+      "cuisines": {
+        "label": "Cocina",
+        "options": {
+          "vietnamese": "Vietnamita",
+          "chinese": "China",
+          "japanese": "Japonés",
+          "korean": "Coreana",
+          "thai": "Tailandesa",
+          "italian": "Italiana",
+          "fastFood": "Comida rápida",
+          "vegetarian": "Vegetariano",
+          "seafood": "Mariscos",
+          "hotpot": "Hotpot",
+          "grill": "Parrilla",
+          "banhMi": "Bánh mì"
+        }
+      },
+      "images": {
+        "title": "Imágenes de perfil",
+        "cover": "Imagen de portada (16:9)",
+        "logo": "Logo del restaurante",
+        "uploadCover": "Clic para subir imagen de portada",
+        "uploadLogo": "Clic para subir logo",
+        "coverPreviewLabel": "Actual imagen de portada vista previa",
+        "logoPreviewLabel": "Actual logo del restaurante vista previa",
+        "logoHint": "Imagen cuadrada, en menos 200×200px. JPG, PNG, o WebP."
+      },
+      "saveBar": {
+        "lastUpdated": "Último updated: {date}",
+        "uploading": "Subiendo imagen...",
+        "saving": "Guardando...",
+        "save": "Guardar perfil"
+      }
+    },
+    "hoursEditor": {
+      "title": "Horario de atención",
+      "description": "Set el semanal opening horario",
+      "loadError": "No se pudo cargar horario de atención.",
+      "invalidOpeningHours": "El horario del servidor está incompleto. Recarga antes de guardar para no sobrescribir el horario real del restaurante.",
+      "saveSuccess": "Horario de atención saved",
+      "saveError": "No se pudo guardar horario de atención.",
+      "save": "Guardar horario",
+      "saving": "Guardando...",
+      "retry": "Reintentar",
+      "days": {
+        "monday": "Lunes",
+        "tuesday": "Martes",
+        "wednesday": "Miércoles",
+        "thursday": "Jueves",
+        "friday": "Viernes",
+        "saturday": "Sábado",
+        "sunday": "Domingo"
+      },
+      "weekly": {
+        "title": "Horario semanal",
+        "open": "Abierto",
+        "closed": "Cerrado",
+        "openTime": "{day} opening hora",
+        "closeTime": "{day} closing hora",
+        "copyAll": "Apply a todos"
+      },
+      "holidays": {
+        "title": "Cierres por feriados",
+        "description": "Agrega cierres especiales de día completo. Estas fechas se guardan con tu perfil de restaurante.",
+        "dateLabel": "Fecha de cierre",
+        "reasonLabel": "Motivo del cierre",
+        "reasonPlaceholder": "Motivo",
+        "add": "Agregar",
+        "empty": "Sin cierre especial fechas",
+        "listLabel": "Cierre especial fechas",
+        "duplicate": "Esta fecha ya está en la lista de cierres.",
+        "noReason": "Sin motivo provided",
+        "remove": "Quitar",
+        "removeWithDate": "Quitar closure en {date}"
+      },
+      "preview": {
+        "title": "Este semana vista previa",
+        "closed": "Cerrado",
+        "shortDays": {
+          "monday": "Lun",
+          "tuesday": "Mar",
+          "wednesday": "Mié",
+          "thursday": "Jue",
+          "friday": "Vie",
+          "saturday": "Sáb",
+          "sunday": "Dom"
+        }
+      },
+      "errorBoundary": {
+        "title": "No se pudo cargar horario de atención.",
+        "description": "Algo salió mal. Inténtalo de nuevo más tarde.",
+        "retry": "Reintentar"
+      }
+    }
+  },
+  "settingsProfile": {
+    "title": "Perfil del restaurante",
+    "description": "Actualiza la información del perfil de tu restaurante"
+  },
+  "settingsHours": {
+    "title": "Horario de atención",
+    "description": "Configura el horario de atención de tu restaurante"
+  },
+  "menuEdit": {
+    "title": "Editar Producto del menú",
+    "description": "Actualizar producto del menú información",
+    "backToMenu": "Volver a menú",
+    "saveChanges": "Guardar cambios",
+    "saving": "Guardando...",
+    "cancel": "Cancelar",
+    "imageUpload": "Subir imagen",
+    "uploading": "Subiendo...",
+    "removeImage": "Quitar imagen",
+    "allergens": "Alérgenos",
+    "available": "Producto es disponible"
+  },
+  "promotions": {
+    "title": "Crear Promoción",
+    "description": "Set arriba descuentos para clientes",
+    "listTitle": "Promociones",
+    "listSubtitle": "Gestionar promotional campañas",
+    "listError": "No se pudo cargar lista.",
+    "createNew": "Crear nuevo",
+    "emptyTitle": "Sin promociones",
+    "emptySubtitle": "Crear tu primero campaña",
+    "active": "Activo",
+    "inactive": "Paused",
+    "retry": "Reintentar",
+    "back": "Volver",
+    "edit": "Editar",
+    "value": "Valor",
+    "usage": "Usado",
+    "startDate": "Iniciar",
+    "endDate": "End",
+    "minOrder": "Pedido mín.",
+    "next": "Siguiente",
+    "create": "Crear promoción",
+    "creating": "Creando...",
+    "stepInfo": "Información",
+    "stepDates": "Fechas",
+    "stepConditions": "Condiciones",
+    "stepReview": "Reseña",
+    "promoName": "Nombre de la campaña",
+    "promoCode": "Código promocional",
+    "autoGenCode": "Auto-generate",
+    "noData": "Sin promociones",
+    "loading": "Cargando promociones...",
+    "pause": "Pausar",
+    "resume": "Activar",
+    "archive": "Archivo",
+    "clearSelection": "Limpiar selección",
+    "selectedCount": "{count} seleccionado",
+    "searchPlaceholder": "Buscar por nombre o código...",
+    "emptyFiltered": "Sin promociones match el actual filtros",
+    "selectPromotion": "Seleccionar promoción {code}",
+    "pauseError": "No se pudo pausar promoción.",
+    "archiveError": "No se pudo archivar promoción.",
+    "bulkError": "La acción masiva falló",
+    "archiveConfirm": "Archivar el seleccionado promoción(s)?",
+    "stats": {
+      "total": "Campañas totales",
+      "active": "Activo",
+      "draft": "Borrador",
+      "usage": "Usage"
+    },
+    "performance": {
+      "title": "Desempeño resumen",
+      "usage": "Usos de la promoción",
+      "revenue": "Ingresos por promociones",
+      "conversion": "Tasa de conversión",
+      "roi": "ROI",
+      "unavailable": "No disponible",
+      "description": "Basado en canjes confirmados, ingresos atribuidos y costo del descuento.",
+      "degradedDescription": "Las analíticas de promociones no están disponibles temporalmente. El panel solo muestra uso confirmado; no se muestran métricas falsas."
+    },
+    "analytics": {
+      "title": "Rendimiento de la promoción",
+      "usage": "Usage",
+      "revenue": "Ingresos por promociones",
+      "conversion": "Tasa de conversión",
+      "roi": "ROI",
+      "timeline": "Uso diario",
+      "emptyTimeline": "Sin datos",
+      "unavailable": "No disponible",
+      "degradedTitle": "Detallado analítica no disponible",
+      "degradedDescription": "Las analíticas detalladas no están disponibles temporalmente. El uso sigue viniendo de datos confirmados."
+    },
+    "status": {
+      "all": "Todos",
+      "draft": "Borrador",
+      "scheduled": "Programado",
+      "active": "Activo",
+      "paused": "Paused",
+      "expired": "Vencido",
+      "archived": "Archivado"
+    },
+    "types": {
+      "percent": "Por ciento off",
+      "fixed": "Fixed descuento",
+      "bogof": "Compra X lleva Y",
+      "combo": "Combo"
+    },
+    "audience": {
+      "all": "Todos clientes",
+      "new": "Clientes nuevos",
+      "vip": "VIP clientes",
+      "lapsed": "Clientes inactivos",
+      "segment": "Segmento",
+      "order_history": "Historial de pedidos"
+    },
+    "form": {
+      "back": "Volver",
+      "errorsTitle": "Por favor fix el following errores:",
+      "basicTitle": "Basic información",
+      "code": "Código de promoción *",
+      "codePlaceholder": "E.g. WELCOME20",
+      "name": "Nombre de la promoción *",
+      "namePlaceholder": "E.g. Bienvenido 20%",
+      "description": "Descripción",
+      "typeTitle": "Tipo de promoción",
+      "percentValue": "Por ciento descuento *",
+      "fixedValue": "Fixed descuento *",
+      "maxDiscount": "Descuento máximo (PEN)",
+      "minOrder": "Pedido mínimo (PEN)",
+      "appliesToTitle": "Applies a",
+      "appliesTo": {
+        "all": "Todos",
+        "category": "Categoría",
+        "items": "Specific productos"
+      },
+      "targetTitle": "Público objetivo",
+      "minOrderCount": "Pedido mínimo cantidad",
+      "limitsTitle": "Límites",
+      "maxUsage": "Usos totales",
+      "perUserLimit": "Límite por cliente",
+      "unlimited": "Ilimitado",
+      "stackable": "Allow stacking con otro promociones",
+      "saving": "Guardando...",
+      "update": "Actualizar",
+      "create": "Crear promoción"
+    },
+    "validation": {
+      "codeTooShort": "El código de promoción debe tener al menos 3 caracteres",
+      "nameTooShort": "El nombre de la promoción debe tener al menos 2 caracteres",
+      "invalidType": "Tipo de promoción es inválido",
+      "discountPositive": "Valor del descuento debe ser greater que 0",
+      "percentMax": "Por ciento descuento no puede exceed 100%",
+      "comboRequired": "BOGOF/Configuración del combo es obligatorio",
+      "buyQuantityPositive": "Comprar cantidad debe ser greater que 0",
+      "invalidDate": "Fecha es inválido",
+      "dateRangeInvalid": "Fecha de inicio debe ser antes fecha de fin",
+      "scheduleRequired": "Por favor configure la promoción horario",
+      "categoryRequired": "Elige una categoría real del menú para esta promoción",
+      "itemsRequired": "Elige al menos un producto del menú para esta promoción"
+    },
+    "detail": {
+      "loadError": "No se pudo cargar promoción.",
+      "actionError": "Acción fallido",
+      "notFound": "Promoción no encontrada",
+      "back": "Volver",
+      "pause": "Pausar",
+      "resume": "CV",
+      "edit": "Editar",
+      "buyGet": "Comprar {buy} get {get}",
+      "comboPrice": "Precio del combo",
+      "value": "Valor",
+      "audience": "Audience",
+      "time": "Hora",
+      "channels": "Canales",
+      "limitsTitle": "Límites & condiciones",
+      "minOrder": "Pedido mínimo",
+      "maxDiscount": "Descuento máximo",
+      "maxUsage": "Usos totales",
+      "perUserLimit": "Límite por cliente",
+      "none": "Ninguno",
+      "unlimited": "Ilimitado",
+      "stackable": "Puede ser combined con otro promociones",
+      "channelLabels": {
+        "in_app": "En-app",
+        "push": "Push",
+        "email": "Correo electrónico",
+        "sms": "SMS"
+      }
+    },
+    "schedule": {
+      "title": "Programación de la promoción",
+      "validFrom": "Fecha de inicio",
+      "validUntil": "Fecha de fin",
+      "recurring": "Recurrente",
+      "weekly": "Semanal",
+      "monthly": "Mensual",
+      "dayOfMonth": "Día de mes",
+      "days": {
+        "mon": "Lun",
+        "tue": "Mar",
+        "wed": "Mié",
+        "thu": "Jue",
+        "fri": "Vie",
+        "sat": "Sáb",
+        "sun": "Dom"
+      }
+    },
+    "comboBuilder": {
+      "bogofTitle": "Configuración de compra X lleva Y",
+      "comboTitle": "Configuración del combo",
+      "buy": "Comprar",
+      "get": "Get",
+      "itemUnit": "productos",
+      "comboPrice": "Precio del combo"
+    },
+    "typePicker": {
+      "percent": {
+        "label": "Por ciento off",
+        "description": "Descuento por porcentaje del pedido"
+      },
+      "fixed": {
+        "label": "Fixed monto",
+        "description": "Descuento un fixed monto"
+      },
+      "bogof": {
+        "label": "Compra X lleva Y",
+        "description": "Recompensa productos después un cantidad umbral"
+      },
+      "combo": {
+        "label": "Combo",
+        "description": "Multiple productos en un fixed precio del combo"
+      }
+    },
+    "channelSelector": {
+      "title": "Canales de distribución",
+      "toggleAria": "Interruptor {channel} canal",
+      "channels": {
+        "in_app": {
+          "label": "En-app",
+          "description": "Mostrar la promoción en las pantallas de cliente de Plaza 4."
+        },
+        "push": {
+          "label": "Notificación push",
+          "description": "Notificar a clientes elegibles por el proveedor push."
+        },
+        "email": {
+          "label": "Correo electrónico",
+          "description": "Enviar el campaña por correo configurado entrega."
+        },
+        "sms": {
+          "label": "SMS",
+          "description": "Enviar el campaña por SMS configurado entrega."
+        }
+      }
+    },
+    "roiChart": {
+      "title": "Ingresos por promociones y costo",
+      "chartAria": "Gráfico de ingresos por promociones y costo del descuento",
+      "revenue": "Ingresos por promociones",
+      "discount": "Costo del descuento"
+    },
+    "itemSelector": {
+      "searchPlaceholder": "Buscar productos...",
+      "loadError": "No se pudo cargar productos del menú.",
+      "retry": "Reintentar",
+      "empty": "No se encontraron productos"
+    },
+    "categorySelector": {
+      "label": "Menú categoría",
+      "placeholder": "Elegir una categoría",
+      "loading": "Cargando categorías...",
+      "loadError": "No se pudo cargar categorías del menú.",
+      "retry": "Reintentar",
+      "empty": "No se encontraron visible categorías del menú"
+    },
+    "newPage": {
+      "title": "Crear nuevo promoción",
+      "description": "Set arriba un promoción campaña",
+      "submitError": "No se pudo crear promoción.",
+      "errorBoundary": {
+        "title": "No se pudo crear promoción campaña.",
+        "description": "Algo salió mal. Por favor inténtalo de nuevo.",
+        "retry": "Reintentar"
+      }
+    },
+    "editPage": {
+      "title": "Editar promoción",
+      "loadError": "No se pudo cargar promoción.",
+      "submitError": "No se pudo actualizar promoción."
+    }
+  },
+  "analytics": {
+    "title": "Analítica",
+    "description": "Restaurante desempeño resumen",
+    "loading": "Cargando analítica...",
+    "retry": "Reintentar",
+    "errorTitle": "Analítica no disponible",
+    "errorDescription": "No pudimos cargar las analíticas del restaurante desde el servidor. Reintenta con conexión estable.",
+    "today": "Hoy",
+    "week": "Este semana",
+    "month": "Este mes",
+    "totalOrders": "Pedidos totales",
+    "totalOrdersSub": "Entregado y completado pedidos",
+    "totalRevenue": "Ingresos totales",
+    "totalRevenueSub": "Desde entregado y completado pedidos",
+    "avgOrderValue": "Ticket promedio",
+    "avgOrderValueSub": "Promedio por día: {amount}",
+    "completionRate": "Tasa de completitud",
+    "hourlyOrders": "Pedidos por hora",
+    "ordersByHourTable": "Pedidos por hora datos tabla",
+    "hourLabel": "{hour}:00",
+    "hourTooltip": "{hour}:00: {count} pedidos",
+    "byCategory": "Por categoría",
+    "categoryRevenueTable": "Ingresos por categoría datos tabla",
+    "categoryColumn": "Categoría",
+    "hourColumn": "Hora",
+    "ordersColumn": "Pedidos",
+    "revenueColumn": "Ingresos",
+    "shareColumn": "Participación",
+    "noData": "Sin datos",
+    "noCategories": "Sin ingresos por categoría"
+  },
+  "insights": {
+    "title": "Analítica & Recomendaciones",
+    "description": "Recomendaciones basadas en pedidos, menú e ingresos reales",
+    "loadError": "No se pudo cargar análisis.",
+    "retry": "Reintentar",
+    "suggestionCount": "Tú tienen {count} recomendaciones hoy",
+    "emptySuggestions": "Aún no hay recomendaciones. Los datos aparecen con suficientes pedidos.",
+    "suggestions": {
+      "apply": "Apply",
+      "dismiss": "Dismiss",
+      "types": {
+        "pricing": "Pricing",
+        "menu_mix": "Menú",
+        "marketing": "Marketing",
+        "operations": "Operations"
+      },
+      "catalog": {
+        "menuAvailability": {
+          "title": "Revisar oculto productos del menú",
+          "description": "{count} los productos del menú no están disponibles ahora.",
+          "impact": "Reduce fallido pedidos"
+        },
+        "deliveryTime": {
+          "title": "Reduce pedido tiempo de completado",
+          "description": "El tiempo promedio de completado es {minutes} minutos.",
+          "impact": "Improve cliente experience"
+        }
+      }
+    },
+    "peakHours": {
+      "title": "Horas pico",
+      "empty": "Pedidos insuficientes para calcular las horas pico",
+      "tableLabel": "Pedido heatmap por día y hora",
+      "hourShort": "{hour}h",
+      "cellLabel": "{count} pedidos - {day} {hour}h",
+      "low": "Bajo",
+      "high": "Alto",
+      "days": {
+        "mon": "Lun",
+        "tue": "Mar",
+        "wed": "Mié",
+        "thu": "Jue",
+        "fri": "Vie",
+        "sat": "Sáb",
+        "sun": "Dom"
+      }
+    },
+    "bestSellers": {
+      "title": "Más vendidos",
+      "empty": "No enough más vendido producto datos aún",
+      "metrics": "{orders} pedidos · {revenueShare}% de los ingresos"
+    },
+    "slowMovers": {
+      "title": "Productos de baja rotación ({count})",
+      "empty": "Sin de baja rotación productos",
+      "metrics": "{orders} pedidos en {period} días · Menos {pctDecline}%",
+      "recommendations": {
+        "bundle": "Paquete",
+        "discount": "Descuento",
+        "remove": "Quitar desde menú"
+      }
+    },
+    "revenueForecast": {
+      "title": "Pronóstico de ingresos",
+      "empty": "Historial de ingresos insuficiente para pronosticar",
+      "chartLabel": "Pronóstico de ingresos gráfico",
+      "confidenceTitle": "Rango de confianza: {lower} - {upper}",
+      "actualTitle": "Real: {amount}",
+      "predictedTitle": "Pronóstico: {amount}",
+      "actual": "Real",
+      "predicted": "Pronóstico",
+      "confidence": "Rango de confianza"
+    }
+  },
+  "orderChat": {
+    "title": "Chat con repartidor",
+    "titleWithDriver": "Chat con repartidor: {driverName}",
+    "connected": "Conectado",
+    "reconnecting": "Reconnecting...",
+    "loading": "Cargando chat del repartidor...",
+    "empty": "Aún no hay mensajes. Envía la primera actualización cuando se asigne el repartidor.",
+    "driverMissing": "Aún no se asignó repartidor. El chat se habilitará tras el despacho.",
+    "loadError": "No se pudo cargar chat del repartidor.",
+    "sendError": "No se pudo enviar este mensaje.",
+    "retry": "Reintentar",
+    "placeholder": "Tipo un mensaje...",
+    "disabledPlaceholder": "En espera para repartidor asignación",
+    "messageLabel": "Mensaje",
+    "send": "Enviar mensaje",
+    "quick": {
+      "ready": "Pedido es listo",
+      "fiveMinutes": "Need 5 más minutos",
+      "backGate": "Usa la puerta trasera",
+      "thanks": "Gracias tú!"
+    }
+  },
+  "chatbot": {
+    "open": "Abrir asistente IA",
+    "close": "Cerrar chat",
+    "title": "Plaza 4 Assistant",
+    "subtitle": "Pregunta sobre pedidos, soporte o el panel",
+    "placeholder": "Tipo un mensaje...",
+    "send": "Enviar",
+    "empty": "Pregunta lo que sea — usamos el servicio IA en vivo.",
+    "emptyReply": "(Vacío assistant respuesta)",
+    "sending": "Enviando...",
+    "error": "No se pudo contactar el asistente. Inténtalo de nuevo.",
+    "degraded": "Assistant es temporarily limitado",
+    "you": "Tú",
+    "assistant": "Assistant",
+    "historyLoading": "Cargando tu conversación…...",
+    "historyError": "No se pudieron cargar tus mensajes anteriores. Igual puedes iniciar una nueva solicitud.",
+    "retryHistory": "Reintentar historial",
+    "providerNotConfigured": "El asistente IA aún no está configurado. Pide a un propietario de la plataforma que complete la configuración del servidor.",
+    "providerUnavailable": "El asistente IA no está disponible temporalmente. No se generó respuesta; inténtalo de nuevo en breve.",
+    "suggestions": "Prueba un punto de partida",
+    "suggestionOne": "Cómo debería I handle un pedido con retraso?",
+    "suggestionTwo": "Cómo hacer I actualizar un producto del menú?",
+    "suggestionThree": "Explain mi promoción opciones",
+    "conversationLoaded": "Conversación loaded",
+    "characterCount": "{count} / {limit} caracteres"
+  }
+}
