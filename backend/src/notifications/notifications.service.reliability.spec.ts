@@ -89,7 +89,7 @@ describe('NotificationsService fanout reliability', () => {
       })
     inApp.send.mockResolvedValueOnce({ success: false, error: 'gateway unavailable' })
     fcm.send.mockRejectedValueOnce(new Error('queue unavailable'))
-    jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(5)
+    jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(14)
 
     const failed = await service.fanout(userId, eventType, payload)
     const retried = await service.fanout(userId, eventType, payload)

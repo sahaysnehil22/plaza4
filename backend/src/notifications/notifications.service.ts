@@ -185,17 +185,17 @@ export class NotificationsService {
         SELECT preferred_locale FROM users WHERE id = ${userId}::uuid LIMIT 1
       `
       const value = rows[0]?.preferred_locale
-      if (value === 'en' || value === 'ja') return value
+      if (value === 'es' || value === 'en' || value === 'ja') return value
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err)
       this.logger.error(`Notification locale lookup failed for userId=${userId}: ${message}`)
       throw new InternalServerErrorException('NOTIFICATION_LOCALE_UNAVAILABLE')
     }
-    return 'vi'
+    return 'es'
   }
 
   private isQuietHours(): boolean {
-    const h = (new Date().getUTCHours() + 7) % 24
+    const h = (new Date().getUTCHours() - 5 + 24) % 24
     return h >= QUIET_HOUR_START || h < QUIET_HOUR_END
   }
 

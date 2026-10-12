@@ -241,7 +241,7 @@ describe('NotificationsService', () => {
     it('sends to in_app and push channels by default', async () => {
       mockRedis.set.mockResolvedValueOnce('OK')
       mockPrisma.$queryRaw.mockResolvedValueOnce([])
-      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(5)
+      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(14)
 
       const result = await service.fanout(userId, eventType, payload)
 
@@ -255,7 +255,7 @@ describe('NotificationsService', () => {
     it('sends canonical persisted notification rows over in-app realtime', async () => {
       mockRedis.set.mockResolvedValueOnce('OK')
       mockPrisma.$queryRaw.mockResolvedValueOnce([])
-      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(5)
+      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(14)
 
       await service.fanout(userId, eventType, payload)
 
@@ -296,7 +296,7 @@ describe('NotificationsService', () => {
       mockRedis.set.mockResolvedValueOnce('OK')
       mockPrisma.$queryRaw.mockResolvedValueOnce([])
 
-      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(16)
+      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(4)
 
       await service.fanout(userId, eventType, payload)
 
@@ -310,7 +310,7 @@ describe('NotificationsService', () => {
       mockRedis.set.mockResolvedValueOnce('OK')
       mockPrisma.$queryRaw.mockResolvedValueOnce([])
 
-      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(16)
+      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(4)
 
       await service.fanout(userId, 'cancelled', { sourceId: 'order-x' })
 
@@ -320,11 +320,11 @@ describe('NotificationsService', () => {
     })
 
     it.each([
-      [14, '21:00 ICT', true],
-      [15, '22:00 ICT', false],
-      [23, '06:00 ICT', false],
-      [0, '07:00 ICT', true],
-    ])('handles the quiet-hours boundary at %s UTC (%s)', async (utcHour, _ictTime, shouldSendPush) => {
+      [2, '21:00 PET', true],
+      [3, '22:00 PET', false],
+      [11, '06:00 PET', false],
+      [12, '07:00 PET', true],
+    ])('handles the quiet-hours boundary at %s UTC (%s)', async (utcHour, _petTime, shouldSendPush) => {
       mockRedis.set.mockResolvedValueOnce('OK')
       mockPrisma.$queryRaw.mockResolvedValueOnce([])
       const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(utcHour)
@@ -362,7 +362,7 @@ describe('NotificationsService', () => {
     it('reports partial channel failure instead of marking the fanout as sent', async () => {
       mockRedis.set.mockResolvedValueOnce('OK')
       mockPrisma.$queryRaw.mockResolvedValueOnce([])
-      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(5)
+      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(14)
       mockFcm.send.mockRejectedValueOnce(new Error('FCM unavailable'))
 
       const result = await service.fanout(userId, eventType, payload)
@@ -375,7 +375,7 @@ describe('NotificationsService', () => {
     it('treats channel success=false results as failed delivery', async () => {
       mockRedis.set.mockResolvedValueOnce('OK')
       mockPrisma.$queryRaw.mockResolvedValueOnce([])
-      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(5)
+      const dateSpy = jest.spyOn(Date.prototype, 'getUTCHours').mockReturnValue(14)
       mockFcm.send.mockResolvedValueOnce({ success: false, error: 'queue unavailable' })
 
       const result = await service.fanout(userId, eventType, payload)

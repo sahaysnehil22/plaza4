@@ -207,7 +207,7 @@ describe('AiToolsService', () => {
     expect(notifications.create).toHaveBeenCalledTimes(2)
     expect(notifications.create).toHaveBeenCalledWith(expect.objectContaining({
       userId: 'admin-1',
-      title: 'AI support escalation',
+      title: 'Escalación de soporte IA',
       type: 'support.escalation',
       payload: expect.objectContaining({
         ticketId: 'ticket-1',
@@ -271,7 +271,7 @@ describe('AiToolsService', () => {
         expect.objectContaining({
           menuItemId: 'item-recent',
           name: 'Chicken rice',
-          restaurantName: 'FoodFlow Kitchen',
+          restaurantName: 'Plaza 4 Kitchen',
           reason: 'recent_order',
         }),
         expect.objectContaining({
@@ -301,14 +301,14 @@ describe('AiToolsService', () => {
 function makeMenuItem(overrides: Record<string, unknown> = {}) {
   return {
     id: 'item-1',
-    name: 'FoodFlow bowl',
+    name: 'Plaza 4 bowl',
     basePrice: '45000',
     isAvailable: true,
     isPopular: false,
     category: { name: 'Rice', isVisible: true },
     restaurant: {
       id: 'restaurant-1',
-      name: 'FoodFlow Kitchen',
+      name: 'Plaza 4 Kitchen',
       rating: '4.8',
       cuisineTypes: ['vietnamese'],
       prepTimeAvgMinutes: 15,

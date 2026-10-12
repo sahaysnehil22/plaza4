@@ -99,7 +99,7 @@ describe('EligibilityService', () => {
     )
     expect(res.valid).toBe(false)
     expect(res.error).toContain('Đơn tối thiểu phải đạt')
-    expect(res.error).toContain('200.000')
+    expect(res.error).toContain('200,000')
   })
 
   it('rejects when restaurant restricted and does not match', async () => {

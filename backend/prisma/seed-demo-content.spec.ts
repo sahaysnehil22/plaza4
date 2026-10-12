@@ -21,7 +21,7 @@ describe('seed demo content builders', () => {
     expect(order.status).toBe('restaurant_pending')
     expect(order.restaurantId).toBe('r1')
     expect(order.items).toHaveLength(1)
-    expect(order.total).toBe(65000 * 2 + 15000)
+    expect(order.total).toBe(65000 * 2 + 6)
   })
 
   it('builds an open support ticket tagged for idempotent seed', () => {
