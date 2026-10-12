@@ -34,7 +34,7 @@ ENV NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=$NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
 ENV NEXT_PUBLIC_ADMIN_URL=$NEXT_PUBLIC_ADMIN_URL
 ENV NEXT_PUBLIC_MAP_PROVIDER=$NEXT_PUBLIC_MAP_PROVIDER
 ENV NEXT_PUBLIC_MAP_STYLE_URL=$NEXT_PUBLIC_MAP_STYLE_URL
-RUN pnpm --filter foodflow-admin build
+RUN pnpm --filter plaza4-admin build
 
 FROM gcr.io/distroless/nodejs22-debian13@sha256:39d204f9061e310d3e090edd185f48b1e9f70ef4771819a555ed716ccb42d229 AS runner
 WORKDIR /app
@@ -52,7 +52,7 @@ ARG NEXT_PUBLIC_MAP_STYLE_URL
 LABEL org.opencontainers.image.source="https://github.com/JasonTM17/FoodDelivery_App"
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.revision=$BUILD_SHA
-LABEL org.opencontainers.image.title="foodflow-admin"
+LABEL org.opencontainers.image.title="plaza4-admin"
 
 ENV NODE_ENV=production
 ENV BUILD_SHA=$BUILD_SHA

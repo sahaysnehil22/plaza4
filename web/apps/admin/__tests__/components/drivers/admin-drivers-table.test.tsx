@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import type { AdminDriver } from '@foodflow/api-client';
+import type { AdminDriver } from '@plaza4/api-client';
 import { describe, expect, it } from 'vitest';
 import { AdminDriversTable } from '@/components/drivers/admin-drivers-table';
 

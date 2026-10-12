@@ -114,7 +114,7 @@ function makeRestaurant() {
     name: 'Row Bistro',
     owner: {
       name: 'Owner One',
-      email: 'owner@foodflow.test',
+      email: 'owner@plaza4.test',
       phone: '0900000000',
     },
     cuisine: 'Vietnamese',

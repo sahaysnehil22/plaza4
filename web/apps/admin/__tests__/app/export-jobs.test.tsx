@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import type { AdminExportJob } from '@foodflow/api-client';
+import type { AdminExportJob } from '@plaza4/api-client';
 import { describe, expect, it, vi } from 'vitest';
 import {
   getExportJobsPollingInterval,

@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
-import { FoodFlowApiClient } from '@foodflow/api-client';
+import { Plaza4ApiClient } from '@plaza4/api-client';
 
-describe('FoodFlowApiClient blob authentication', () => {
+describe('Plaza4ApiClient blob authentication', () => {
   it('retries a blob request with the newly refreshed access token', async () => {
     let accessToken = 'expired-token';
     const setTokens = vi.fn(tokens => { accessToken = tokens.accessToken; });
@@ -17,8 +17,8 @@ describe('FoodFlowApiClient blob authentication', () => {
       }
       return new Response('audit,csv', { status: 200, headers: { 'Content-Type': 'text/csv' } });
     });
-    const client = new FoodFlowApiClient({
-      baseUrl: 'https://api.foodflow.test',
+    const client = new Plaza4ApiClient({
+      baseUrl: 'https://api.plaza4.test',
       getAccessToken: () => accessToken,
       getRefreshToken: () => 'refresh-token',
       setTokens,
@@ -43,8 +43,8 @@ describe('FoodFlowApiClient blob authentication', () => {
     const fetcher = vi.fn(async () => (
       Response.json({ title: 'Unauthorized', status: 401 }, { status: 401 })
     ));
-    const client = new FoodFlowApiClient({
-      baseUrl: 'https://api.foodflow.test',
+    const client = new Plaza4ApiClient({
+      baseUrl: 'https://api.plaza4.test',
       getAccessToken: () => 'expired-token',
       getRefreshToken: () => 'invalid-refresh-token',
       setTokens: vi.fn(),
@@ -77,8 +77,8 @@ describe('FoodFlowApiClient blob authentication', () => {
       }
       return new Response('audit,csv', { status: 200, headers: { 'Content-Type': 'text/csv' } });
     });
-    const client = new FoodFlowApiClient({
-      baseUrl: 'https://api.foodflow.test',
+    const client = new Plaza4ApiClient({
+      baseUrl: 'https://api.plaza4.test',
       getAccessToken: () => 'expired-token',
       getRefreshToken: () => 'refresh-token',
       setTokens,
@@ -117,8 +117,8 @@ describe('FoodFlowApiClient blob authentication', () => {
       }
       return new Response('audit,csv', { status: 200, headers: { 'Content-Type': 'text/csv' } });
     });
-    const client = new FoodFlowApiClient({
-      baseUrl: 'https://api.foodflow.test',
+    const client = new Plaza4ApiClient({
+      baseUrl: 'https://api.plaza4.test',
       getAccessToken: () => accessToken,
       getRefreshToken: () => refreshToken,
       setTokens,
@@ -162,8 +162,8 @@ describe('FoodFlowApiClient blob authentication', () => {
       }
       return new Response('audit,csv', { status: 200, headers: { 'Content-Type': 'text/csv' } });
     });
-    const client = new FoodFlowApiClient({
-      baseUrl: 'https://api.foodflow.test',
+    const client = new Plaza4ApiClient({
+      baseUrl: 'https://api.plaza4.test',
       getAccessToken: () => accessToken,
       getRefreshToken: () => refreshToken,
       setTokens,

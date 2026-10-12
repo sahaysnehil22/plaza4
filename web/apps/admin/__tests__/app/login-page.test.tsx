@@ -23,13 +23,13 @@ describe('Admin LoginPage', () => {
     mockedApiPost.mockResolvedValueOnce({
       accessToken: tokenFixture('admin-access'),
       refreshToken: tokenFixture('admin-refresh'),
-      user: { email: 'admin@foodflow.vn', role: 'admin' },
+      user: { email: 'admin@plaza4.pe', role: 'admin' },
     });
 
     render(<LoginPage />);
 
     fireEvent.change(screen.getByLabelText('email'), {
-      target: { value: 'admin@foodflow.vn' },
+      target: { value: 'admin@plaza4.pe' },
     });
     fireEvent.change(screen.getByLabelText('password'), {
       target: { value: credentialFixture('admin') },
@@ -40,7 +40,7 @@ describe('Admin LoginPage', () => {
       expect(mockedApiPost).toHaveBeenCalledWith(
         '/auth/login',
         {
-          email: 'admin@foodflow.vn',
+          email: 'admin@plaza4.pe',
           password: credentialFixture('admin'),
         },
         { requireAuth: false },
@@ -49,8 +49,8 @@ describe('Admin LoginPage', () => {
     expect(localStorage.getItem('admin_token')).toBe(tokenFixture('admin-access'));
     expect(localStorage.getItem('admin_refresh_token')).toBe(tokenFixture('admin-refresh'));
     expect(mockedLogin).toHaveBeenCalledWith(tokenFixture('admin-access'), {
-      name: 'admin@foodflow.vn',
-      email: 'admin@foodflow.vn',
+      name: 'admin@plaza4.pe',
+      email: 'admin@plaza4.pe',
       role: 'admin',
     });
   });
@@ -65,13 +65,13 @@ describe('Admin LoginPage', () => {
     mockedApiPost.mockResolvedValueOnce({
       accessToken: tokenFixture('customer-access'),
       refreshToken: tokenFixture('customer-refresh'),
-      user: { email: 'customer@foodflow.vn', role: 'customer' },
+      user: { email: 'customer@plaza4.pe', role: 'customer' },
     });
 
     render(<LoginPage />);
 
     fireEvent.change(screen.getByLabelText('email'), {
-      target: { value: 'customer@foodflow.vn' },
+      target: { value: 'customer@plaza4.pe' },
     });
     fireEvent.change(screen.getByLabelText('password'), {
       target: { value: credentialFixture('customer') },

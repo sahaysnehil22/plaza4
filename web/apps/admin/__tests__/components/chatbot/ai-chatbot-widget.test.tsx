@@ -1,7 +1,7 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 import { AiChatbotWidget } from '@/components/chatbot/ai-chatbot-widget'
-import type { AiChatHistory, AiChatReply } from '@foodflow/api-client'
+import type { AiChatHistory, AiChatReply } from '@plaza4/api-client'
 
 const emptyHistory: AiChatHistory = { sessionId: null, messages: [] }
 

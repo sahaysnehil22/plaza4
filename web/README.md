@@ -1,8 +1,8 @@
-# FoodFlow Web
+# Plaza 4 Web
 
 ## Purpose
 
-`web/` is a pnpm 11 Turborepo for the FoodFlow dashboards:
+`web/` is a pnpm 11 Turborepo for the Plaza 4 dashboards:
 
 - `apps/admin`: platform operations, live driver map, restaurants, users, orders, promotions, support, audit logs, exports, settings, and AI monitor.
 - `apps/restaurant`: merchant order queue, live delivery tracking map, menu, categories, reviews, revenue, promotions, staff, profile, operating hours, insights, and notifications.
@@ -87,10 +87,10 @@ pnpm test:e2e:install
 Focused app checks:
 
 ```bash
-pnpm --filter foodflow-admin typecheck
-pnpm --filter foodflow-admin lint
-pnpm --filter foodflow-admin test
-pnpm --filter foodflow-admin build
+pnpm --filter plaza4-admin typecheck
+pnpm --filter plaza4-admin lint
+pnpm --filter plaza4-admin test
+pnpm --filter plaza4-admin build
 
 pnpm --filter restaurant typecheck
 pnpm --filter restaurant lint

@@ -21,7 +21,7 @@ function AuthProbe() {
     <>
       <button
         type="button"
-        onClick={() => login('new-token', { name: 'New Admin', email: 'new@foodflow.vn', role: 'admin' })}
+        onClick={() => login('new-token', { name: 'New Admin', email: 'new@plaza4.pe', role: 'admin' })}
       >
         Log in
       </button>

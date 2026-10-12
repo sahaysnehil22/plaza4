@@ -4,9 +4,9 @@ import { resolveAdminMetadataBase } from '@/lib/metadata-url'
 describe('admin metadata base URL', () => {
   it('uses the configured public Admin URL', () => {
     expect(resolveAdminMetadataBase({
-      NEXT_PUBLIC_ADMIN_URL: ' https://admin.foodflow.test ',
+      NEXT_PUBLIC_ADMIN_URL: ' https://admin.plaza4.test ',
       VERCEL_ENV: 'production',
-    }).toString()).toBe('https://admin.foodflow.test/')
+    }).toString()).toBe('https://admin.plaza4.test/')
   })
 
   it('keeps the localhost default outside production', () => {

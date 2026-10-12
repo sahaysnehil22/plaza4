@@ -8,8 +8,8 @@ const validPromotion = {
   name: 'Welcome offer',
   discountType: 'percent' as const,
   discountValue: 20,
-  minOrderVnd: 0,
-  maxDiscountVnd: '',
+  minOrderPen: 0,
+  maxDiscountPen: '',
   audience: 'all' as const,
   validFrom: '2026-07-01',
   validUntil: '2026-07-31',
@@ -23,7 +23,7 @@ describe('admin promotion schema', () => {
   it('treats blank optional numeric inputs as omitted', () => {
     const result = schema.parse(validPromotion);
 
-    expect(result.maxDiscountVnd).toBeUndefined();
+    expect(result.maxDiscountPen).toBeUndefined();
     expect(result.maxUsage).toBeUndefined();
   });
 

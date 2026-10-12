@@ -1,5 +1,5 @@
 import { act, renderHook, waitFor } from '@testing-library/react';
-import type { AdminDriverLocation } from '@foodflow/api-client';
+import type { AdminDriverLocation } from '@plaza4/api-client';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { apiGet } from '@/lib/api';
 import { useRealtimeDriverLocations } from '@/hooks/use-realtime-driver-locations';

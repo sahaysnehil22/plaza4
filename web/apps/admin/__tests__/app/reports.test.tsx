@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { ApiClientError, type AdminExportJob } from '@foodflow/api-client';
+import { ApiClientError, type AdminExportJob } from '@plaza4/api-client';
 import { describe, expect, it, vi } from 'vitest';
 import { RecentReportList } from '@/app/[locale]/reports/recent-report-list';
 import {

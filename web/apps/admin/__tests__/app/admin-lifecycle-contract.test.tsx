@@ -26,7 +26,7 @@ describe('admin lifecycle API contract', () => {
           {
             id: 'user-1',
             fullName: 'Restaurant Owner',
-            email: 'owner@foodflow.test',
+            email: 'owner@plaza4.test',
             phone: null,
             role: 'restaurant',
             isActive: false,
@@ -56,7 +56,7 @@ describe('admin lifecycle API contract', () => {
         {
           id: 'user-1',
           fullName: 'Driver One',
-          email: 'driver@foodflow.test',
+          email: 'driver@plaza4.test',
           phone: '0900000000',
           role: 'driver',
           isActive: true,
@@ -95,7 +95,7 @@ describe('admin lifecycle API contract', () => {
               {
                 user: {
                   fullName: 'Owner One',
-                  email: 'owner@foodflow.test',
+                  email: 'owner@plaza4.test',
                   phone: '0900000000',
                 },
               },

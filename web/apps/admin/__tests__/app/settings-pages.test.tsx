@@ -48,7 +48,7 @@ describe('admin settings pages', () => {
     renderWithClient(<SettingsPage />);
 
     fireEvent.change(await screen.findByDisplayValue('Existing Flow'), {
-      target: { value: 'FoodFlow Pro' },
+      target: { value: 'Plaza 4 Pro' },
     });
     fireEvent.change(screen.getByDisplayValue('360'), { target: { value: '720' } });
     fireEvent.click(screen.getByRole('button', { name: 'save' }));
@@ -57,8 +57,8 @@ describe('admin settings pages', () => {
     expect(mockedApiPatch).toHaveBeenCalledWith(
       '/admin/settings/general',
       expect.objectContaining({
-        platformName: 'FoodFlow Pro',
-        currency: 'VND',
+        platformName: 'Plaza 4 Pro',
+        currency: 'PEN',
         security: expect.objectContaining({ maxSessionMinutes: 720 }),
       }),
     );
@@ -70,7 +70,7 @@ describe('admin settings pages', () => {
       settings: {
         platformName: 'Partial Flow',
         timezone: 'Asia/Bangkok',
-        currency: 'VND',
+        currency: 'PEN',
       },
       updatedAt: null,
     });
@@ -116,13 +116,13 @@ describe('admin settings pages', () => {
     mockedApiGet.mockResolvedValue({
       section: 'branding',
       settings: {
-        platformName: 'FoodFlow',
+        platformName: 'Plaza 4',
         tagline: 'Existing tagline',
-        supportEmail: 'ops@foodflow.vn',
+        supportEmail: 'ops@plaza4.pe',
         contactPhone: '+84 123',
         primaryColor: '#111111',
         successColor: '#222222',
-        logoUrl: 'https://cdn.foodflow.vn/logo.svg',
+        logoUrl: 'https://cdn.plaza4.pe/logo.svg',
       },
       updatedAt: null,
     });
@@ -133,7 +133,7 @@ describe('admin settings pages', () => {
     fireEvent.change(await screen.findByDisplayValue('Existing tagline'), {
       target: { value: 'Real delivery operations' },
     });
-    fireEvent.change(screen.getByDisplayValue('https://cdn.foodflow.vn/logo.svg'), {
+    fireEvent.change(screen.getByDisplayValue('https://cdn.plaza4.pe/logo.svg'), {
       target: { value: '' },
     });
     fireEvent.click(screen.getByRole('button', { name: 'save' }));
@@ -154,7 +154,7 @@ describe('admin settings pages', () => {
     mockedApiGet.mockResolvedValue({
       section: 'compliance',
       settings: {
-        privacyUrl: 'https://foodflow.vn/privacy',
+        privacyUrl: 'https://plaza4.pe/privacy',
         auditRetentionDays: 180,
         orderRetentionDays: 365,
         userDataRetentionDays: 730,
@@ -172,8 +172,8 @@ describe('admin settings pages', () => {
 
     renderWithClient(<SettingsCompliancePage />);
 
-    fireEvent.change(await screen.findByDisplayValue('https://foodflow.vn/privacy'), {
-      target: { value: 'https://foodflow.vn/legal/privacy' },
+    fireEvent.change(await screen.findByDisplayValue('https://plaza4.pe/privacy'), {
+      target: { value: 'https://plaza4.pe/legal/privacy' },
     });
     fireEvent.change(screen.getByDisplayValue('180'), { target: { value: '365' } });
     fireEvent.click(screen.getByRole('button', { name: 'save' }));
@@ -182,7 +182,7 @@ describe('admin settings pages', () => {
     expect(mockedApiPatch).toHaveBeenCalledWith(
       '/admin/settings/compliance',
       expect.objectContaining({
-        privacyUrl: 'https://foodflow.vn/legal/privacy',
+        privacyUrl: 'https://plaza4.pe/legal/privacy',
         auditRetentionDays: 365,
         supportSlaBusinessHours: 'ICT Mon-Sat 08:00-20:00',
       }),

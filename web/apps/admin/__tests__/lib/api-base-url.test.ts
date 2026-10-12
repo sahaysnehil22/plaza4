@@ -4,9 +4,9 @@ import { resolveApiBaseUrl } from '@/lib/api-base-url';
 describe('admin API base URL', () => {
   it('uses the configured public API URL', () => {
     expect(resolveApiBaseUrl({
-      NEXT_PUBLIC_API_URL: ' https://api.foodflow.test/admin ',
+      NEXT_PUBLIC_API_URL: ' https://api.plaza4.test/admin ',
       VERCEL_ENV: 'production',
-    })).toBe('https://api.foodflow.test/admin');
+    })).toBe('https://api.plaza4.test/admin');
   });
 
   it('keeps the localhost default for local development', () => {

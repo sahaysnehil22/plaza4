@@ -25,20 +25,20 @@ describe('admin realtime socket', () => {
   });
 
   it('uses the canonical NEXT_PUBLIC_WS_URL and appends the events namespace', async () => {
-    vi.stubEnv('NEXT_PUBLIC_WS_URL', 'https://realtime.foodflow.test');
+    vi.stubEnv('NEXT_PUBLIC_WS_URL', 'https://realtime.plaza4.test');
 
     const { getSocket, disconnectSocket } = await import('@/lib/socket');
     getSocket();
 
     expect(socketModule.io).toHaveBeenCalledWith(
-      'https://realtime.foodflow.test/events',
+      'https://realtime.plaza4.test/events',
       expect.objectContaining({ autoConnect: true }),
     );
     disconnectSocket();
   });
 
   it('reads the current admin token when the socket connects', async () => {
-    vi.stubEnv('NEXT_PUBLIC_WS_URL', 'https://realtime.foodflow.test/events');
+    vi.stubEnv('NEXT_PUBLIC_WS_URL', 'https://realtime.plaza4.test/events');
     localStorage.setItem('admin_token', 'admin-access-token');
 
     const { getSocket, disconnectSocket } = await import('@/lib/socket');
@@ -50,13 +50,13 @@ describe('admin realtime socket', () => {
     const callback = vi.fn();
     options.auth(callback);
 
-    expect(socketModule.io.mock.calls[0][0]).toBe('https://realtime.foodflow.test/events');
+    expect(socketModule.io.mock.calls[0][0]).toBe('https://realtime.plaza4.test/events');
     expect(callback).toHaveBeenCalledWith({ token: 'admin-access-token' });
     disconnectSocket();
   });
 
   it('does not use the removed NEXT_PUBLIC_SOCKET_URL fallback', async () => {
-    vi.stubEnv('NEXT_PUBLIC_SOCKET_URL', 'https://legacy-realtime.foodflow.test/events');
+    vi.stubEnv('NEXT_PUBLIC_SOCKET_URL', 'https://legacy-realtime.plaza4.test/events');
 
     const { resolveEventsSocketUrl } = await import('@/lib/socket');
 

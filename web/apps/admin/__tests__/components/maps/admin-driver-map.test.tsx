@@ -127,7 +127,7 @@ describe('AdminDriverMap', () => {
     const markerButton = await screen.findByRole('button', { name: 'Nguyen Minh, Available' });
     expect(mocks.markerInstances[0].setLngLat).toHaveBeenCalledWith([106.7009, 10.7769]);
     expect(mocks.map.addSource).toHaveBeenCalledWith(
-      'foodflow-vietnam-boundary',
+      'plaza4-vietnam-boundary',
       expect.objectContaining({ data: '/data/vietnam-boundary.geojson' }),
     );
     expect(mocks.map.easeTo).toHaveBeenCalledWith(expect.objectContaining({

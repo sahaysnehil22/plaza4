@@ -20,14 +20,14 @@ describe('Admin password reset pages', () => {
     render(<ForgotPasswordPage />);
 
     fireEvent.change(screen.getByLabelText('email'), {
-      target: { value: ' admin@foodflow.vn ' },
+      target: { value: ' admin@plaza4.pe ' },
     });
     fireEvent.click(screen.getByRole('button', { name: 'submit' }));
 
     await waitFor(() => {
       expect(mockedApiPost).toHaveBeenCalledWith(
         '/auth/forgot-password',
-        { email: 'admin@foodflow.vn' },
+        { email: 'admin@plaza4.pe' },
         { requireAuth: false },
       );
     });
