@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
 import 'app_localizations_ja.dart';
 import 'app_localizations_vi.dart';
 
@@ -96,6 +97,7 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
+    Locale('es'),
     Locale('ja'),
     Locale('vi'),
   ];
@@ -223,7 +225,7 @@ abstract class AppLocalizations {
   /// No description provided for @driverLoginTitle.
   ///
   /// In vi, this message translates to:
-  /// **'FoodFlow Driver'**
+  /// **'Plaza 4 Driver'**
   String get driverLoginTitle;
 
   /// No description provided for @driverLoginSubtitle.
@@ -277,7 +279,7 @@ abstract class AppLocalizations {
   /// No description provided for @registerSubtitle.
   ///
   /// In vi, this message translates to:
-  /// **'Điền thông tin để bắt đầu sử dụng FoodFlow'**
+  /// **'Điền thông tin để bắt đầu sử dụng Plaza 4'**
   String get registerSubtitle;
 
   /// No description provided for @fullNameLabel.
@@ -739,7 +741,7 @@ abstract class AppLocalizations {
   /// No description provided for @aboutApp.
   ///
   /// In vi, this message translates to:
-  /// **'Về FoodFlow'**
+  /// **'Về Plaza 4'**
   String get aboutApp;
 
   /// No description provided for @aboutSubtitle.
@@ -1029,6 +1031,12 @@ abstract class AppLocalizations {
   /// In vi, this message translates to:
   /// **'Xem giỏ hàng'**
   String get cartViewCart;
+
+  /// Snackbar shown when an item is added to the cart
+  ///
+  /// In vi, this message translates to:
+  /// **'Đã thêm {name} vào giỏ hàng'**
+  String cartAddedItem(String name);
 
   /// No description provided for @cartDelete.
   ///
@@ -2359,7 +2367,7 @@ abstract class AppLocalizations {
   /// No description provided for @locationPermissionSubtitle.
   ///
   /// In vi, this message translates to:
-  /// **'FoodFlow cần vị trí của bạn để tìm nhà hàng gần nhất và giao hàng chính xác hơn.'**
+  /// **'Plaza 4 cần vị trí của bạn để tìm nhà hàng gần nhất và giao hàng chính xác hơn.'**
   String get locationPermissionSubtitle;
 
   /// No description provided for @locationPermissionAllow.
@@ -2665,7 +2673,7 @@ abstract class AppLocalizations {
   /// No description provided for @onboardingWelcomeTitle.
   ///
   /// In vi, this message translates to:
-  /// **'Chào mừng đến FoodFlow'**
+  /// **'Chào mừng đến Plaza 4'**
   String get onboardingWelcomeTitle;
 
   /// No description provided for @onboardingWelcomeSubtitle.
@@ -2911,7 +2919,7 @@ abstract class AppLocalizations {
   /// No description provided for @referralShareMessage.
   ///
   /// In vi, this message translates to:
-  /// **'Dùng mã {code} để nhận ưu đãi khi đặt đơn đầu tiên trên FoodFlow!'**
+  /// **'Dùng mã {code} để nhận ưu đãi khi đặt đơn đầu tiên trên Plaza 4!'**
   String referralShareMessage(String code);
 
   /// No description provided for @referralInviteCount.
@@ -3253,7 +3261,7 @@ abstract class AppLocalizations {
   /// No description provided for @driver_onboarding_agreement_terms.
   ///
   /// In vi, this message translates to:
-  /// **'1. Dịch vụ tài xế FoodFlow\n\nKhi đăng ký làm tài xế FoodFlow, bạn đồng ý cung cấp dịch vụ giao hàng trong khu vực hoạt động đã được duyệt.\n\n2. Yêu cầu\n\n• Có giấy phép lái xe và giấy tờ phương tiện hợp lệ.\n• Sử dụng phương tiện an toàn, được bảo hiểm và đúng hồ sơ đăng ký.\n• Duy trì thái độ chuyên nghiệp, điểm đánh giá phù hợp và tuân thủ luật giao thông.\n• Bảo mật thông tin khách hàng, nhà hàng và đơn hàng.\n\n3. Thu nhập và thanh toán\n\nThu nhập được tính từ đơn hoàn thành, khoảng cách, ưu đãi và điều chỉnh đã được duyệt. Thanh toán hàng tuần qua tài khoản ngân hàng đã lưu trên FoodFlow.\n\n4. Hành vi và tiêu chuẩn\n\nTài xế phải lịch sự với khách hàng, nhà hàng và bộ phận hỗ trợ. Gian lận, lạm dụng, giao hàng không an toàn hoặc báo cáo sai có thể khiến tài khoản bị tạm ngưng hoặc chấm dứt.\n\n5. Chấm dứt\n\nFoodFlow có quyền tạm ngưng hoặc chấm dứt quyền truy cập nếu bạn vi phạm điều khoản, quy tắc an toàn hoặc yêu cầu pháp lý.'**
+  /// **'1. Dịch vụ tài xế Plaza 4\n\nKhi đăng ký làm tài xế Plaza 4, bạn đồng ý cung cấp dịch vụ giao hàng trong khu vực hoạt động đã được duyệt.\n\n2. Yêu cầu\n\n• Có giấy phép lái xe và giấy tờ phương tiện hợp lệ.\n• Sử dụng phương tiện an toàn, được bảo hiểm và đúng hồ sơ đăng ký.\n• Duy trì thái độ chuyên nghiệp, điểm đánh giá phù hợp và tuân thủ luật giao thông.\n• Bảo mật thông tin khách hàng, nhà hàng và đơn hàng.\n\n3. Thu nhập và thanh toán\n\nThu nhập được tính từ đơn hoàn thành, khoảng cách, ưu đãi và điều chỉnh đã được duyệt. Thanh toán hàng tuần qua tài khoản ngân hàng đã lưu trên Plaza 4.\n\n4. Hành vi và tiêu chuẩn\n\nTài xế phải lịch sự với khách hàng, nhà hàng và bộ phận hỗ trợ. Gian lận, lạm dụng, giao hàng không an toàn hoặc báo cáo sai có thể khiến tài khoản bị tạm ngưng hoặc chấm dứt.\n\n5. Chấm dứt\n\nPlaza 4 có quyền tạm ngưng hoặc chấm dứt quyền truy cập nếu bạn vi phạm điều khoản, quy tắc an toàn hoặc yêu cầu pháp lý.'**
   String get driver_onboarding_agreement_terms;
 
   /// No description provided for @driver_onboarding_agreement_failed.
@@ -4177,7 +4185,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpFaqPaymentMethodsA.
   ///
   /// In vi, this message translates to:
-  /// **'Hiện tại chúng tôi chấp nhận tiền mặt khi nhận hàng và ví điện tử FoodFlow.'**
+  /// **'Hiện tại chúng tôi chấp nhận tiền mặt khi nhận hàng và ví điện tử Plaza 4.'**
   String get helpFaqPaymentMethodsA;
 
   /// No description provided for @helpFaqTopUpWalletQ.
@@ -4225,7 +4233,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpFaqRewardPointsA.
   ///
   /// In vi, this message translates to:
-  /// **'Số điểm được tính từ sổ cái điểm thưởng đã xác nhận. Ưu đãi tích điểm hoặc giới thiệu sẽ hiển thị sau khi FoodFlow ghi nhận.'**
+  /// **'Số điểm được tính từ sổ cái điểm thưởng đã xác nhận. Ưu đãi tích điểm hoặc giới thiệu sẽ hiển thị sau khi Plaza 4 ghi nhận.'**
   String get helpFaqRewardPointsA;
 
   /// No description provided for @helpFaqTrackOrderQ.
@@ -4252,7 +4260,7 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) =>
-      <String>['en', 'ja', 'vi'].contains(locale.languageCode);
+      <String>['en', 'es', 'ja', 'vi'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -4263,6 +4271,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'en':
       return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
     case 'ja':
       return AppLocalizationsJa();
     case 'vi':
