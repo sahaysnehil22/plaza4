@@ -2,8 +2,8 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import type { AdminSettingsSectionResponse } from '@foodflow/api-client';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import type { AdminSettingsSectionResponse } from '@plaza4/api-client';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import { PageHeader } from '@/components/layout/admin-page-header';
 import { apiGet, apiPatch } from '@/lib/api';
 import { useTranslations } from 'next-intl';

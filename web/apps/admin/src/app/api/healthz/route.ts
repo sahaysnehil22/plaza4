@@ -7,7 +7,7 @@ export function GET() {
   return NextResponse.json(
     {
       status: 'ok',
-      service: 'foodflow-admin',
+      service: 'plaza4-admin',
       revision: process.env.BUILD_SHA ?? process.env.VERCEL_GIT_COMMIT_SHA ?? null,
       timestamp: new Date().toISOString(),
     },

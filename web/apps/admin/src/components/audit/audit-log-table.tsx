@@ -20,7 +20,7 @@ interface AuditLogTableProps {
 const dateLocales: Record<string, string> = {
   en: 'en-US',
   ja: 'ja-JP',
-  vi: 'vi-VN',
+  vi: 'es-PE',
 };
 
 export function AuditLogTable({ logs }: AuditLogTableProps) {
@@ -45,7 +45,7 @@ export function AuditLogTable({ logs }: AuditLogTableProps) {
             {logs.map(log => (
               <TableRow key={log.id} className="transition-colors hover:bg-muted/50">
                 <TableCell className="font-mono text-xs text-muted-foreground">
-                  {new Date(log.createdAt).toLocaleString(dateLocales[locale] ?? 'vi-VN')}
+                  {new Date(log.createdAt).toLocaleString(dateLocales[locale] ?? 'es-PE')}
                 </TableCell>
                 <TableCell>
                   <p className="font-medium">{log.admin.fullName}</p>

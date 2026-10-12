@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { FoodFlowLogo } from '@foodflow/ui/foodflow-logo';
-import { defaultLocale } from '@foodflow/i18n';
+import { Plaza4Logo } from '@plaza4/ui/plaza4-logo';
+import { defaultLocale } from '@plaza4/i18n';
 import { useTranslations } from 'next-intl';
 import { ArrowLeft, Home } from 'lucide-react';
 
-const LOCALES = new Set(['vi', 'en', 'ja']);
+const LOCALES = new Set(['es', 'vi', 'en', 'ja']);
 
 function getOverviewHref(pathname: string | null) {
   const segment = pathname?.split('/').filter(Boolean)[0];
@@ -22,7 +22,7 @@ export default function NotFound() {
 
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center px-4">
-      <FoodFlowLogo showWordmark={false} className="mb-6" markClassName="h-20 w-20" />
+      <Plaza4Logo showWordmark={false} className="mb-6" markClassName="h-20 w-20" />
       <h1 className="mb-2 text-6xl font-bold text-muted-foreground/30">404</h1>
       <h2 className="mb-2 text-xl font-semibold">{t('title')}</h2>
       <p className="mb-8 max-w-md text-center text-sm text-muted-foreground">

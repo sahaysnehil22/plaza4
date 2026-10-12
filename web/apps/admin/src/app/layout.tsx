@@ -8,24 +8,24 @@ import { resolveAdminMetadataBase } from '@/lib/metadata-url';
 export const metadata: Metadata = {
   metadataBase: resolveAdminMetadataBase(),
   title: {
-    template: '%s | FoodFlow Admin',
-    default: 'FoodFlow Admin',
+    template: '%s | Plaza 4 Admin',
+    default: 'Plaza 4 Admin',
   },
-  description: 'FoodFlow delivery operations console for orders, restaurants, drivers, and users',
+  description: 'Plaza 4 delivery operations console for orders, restaurants, drivers, and users',
   manifest: '/site.webmanifest',
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/foodflow-mark.svg', type: 'image/svg+xml', sizes: 'any' },
+      { url: '/plaza4-mark.svg', type: 'image/svg+xml', sizes: 'any' },
     ],
   },
   openGraph: {
-    title: 'FoodFlow Admin',
-    description: 'FoodFlow delivery operations console',
+    title: 'Plaza 4 Admin',
+    description: 'Plaza 4 delivery operations console',
     type: 'website',
-    images: [{ url: '/foodflow-mark.svg', width: 512, height: 512, alt: 'FoodFlow Admin mark' }],
+    images: [{ url: '/plaza4-mark.svg', width: 512, height: 512, alt: 'Plaza 4 Admin mark' }],
   },
-  twitter: { card: 'summary', title: 'FoodFlow Admin', images: ['/foodflow-mark.svg'] },
+  twitter: { card: 'summary', title: 'Plaza 4 Admin', images: ['/plaza4-mark.svg'] },
   robots: { index: false, follow: false },
 };
 

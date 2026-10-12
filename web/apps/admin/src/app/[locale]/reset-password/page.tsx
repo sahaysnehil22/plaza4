@@ -4,7 +4,7 @@ import { FormEvent, useMemo, useState } from 'react';
 import { Link } from '@/navigation';
 import { useTranslations } from 'next-intl';
 import { ArrowLeft, Loader2, ShieldCheck, XCircle } from 'lucide-react';
-import { FoodFlowLogo } from '@foodflow/ui/foodflow-logo';
+import { Plaza4Logo } from '@plaza4/ui/plaza4-logo';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -62,7 +62,7 @@ export default function ResetPasswordPage() {
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-50 via-white to-orange-50 p-4">
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="space-y-2 text-center">
-          <FoodFlowLogo showWordmark={false} markClassName="h-16 w-16" className="mx-auto mb-3 justify-center" />
+          <Plaza4Logo showWordmark={false} markClassName="h-16 w-16" className="mx-auto mb-3 justify-center" />
           <CardTitle className="text-2xl font-bold">{submitted ? t('successTitle') : t('title')}</CardTitle>
           <CardDescription>{submitted ? t('successDescription') : t('description')}</CardDescription>
         </CardHeader>

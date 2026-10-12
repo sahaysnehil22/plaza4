@@ -1,15 +1,17 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { FoodFlowLogo } from '@foodflow/ui/foodflow-logo';
-import type { Locale } from '@foodflow/i18n';
+import { Plaza4Logo } from '@plaza4/ui/plaza4-logo';
+import type { Locale } from '@plaza4/i18n';
+import esMessages from '../../messages/es.json';
 import viMessages from '../../messages/vi.json';
 import enMessages from '../../messages/en.json';
 import jaMessages from '../../messages/ja.json';
 import { RefreshCw } from 'lucide-react';
 
-const LOCALES = ['vi', 'en', 'ja'] as const;
+const LOCALES = ['es', 'vi', 'en', 'ja'] as const;
 const globalErrorMessages = {
+  es: esMessages.rootStates.globalError,
   vi: viMessages.rootStates.globalError,
   en: enMessages.rootStates.globalError,
   ja: jaMessages.rootStates.globalError,
@@ -30,7 +32,7 @@ function resolveLocale(): Locale {
     if (isLocale(pathLocale)) return pathLocale;
   }
 
-  return 'vi';
+  return 'es';
 }
 
 export default function GlobalError({
@@ -46,7 +48,7 @@ export default function GlobalError({
     <html lang={locale}>
       <body className="bg-background">
         <div className="flex min-h-screen flex-col items-center justify-center gap-6 px-4">
-          <FoodFlowLogo showWordmark={false} markClassName="h-20 w-20" />
+          <Plaza4Logo showWordmark={false} markClassName="h-20 w-20" />
           <div className="space-y-2 text-center">
             <h1 className="text-2xl font-bold tracking-tight">{copy.title}</h1>
             <p className="max-w-md text-sm text-muted-foreground">

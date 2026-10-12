@@ -1,8 +1,8 @@
 'use client';
 
 import { useQuery } from '@tanstack/react-query';
-import type { AdminSettingsSectionResponse } from '@foodflow/api-client';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import type { AdminSettingsSectionResponse } from '@plaza4/api-client';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import { Bell, Bot, CreditCard, ShieldCheck, Webhook, XCircle } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { PageHeader } from '@/components/layout/admin-page-header';

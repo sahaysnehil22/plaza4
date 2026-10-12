@@ -6,7 +6,7 @@ import { apiGet, apiPatch } from '@/lib/api';
 import { timeSince } from '@/lib/utils';
 import { useLocale, useTranslations } from 'next-intl';
 import { PageHeader } from '@/components/layout/admin-page-header';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import TicketPriorityBadge from '@/components/badges/ticket-priority-badge';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';

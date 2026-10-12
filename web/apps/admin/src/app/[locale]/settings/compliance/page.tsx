@@ -2,8 +2,8 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import type { AdminSettingsSectionResponse } from '@foodflow/api-client';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import type { AdminSettingsSectionResponse } from '@plaza4/api-client';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import { useTranslations } from 'next-intl';
 import { apiGet, apiPatch } from '@/lib/api';
 import { PageHeader } from '@/components/layout/admin-page-header';
@@ -143,7 +143,7 @@ export default function SettingsCompliancePage() {
               <Label htmlFor="tosUrl">{t('tosUrl')}</Label>
               <Input
                 id="tosUrl"
-                placeholder="https://foodflow.vn/terms"
+                placeholder="https://plaza4.pe/terms"
                 type="url"
                 value={form.tosUrl}
                 onChange={(event) => setField('tosUrl', event.target.value)}
@@ -153,7 +153,7 @@ export default function SettingsCompliancePage() {
               <Label htmlFor="privacyUrl">{t('privacyUrl')}</Label>
               <Input
                 id="privacyUrl"
-                placeholder="https://foodflow.vn/privacy"
+                placeholder="https://plaza4.pe/privacy"
                 type="url"
                 value={form.privacyUrl}
                 onChange={(event) => setField('privacyUrl', event.target.value)}
@@ -163,7 +163,7 @@ export default function SettingsCompliancePage() {
               <Label htmlFor="cookiePolicyUrl">{t('cookiePolicyUrl')}</Label>
               <Input
                 id="cookiePolicyUrl"
-                placeholder="https://foodflow.vn/cookies"
+                placeholder="https://plaza4.pe/cookies"
                 type="url"
                 value={form.cookiePolicyUrl}
                 onChange={(event) => setField('cookiePolicyUrl', event.target.value)}

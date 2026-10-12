@@ -1,4 +1,4 @@
-import { defaultLocale } from '@foodflow/i18n';
+import { defaultLocale } from '@plaza4/i18n';
 import { redirect } from 'next/navigation';
 
 export default function HomePage() {

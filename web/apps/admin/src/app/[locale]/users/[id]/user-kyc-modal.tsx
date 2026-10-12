@@ -13,7 +13,7 @@ import type {
   AdminKycReviewRequest,
   AdminKycSignedDocuments,
   AdminKycStatus,
-} from '@foodflow/api-client';
+} from '@plaza4/api-client';
 import { apiGet, apiPost } from '@/lib/api';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';

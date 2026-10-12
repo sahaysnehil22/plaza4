@@ -77,7 +77,7 @@
   background: hsl(var(--muted-foreground) / 0.5);
 }
 
-.foodflow-driver-marker {
+.plaza4-driver-marker {
   width: 1.35rem;
   height: 1.35rem;
   cursor: pointer;
@@ -87,11 +87,11 @@
   transition: box-shadow 150ms ease, opacity 150ms ease, transform 150ms ease;
 }
 
-.foodflow-driver-marker:hover {
+.plaza4-driver-marker:hover {
   transform: scale(1.12);
 }
 
-.foodflow-driver-marker:focus-visible {
+.plaza4-driver-marker:focus-visible {
   outline: 3px solid #2563eb;
   outline-offset: 3px;
   box-shadow: 0 0 0 5px rgb(255 255 255 / 90%);
