@@ -25,14 +25,14 @@
     "restaurantOnly": "このダッシュボードはレストランアカウントのみ利用できます。"
   },
   "sidebar": {
-    "brand": "FoodFlow レストラン",
+    "brand": "Plaza 4 レストラン",
     "defaultName": "レストラン",
     "manage": "管理",
     "collapse": "サイドバーを折りたたむ",
     "expand": "サイドバーを展開する",
     "navigation": "レストランナビゲーション",
     "openNavigation": "レストランメニューを開く",
-    "mobileTitle": "FoodFlowレストランメニュー",
+    "mobileTitle": "Plaza 4レストランメニュー",
     "mobileDescription": "レストランを管理するエリアを選択します",
     "settingsGroup": "設定",
     "settingsGeneral": "一般",
@@ -176,7 +176,7 @@
       "mapErrorTitle": "配達マップを表示できません",
       "mapErrorDescription": "オープンマップタイルを読み込めませんでした。ネットワーク接続を確認して再試行してください。",
       "driverMarkerLabel": "ドライバーの現在のGPS位置",
-      "telemetryUnavailable": "実際のドライバーGPSまたはルートはまだ記録されていません。FoodFlowはETAを捏造しません。",
+      "telemetryUnavailable": "実際のドライバーGPSまたはルートはまだ記録されていません。Plaza 4はETAを捏造しません。",
       "noSnapshotDescription": "バックエンドがドライバー割り当てと実テレメトリを記録すると追跡が表示されます。",
       "etaLabel": "ETA",
       "etaMinutes": "{minutes}分",
@@ -515,14 +515,15 @@
     }
   },
   "metadata": {
-    "title": "FoodFlow レストラン",
-    "titleTemplate": "%s | FoodFlow レストラン",
-    "description": "FoodFlowで注文、メニュー、売上、店舗運営を管理します。"
+    "title": "Plaza 4 レストラン",
+    "titleTemplate": "%s | Plaza 4 レストラン",
+    "description": "Plaza 4で注文、メニュー、売上、店舗運営を管理します。"
   },
   "localeSwitcher": {
     "triggerAria": "言語を切り替えます。現在の言語: {language}",
     "menuAria": "言語セレクター",
     "languages": {
+      "es": "スペイン語",
       "vi": "ベトナム語",
       "en": "英語",
       "ja": "日本語"
@@ -817,7 +818,7 @@
       },
       "operations": {
         "title": "運用設定",
-        "minOrder": "最低注文額（VND）",
+        "minOrder": "最低注文額（PEN）",
         "acceptingOrders": "注文受付",
         "acceptingOrdersDescription": "オンにするとレストランを表示し、新規注文を受け付けます"
       },
@@ -1043,8 +1044,8 @@
       "typeTitle": "プロモーション種類",
       "percentValue": "割引率 *",
       "fixedValue": "固定割引額 *",
-      "maxDiscount": "最大割引額（VND）",
-      "minOrder": "最低注文金額（VND）",
+      "maxDiscount": "最大割引額（PEN）",
+      "minOrder": "最低注文金額（PEN）",
       "appliesToTitle": "適用対象",
       "appliesTo": {
         "all": "すべて",
@@ -1155,7 +1156,7 @@
       "channels": {
         "in_app": {
           "label": "アプリ内",
-          "description": "FoodFlowの顧客画面内にプロモーションを表示します。"
+          "description": "Plaza 4の顧客画面内にプロモーションを表示します。"
         },
         "push": {
           "label": "プッシュ通知",
@@ -1337,7 +1338,7 @@
   "chatbot": {
     "open": "AIアシスタントを開く",
     "close": "チャットを閉じる",
-    "title": "FoodFlowアシスタント",
+    "title": "Plaza 4アシスタント",
     "subtitle": "注文・サポート・ダッシュボードについて質問",
     "placeholder": "メッセージを入力...",
     "send": "送信",
