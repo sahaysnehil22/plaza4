@@ -7,17 +7,17 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function formatCurrency(amount: number, locale = 'vi-VN'): string {
+export function formatCurrency(amount: number, locale = 'es-PE'): string {
   return new Intl.NumberFormat(locale, {
     style: 'currency',
-    currency: 'VND',
+    currency: 'PEN',
   }).format(amount);
 }
 
-export function formatCompactCurrency(amount: number, locale = 'vi-VN'): string {
+export function formatCompactCurrency(amount: number, locale = 'es-PE'): string {
   return new Intl.NumberFormat(locale, {
     style: 'currency',
-    currency: 'VND',
+    currency: 'PEN',
     notation: 'compact',
     maximumFractionDigits: 1,
   }).format(amount);

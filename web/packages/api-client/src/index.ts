@@ -1,4 +1,4 @@
-export { ApiClientError, FoodFlowApiClient } from './api-client';
+export { ApiClientError, Plaza4ApiClient } from './api-client';
 export { assertAiChatSessionId, parseAiChatHistory, parseAiChatReply } from './ai-chat-contract';
 export type {
   ApiClientOptions,

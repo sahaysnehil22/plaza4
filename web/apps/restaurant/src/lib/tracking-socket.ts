@@ -1,7 +1,7 @@
 'use client';
 
 import { io, type Socket } from 'socket.io-client';
-import type { DeliveryRoutePhase } from '@foodflow/api-client';
+import type { DeliveryRoutePhase } from '@plaza4/api-client';
 import { assertProductionPublicUrl, isProductionDeployment } from './public-env';
 import { createSupabaseSocketAdapter, resolveRealtimeProvider, type SupabaseSocketAdapter } from './supabase-realtime';
 

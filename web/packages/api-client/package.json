@@ -1,5 +1,5 @@
 {
-  "name": "@foodflow/api-client",
+  "name": "@plaza4/api-client",
   "version": "0.1.0",
   "private": true,
   "main": "./src/index.ts",

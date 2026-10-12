@@ -54,14 +54,14 @@ export function computeDiscountAmount(
   type: PromotionType,
   discountValue: number,
   orderTotal: number,
-  maxDiscountVnd?: number
+  maxDiscountPen?: number
 ): number {
   let amount = 0;
   switch (type) {
     case 'percent':
       amount = (orderTotal * discountValue) / 100;
-      if (maxDiscountVnd && maxDiscountVnd > 0) {
-        amount = Math.min(amount, maxDiscountVnd);
+      if (maxDiscountPen && maxDiscountPen > 0) {
+        amount = Math.min(amount, maxDiscountPen);
       }
       break;
     case 'fixed':

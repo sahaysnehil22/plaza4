@@ -43,7 +43,7 @@ function isBodyInit(value: unknown): value is BodyInit {
   );
 }
 
-export class FoodFlowApiClient {
+export class Plaza4ApiClient {
   private readonly options: ApiClientOptions;
   private refreshPromise: { refreshToken: string; promise: Promise<boolean> } | null = null;
 
@@ -150,7 +150,7 @@ export class FoodFlowApiClient {
     } catch {
       throw new ApiClientError({
         title: 'Invalid API response body',
-        detail: 'Expected a JSON FoodFlow API success envelope.',
+        detail: 'Expected a JSON Plaza 4 API success envelope.',
         status: response.status,
         code: 'API_CONTRACT_INVALID_JSON',
       });
@@ -160,7 +160,7 @@ export class FoodFlowApiClient {
 
     throw new ApiClientError({
       title: 'Invalid API response envelope',
-      detail: 'Expected FoodFlow API success envelope with success=true and data.',
+      detail: 'Expected Plaza 4 API success envelope with success=true and data.',
       status: response.status,
       code: 'API_CONTRACT_INVALID_ENVELOPE',
     });

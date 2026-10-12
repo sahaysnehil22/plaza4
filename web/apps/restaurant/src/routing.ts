@@ -1,4 +1,4 @@
-import { defaultLocale, locales } from '@foodflow/i18n';
+import { defaultLocale, locales } from '@plaza4/i18n';
 import { defineRouting } from 'next-intl/routing';
 
 export const routing = defineRouting({

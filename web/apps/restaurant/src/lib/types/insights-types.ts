@@ -7,4 +7,4 @@ export type {
   RestaurantPeakHour as PeakHour,
   RestaurantRevenueForecastPoint as RevenueForecastPoint,
   RestaurantInsights,
-} from '@foodflow/api-client';
+} from '@plaza4/api-client';

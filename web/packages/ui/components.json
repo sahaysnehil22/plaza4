@@ -11,8 +11,8 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "@foodflow/ui",
-    "utils": "@foodflow/ui/lib/utils",
-    "ui": "@foodflow/ui"
+    "components": "@plaza4/ui",
+    "utils": "@plaza4/ui/lib/utils",
+    "ui": "@plaza4/ui"
   }
 }

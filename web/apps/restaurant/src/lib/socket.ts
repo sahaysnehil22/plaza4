@@ -1,7 +1,7 @@
 'use client';
 
 import { io, type Socket } from 'socket.io-client';
-import type { RestaurantOrderChatMessage } from '@foodflow/api-client';
+import type { RestaurantOrderChatMessage } from '@plaza4/api-client';
 import { assertProductionPublicUrl, isProductionDeployment } from './public-env';
 import { createSupabaseSocketAdapter, resolveRealtimeProvider, type SupabaseSocketAdapter } from './supabase-realtime';
 import type { Order, OrderStatus } from './types';

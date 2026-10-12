@@ -1,11 +1,11 @@
 'use client';
 
 import {
-  FoodFlowApiClient,
+  Plaza4ApiClient,
   type ApiRequestOptions,
   type PaginationMeta,
   type TokenPair,
-} from '@foodflow/api-client';
+} from '@plaza4/api-client';
 import { resolveApiBaseUrl } from '@/lib/api-base-url';
 
 const API_URL = resolveApiBaseUrl();
@@ -63,11 +63,11 @@ export function isAuthenticated(): boolean {
 
 function redirectToLocalizedLogin(): void {
   if (typeof window === 'undefined') return;
-  const locale = window.location.pathname.match(/^\/(vi|en|ja)(?:\/|$)/)?.[1] ?? 'vi';
+  const locale = window.location.pathname.match(/^\/(es|vi|en|ja)(?:\/|$)/)?.[1] ?? 'es';
   window.location.assign(`/${locale}/login`);
 }
 
-const client = new FoodFlowApiClient({
+const client = new Plaza4ApiClient({
   baseUrl: API_URL,
   getAccessToken: () => getStorageValue('restaurant_token'),
   getRefreshToken: () => getStorageValue('restaurant_refresh_token'),

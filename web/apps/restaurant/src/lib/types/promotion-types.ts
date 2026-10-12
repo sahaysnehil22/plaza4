@@ -34,8 +34,8 @@ export interface Promotion {
   description?: string;
   type: PromotionType;
   discountValue: number;
-  minOrderVnd?: number;
-  maxDiscountVnd?: number;
+  minOrderPen?: number;
+  maxDiscountPen?: number;
   appliesTo: 'all' | 'category' | 'items';
   categoryId?: string;
   itemIds?: string[];
