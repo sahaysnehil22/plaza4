@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/notifications/fcm_token_lifecycle.dart';
+import 'package:plaza4_customer/shared/notifications/fcm_token_lifecycle.dart';
 
 void main() {
   late _FakeMessaging messaging;

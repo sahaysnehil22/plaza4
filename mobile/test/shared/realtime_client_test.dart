@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/api/realtime_client.dart';
-import 'package:foodflow_customer/shared/config/app_config.dart';
+import 'package:plaza4_customer/shared/api/realtime_client.dart';
+import 'package:plaza4_customer/shared/config/app_config.dart';
 
 void main() {
   for (final provider in RealtimeProvider.values) {

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/api/supabase_realtime_client.dart';
+import 'package:plaza4_customer/shared/api/supabase_realtime_client.dart';
 
 void main() {
   group('RealtimeTokenGrant', () {
