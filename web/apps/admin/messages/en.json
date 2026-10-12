@@ -25,7 +25,7 @@
       "discountSettings": "Discount settings",
       "type": "Type *",
       "discountPercentage": "Discount percentage (%) *",
-      "discountAmount": "Discount amount (VND) *",
+      "discountAmount": "Discount amount (PEN) *",
       "conditions": "Eligibility and limits",
       "perUserLimit": "Limit per user",
       "maxUsage": "Total uses (leave blank for unlimited)",
@@ -125,9 +125,9 @@
     }
   },
   "login": {
-    "title": "FoodFlow Admin",
+    "title": "Plaza 4 Admin",
     "description": "Sign in to manage the system",
-    "emailPlaceholder": "admin@foodflow.com",
+    "emailPlaceholder": "admin@plaza4.com",
     "adminOnly": "This dashboard is available to administrators only.",
     "rememberMe": "Remember me",
     "forgotPassword": "Forgot password?",
@@ -138,19 +138,19 @@
   },
   "forgotPassword": {
     "title": "Reset your password",
-    "description": "Enter the admin email associated with your FoodFlow account.",
-    "emailPlaceholder": "admin@foodflow.com",
+    "description": "Enter the admin email associated with your Plaza 4 account.",
+    "emailPlaceholder": "admin@plaza4.com",
     "submit": "Send reset instructions",
     "submitting": "Sending instructions...",
     "successTitle": "Check your inbox",
     "successDescription": "If this account exists and email delivery is configured, reset instructions are on the way.",
-    "neutralNotice": "For security, FoodFlow does not reveal whether an email address exists.",
+    "neutralNotice": "For security, Plaza 4 does not reveal whether an email address exists.",
     "backToLogin": "Back to login",
     "error": "Could not request a password reset. Please try again."
   },
   "resetPassword": {
     "title": "Create a new password",
-    "description": "Use the secure one-time link from your FoodFlow email.",
+    "description": "Use the secure one-time link from your Plaza 4 email.",
     "newPassword": "New password",
     "confirmPassword": "Confirm password",
     "passwordPlaceholder": "At least 8 characters",
@@ -175,17 +175,18 @@
     "accountMenu": "Open account menu",
     "switchLanguage": "Switch language",
     "languages": {
+      "es": "Spanish",
       "vi": "Vietnamese",
       "en": "English",
       "ja": "Japanese"
     }
   },
   "sidebar": {
-    "brand": "FoodFlow",
+    "brand": "Plaza 4",
     "adminBadge": "Admin",
     "logout": "Sign Out",
     "navigation": "Admin navigation",
-    "mobileTitle": "FoodFlow admin menu",
+    "mobileTitle": "Plaza 4 admin menu",
     "mobileDescription": "Choose an area to manage the platform"
   },
   "breadcrumb": {
@@ -206,7 +207,7 @@
   },
   "overview": {
     "title": "Overview",
-    "description": "System activity overview for FoodFlow",
+    "description": "System activity overview for Plaza 4",
     "todayOrders": "Today's Orders",
     "todayRevenue": "Today's Revenue",
     "totalOrders": "Total Orders",
@@ -842,7 +843,7 @@
   },
   "settings": {
     "title": "System Settings",
-    "description": "Configure the FoodFlow platform",
+    "description": "Configure the Plaza 4 platform",
     "save": "Save settings",
     "saving": "Saving...",
     "saveError": "Could not save settings",
@@ -929,7 +930,7 @@
     "loadErrorTitle": "Unable to load support tickets",
     "loadErrorDescription": "The support queue is temporarily unavailable. Retry before taking action so live tickets are not hidden.",
     "contractErrorTitle": "Support response is incomplete",
-    "contractErrorDescription": "The API response did not include a tickets list, so FoodFlow will not display a fake empty queue.",
+    "contractErrorDescription": "The API response did not include a tickets list, so Plaza 4 will not display a fake empty queue.",
     "retry": "Retry",
     "emptyColumn": "No tickets",
     "orderShort": "Order: #{id}",
@@ -1093,7 +1094,7 @@
     }
   },
   "aiMonitor": {
-    "title": "FoodFlow AI Monitor",
+    "title": "Plaza 4 AI Monitor",
     "description": "Monitor DeepSeek chatbot configuration and real telemetry availability",
     "loadErrorTitle": "Unable to load AI monitor",
     "loadErrorDescription": "Check the backend connection or retry in a few seconds.",
@@ -1132,7 +1133,7 @@
     "configurationRequiredDescription": "A platform owner must add a rotated DEEPSEEK_API_KEY to the server-side secret store, then redeploy and verify a real chat request. Do not paste keys into this dashboard or source control.",
     "telemetrySourceNote": "Token and latency values are recorded only after real provider requests.",
     "refresh": "Refresh",
-    "costUnavailableDescription": "Cost stays unavailable until a provider billing source is connected; FoodFlow does not estimate it from tokens."
+    "costUnavailableDescription": "Cost stays unavailable until a provider billing source is connected; Plaza 4 does not estimate it from tokens."
   },
   "analytics": {
     "title": "Analytics",
@@ -1373,7 +1374,7 @@
     "retry": "Retry",
     "sePayDescription": "Payment intent and signed webhook configuration",
     "aiChatbot": "DeepSeek AI Chatbot",
-    "aiChatbotDescription": "Direct LLM runtime for FoodFlow customer support",
+    "aiChatbotDescription": "Direct LLM runtime for Plaza 4 customer support",
     "pushNotifications": "Firebase Cloud Messaging",
     "fcmDescription": "Server-side push notification provider",
     "outboundWebhooks": "Outbound Webhooks",
@@ -1395,7 +1396,7 @@
   },
   "settingsBranding": {
     "title": "Branding",
-    "description": "Customize the visual identity of FoodFlow",
+    "description": "Customize the visual identity of Plaza 4",
     "save": "Save branding",
     "saving": "Saving...",
     "brandIdentity": "Brand Identity",
@@ -1551,7 +1552,7 @@
   "chatbot": {
     "open": "Open AI assistant",
     "close": "Close chat",
-    "title": "FoodFlow Assistant",
+    "title": "Plaza 4 Assistant",
     "subtitle": "Ask about orders, support, or the dashboard",
     "placeholder": "Type a message...",
     "send": "Send",
