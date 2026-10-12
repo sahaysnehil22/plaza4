@@ -6,15 +6,15 @@ import 'fcm_token_lifecycle.dart';
 typedef FcmDeepLinkHandler = void Function(String deepLink);
 
 const _androidChannel = AndroidNotificationChannel(
-  'foodflow_notifications',
-  'FoodFlow notifications',
+  'plaza4_notifications',
+  'Plaza 4 notifications',
   description: 'Order, delivery, and account notifications',
   importance: Importance.high,
 );
 
 const _androidNotificationDetails = AndroidNotificationDetails(
-  'foodflow_notifications',
-  'FoodFlow notifications',
+  'plaza4_notifications',
+  'Plaza 4 notifications',
   channelDescription: 'Order, delivery, and account notifications',
   importance: Importance.high,
   priority: Priority.high,
@@ -82,7 +82,7 @@ class FcmNotificationPresenter {
 
     await _localNotifications.show(
       message.messageId?.hashCode ?? DateTime.now().microsecondsSinceEpoch,
-      notification.title ?? 'FoodFlow',
+      notification.title ?? 'Plaza 4',
       notification.body ?? '',
       const NotificationDetails(android: _androidNotificationDetails),
       payload: fcmDeepLinkFromData(message.data),

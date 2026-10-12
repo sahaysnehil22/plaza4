@@ -467,7 +467,7 @@ class CartNotifier extends StateNotifier<CartState> {
     try {
       final response = await _api.get('/orders/delivery-pricing');
       final data = response.data as Map<String, dynamic>;
-      final fee = (data['baseDeliveryFeeVnd'] as num?)?.toDouble();
+      final fee = (data['baseDeliveryFeePen'] as num?)?.toDouble();
       if (fee == null || fee < 0) {
         throw const FormatException('DELIVERY_PRICING_INVALID_RESPONSE');
       }

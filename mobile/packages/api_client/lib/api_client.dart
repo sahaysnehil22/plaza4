@@ -1,4 +1,4 @@
-/// FoodFlow API Client — generated from docs/openapi.yaml
+/// Plaza 4 API Client — generated from docs/openapi.yaml
 /// @version 0.1.0
 library api_client;
 

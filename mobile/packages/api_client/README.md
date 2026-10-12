@@ -1,10 +1,10 @@
-# @foodflow/api_client (Dart)
+# @plaza4/api_client (Dart)
 
-Generated Dart client from the FoodFlow OpenAPI contract at `../../../docs/openapi.yaml`.
+Generated Dart client from the Plaza 4 OpenAPI contract at `../../../docs/openapi.yaml`.
 
 ## Purpose
 
-Provides typed Dart models for the FoodFlow API. Used by the Flutter mobile apps (customer + driver) as a shared dependency.
+Provides typed Dart models for the Plaza 4 API. Used by the Flutter mobile apps (customer + driver) as a shared dependency.
 
 ## API surface
 

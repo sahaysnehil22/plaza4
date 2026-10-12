@@ -1,4 +1,4 @@
-/// Shared coordinate guards for FoodFlow's Vietnam delivery map.
+/// Shared coordinate guards for Plaza 4's Vietnam delivery map.
 ///
 /// Backend tracking rejects driver telemetry outside the Vietnam operating
 /// bounds, and the mobile apps should apply the same defensive rule before

@@ -4,16 +4,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/locale_provider.dart';
 import '../theme/app_colors.dart';
 
-/// Renders three toggle buttons (VI / EN / JA) that update [localeProvider].
+/// Renders toggle buttons (ES / EN) that update [localeProvider].
 /// Drop this widget anywhere in the settings/profile section of customer or
 /// driver app.
 class LocaleSwitcher extends ConsumerWidget {
   const LocaleSwitcher({super.key});
 
   static const _locales = [
-    (code: 'vi', label: 'VI'),
+    (code: 'es', label: 'ES'),
     (code: 'en', label: 'EN'),
-    (code: 'ja', label: 'JA'),
   ];
 
   @override

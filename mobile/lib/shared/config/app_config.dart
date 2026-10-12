@@ -86,7 +86,7 @@ class AppConfig {
     if (kReleaseMode) {
       throw StateError(
         'API_BASE_URL is required for release builds. '
-        'Pass --dart-define=API_BASE_URL=https://api.foodflow.vn/api.',
+        'Pass --dart-define=API_BASE_URL=https://api.plaza4.pe/api.',
       );
     }
 

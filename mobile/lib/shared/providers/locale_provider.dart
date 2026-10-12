@@ -4,10 +4,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 const _localeStorageKey = 'app_locale';
-const _defaultLocale = Locale('vi');
+const _defaultLocale = Locale('es');
 
 /// Persists the current [Locale] to FlutterSecureStorage.
-/// Defaults to Vietnamese on first launch.
+/// Defaults to Spanish (Peru) on first launch.
 class LocaleNotifier extends Notifier<Locale> {
   static const _storage = FlutterSecureStorage();
 
