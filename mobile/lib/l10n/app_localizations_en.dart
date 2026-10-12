@@ -71,7 +71,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get registerAsDriver => 'Register as a driver';
 
   @override
-  String get driverLoginTitle => 'FoodFlow Driver';
+  String get driverLoginTitle => 'Plaza 4 Driver';
 
   @override
   String get driverLoginSubtitle => 'Sign in to start accepting deliveries';
@@ -102,7 +102,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get registerCreateAccount => 'Create a new account';
 
   @override
-  String get registerSubtitle => 'Fill in the details to start using FoodFlow';
+  String get registerSubtitle => 'Fill in the details to start using Plaza 4';
 
   @override
   String get fullNameLabel => 'Full name';
@@ -337,7 +337,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get supportSubtitle => 'Help center';
 
   @override
-  String get aboutApp => 'About FoodFlow';
+  String get aboutApp => 'About Plaza 4';
 
   @override
   String get aboutSubtitle => 'Version 1.0.0';
@@ -485,6 +485,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get cartViewCart => 'View cart';
+
+  @override
+  String cartAddedItem(String name) {
+    return 'Added $name to cart';
+  }
 
   @override
   String get cartDelete => 'Delete';
@@ -1215,7 +1220,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get locationPermissionSubtitle =>
-      'FoodFlow needs your location to find nearby restaurants and deliver accurately.';
+      'Plaza 4 needs your location to find nearby restaurants and deliver accurately.';
 
   @override
   String get locationPermissionAllow => 'Allow';
@@ -1379,7 +1384,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get onboardingGetStarted => 'Get Started';
 
   @override
-  String get onboardingWelcomeTitle => 'Welcome to FoodFlow';
+  String get onboardingWelcomeTitle => 'Welcome to Plaza 4';
 
   @override
   String get onboardingWelcomeSubtitle =>
@@ -1511,7 +1516,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String referralShareMessage(String code) {
-    return 'Use code $code to get a reward on your first FoodFlow order!';
+    return 'Use code $code to get a reward on your first Plaza 4 order!';
   }
 
   @override
@@ -1695,7 +1700,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get driver_onboarding_agreement_terms =>
-      '1. FoodFlow driver service\n\nBy registering as a FoodFlow driver, you agree to provide delivery services in your approved operating area.\n\n2. Requirements\n\n• Keep a valid driver license and required vehicle documents.\n• Use a safe, insured vehicle that matches your registered profile.\n• Maintain a professional rating and follow traffic laws.\n• Keep customer, restaurant, and order data confidential.\n\n3. Earnings and settlement\n\nEarnings are calculated from completed orders, distance, incentives, and approved adjustments. Weekly settlement is paid to the bank account saved in FoodFlow.\n\n4. Conduct standards\n\nDrivers must behave professionally with customers, restaurants, and support agents. Fraud, abuse, unsafe delivery, or false reporting can suspend or terminate the account.\n\n5. Termination\n\nFoodFlow may suspend or terminate driver access when these terms, safety rules, or legal requirements are violated.';
+      '1. Plaza 4 driver service\n\nBy registering as a Plaza 4 driver, you agree to provide delivery services in your approved operating area.\n\n2. Requirements\n\n• Keep a valid driver license and required vehicle documents.\n• Use a safe, insured vehicle that matches your registered profile.\n• Maintain a professional rating and follow traffic laws.\n• Keep customer, restaurant, and order data confidential.\n\n3. Earnings and settlement\n\nEarnings are calculated from completed orders, distance, incentives, and approved adjustments. Weekly settlement is paid to the bank account saved in Plaza 4.\n\n4. Conduct standards\n\nDrivers must behave professionally with customers, restaurants, and support agents. Fraud, abuse, unsafe delivery, or false reporting can suspend or terminate the account.\n\n5. Termination\n\nPlaza 4 may suspend or terminate driver access when these terms, safety rules, or legal requirements are violated.';
 
   @override
   String get driver_onboarding_agreement_failed =>
@@ -1886,7 +1891,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get driver_tip_custom_title => 'Or enter another amount';
 
   @override
-  String get driver_tip_custom_hint => 'Enter amount (VND)';
+  String get driver_tip_custom_hint => 'Enter amount (PEN)';
 
   @override
   String get driver_tip_skip => 'Skip';
@@ -2200,7 +2205,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpFaqPaymentMethodsA =>
-      'We currently accept cash on delivery and FoodFlow e-wallet.';
+      'We currently accept cash on delivery and Plaza 4 e-wallet.';
 
   @override
   String get helpFaqTopUpWalletQ => 'How do I top up my wallet?';
@@ -2229,7 +2234,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpFaqRewardPointsA =>
-      'Your balance is calculated from the confirmed loyalty ledger. Active earning or referral rewards appear after they are recorded by FoodFlow.';
+      'Your balance is calculated from the confirmed loyalty ledger. Active earning or referral rewards appear after they are recorded by Plaza 4.';
 
   @override
   String get helpFaqTrackOrderQ => 'How do I track my order in real-time?';
