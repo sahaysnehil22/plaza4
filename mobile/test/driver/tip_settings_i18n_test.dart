@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:foodflow_customer/driver/providers/tip_provider.dart';
-import 'package:foodflow_customer/driver/screens/settings_screen.dart';
-import 'package:foodflow_customer/driver/screens/tip_adjustment_screen.dart';
-import 'package:foodflow_customer/driver/widgets/tip_amount_picker.dart';
-import 'package:foodflow_customer/l10n/app_localizations.dart';
+import 'package:plaza4_customer/driver/providers/tip_provider.dart';
+import 'package:plaza4_customer/driver/screens/settings_screen.dart';
+import 'package:plaza4_customer/driver/screens/tip_adjustment_screen.dart';
+import 'package:plaza4_customer/driver/widgets/tip_amount_picker.dart';
+import 'package:plaza4_customer/l10n/app_localizations.dart';
 
 Widget _app(
   Locale locale,

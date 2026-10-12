@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/driver/providers/trip_route_provider.dart';
+import 'package:plaza4_customer/driver/providers/trip_route_provider.dart';
 
 void main() {
   group('TripRouteDetail.fromJson', () {

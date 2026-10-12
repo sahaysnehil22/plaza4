@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/l10n/app_localizations.dart';
-import 'package:foodflow_customer/shared/providers/locale_provider.dart';
+import 'package:plaza4_customer/l10n/app_localizations.dart';
+import 'package:plaza4_customer/shared/providers/locale_provider.dart';
 
 // NOTE: These tests require `flutter gen-l10n` to be run first.
 // Run: cd mobile && flutter pub get && flutter gen-l10n

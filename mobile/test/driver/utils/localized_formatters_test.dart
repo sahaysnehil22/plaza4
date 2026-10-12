@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:foodflow_customer/driver/utils/history_date_formatter.dart';
-import 'package:foodflow_customer/l10n/app_localizations.dart';
-import 'package:foodflow_customer/shared/utils/currency_formatter.dart';
+import 'package:plaza4_customer/driver/utils/history_date_formatter.dart';
+import 'package:plaza4_customer/l10n/app_localizations.dart';
+import 'package:plaza4_customer/shared/utils/currency_formatter.dart';
 
 class _FormatterProbe extends StatelessWidget {
   const _FormatterProbe({required this.now, required this.value});
@@ -15,9 +15,9 @@ class _FormatterProbe extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(formatVnd(context, 12345), key: const Key('currency')),
-        Text(formatSignedVnd(context, 12345), key: const Key('positive')),
-        Text(formatSignedVnd(context, -12345), key: const Key('negative')),
+        Text(formatPen(context, 12345), key: const Key('currency')),
+        Text(formatSignedPen(context, 12345), key: const Key('positive')),
+        Text(formatSignedPen(context, -12345), key: const Key('negative')),
         Text(
           formatDriverHistoryDateTime(context, value, now: now),
           key: const Key('history-date'),

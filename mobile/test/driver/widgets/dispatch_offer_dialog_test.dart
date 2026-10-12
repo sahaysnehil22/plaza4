@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/driver/providers/driver_provider.dart'
+import 'package:plaza4_customer/driver/providers/driver_provider.dart'
     show DispatchOffer;
-import 'package:foodflow_customer/driver/widgets/dispatch_offer_dialog.dart';
-import 'package:foodflow_customer/l10n/app_localizations.dart';
+import 'package:plaza4_customer/driver/widgets/dispatch_offer_dialog.dart';
+import 'package:plaza4_customer/l10n/app_localizations.dart';
 
 const _testOffer = DispatchOffer(
   orderId: 'order-001',

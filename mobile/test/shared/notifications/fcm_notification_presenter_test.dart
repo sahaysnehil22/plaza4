@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/notifications/fcm_notification_presenter.dart';
+import 'package:plaza4_customer/shared/notifications/fcm_notification_presenter.dart';
 
 void main() {
   test('accepts a local notification deep link', () {

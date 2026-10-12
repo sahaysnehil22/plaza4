@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/models/menu_item.dart';
+import 'package:plaza4_customer/shared/models/menu_item.dart';
 
 void main() {
   group('MenuItemModel.fromJson', () {

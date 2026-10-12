@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/config/app_config.dart';
+import 'package:plaza4_customer/shared/config/app_config.dart';
 
 void main() {
   group('AppConfig', () {

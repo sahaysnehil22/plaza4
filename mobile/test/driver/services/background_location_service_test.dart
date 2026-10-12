@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/driver/services/background_location_service.dart';
-import 'package:foodflow_customer/shared/api/realtime_client.dart';
-import 'package:foodflow_customer/shared/api/socket_client.dart';
+import 'package:plaza4_customer/driver/services/background_location_service.dart';
+import 'package:plaza4_customer/shared/api/realtime_client.dart';
+import 'package:plaza4_customer/shared/api/socket_client.dart';
 
 void main() {
   // Reset singleton between tests so state doesn't bleed across cases.

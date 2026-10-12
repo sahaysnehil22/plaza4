@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/utils/auth_validation.dart';
+import 'package:plaza4_customer/shared/utils/auth_validation.dart';
 
 void main() {
   test('normalizes common Vietnamese local numbers to the API E.164 form', () {

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/utils/notification_category.dart';
+import 'package:plaza4_customer/shared/utils/notification_category.dart';
 
 void main() {
   test('classifies canonical order event types', () {

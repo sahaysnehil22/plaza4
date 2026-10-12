@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/api/api_client.dart';
+import 'package:plaza4_customer/shared/api/api_client.dart';
 
 void main() {
   group('ApiClient.generateIdempotencyKey', () {
