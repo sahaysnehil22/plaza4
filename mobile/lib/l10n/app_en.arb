@@ -21,7 +21,7 @@
   "noAccount": "Don't have an account?",
   "registerLink": "Register",
   "registerAsDriver": "Register as a driver",
-  "driverLoginTitle": "FoodFlow Driver",
+  "driverLoginTitle": "Plaza 4 Driver",
   "driverLoginSubtitle": "Sign in to start accepting deliveries",
   "driverLoginInvalidCredentials": "Email or password is incorrect.",
   "driverLoginUnavailable": "Unable to sign in right now. Please try again.",
@@ -31,7 +31,7 @@
 
   "registerTitle": "Register",
   "registerCreateAccount": "Create a new account",
-  "registerSubtitle": "Fill in the details to start using FoodFlow",
+  "registerSubtitle": "Fill in the details to start using Plaza 4",
   "fullNameLabel": "Full name",
   "fullNameHint": "Enter your full name",
   "fullNameRequired": "Please enter your full name",
@@ -112,7 +112,7 @@
   "favoritesSubtitle": "Your favorite dishes",
   "support": "Support",
   "supportSubtitle": "Help center",
-  "aboutApp": "About FoodFlow",
+  "aboutApp": "About Plaza 4",
   "aboutSubtitle": "Version 1.0.0",
   "logout": "Logout",
   "logoutConfirm": "Are you sure you want to logout?",
@@ -169,6 +169,11 @@
   "cartDiscountLabel": "Discount",
   "cartGrandTotal": "Total",
   "cartViewCart": "View cart",
+  "cartAddedItem": "Added {name} to cart",
+  "@cartAddedItem": {
+    "description": "Snackbar shown when an item is added to the cart",
+    "placeholders": { "name": { "type": "String" } }
+  },
   "cartDelete": "Delete",
 
   "checkoutTitle": "Checkout",
@@ -475,7 +480,7 @@
   "driverHistoryDeliveryFee": "Delivery fee",
 
   "locationPermissionTitle": "Allow location access",
-  "locationPermissionSubtitle": "FoodFlow needs your location to find nearby restaurants and deliver accurately.",
+  "locationPermissionSubtitle": "Plaza 4 needs your location to find nearby restaurants and deliver accurately.",
   "locationPermissionAllow": "Allow",
   "locationPermissionManual": "Enter address manually",
 
@@ -537,7 +542,7 @@
   "onboardingSkip": "Skip",
   "onboardingNext": "Next",
   "onboardingGetStarted": "Get Started",
-  "onboardingWelcomeTitle": "Welcome to FoodFlow",
+  "onboardingWelcomeTitle": "Welcome to Plaza 4",
   "onboardingWelcomeSubtitle": "Order your favorite food, delivered fast to your door",
   "onboardingLocationTitle": "Find Restaurants Near You",
   "onboardingLocationSubtitle": "Allow location access to discover the best restaurants around you",
@@ -587,7 +592,7 @@
   "referralShareCode": "Share Code",
   "referralShareFailed": "Could not open the share sheet. Please try again.",
   "referralShareSheetTitle": "Share referral code",
-  "referralShareMessage": "Use code {code} to get a reward on your first FoodFlow order!",
+  "referralShareMessage": "Use code {code} to get a reward on your first Plaza 4 order!",
   "@referralShareMessage": {
     "placeholders": { "code": { "type": "String" } }
   },
@@ -657,7 +662,7 @@
   "driver_onboarding_agreement_accept": "Agree and continue",
   "driver_onboarding_agreement_submit": "SUBMIT APPLICATION",
   "driver_onboarding_agreement_note": "Application reviewed in 24-48h. You will be notified when approved.",
-  "driver_onboarding_agreement_terms": "1. FoodFlow driver service\n\nBy registering as a FoodFlow driver, you agree to provide delivery services in your approved operating area.\n\n2. Requirements\n\n• Keep a valid driver license and required vehicle documents.\n• Use a safe, insured vehicle that matches your registered profile.\n• Maintain a professional rating and follow traffic laws.\n• Keep customer, restaurant, and order data confidential.\n\n3. Earnings and settlement\n\nEarnings are calculated from completed orders, distance, incentives, and approved adjustments. Weekly settlement is paid to the bank account saved in FoodFlow.\n\n4. Conduct standards\n\nDrivers must behave professionally with customers, restaurants, and support agents. Fraud, abuse, unsafe delivery, or false reporting can suspend or terminate the account.\n\n5. Termination\n\nFoodFlow may suspend or terminate driver access when these terms, safety rules, or legal requirements are violated.",
+  "driver_onboarding_agreement_terms": "1. Plaza 4 driver service\n\nBy registering as a Plaza 4 driver, you agree to provide delivery services in your approved operating area.\n\n2. Requirements\n\n• Keep a valid driver license and required vehicle documents.\n• Use a safe, insured vehicle that matches your registered profile.\n• Maintain a professional rating and follow traffic laws.\n• Keep customer, restaurant, and order data confidential.\n\n3. Earnings and settlement\n\nEarnings are calculated from completed orders, distance, incentives, and approved adjustments. Weekly settlement is paid to the bank account saved in Plaza 4.\n\n4. Conduct standards\n\nDrivers must behave professionally with customers, restaurants, and support agents. Fraud, abuse, unsafe delivery, or false reporting can suspend or terminate the account.\n\n5. Termination\n\nPlaza 4 may suspend or terminate driver access when these terms, safety rules, or legal requirements are violated.",
   "driver_onboarding_agreement_failed": "Could not save agreement. Please try again.",
   "driver_incentives_title": "Incentives",
   "driver_incentives_active": "Active",
@@ -733,7 +738,7 @@
   "driver_tip_customer_prefix": "Customer",
   "driver_tip_picker_title": "Choose tip amount",
   "driver_tip_custom_title": "Or enter another amount",
-  "driver_tip_custom_hint": "Enter amount (VND)",
+  "driver_tip_custom_hint": "Enter amount (PEN)",
   "driver_tip_skip": "Skip",
   "driver_tip_confirm": "Confirm",
   "driver_tip_success_snackbar": "Tip report saved",
@@ -853,7 +858,7 @@
   "helpFaqLateDeliveryQ": "What should I do if my order is late?",
   "helpFaqLateDeliveryA": "Please contact chat support so we can check directly with the driver.",
   "helpFaqPaymentMethodsQ": "Which payment methods are accepted?",
-  "helpFaqPaymentMethodsA": "We currently accept cash on delivery and FoodFlow e-wallet.",
+  "helpFaqPaymentMethodsA": "We currently accept cash on delivery and Plaza 4 e-wallet.",
   "helpFaqTopUpWalletQ": "How do I top up my wallet?",
   "helpFaqTopUpWalletA": "Go to \"Profile\" → \"Wallet\" → tap \"Top Up\" and select the desired amount.",
   "helpFaqAddAddressQ": "How do I add a delivery address?",
@@ -861,7 +866,7 @@
   "helpFaqMissingOrderQ": "I didn't receive my order, what should I do?",
   "helpFaqMissingOrderA": "If the driver marked the order as delivered but you haven't received it, contact support immediately.",
   "helpFaqRewardPointsQ": "How are reward points earned?",
-  "helpFaqRewardPointsA": "Your balance is calculated from the confirmed loyalty ledger. Active earning or referral rewards appear after they are recorded by FoodFlow.",
+  "helpFaqRewardPointsA": "Your balance is calculated from the confirmed loyalty ledger. Active earning or referral rewards appear after they are recorded by Plaza 4.",
   "helpFaqTrackOrderQ": "How do I track my order in real-time?",
   "helpFaqTrackOrderA": "After placing an order, go to \"Orders\" → select the active order → tap \"Track\"."
 }

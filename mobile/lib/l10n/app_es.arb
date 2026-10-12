@@ -1,0 +1,1029 @@
+{
+  "@@locale": "es",
+  "loginTitle": "Iniciar sesión",
+  "loginWelcomeBack": "Bienvenido de nuevo",
+  "emailLabel": "Correo electrónico",
+  "emailHint": "Ingresa tu correo electrónico",
+  "emailRequired": "Por favor ingresa tu correo electrónico",
+  "emailInvalid": "Correo electrónico inválido",
+  "passwordLabel": "Contraseña",
+  "passwordHint": "Ingresa tu contraseña",
+  "passwordRequired": "Por favor ingresa tu contraseña",
+  "passwordMinLength": "Usa de 8 a 72 caracteres con mayúsculas, minúsculas y un número",
+  "showPassword": "Mostrar contraseña",
+  "hidePassword": "Ocultar contraseña",
+  "forgotPassword": "¿Olvidaste tu contraseña?",
+  "forgotPasswordTitle": "Recuperar contraseña",
+  "forgotPasswordContent": "Contáctanos por correo electrónico para restablecer tu contraseña.",
+  "close": "Cerrar",
+  "loginButton": "Iniciar sesión",
+  "noAccount": "¿No tienes una cuenta?",
+  "registerLink": "Regístrate",
+  "registerAsDriver": "Regístrate como repartidor",
+  "driverLoginTitle": "Plaza 4 Repartidor",
+  "driverLoginSubtitle": "Inicia sesión para empezar a aceptar pedidos",
+  "driverLoginInvalidCredentials": "El correo o la contraseña son incorrectos.",
+  "driverLoginUnavailable": "No se pudo iniciar sesión en este momento. Inténtalo de nuevo.",
+  "driverProfileUnavailable": "No se pudo cargar el perfil del repartidor. Inténtalo de nuevo.",
+  "driverKycStatusUnavailable": "No se pudo verificar el estado de validación. Inténtalo de nuevo.",
+  "driverAvailabilityUnavailable": "No se pudo actualizar la disponibilidad. Inténtalo de nuevo.",
+  "registerTitle": "Registro",
+  "registerCreateAccount": "Crea una cuenta nueva",
+  "registerSubtitle": "Completa tus datos para empezar a usar Plaza 4",
+  "fullNameLabel": "Nombre completo",
+  "fullNameHint": "Ingresa tu nombre completo",
+  "fullNameRequired": "Por favor ingresa tu nombre completo",
+  "fullNameMinLength": "El nombre debe tener al menos 2 caracteres",
+  "phoneLabel": "Número de celular",
+  "phoneHint": "Ingresa tu número de celular",
+  "phoneRequired": "Por favor ingresa tu número de celular",
+  "phoneInvalid": "Número de celular inválido",
+  "passwordHintLong": "De 8 a 72 caracteres con mayúsculas, minúsculas y un número",
+  "confirmPasswordLabel": "Confirmar contraseña",
+  "confirmPasswordHint": "Vuelve a ingresar tu contraseña",
+  "confirmPasswordRequired": "Por favor confirma tu contraseña",
+  "passwordMismatch": "Las contraseñas no coinciden",
+  "registerAs": "¿Registrarse como?",
+  "roleCustomer": "Cliente",
+  "roleDriver": "Repartidor",
+  "registerButton": "Registrarse",
+  "hasAccount": "¿Ya tienes una cuenta?",
+  "greetingAnonymous": "¡Hola!",
+  "greetingNamed": "¡Hola, {name}!",
+  "homeQuestion": "¿Qué quieres comer hoy?",
+  "locating": "Ubicando...",
+  "currentLocationLabel": "Ubicación actual",
+  "searchHint": "Busca comida, restaurantes...",
+  "nearbyRestaurants": "Restaurantes cercanos",
+  "viewAll": "Ver todos",
+  "loadingRestaurants": "Buscando restaurantes cercanos...",
+  "noRestaurantsTitle": "No se encontraron restaurantes",
+  "noRestaurantsSubtitle": "Prueba ampliando tu zona de búsqueda",
+  "reload": "Recargar",
+  "navHome": "Inicio",
+  "navSearch": "Buscar",
+  "navCart": "Carrito",
+  "navOrders": "Pedidos",
+  "navProfile": "Perfil",
+  "navEarnings": "Ganancias",
+  "cuisineAll": "Todo",
+  "cuisineFastFood": "Comida rápida",
+  "cuisineVietnamese": "Vietnamita",
+  "cuisineJapanese": "Japonesa",
+  "cuisineKorean": "Coreana",
+  "cuisineChinese": "China",
+  "cuisineItalian": "Italiana",
+  "cuisineDessert": "Postres",
+  "cuisineDrinks": "Bebidas",
+  "profileTitle": "Perfil",
+  "defaultUser": "Usuario",
+  "statsOrders": "Pedidos",
+  "statsReviews": "Reseñas",
+  "statsAddresses": "Direcciones",
+  "statsPoints": "Puntos",
+  "myAddresses": "Mis direcciones",
+  "myAddressesSubtitle": "Gestiona tus direcciones de entrega",
+  "profileLoyalty": "Recompensas de lealtad",
+  "profileLoyaltySubtitle": "Ver puntos y canjear",
+  "profileWallet": "Mi billetera",
+  "profileWalletSubtitle": "Saldo y movimientos",
+  "profileReferral": "Invita amigos",
+  "profileReferralSubtitle": "Gana recompensas por referir",
+  "profileHelp": "Ayuda y preguntas frecuentes",
+  "profileHelpSubtitle": "Preguntas comunes + contacto",
+  "paymentMethods": "Métodos de pago",
+  "paymentMethodsSubtitle": "Agrega o cambia tu método de pago",
+  "notificationsTitle": "Notificaciones",
+  "notificationsSubtitle": "Gestiona las notificaciones push",
+  "notificationsReadAll": "Marcar todas como leídas",
+  "notificationsAll": "Todas",
+  "notificationsOrders": "Pedidos",
+  "notificationsPromotions": "Promociones",
+  "notificationsSystem": "Sistema",
+  "notificationsEmptyTitle": "Sin notificaciones",
+  "notificationsEmptySubtitle": "Aún no tienes notificaciones.",
+  "favorites": "Favoritos",
+  "favoritesSubtitle": "Tus platos favoritos",
+  "support": "Soporte",
+  "supportSubtitle": "Centro de ayuda",
+  "aboutApp": "Acerca de Plaza 4",
+  "aboutSubtitle": "Versión 1.0.0",
+  "logout": "Cerrar sesión",
+  "logoutConfirm": "¿Seguro que quieres cerrar sesión?",
+  "cancel": "Cancelar",
+  "commonRetry": "Reintentar",
+  "commonErrorTitle": "Algo salió mal",
+  "commonErrorMessage": "Por favor inténtalo de nuevo.",
+  "commonEmptyTitle": "No hay datos disponibles",
+  "restaurantClosed": "Cerrado",
+  "foodSoldOut": "Agotado",
+  "driverProfileTitle": "Perfil",
+  "defaultDriver": "Repartidor",
+  "vehicleInfo": "Información del vehículo",
+  "vehicleType": "Tipo de vehículo",
+  "vehiclePlate": "Número de placa",
+  "statistics": "Estadísticas",
+  "totalDeliveries": "Entregas totales",
+  "totalEarnings": "Ganancias totales",
+  "languageTitle": "Idioma",
+  "languageVi": "Tiếng Việt",
+  "languageEn": "English",
+  "languageJa": "日本語",
+  "languageEs": "Español",
+  "orderStatusPending": "Pendiente",
+  "orderStatusConfirmed": "Confirmado",
+  "orderStatusPreparing": "En preparación",
+  "orderStatusPickedUp": "En camino",
+  "orderStatusDelivered": "Entregado",
+  "orderStatusCancelled": "Cancelado",
+  "cartTitle": "Carrito",
+  "cartEmpty": "Tu carrito está vacío",
+  "cartEmptySubtitle": "Agrega algo de comida para empezar",
+  "cartClearTitle": "¿Vaciar el carrito?",
+  "cartClearContent": "¿Seguro que quieres eliminar todos los productos de tu carrito?",
+  "cartKeep": "Conservar",
+  "cartClearAll": "Vaciar todo",
+  "cartPromoCode": "Código promocional",
+  "cartPromoHint": "Ingresa el código de descuento",
+  "cartPromoRemove": "Quitar",
+  "cartPromoApply": "Aplicar",
+  "cartPromoApplied": "Código {code} aplicado",
+
+  "@cartPromoApplied": {
+    "description": "Applied promo code message",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "cartSubtotal": "Subtotal",
+  "cartDeliveryFee": "Costo de envío",
+  "cartDeliveryFeeLoading": "Cargando desde el servidor…",
+  "cartDeliveryFeeUnavailable": "No disponible",
+  "cartFreeDelivery": "Gratis",
+  "cartDiscountLabel": "Descuento",
+  "cartGrandTotal": "Total",
+  "cartViewCart": "Ver carrito",
+  "cartAddedItem": "{name} agregado al carrito",
+
+  "@cartAddedItem": {
+    "description": "Snackbar shown when an item is added to the cart",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cartDelete": "Eliminar",
+  "checkoutTitle": "Finalizar pedido",
+  "checkoutDeliveryAddress": "Dirección de entrega",
+  "checkoutNoAddress": "No tienes direcciones guardadas",
+  "checkoutNoAddressSubtitle": "Agrega una dirección para continuar con tu pedido",
+  "checkoutAddAddress": "Agregar nueva dirección",
+  "checkoutPaymentMethod": "Método de pago",
+  "checkoutPaymentCash": "Efectivo",
+  "checkoutPaymentCashSubtitle": "Paga al recibir",
+  "checkoutPaymentWallet": "Billetera electrónica",
+  "checkoutNoteForDriver": "Nota para el repartidor",
+  "checkoutNoteHint": "Agrega una nota...",
+  "checkoutOrderSummary": "Resumen del pedido",
+  "checkoutSelectAddress": "Por favor selecciona una dirección de entrega",
+  "checkoutOrderFailed": "El pedido falló",
+  "addressDefault": "Predeterminada",
+  "restaurantListTitle": "Cercanos",
+  "restaurantViewList": "Lista",
+  "restaurantViewMap": "Mapa",
+  "restaurantNoResults": "No se encontraron restaurantes",
+  "restaurantNoResultsSubtitle": "Prueba con otro filtro",
+  "restaurantLocationRequired": "Permite el acceso a tu ubicación para encontrar restaurantes cercanos.",
+  "restaurantLoadFailed": "No se pudieron cargar los restaurantes. Inténtalo de nuevo.",
+  "restaurantDetailLoadFailed": "No se pudieron cargar los detalles del restaurante. Inténtalo de nuevo.",
+  "restaurantMenuLoadFailed": "No se pudo cargar este menú. Inténtalo de nuevo.",
+  "restaurantMenuTab": "Menú",
+  "restaurantReviewsTab": "Reseñas",
+  "restaurantInfoTab": "Info",
+  "restaurantMenuEmpty": "Menú en actualización",
+  "restaurantMenuEmptySubtitle": "Aún no hay productos en este menú",
+  "restaurantNoReviews": "Aún no hay reseñas",
+  "restaurantInfoTitle": "Información del restaurante",
+  "restaurantReviewFood": "Comida",
+  "restaurantReviewDelivery": "Envío",
+  "restaurantReviewCountLabel": "Reseñas",
+  "foodPopular": "Populares",
+  "foodSpecialNote": "Instrucciones especiales",
+  "foodNoteHint": "ej. sin cebolla, poco picante...",
+  "foodRequired": "(Obligatorio)",
+  "foodAddToCart": "Agregar al carrito",
+  "trackingOrderStatus": "Estado del pedido",
+  "trackingStepPending": "Esperando confirmación",
+  "trackingStepPreparing": "En preparación",
+  "trackingStepDelivering": "En camino",
+  "trackingStepDelivered": "Entregado",
+  "trackingOrderInProgress": "Tu pedido está en camino",
+  "trackingCallDriver": "Llamar",
+  "trackingMessageDriver": "Mensaje",
+  "trackingMarkerRestaurant": "Restaurante",
+  "trackingMarkerDriver": "Repartidor",
+  "trackingMarkerDestination": "Destino",
+  "orderHistoryTitle": "Mis pedidos",
+  "orderHistoryTabActive": "Activos ({count})",
+
+  "@orderHistoryTabActive": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderHistoryTabCompleted": "Completados ({count})",
+
+  "@orderHistoryTabCompleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderHistoryTabCancelled": "Cancelados ({count})",
+
+  "@orderHistoryTabCancelled": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderHistoryNoActive": "No tienes pedidos activos",
+  "orderHistoryNoCompleted": "Aún no tienes pedidos completados",
+  "orderHistoryNoCancelled": "No tienes pedidos cancelados",
+  "orderHistoryEmptySubtitle": "Tus pedidos aparecerán aquí",
+  "orderHistoryTrack": "Rastrear",
+  "addressManagementTitle": "Mis direcciones",
+  "addressAdd": "Agregar dirección",
+  "addressLoading": "Cargando direcciones...",
+  "addressEmpty": "No tienes direcciones guardadas",
+  "addressEmptySubtitle": "Agrega una dirección para empezar a pedir",
+  "addressSetDefault": "Marcar como predeterminada",
+  "addressEdit": "Editar",
+  "addressDeleteTitle": "¿Eliminar dirección?",
+  "addressDeleteContent": "¿Eliminar \"{label}\"?",
+
+  "@addressDeleteContent": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "addressAddSuccess": "Dirección agregada",
+  "addressUpdateSuccess": "Dirección actualizada",
+  "addressDeleteSuccess": "Dirección eliminada",
+  "addressSave": "Guardar",
+  "addressLabelField": "Etiqueta",
+  "addressFieldLabel": "Dirección",
+  "addressFieldHint": "Ingresa la dirección detallada",
+  "addressRequired": "Por favor ingresa una dirección",
+  "addressAddDialogTitle": "Agregar nueva dirección",
+  "addressEditDialogTitle": "Editar dirección",
+  "addressAddFailed": "No se pudo agregar la dirección",
+  "addressLocationRequired": "Elige una ubicación válida en el mapa.",
+  "addressLocationInvalid": "La ubicación de la dirección no es válida. Elígela de nuevo en el mapa.",
+  "addressUpdateFailed": "No se pudo actualizar la dirección",
+  "addressDeleteFailed": "No se pudo eliminar la dirección",
+  "addressDeleteAction": "Eliminar",
+  "addressHomeLabel": "Casa",
+  "addressWorkLabel": "Trabajo",
+  "addressOtherLabel": "Otro",
+  "supportConnecting": "Conectando...",
+  "supportDriverOnline": "En línea",
+  "supportAiHeader": "Soporte con IA — respuestas rápidas a preguntas comunes",
+  "supportNoMessages": "Aún no hay mensajes",
+  "supportNoMessagesSubtitle": "Envía tu primer mensaje para empezar a chatear",
+  "supportMessageHint": "Escribe un mensaje...",
+  "reviewTitle": "Califica tu pedido",
+  "reviewFoodQuality": "Calidad de la comida",
+  "reviewDeliveryQuality": "Calidad del envío",
+  "reviewComment": "Tus comentarios",
+  "reviewCommentHint": "Comparte tu experiencia con la comida y el servicio de entrega...",
+  "reviewSubmit": "Enviar reseña",
+  "reviewSuccess": "¡Reseña enviada!",
+  "reviewError": "Algo salió mal. Inténtalo de nuevo.",
+  "reviewRatingExcellent": "¡Excelente!",
+  "reviewRatingGood": "Bueno",
+  "reviewRatingAverage": "Regular",
+  "reviewRatingPoor": "Malo",
+  "reviewRatingBad": "Muy malo",
+  "driverDashboardToday": "Hoy",
+  "driverDashboardOrders": "Pedidos recientes",
+  "driverDashboardNoOrders": "Aún no hay pedidos",
+  "driverActiveOrderTitle": "Pedido activo",
+  "driverStatEarnings": "Ganancias",
+  "driverStatOnline": "En línea",
+  "driverStatusTitle": "Estado de disponibilidad",
+  "driverStatusPauseTitle": "Pausar recepción de pedidos",
+  "driverStatusPauseSubtitle": "Pausa por un tiempo definido y vuelve en línea automáticamente.",
+  "driverStatusPauseMinutes": "{minutes} min",
+
+  "@driverStatusPauseMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "driverStatusPauseHours": "{hours} h",
+
+  "@driverStatusPauseHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "driverStatusResumeNow": "Volver a recibir pedidos ahora",
+  "driverStatusToday": "Hoy",
+  "driverStatusOnlineTime": "Tiempo en línea",
+  "driverStatusDurationMinutes": "{minutes}m",
+
+  "@driverStatusDurationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "driverStatusDurationHoursMinutes": "{hours}h {minutes}m",
+
+  "@driverStatusDurationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "driverStatusInfoText": "Cuando estés en línea, recibirás alertas de nuevos pedidos en tu zona activa.",
+  "driverOnlineStatusOnline": "En línea",
+  "driverOnlineStatusPaused": "En pausa",
+  "driverOnlineStatusOffline": "Desconectado",
+  "driverOnlineStatusDelivering": "Entregando",
+  "driverOnlineReady": "Listo para recibir pedidos",
+  "driverOnlineEnable": "Actívate para recibir pedidos",
+  "driverDeliveryGpsActive": "El GPS está compartiendo tu ubicación",
+  "driverDeliveryGpsResume": "Conéctate para reanudar el GPS",
+  "driverOnlineAutoOffline": "Vuelve a desconectarse automáticamente al terminar la pausa",
+  "driverDateToday": "Hoy",
+  "driverDateLastSevenDays": "Últimos 7 días",
+  "driverDateLastThirtyDays": "Últimos 30 días",
+  "driverDateCustom": "Personalizado",
+  "driverDateClear": "Limpiar",
+  "driverDateFrom": "Desde el {date}",
+
+  "@driverDateFrom": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "driverDateTo": "Hasta el {date}",
+
+  "@driverDateTo": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "driverStepRestaurant": "Restaurante",
+  "driverStepPickup": "Recoger",
+  "driverStepDeliver": "Entregar",
+  "driverStepComplete": "Completar",
+  "driverPeakTitle": "Horas pico",
+  "driverPeakProgress": "{completed}/{target} pedidos",
+
+  "@driverPeakProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "driverPeakRewardEarned": "Recompensa ganada: {amount}",
+
+  "@driverPeakRewardEarned": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "driverPeakRewardRemaining": "Completa {count} pedidos más para ganar {amount}",
+
+  "@driverPeakRewardRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "driverEarningsDaily": "Ganancias del día",
+  "driverDaysCount": "{count} días",
+
+  "@driverDaysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "driverRatingsReviewCount": "{count} reseñas",
+
+  "@driverRatingsReviewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "driverEarningsTitle": "Ganancias",
+  "driverEarningsPeriodToday": "Hoy",
+  "driverEarningsPeriodWeek": "Esta semana",
+  "driverEarningsPeriodMonth": "Este mes",
+  "driverEarningsTotal": "Ganancias totales",
+  "driverEarningsAverage": "Promedio por pedido",
+  "driverEarningsHistory": "Historial de entregas",
+  "driverEarningsEmpty": "Aún no hay datos de ganancias",
+  "driverEarningsChartError": "No se pudo cargar el gráfico de ganancias",
+  "driverEarningsChartRetry": "Reintentar",
+  "driverRatingsTitle": "Historial de calificaciones",
+  "driverRatingsAll": "Todas",
+  "driverRatingsStars": "{count} estrellas",
+
+  "@driverRatingsStars": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "driverRatingsEmpty": "Aún no tienes calificaciones",
+  "driverRatingsError": "No se pudieron cargar las calificaciones.",
+  "driverRatingsRetry": "Reintentar",
+  "driverRatingsOrder": "Pedido: {code}",
+
+  "@driverRatingsOrder": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "driverRatingsToday": "Hoy",
+  "driverRatingsYesterday": "Ayer",
+  "driverHistoryTodayAt": "Hoy, {time}",
+
+  "@driverHistoryTodayAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "driverHistoryYesterdayAt": "Ayer, {time}",
+
+  "@driverHistoryYesterdayAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "driverTripDetailTitle": "Detalles del viaje",
+  "driverTripDetailSegments": "Tramos de la ruta",
+  "driverTripDetailRetry": "Reintentar",
+  "driverTripDetailNoRoute": "Aún no hay datos de ruta para este viaje",
+  "driverTripDetailLoadError": "No se pudo cargar la ruta del viaje",
+  "driverTripDetailOrder": "Pedido: {code}",
+
+  "@driverTripDetailOrder": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "driverTripSummaryDistance": "Distancia",
+  "driverTripSummaryDuration": "Duración",
+  "driverTripSummaryAvgSpeed": "Velocidad prom.",
+  "driverTripSummaryEarnings": "Ganancias",
+  "driverTripSummaryCustomerRating": "Calificación del cliente",
+  "driverTripSummaryMinutes": "{minutes} min",
+
+  "@driverTripSummaryMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "driverRouteReplayTooltip": "Reproducir ruta",
+  "driverRouteReplayPlaying": "Reproduciendo...",
+  "driverRouteReplayReady": "Toca para reproducir",
+  "driverRouteReplayCompleted": "Reproducción terminada",
+  "driverRouteReplayEstimated": "Solo ruta planificada — repetición GPS no disponible",
+  "driverRouteReplayEstimatedTooltip": "La telemetría GPS no está disponible para este viaje",
+  "driverKycTitle": "Verificación KYC",
+  "driverKycUploadTitle": "Subir documentos",
+  "driverKycUploadSubtitle": "Sube todos los documentos requeridos",
+  "driverKycCccdFront": "DNI (anverso)",
+  "driverKycCccdBack": "DNI (reverso)",
+  "driverKycDriverLicense": "Licencia de conducir",
+  "driverKycVehicleReg": "Tarjeta de propiedad del vehículo",
+  "driverKycTakePhoto": "Tomar foto",
+  "driverKycGallery": "Elegir de la galería",
+  "driverKycUploadHint": "Toma una foto o súbela",
+  "driverKycSubmit": "ENVIAR SOLICITUD",
+  "driverKycNote": "Solicitud revisada en 24-48 h. Te avisaremos cuando sea aprobada.",
+  "driverKycSubmitFailed": "No se pudo enviar la solicitud. Inténtalo de nuevo.",
+  "driverKycUploadFailed": "No se pudo subir este documento. Inténtalo de nuevo.",
+  "driverKycUnsupportedImage": "Usa una imagen válida en JPEG, PNG o WebP.",
+  "driverKycFileTooSmall": "Esta imagen está incompleta o es muy pequeña. Captura el documento de nuevo.",
+  "driverKycFileTooLarge": "Cada documento debe pesar 4 MB o menos.",
+  "driverKycInvalidUploadGrant": "La sesión de subida segura no es válida. Inténtalo de nuevo.",
+  "driverKycSubmittedTitle": "Solicitud enviada",
+  "driverKycSubmittedMessage": "Tus documentos privados están guardados de forma segura y en espera de revisión. No podrás conectarte hasta la aprobación.",
+  "driverKycGoHome": "Ir al inicio del repartidor",
+  "driverHistoryTitle": "Historial de entregas",
+  "driverHistoryFilterDate": "Filtrar por fecha",
+  "driverHistoryEmpty": "Sin historial de entregas",
+  "driverHistoryLoadError": "No se pudo cargar el historial de entregas. Inténtalo de nuevo.",
+  "driverHistoryRetry": "Intentar de nuevo",
+  "driverHistoryOrderNumberLabel": "Pedido",
+  "driverHistoryDeliveryAddressLabel": "Dirección de entrega",
+  "driverHistoryNoteLabel": "Nota",
+  "driverHistoryDeliveryFee": "Costo de envío",
+  "locationPermissionTitle": "Permite el acceso a tu ubicación",
+  "locationPermissionSubtitle": "Plaza 4 necesita tu ubicación para encontrar restaurantes cercanos y entregar con precisión.",
+  "locationPermissionAllow": "Permitir",
+  "locationPermissionManual": "Ingresar dirección manualmente",
+  "driverNavTitle": "Entrega",
+  "driverNavNoOrder": "Sin pedido activo",
+  "driverNavRestaurant": "Restaurante",
+  "driverNavCallRestaurant": "Llamar al restaurante",
+  "driverNavDeliveryAddress": "Dirección de entrega",
+  "driverNavArrivedAtRestaurant": "LLEGUÉ AL RESTAURANTE",
+  "driverNavPreparingFood": "Preparando la comida",
+  "driverNavItemsToPickup": "Productos por recoger",
+  "driverNavConfirmPickup": "CONFIRMAR RECOJO",
+  "driverNavEta": "ETA - Llegada estimada",
+  "driverNavEtaMinutes": "Aprox. {minutes} min",
+
+  "@driverNavEtaMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "driverNavEtaUnavailable": "Esperando el ETA de la ruta",
+  "driverNavCustomerAddress": "Dirección del cliente",
+  "driverNavCallCustomer": "Llamar al cliente",
+  "driverNavConfirmDelivery": "CONFIRMAR ENTREGA",
+  "driverNavDeliverySuccess": "¡Entrega exitosa!",
+  "driverNavOrderTotal": "Total del pedido",
+  "driverNavYouEarned": "Ganaste",
+  "driverNavGoHome": "IR AL INICIO",
+  "driverPickupTitle": "Confirmar recojo",
+  "driverPickupRestaurantNoteTitle": "Nota del restaurante",
+  "driverPickupHint": "Revisa cada producto antes de confirmar",
+  "driverPickupReportIssue": "Reportar un problema",
+  "driverPickupReportSupportMessage": "Soporte se conectará de inmediato.",
+  "driverPickupMissingTitle": "No hay datos del pedido para confirmar.",
+  "driverPickupMissingDescription": "Abre esta pantalla desde un pedido activo.",
+  "driverDeliveryCompleteSubtitle": "Gracias por completar esta entrega",
+  "driverDeliveryTripEarnings": "Ganancias del viaje",
+  "driverDeliveryBonus": "Bono",
+  "driverDeliveryContinue": "SEGUIR ACEPTANDO PEDIDOS",
+  "driverDeliveryMissingTitle": "No hay datos de ganancias del viaje.",
+  "driverDeliveryMissingDescription": "Abre esta pantalla desde un pedido completado.",
+  "driverNavPhoneError": "No se puede abrir el marcador",
+  "driverNavOpenDirections": "Abrir direcciones",
+  "driverNavDirectionsUnavailable": "No hay direcciones disponibles para esta parada",
+  "driverDispatchNewOrderTitle": "¡Nuevo pedido!",
+  "driverDispatchNewOrderSubtitle": "Acepta para empezar la entrega",
+  "driverDispatchRestaurantLabel": "Restaurante",
+  "driverDispatchDeliveryLabel": "Entregar en",
+  "driverDispatchCountdownDecision": "Quedan {seconds} segundos para decidir",
+
+  "@driverDispatchCountdownDecision": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "driverDispatchCountdownUrgent": "¡Casi sin tiempo!",
+  "driverDispatchReject": "Rechazar",
+  "driverDispatchAccept": "Aceptar pedido",
+  "cartPlaceOrder": "Hacer pedido",
+  "checkoutConfirmOrder": "Confirmar pedido",
+  "onboardingSkip": "Omitir",
+  "onboardingNext": "Siguiente",
+  "onboardingGetStarted": "Empezar",
+  "onboardingWelcomeTitle": "Bienvenido a Plaza 4",
+  "onboardingWelcomeSubtitle": "Pide tu comida favorita, entregada rápido en tu puerta",
+  "onboardingLocationTitle": "Encuentra restaurantes cerca de ti",
+  "onboardingLocationSubtitle": "Permite el acceso a tu ubicación para descubrir los mejores restaurantes a tu alrededor",
+  "onboardingNotificationTitle": "Actualizaciones del pedido en tiempo real",
+  "onboardingNotificationSubtitle": "Recibe avisos cuando tu pedido sea confirmado y esté en camino",
+  "loyaltyTitle": "Puntos de lealtad",
+  "loyaltyPointsBalance": "Saldo actual",
+  "loyaltyPoints": "{count} pts",
+
+  "@loyaltyPoints": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "loyaltyTierBronze": "Bronce",
+  "loyaltyTierSilver": "Plata",
+  "loyaltyTierGold": "Oro",
+  "loyaltyTierPlatinum": "Platino",
+  "loyaltyNextTier": "Siguiente nivel",
+  "loyaltyPointsToNextTier": "Te faltan {points} puntos para subir de nivel",
+
+  "@loyaltyPointsToNextTier": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "loyaltyHistory": "Historial de puntos",
+  "loyaltyHistoryEmpty": "Aún no tienes historial de puntos",
+  "loyaltyRedeem": "Canjear puntos",
+  "walletTitle": "Billetera",
+  "walletBalance": "Saldo",
+  "walletTopUp": "Recargar",
+  "walletWithdraw": "Retirar",
+  "walletTransactionHistory": "Historial de movimientos",
+  "walletTransactionEmpty": "Aún no hay movimientos",
+  "walletTopUpTitle": "Recargar billetera",
+  "walletSelectAmount": "Selecciona el monto",
+  "walletConfirmTopUp": "Confirmar recarga",
+  "walletDebit": "Débito",
+  "walletCredit": "Crédito",
+  "walletReasonOrderPayment": "Pago del pedido",
+  "walletReasonOrderRefund": "Reembolso del pedido",
+  "walletReasonWithdrawal": "Retiro",
+  "walletReasonAdjustment": "Ajuste de billetera",
+  "referralTitle": "Refiere a un amigo",
+  "referralSubtitle": "Comparte tu código de referido y gana recompensas",
+  "referralCode": "Tu código de referido",
+  "referralCopyCode": "Copiar código",
+  "referralCodeCopied": "¡Código copiado!",
+  "referralShareCode": "Compartir código",
+  "referralShareFailed": "No se pudo abrir el menú de compartir. Inténtalo de nuevo.",
+  "referralShareSheetTitle": "Compartir código de referido",
+  "referralShareMessage": "¡Usa el código {code} y obtén un premio en tu primer pedido de Plaza 4!",
+
+  "@referralShareMessage": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "referralInviteCount": "Invitaste a {count} amigos",
+
+  "@referralInviteCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "referralBonusEarned": "Bono ganado",
+  "referralHowItWorks": "Cómo funciona",
+  "referralStep1": "Comparte tu código de referido",
+  "referralStep2": "Tu amigo se registra y hace su primer pedido",
+  "referralStep3": "Las recompensas elegibles aparecen tras la verificación",
+  "helpTitle": "Centro de ayuda",
+  "helpSearchHint": "Buscar preguntas...",
+  "helpFaq": "Preguntas frecuentes",
+  "helpFaqEmpty": "No se encontraron preguntas",
+  "helpChatSupport": "Chat de soporte",
+  "helpCallSupport": "Llamar a soporte",
+  "helpEmailSupport": "Soporte por correo",
+  "helpCategories": "Categorías",
+  "helpCategoryOrders": "Pedidos",
+  "helpCategoryPayment": "Pagos",
+  "helpCategoryDelivery": "Envíos",
+  "helpCategoryAccount": "Cuenta",
+  "filterTitle": "Filtros",
+  "filterApply": "Aplicar",
+  "filterReset": "Limpiar",
+  "filterRating": "Calificación",
+  "filterDeliveryTime": "Tiempo de entrega",
+  "filterPriceRange": "Rango de precios",
+  "filterMinutes": "{min} min",
+
+  "@filterMinutes": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "filterFreeDelivery": "Envío gratis",
+  "filterOpenNow": "Abierto ahora",
+  "addressPickerTitle": "Seleccionar dirección",
+  "addressPickerSearchHint": "Buscar dirección...",
+  "addressPickerUseCurrentLocation": "Usar ubicación actual",
+  "addressPickerSaved": "Direcciones guardadas",
+  "addressPickerNoSaved": "No tienes direcciones guardadas",
+  "addressPickerConfirm": "Confirmar esta dirección",
+  "driver_onboarding_vehicle_title": "Información del vehículo",
+  "driver_onboarding_vehicle_subtitle": "Cuéntanos sobre tu vehículo",
+  "driver_onboarding_vehicle_type_label": "Tipo de vehículo",
+  "driver_onboarding_vehicle_type_bike": "Bicicleta",
+  "driver_onboarding_vehicle_type_motorbike": "Moto",
+  "driver_onboarding_vehicle_type_car": "Auto",
+  "driver_onboarding_license_label": "Número de licencia de conducir",
+  "driver_onboarding_license_hint": "Ingresa tu número de licencia",
+  "driver_onboarding_license_required": "Por favor ingresa tu número de licencia",
+  "driver_onboarding_license_invalid": "Usa de 5 a 50 letras, números, puntos, barras o guiones",
+  "driver_onboarding_plate_label": "Placa",
+  "driver_onboarding_plate_hint": "Ingresa la placa",
+  "driver_onboarding_plate_required": "Por favor ingresa la placa",
+  "driver_onboarding_plate_invalid": "Usa de 5 a 20 letras, números, puntos o guiones",
+  "driver_onboarding_next": "Siguiente",
+  "driver_onboarding_documents_title": "Documentos requeridos",
+  "driver_onboarding_documents_subtitle": "Sube todos los documentos requeridos para revisión",
+  "driver_onboarding_agreement_title": "Términos del repartidor",
+  "driver_onboarding_agreement_subtitle": "Lee y acepta los términos para empezar",
+  "driver_onboarding_agreement_read": "He leído y acepto los Términos del servicio",
+  "driver_onboarding_agreement_accept": "Aceptar y continuar",
+  "driver_onboarding_agreement_submit": "ENVIAR SOLICITUD",
+  "driver_onboarding_agreement_note": "Solicitud revisada en 24-48 h. Te avisaremos cuando sea aprobada.",
+  "driver_onboarding_agreement_terms": "1. Servicio de repartidor de Plaza 4\n\nAl registrarte como repartidor de Plaza 4, aceptas brindar servicios de entrega en tu zona operativa aprobada.\n\n2. Requisitos\n\n• Mantén una licencia de conducir válida y los documentos vehiculares requeridos.\n• Usa un vehículo seguro y asegurado que coincida con tu perfil registrado.\n• Mantén una calificación profesional y respeta las normas de tránsito.\n• Mantén confidenciales los datos de clientes, restaurantes y pedidos.\n\n3. Ganancias y liquidación\n\nLas ganancias se calculan a partir de los pedidos completados, la distancia, los incentivos y los ajustes aprobados. La liquidación semanal se paga a la cuenta bancaria guardada en Plaza 4.\n\n4. Normas de conducta\n\nLos repartidores deben comportarse profesionalmente con clientes, restaurantes y soporte. El fraude, el abuso, la entrega insegura o los reportes falsos pueden suspender o terminar la cuenta.\n\n5. Terminación\n\nPlaza 4 puede suspender o terminar el acceso del repartidor cuando se violen estos términos, las normas de seguridad o los requisitos legales.",
+  "driver_onboarding_agreement_failed": "No se pudo guardar el acuerdo. Inténtalo de nuevo.",
+  "driver_incentives_title": "Incentivos",
+  "driver_incentives_active": "Activos",
+  "driver_incentives_completed": "Completados",
+  "driver_incentives_progress": "{current}/{target} pedidos",
+
+  "@driver_incentives_progress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "driver_incentives_reward": "Recompensa: {amount}",
+
+  "@driver_incentives_reward": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "driver_incentives_empty": "No hay incentivos disponibles",
+  "driver_incentives_error": "No se pudieron cargar los incentivos",
+  "driver_incentives_retry": "Reintentar",
+  "driver_incentives_expires": "Vence: {date}",
+
+  "@driver_incentives_expires": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "driver_heatmap_title": "Mapa de demanda",
+  "driver_heatmap_subtitle": "Zonas con alta demanda de entregas ahora mismo",
+  "driver_heatmap_high": "Demanda alta",
+  "driver_heatmap_medium": "Demanda media",
+  "driver_heatmap_low": "Demanda baja",
+  "driver_heatmap_legend": "Leyenda de colores",
+  "driver_heatmap_window_now": "Ahora",
+  "driver_heatmap_window_next_hour": "Próx. 1 h",
+  "driver_heatmap_window_next_three_hours": "Próx. 3 h",
+  "driver_heatmap_window_today": "Hoy",
+  "driver_heatmap_missing_location_title": "Ubicación del repartidor no disponible",
+  "driver_heatmap_missing_location_description": "Conéctate o espera a que el GPS se actualice para ver la demanda cerca de tu ubicación real.",
+  "driver_heatmap_empty_title": "Aún no hay datos de demanda",
+  "driver_heatmap_empty_description": "Los datos de demanda aparecen cuando hay pedidos disponibles cerca de tu zona.",
+  "driver_heatmap_order_count": "{count} pedidos",
+
+  "@driver_heatmap_order_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "driver_heatmap_avg_payout": "Promedio de {amount}/pedido",
+
+  "@driver_heatmap_avg_payout": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "driver_bank_title": "Cuenta bancaria",
+  "driver_bank_subtitle": "Agrega una cuenta para recibir pagos semanales",
+  "driver_bank_name_label": "Nombre del banco",
+  "driver_bank_name_hint": "Selecciona el banco",
+  "driver_bank_account_label": "Número de cuenta",
+  "driver_bank_account_hint": "Ingresa el número de cuenta",
+  "driver_bank_account_required": "Por favor ingresa el número de cuenta",
+  "driver_bank_save": "Guardar cuenta",
+  "driver_bank_saved": "Cuenta bancaria guardada",
+  "driver_bank_verify": "Verificar cuenta",
+  "driver_bank_add_title": "Agregar cuenta bancaria",
+  "driver_bank_name_required": "Por favor selecciona un banco",
+  "driver_bank_holder_label": "Titular de la cuenta",
+  "driver_bank_holder_hint": "JUAN PEREZ",
+  "driver_bank_holder_required": "Por favor ingresa el nombre del titular",
+  "driver_bank_linked_title": "Cuentas vinculadas",
+  "driver_bank_default_badge": "Predeterminada",
+  "driver_bank_add_button": "Agregar cuenta bancaria",
+  "driver_bank_save_failed": "No se pudo actualizar la cuenta bancaria. Inténtalo de nuevo.",
+  "driver_bank_delete_tooltip": "Eliminar cuenta bancaria",
+  "driver_bank_delete_title": "¿Eliminar cuenta bancaria?",
+  "driver_bank_delete_message": "Esto quita la cuenta de pagos de tu perfil de repartidor.",
+  "driver_bank_delete_confirm": "Eliminar",
+  "driver_bank_cancel": "Cancelar",
+  "driver_bank_retry": "Reintentar",
+  "driver_tip_title": "Ajuste de propina",
+  "driver_tip_header_title": "¿El cliente agregó propina en efectivo?",
+  "driver_tip_order_prefix": "Pedido de",
+  "driver_tip_customer_prefix": "Cliente",
+  "driver_tip_picker_title": "Elige el monto de la propina",
+  "driver_tip_custom_title": "O ingresa otro monto",
+  "driver_tip_custom_hint": "Ingresa el monto (PEN)",
+  "driver_tip_skip": "Omitir",
+  "driver_tip_confirm": "Confirmar",
+  "driver_tip_success_snackbar": "Reporte de propina guardado",
+  "driver_tip_success_message": "Reporte de propina guardado para auditoría. La liquidación no cambia automáticamente.",
+  "driver_tip_submit_failed": "No se pudo guardar el reporte de propina. Inténtalo de nuevo.",
+  "driver_notifications_read_all": "Marcar todas como leídas",
+  "driver_notifications_all": "Todas",
+  "driver_notifications_orders": "Pedidos",
+  "driver_notifications_rewards": "Recompensas",
+  "driver_notifications_system": "Sistema",
+  "driver_notifications_empty_title": "Sin notificaciones",
+  "driver_notifications_empty_subtitle": "Aún no tienes notificaciones de repartidor.",
+  "driver_notifications_load_failed": "No se pudieron cargar las notificaciones",
+  "driver_notifications_now": "ahora",
+  "driver_notifications_minute_suffix": "min",
+  "driver_notifications_hour_suffix": "h",
+  "driver_notifications_day_suffix": "d",
+  "driver_support_title": "Soporte al repartidor",
+  "driver_support_subtitle": "Siempre estamos aquí para ayudarte",
+  "driver_support_faq": "Preguntas frecuentes",
+  "driver_support_contact": "Contactar soporte",
+  "driver_support_chat": "Chat en vivo",
+  "driver_support_email": "Enviar correo",
+  "driver_support_phone": "Línea directa: 1800-xxxx",
+  "driver_support_faq_q1": "¿Cuándo me pagan?",
+  "driver_support_faq_a1": "Tus ganancias se transfieren a tu cuenta bancaria cada lunes.",
+  "driver_support_faq_q2": "¿Cómo cambio mi zona de entrega?",
+  "driver_support_faq_a2": "Ve a Ajustes > Zonas activas para cambiar tu zona de entrega.",
+  "driver_settings_title": "Ajustes",
+  "driver_settings_notifications_section": "Notificaciones",
+  "driver_settings_general_section": "General",
+  "driver_settings_notifications": "Notificaciones push",
+  "driver_settings_notifications_subtitle": "Recibe alertas de nuevos pedidos",
+  "driver_settings_language": "Idioma",
+  "driver_settings_language_subtitle": "Español",
+  "driver_settings_privacy": "Política de privacidad",
+  "driver_settings_about": "Acerca de la app",
+  "driver_settings_logout": "Cerrar sesión",
+  "driver_settings_logout_confirm": "¿Seguro que quieres cerrar sesión?",
+  "driver_settings_sound": "Sonido de notificación",
+  "driver_settings_sound_subtitle": "Reproducir sonido al llegar un nuevo pedido",
+  "driver_settings_version": "Versión {version}",
+
+  "@driver_settings_version": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "favoritesTitle": "Favoritos",
+  "favoritesEmpty": "Aún no tienes restaurantes favoritos",
+  "favoritesEmptySubtitle": "Explora y agrega restaurantes a tus favoritos",
+  "favoritesEmptyCta": "Explorar restaurantes",
+  "searchInputHint": "Busca comida, restaurantes...",
+  "searchButtonLabel": "Buscar",
+  "searchRecentLabel": "Búsquedas recientes",
+  "searchClearAll": "Borrar todo",
+  "searchEmptyTitle": "Busca comida, restaurantes",
+  "searchEmptySubtitle": "Escribe el nombre de un plato o restaurante",
+  "searchNoResults": "Sin resultados para \"{query}\"",
+
+  "@searchNoResults": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultsSubtitle": "Prueba con otras palabras o cambia los filtros",
+  "searchClosedBadge": "Cerrado",
+  "searchFilterNearest": "Más cercanos",
+  "searchFilterTopRated": "Mejor calificados",
+  "searchFilterPriceLowHigh": "Precio: menor a mayor",
+  "searchFilterOpenNow": "Abierto ahora",
+  "searchLoadFailed": "No se pudo buscar ahora. Inténtalo de nuevo.",
+  "vouchersTitle": "Ofertas y cupones",
+  "vouchersTabMine": "Mis cupones",
+  "vouchersTabAvailable": "Disponibles",
+  "vouchersTabExpired": "Vencidos",
+  "vouchersCodeCopied": "Código copiado",
+  "vouchersEmptyMine": "Aún no tienes cupones",
+  "vouchersEmptyAvailable": "No hay cupones disponibles",
+  "vouchersEmptyAvailableSubtitle": "Explora los cupones disponibles",
+  "vouchersEmptyExpired": "No hay cupones vencidos",
+  "vouchersEmptyExpiredSubtitle": "Los cupones vencidos aparecerán aquí",
+  "vouchersUseNow": "Usar ahora",
+  "vouchersPercentOff": "{percent}% de descuento",
+
+  "@vouchersPercentOff": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "vouchersMinOrder": "Pedido mín. {amount}",
+
+  "@vouchersMinOrder": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "vouchersExpiresAt": "Vence: {date}",
+
+  "@vouchersExpiresAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "cancelOrderTitle": "Cancelar pedido",
+  "cancelOrderSuccess": "Pedido cancelado con éxito",
+  "cancelOrderFailed": "No se pudo cancelar el pedido",
+  "cancelOrderInfoHeader": "Información del pedido",
+  "cancelOrderReasonHeader": "Selecciona el motivo de cancelación",
+  "cancelOrderReasonSubtitle": "Lamentamos si algo no estuvo bien",
+  "cancelOrderReasonSlow": "El restaurante tardó mucho",
+  "cancelOrderReasonChanged": "Cambié de opinión",
+  "cancelOrderReasonWrong": "Pedí por error",
+  "cancelOrderReasonOther": "Otro",
+  "cancelOrderNoteHint": "Nota adicional (opcional)",
+  "cancelOrderRefundNote": "Reembolso en 3 a 5 días hábiles",
+  "cancelOrderConfirmCta": "Confirmar cancelación",
+  "helpCenterSearchHint": "Buscar preguntas...",
+  "helpCenterChatCta": "Chatear con soporte",
+  "helpCenterNoResults": "No se encontraron preguntas",
+  "helpFaqCancelOrderQ": "¿Cómo cancelo un pedido?",
+  "helpFaqCancelOrderA": "Puedes cancelar un pedido dentro de los 2 minutos de haberlo hecho. Ve a \"Pedidos\" → selecciona el pedido → toca \"Cancelar\".",
+  "helpFaqLateDeliveryQ": "¿Qué hago si mi pedido llega tarde?",
+  "helpFaqLateDeliveryA": "Contáctanos por el chat de soporte para verificarlo directamente con el repartidor.",
+  "helpFaqPaymentMethodsQ": "¿Qué métodos de pago aceptan?",
+  "helpFaqPaymentMethodsA": "Actualmente aceptamos pago en efectivo al recibir y la billetera electrónica de Plaza 4.",
+  "helpFaqTopUpWalletQ": "¿Cómo recargo mi billetera?",
+  "helpFaqTopUpWalletA": "Ve a \"Perfil\" → \"Billetera\" → toca \"Recargar\" y selecciona el monto deseado.",
+  "helpFaqAddAddressQ": "¿Cómo agrego una dirección de entrega?",
+  "helpFaqAddAddressA": "Ve a \"Perfil\" → \"Mis direcciones\" → toca \"Agregar dirección\" e ingresa los datos.",
+  "helpFaqMissingOrderQ": "No recibí mi pedido, ¿qué hago?",
+  "helpFaqMissingOrderA": "Si el repartidor marcó el pedido como entregado pero no lo recibiste, contacta a soporte de inmediato.",
+  "helpFaqRewardPointsQ": "¿Cómo se ganan los puntos de recompensa?",
+  "helpFaqRewardPointsA": "Tu saldo se calcula del registro de lealtad confirmado. Las recompensas activas o por referidos aparecen cuando Plaza 4 las registra.",
+  "helpFaqTrackOrderQ": "¿Cómo rastreo mi pedido en tiempo real?",
+  "helpFaqTrackOrderA": "Después de hacer tu pedido, ve a \"Pedidos\" → selecciona el pedido activo → toca \"Rastrear\"."
+}
