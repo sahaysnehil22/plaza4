@@ -252,7 +252,7 @@ class _DeliveryHistoryScreenState extends ConsumerState<DeliveryHistoryScreen> {
                   ],
                 ),
                 Text(
-                  formatVnd(context, order.total),
+                  formatPen(context, order.total),
                   style: const TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w700,
@@ -393,7 +393,7 @@ class _DeliveryHistoryScreenState extends ConsumerState<DeliveryHistoryScreen> {
                     ),
                   ),
                   Text(
-                    formatVnd(ctx, order.deliveryFee),
+                    formatPen(ctx, order.deliveryFee),
                     style: const TextStyle(fontSize: 14, color: Colors.white),
                   ),
                 ],
@@ -411,7 +411,7 @@ class _DeliveryHistoryScreenState extends ConsumerState<DeliveryHistoryScreen> {
                     ),
                   ),
                   Text(
-                    formatVnd(ctx, order.total),
+                    formatPen(ctx, order.total),
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w700,

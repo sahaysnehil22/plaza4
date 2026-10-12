@@ -230,7 +230,7 @@ class _HeatmapScreenState extends ConsumerState<HeatmapScreen> {
                   ),
                   Text(
                     l10n.driver_heatmap_avg_payout(
-                      formatVnd(context, point.avgPayout),
+                      formatPen(context, point.avgPayout),
                     ),
                     style: const TextStyle(
                       fontSize: 13,

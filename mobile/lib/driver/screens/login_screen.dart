@@ -4,7 +4,7 @@ import '../../l10n/app_localizations.dart';
 import '../../shared/theme/app_colors.dart';
 import '../../shared/theme/app_text_styles.dart';
 import '../../shared/utils/app_error_messages.dart';
-import '../../shared/widgets/foodflow_mark.dart';
+import '../../shared/widgets/plaza4_mark.dart';
 import '../providers/driver_provider.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
@@ -44,7 +44,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   // Logo
-                  const FoodFlowMark(size: 88),
+                  const Plaza4Mark(size: 88),
                   const SizedBox(height: 20),
                   Text(
                     l10n.driverLoginTitle,

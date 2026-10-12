@@ -785,7 +785,7 @@ class _DeliveryFlowScreenState extends ConsumerState<DeliveryFlowScreen> {
           ),
         ),
         Text(
-          formatVnd(context, amount),
+          formatPen(context, amount),
           style: TextStyle(
             fontSize: isHighlight ? 20 : 15,
             fontWeight: FontWeight.w700,

@@ -51,7 +51,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         backgroundColor: const Color(0xFF1A1A1A),
         elevation: 0,
         title: const Text(
-          'FoodFlow Driver',
+          'Plaza 4 Driver',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700),
         ),
         actions: [
@@ -119,7 +119,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         DriverStatCard(
           icon: Icons.monetization_on_outlined,
           label: l10n.driverStatEarnings,
-          value: formatVnd(context, stats.earnings),
+          value: formatPen(context, stats.earnings),
           color: AppColors.primary,
         ),
         DriverStatCard(

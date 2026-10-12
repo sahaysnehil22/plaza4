@@ -99,13 +99,13 @@ class _SupportDriverScreenState extends ConsumerState<SupportDriverScreen> {
             _ContactButton(
               icon: Icons.chat_outlined,
               label: l10n.driver_support_chat,
-              onTap: () => _launch('https://foodflow.vn/driver-help'),
+              onTap: () => _launch('https://plaza4.pe/driver-help'),
             ),
             const SizedBox(height: 10),
             _ContactButton(
               icon: Icons.email_outlined,
               label: l10n.driver_support_email,
-              onTap: () => _launch('mailto:driver-support@foodflow.vn'),
+              onTap: () => _launch('mailto:driver-support@plaza4.pe'),
             ),
             const SizedBox(height: 10),
             _ContactButton(

@@ -215,7 +215,7 @@ class ProfileScreen extends ConsumerWidget {
                   const Divider(color: Color(0xFF374151), height: 20),
                   _buildInfoRow(
                     l10n.totalEarnings,
-                    formatVnd(context, state.totalEarnings),
+                    formatPen(context, state.totalEarnings),
                   ),
                 ],
               ),
