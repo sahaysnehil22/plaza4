@@ -126,7 +126,7 @@ class _TipAdjustmentScreenState extends ConsumerState<TipAdjustmentScreen> {
                   },
             child: effective > 0
                 ? Text(
-                    '${l10n.driver_tip_confirm} ${formatVnd(context, effective)}',
+                    '${l10n.driver_tip_confirm} ${formatPen(context, effective)}',
                   )
                 : Text(l10n.driver_tip_confirm),
           ),

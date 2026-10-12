@@ -41,7 +41,7 @@ class EarningsKpiCards extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                formatVnd(context, earnings.total),
+                formatPen(context, earnings.total),
                 style: const TextStyle(
                   fontSize: 36,
                   fontWeight: FontWeight.w800,
@@ -66,7 +66,7 @@ class EarningsKpiCards extends StatelessWidget {
             Expanded(
               child: _MiniKpi(
                 label: l10n.driverEarningsAverage,
-                value: formatVnd(context, earnings.averagePerOrder),
+                value: formatPen(context, earnings.averagePerOrder),
                 color: AppColors.accent,
                 icon: Icons.trending_up,
               ),

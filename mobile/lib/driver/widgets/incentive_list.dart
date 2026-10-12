@@ -127,7 +127,7 @@ class _IncentiveCard extends StatelessWidget {
               ),
               Text(
                 l10n.driver_incentives_reward(
-                  formatVnd(context, item.rewardAmount),
+                  formatPen(context, item.rewardAmount),
                 ),
                 style: const TextStyle(
                   color: AppColors.primary,

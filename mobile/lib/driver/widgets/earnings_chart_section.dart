@@ -29,7 +29,7 @@ class EarningsChartSection extends ConsumerWidget {
     }
     return EarningsDailyBarChart(
       byDay: chartState.summary!.byDay,
-      maxAmount: chartState.summary!.totalVnd,
+      maxAmount: chartState.summary!.totalPen,
     );
   }
 }

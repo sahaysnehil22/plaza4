@@ -94,7 +94,7 @@ class TripSummaryCard extends StatelessWidget {
                 ),
                 const Spacer(),
                 Text(
-                  '${payout.toStringAsFixed(0)}₫',
+                  '${payout.toStringAsFixed(0)}S/',
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w700,

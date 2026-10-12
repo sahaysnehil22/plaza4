@@ -22,7 +22,7 @@ class PeakHourProgress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final formattedBonus = formatVnd(context, bonusAmount);
+    final formattedBonus = formatPen(context, bonusAmount);
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(

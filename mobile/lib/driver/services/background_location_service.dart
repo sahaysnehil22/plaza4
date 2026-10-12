@@ -356,7 +356,7 @@ LocationSettings defaultDriverLocationSettings() {
       distanceFilter: 10,
       intervalDuration: _kActiveInterval,
       foregroundNotificationConfig: const ForegroundNotificationConfig(
-        notificationTitle: 'FoodFlow đang chia sẻ vị trí giao hàng',
+        notificationTitle: 'Plaza 4 đang chia sẻ vị trí giao hàng',
         notificationText:
             'Chỉ hoạt động khi tài xế Online hoặc đang có chuyến.',
         enableWakeLock: true,

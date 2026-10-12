@@ -165,7 +165,7 @@ class _DispatchOfferDialogState extends State<DispatchOfferDialog> {
                 AppColors.info,
               ),
               _chip(
-                formatSignedVnd(context, widget.offer.deliveryFee),
+                formatSignedPen(context, widget.offer.deliveryFee),
                 Icons.monetization_on,
                 AppColors.primary,
               ),

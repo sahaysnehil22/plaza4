@@ -89,7 +89,7 @@ class _EarningEntryCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text(
-                formatSignedVnd(context, entry.amount),
+                formatSignedPen(context, entry.amount),
                 style: const TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.w700,

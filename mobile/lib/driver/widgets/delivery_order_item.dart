@@ -61,7 +61,7 @@ class DeliveryOrderItem extends StatelessWidget {
             ),
           ),
           Text(
-            formatVnd(context, order.total),
+            formatPen(context, order.total),
             style: const TextStyle(
               fontSize: 15,
               fontWeight: FontWeight.w700,

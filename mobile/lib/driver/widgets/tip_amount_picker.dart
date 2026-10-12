@@ -35,7 +35,7 @@ class TipAmountPicker extends ConsumerWidget {
           children: _suggestedAmounts.map((amount) {
             final isSelected = tipState.suggestedAmount == amount;
             return ChoiceChip(
-              label: Text(formatVnd(context, amount)),
+              label: Text(formatPen(context, amount)),
               selected: isSelected,
               showCheckmark: false,
               onSelected: (_) =>
@@ -69,7 +69,7 @@ class TipAmountPicker extends ConsumerWidget {
           style: const TextStyle(color: Colors.white),
           decoration: InputDecoration(
             hintText: l10n.driver_tip_custom_hint,
-            prefixText: '${vndCurrencySymbol(context)} ',
+            prefixText: '${penCurrencySymbol(context)} ',
             prefixStyle: const TextStyle(color: Color(0xFF6B7280)),
           ),
           onChanged: (value) {
