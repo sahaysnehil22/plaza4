@@ -1232,7 +1232,7 @@ model PayoutLedger {
   recipientType     String    @map("recipient_type") @db.VarChar(20)
   recipientId       String?   @map("recipient_id") @db.Uuid
   amount            Int
-  currency          String    @default("VND") @db.VarChar(3)
+  currency          String    @default("PEN") @db.VarChar(3)
   status            String    @default("pending") @db.VarChar(20)
   settlementBatchId String?   @map("settlement_batch_id") @db.Uuid
   createdAt         DateTime  @default(now()) @map("created_at") @db.Timestamptz()
@@ -1252,7 +1252,7 @@ model DriverTipReport {
   orderId   String   @map("order_id") @db.Uuid
   driverId  String   @map("driver_id") @db.Uuid
   amount    Int
-  currency  String   @default("VND") @db.VarChar(3)
+  currency  String   @default("PEN") @db.VarChar(3)
   status    String   @default("reported") @db.VarChar(20)
   createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz()
   updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz()

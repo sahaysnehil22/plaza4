@@ -47,7 +47,7 @@ export function buildDemoOrderInput(params: {
 }): DemoOrderInput {
   const qty = 2
   const subtotal = params.unitPrice * qty
-  const deliveryFee = 15000
+  const deliveryFee = 6
   return {
     orderCode: DEMO_ORDER_CODE,
     customerId: params.customerId,
@@ -126,15 +126,15 @@ export type SeedDemoPrisma = {
 }
 
 /**
- * Ensures ≥1 partner order (restaurant1 / pho-24) and ≥1 support ticket exist.
+ * Ensures ≥1 partner order (restaurant1 / polleria-el-buen-sabor) and ≥1 support ticket exist.
  * Idempotent via DEMO_ORDER_CODE and DEMO_TICKET_TAG.
  */
 export async function ensureDemoOrdersAndTickets(prisma: SeedDemoPrisma): Promise<{
   orderId: string | null
   ticketId: string | null
 }> {
-  const customer = await prisma.user.findUnique({ where: { email: 'customer1@foodflow.vn' } })
-  const restaurant = await prisma.restaurant.findFirst({ where: { slug: 'pho-24' } })
+  const customer = await prisma.user.findUnique({ where: { email: 'customer1@plaza4.pe' } })
+  const restaurant = await prisma.restaurant.findFirst({ where: { slug: 'polleria-el-buen-sabor' } })
   if (!customer || !restaurant) {
     return { orderId: null, ticketId: null }
   }

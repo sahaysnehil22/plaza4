@@ -24,7 +24,7 @@ export class AdminAuditController {
   @Get('export')
   async exportCsv(@Query() query: AdminAuditQueryDto, @Res() response: Response) {
     const csv = await this.audit.exportCsv(query)
-    const filename = `foodflow-audit-${new Date().toISOString().slice(0, 10)}.csv`
+    const filename = `plaza4-audit-${new Date().toISOString().slice(0, 10)}.csv`
     response.setHeader('Content-Type', 'text/csv; charset=utf-8')
     response.setHeader('Content-Disposition', `attachment; filename="${filename}"`)
     response.send(csv)
