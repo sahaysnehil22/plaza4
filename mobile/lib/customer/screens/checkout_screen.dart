@@ -272,7 +272,7 @@ class _CheckoutScreenState extends ConsumerState<CheckoutScreen> {
             _buildPaymentOption(
               icon: Icons.wallet,
               title: l10n.checkoutPaymentWallet,
-              subtitle: 'FoodFlow Wallet',
+              subtitle: 'Plaza 4 Wallet',
               value: 'wallet',
             ),
 

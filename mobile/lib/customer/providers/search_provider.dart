@@ -9,7 +9,7 @@ class SearchResultItem {
   final String imageUrl;
   final double? rating;
   final String? subtitle;
-  final int? price; // in VND
+  final int? price; // in PEN
   final double? distanceKm;
   final bool isOpen;
 

@@ -246,10 +246,7 @@ class _CancelOrderScreenState extends ConsumerState<CancelOrderScreen> {
     };
   }
 
-  String _formatCurrency(int vnd) {
-    if (vnd >= 1000) {
-      return '${(vnd / 1000).round()}K₫';
-    }
-    return '$vnd₫';
+  String _formatCurrency(int pen) {
+    return 'S/ $pen';
   }
 }

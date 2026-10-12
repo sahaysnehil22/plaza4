@@ -71,7 +71,7 @@ class _HelpCenterScreenState extends State<HelpCenterScreen> {
   }
 
   Future<void> _launchEmail() async {
-    final uri = Uri.parse('mailto:support@foodflow.vn');
+    final uri = Uri.parse('mailto:support@plaza4.pe');
     if (await canLaunchUrl(uri)) await launchUrl(uri);
   }
 

@@ -250,10 +250,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                     onTap: () {
                       showAboutDialog(
                         context: context,
-                        applicationName: 'FoodFlow',
+                        applicationName: 'Plaza 4',
                         applicationVersion: '1.0.0',
                         applicationLegalese:
-                            '© 2026 FoodFlow. Đặt đồ ăn nhanh chóng, giao hàng tận nơi.',
+                            '© 2026 Plaza 4. Đặt đồ ăn nhanh chóng, giao hàng tận nơi.',
                       );
                     },
                   ),

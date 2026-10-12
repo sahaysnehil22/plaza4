@@ -349,7 +349,7 @@ class _RestaurantDetailScreenState extends ConsumerState<RestaurantDetailScreen>
                   ref.read(cartProvider.notifier).addItem(item: item);
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text('Đã thêm ${item.name} vào giỏ hàng'),
+                      content: Text(AppLocalizations.of(context).cartAddedItem(item.name)),
                       duration: const Duration(seconds: 2),
                       action: SnackBarAction(
                         label: AppLocalizations.of(context).cartViewCart,

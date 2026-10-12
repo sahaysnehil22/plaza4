@@ -1,6 +1,6 @@
 import 'route_names.dart';
 
-/// Parses deep link URIs (foodflow:// and https://foodflow.vn/) into route paths.
+/// Parses deep link URIs (plaza4:// and https://plaza4.pe/) into route paths.
 class DeepLinkParser {
   DeepLinkParser._();
 
@@ -11,23 +11,23 @@ class DeepLinkParser {
     final uri = Uri.tryParse(uriString);
     if (uri == null) return null;
 
-    // Handle foodflow:// scheme
-    if (uri.scheme == DeepLinkScheme.foodflow) {
-      return _parseFoodflowLink(uri);
+    // Handle plaza4:// scheme
+    if (uri.scheme == DeepLinkScheme.plaza4) {
+      return _parsePlaza4Link(uri);
     }
 
-    // Handle https://foodflow.vn scheme
-    if (uri.scheme == DeepLinkScheme.https && uri.host == 'foodflow.vn') {
+    // Handle https://plaza4.pe scheme
+    if (uri.scheme == DeepLinkScheme.https && uri.host == 'plaza4.pe') {
       return _parseHttpsLink(uri);
     }
 
     return null;
   }
 
-  /// foodflow://orders/id has host=`orders` and path=`/id`.
-  /// foodflow:///orders/id has empty host and path=`/orders/id`.
+  /// plaza4://orders/id has host=`orders` and path=`/id`.
+  /// plaza4:///orders/id has empty host and path=`/orders/id`.
   static List<String> _segments(Uri uri) {
-    if (uri.scheme == DeepLinkScheme.foodflow) {
+    if (uri.scheme == DeepLinkScheme.plaza4) {
       final segments = <String>[];
       if (uri.host.isNotEmpty) {
         segments.add(uri.host);
@@ -38,7 +38,7 @@ class DeepLinkParser {
     return uri.pathSegments;
   }
 
-  static String? _parseFoodflowLink(Uri uri) {
+  static String? _parsePlaza4Link(Uri uri) {
     final pathSegments = _segments(uri);
     if (pathSegments.isEmpty) return null;
 
@@ -66,7 +66,7 @@ class DeepLinkParser {
   }
 
   static String? _parseHttpsLink(Uri uri) {
-    return _parseFoodflowLink(uri);
+    return _parsePlaza4Link(uri);
   }
 
   /// Parse a route and build path with extras for GoRouter.
@@ -75,8 +75,8 @@ class DeepLinkParser {
     if (uri == null) return null;
 
     final scheme = uri.scheme;
-    if (scheme != DeepLinkScheme.foodflow &&
-        !(scheme == DeepLinkScheme.https && uri.host == 'foodflow.vn')) {
+    if (scheme != DeepLinkScheme.plaza4 &&
+        !(scheme == DeepLinkScheme.https && uri.host == 'plaza4.pe')) {
       return null;
     }
 

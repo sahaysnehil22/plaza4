@@ -53,7 +53,7 @@ class Routes {
 class DeepLinkScheme {
   DeepLinkScheme._();
 
-  static const foodflow = 'foodflow';
+  static const plaza4 = 'plaza4';
   static const https = 'https';
 }
 
