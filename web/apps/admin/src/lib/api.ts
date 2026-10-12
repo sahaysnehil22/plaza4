@@ -1,9 +1,9 @@
 import {
-  FoodFlowApiClient,
+  Plaza4ApiClient,
   type ApiRequestOptions,
   type PaginationMeta,
   type TokenPair,
-} from '@foodflow/api-client';
+} from '@plaza4/api-client';
 import { clearAdminSession } from '@/lib/admin-session';
 import { resolveApiBaseUrl } from '@/lib/api-base-url';
 
@@ -26,11 +26,11 @@ function clearTokens(): void {
 
 function redirectToLocalizedLogin(): void {
   if (typeof window === 'undefined') return;
-  const locale = window.location.pathname.match(/^\/(vi|en|ja)(?:\/|$)/)?.[1] ?? 'vi';
+  const locale = window.location.pathname.match(/^\/(es|vi|en|ja)(?:\/|$)/)?.[1] ?? 'es';
   window.location.assign(`/${locale}/login`);
 }
 
-const client = new FoodFlowApiClient({
+const client = new Plaza4ApiClient({
   baseUrl: API_BASE,
   getAccessToken: () => getStorageValue('admin_token'),
   getRefreshToken: () => getStorageValue('admin_refresh_token'),

@@ -31,20 +31,20 @@ describe('restaurant tracking socket', () => {
   });
 
   it('uses the canonical NEXT_PUBLIC_WS_URL and appends the tracking namespace', async () => {
-    vi.stubEnv('NEXT_PUBLIC_WS_URL', 'https://restaurant-realtime.foodflow.test');
+    vi.stubEnv('NEXT_PUBLIC_WS_URL', 'https://restaurant-realtime.plaza4.test');
 
     const { getTrackingSocket, disconnectTrackingSocket } = await import('@/lib/tracking-socket');
     getTrackingSocket();
 
     expect(socketModule.io).toHaveBeenCalledWith(
-      'https://restaurant-realtime.foodflow.test/tracking',
+      'https://restaurant-realtime.plaza4.test/tracking',
       expect.objectContaining({ autoConnect: false }),
     );
     disconnectTrackingSocket();
   });
 
   it('does not use the removed NEXT_PUBLIC_SOCKET_URL fallback', async () => {
-    vi.stubEnv('NEXT_PUBLIC_SOCKET_URL', 'https://legacy-realtime.foodflow.test/events');
+    vi.stubEnv('NEXT_PUBLIC_SOCKET_URL', 'https://legacy-realtime.plaza4.test/events');
 
     const { resolveTrackingSocketUrl } = await import('@/lib/tracking-socket');
 
@@ -52,7 +52,7 @@ describe('restaurant tracking socket', () => {
   });
 
   it('subscribes to an order room and reads the current restaurant access token', async () => {
-    vi.stubEnv('NEXT_PUBLIC_WS_URL', 'https://restaurant-realtime.foodflow.test');
+    vi.stubEnv('NEXT_PUBLIC_WS_URL', 'https://restaurant-realtime.plaza4.test');
     localStorage.setItem('restaurant_token', 'restaurant-access-token');
     const { connectToTrackingOrder, disconnectTrackingSocket } = await import('@/lib/tracking-socket');
 

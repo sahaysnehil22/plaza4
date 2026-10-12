@@ -114,7 +114,7 @@ describe('Revenue analytics components', () => {
     expect(screen.getByText('No payment data yet.')).toBeVisible();
     expect(screen.getByText('No order-source data yet.')).toBeVisible();
     expect(screen.getByRole('button', { name: 'Export report' })).toBeDisabled();
-    expect(screen.queryByText(/1\s*₫/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/S\/\s*1/)).not.toBeInTheDocument();
   });
 
   it('keeps benchmark progress finite when the reference is zero', () => {

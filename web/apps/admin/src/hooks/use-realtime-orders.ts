@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import type { AdminRecentOrder, AdminRecentOrdersResponse } from '@foodflow/api-client';
+import type { AdminRecentOrder, AdminRecentOrdersResponse } from '@plaza4/api-client';
 import { apiGet } from '@/lib/api';
 import { getSocket } from '@/lib/socket';
 import { resolveRealtimeProvider, subscribeToSupabaseOutbox } from '@/lib/supabase-realtime';

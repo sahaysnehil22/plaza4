@@ -1,7 +1,7 @@
 'use client';
 
 import { useSuspenseQuery } from '@tanstack/react-query';
-import type { AdminKpisResponse } from '@foodflow/api-client';
+import type { AdminKpisResponse } from '@plaza4/api-client';
 import { apiGet } from '@/lib/api';
 
 interface UseKpiOptions {

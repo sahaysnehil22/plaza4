@@ -12,7 +12,7 @@ const mocks = vi.hoisted(() => {
     addControl: vi.fn().mockReturnThis(),
     addLayer: vi.fn().mockReturnThis(),
     addSource: vi.fn((id: string, _source: unknown) => {
-      if (id === 'foodflow-order-route') routeSource = { setData: vi.fn() };
+      if (id === 'plaza4-order-route') routeSource = { setData: vi.fn() };
       return map;
     }),
     easeTo: vi.fn().mockReturnThis(),
@@ -105,7 +105,7 @@ describe('OrderTrackingMapCanvas', () => {
     );
 
     await screen.findByRole('img', { name: 'Current driver GPS position' });
-    expect(mocks.map.addSource).toHaveBeenCalledWith('foodflow-order-route', {
+    expect(mocks.map.addSource).toHaveBeenCalledWith('plaza4-order-route', {
       type: 'geojson',
       data: expect.objectContaining({
         features: [expect.objectContaining({
@@ -142,7 +142,7 @@ describe('OrderTrackingMapCanvas', () => {
     );
 
     await waitFor(() => expect(mocks.map.addSource).toHaveBeenCalled());
-    const routeCall = mocks.map.addSource.mock.calls.find(([id]) => id === 'foodflow-order-route');
+    const routeCall = mocks.map.addSource.mock.calls.find(([id]) => id === 'plaza4-order-route');
     expect(routeCall?.[1]).toEqual({
       type: 'geojson',
       data: { type: 'FeatureCollection', features: [] },

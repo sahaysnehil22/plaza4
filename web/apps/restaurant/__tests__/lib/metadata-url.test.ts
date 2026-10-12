@@ -4,9 +4,9 @@ import { resolveRestaurantMetadataBase } from '@/lib/metadata-url'
 describe('restaurant metadata base URL', () => {
   it('uses the configured public Restaurant URL', () => {
     expect(resolveRestaurantMetadataBase({
-      NEXT_PUBLIC_RESTAURANT_URL: ' https://restaurant.foodflow.test ',
+      NEXT_PUBLIC_RESTAURANT_URL: ' https://restaurant.plaza4.test ',
       VERCEL_ENV: 'production',
-    }).toString()).toBe('https://restaurant.foodflow.test/')
+    }).toString()).toBe('https://restaurant.plaza4.test/')
   })
 
   it('keeps the localhost default outside production', () => {

@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { apiGet } from '@/lib/api';
 import { isHttpsUrl } from '@/lib/safe-url';
 import { formatDate } from '@/lib/utils';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Separator } from '@/components/ui/separator';

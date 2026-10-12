@@ -1,4 +1,4 @@
-import { locales } from '@foodflow/i18n';
+import { locales } from '@plaza4/i18n';
 
 const PUBLIC_AUTH_PATHS = ['/login', '/forgot-password', '/reset-password'] as const;
 

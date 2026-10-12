@@ -26,7 +26,7 @@ describe('canonicalizeCuisineValues', () => {
   it('associates every profile field with a visible label', () => {
     render(
       <BasicInfoFields
-        values={{ name: 'FoodFlow', description: 'Fresh food', address: '1 Main St', phone: '0900000000' }}
+        values={{ name: 'Plaza 4', description: 'Fresh food', address: '1 Main St', phone: '0900000000' }}
         setters={{ setName: vi.fn(), setDescription: vi.fn(), setAddress: vi.fn(), setPhone: vi.fn() }}
         cuisines={[]}
         onToggleCuisine={vi.fn()}

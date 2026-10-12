@@ -1,9 +1,9 @@
-import { ApiClientError, FoodFlowApiClient } from '@foodflow/api-client';
+import { ApiClientError, Plaza4ApiClient } from '@plaza4/api-client';
 import { describe, expect, it, vi } from 'vitest';
 
 function createClient(body: unknown, status = 400) {
-  return new FoodFlowApiClient({
-    baseUrl: 'https://api.foodflow.test',
+  return new Plaza4ApiClient({
+    baseUrl: 'https://api.plaza4.test',
     getAccessToken: () => null,
     getRefreshToken: () => null,
     setTokens: () => undefined,
@@ -17,7 +17,7 @@ function createClient(body: unknown, status = 400) {
   });
 }
 
-describe('FoodFlowApiClient error parsing', () => {
+describe('Plaza4ApiClient error parsing', () => {
   it('rejects successful responses that do not use the canonical success envelope', async () => {
     const client = createClient({ id: 'legacy-raw-payload' }, 200);
 
@@ -25,7 +25,7 @@ describe('FoodFlowApiClient error parsing', () => {
       name: 'ApiClientError',
       status: 200,
       code: 'API_CONTRACT_INVALID_ENVELOPE',
-      message: 'Expected FoodFlow API success envelope with success=true and data.',
+      message: 'Expected Plaza 4 API success envelope with success=true and data.',
     } as Partial<ApiClientError>);
   });
 

@@ -7,9 +7,9 @@ export function cn(...inputs: ClassValue[]) {
 
 export function formatCurrency(amount: number | null | undefined): string {
   if (amount == null || isNaN(amount)) return '-';
-  return new Intl.NumberFormat('vi-VN', {
+  return new Intl.NumberFormat('es-PE', {
     style: 'currency',
-    currency: 'VND',
+    currency: 'PEN',
   }).format(amount);
 }
 
@@ -17,7 +17,7 @@ export function formatDate(dateString: string | null | undefined): string {
   if (!dateString) return '-';
   const date = new Date(dateString);
   if (isNaN(date.getTime())) return 'N/A';
-  return new Intl.DateTimeFormat('vi-VN', {
+  return new Intl.DateTimeFormat('es-PE', {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
@@ -30,14 +30,14 @@ export function formatDateShort(dateString: string | null | undefined): string {
   if (!dateString) return '-';
   const date = new Date(dateString);
   if (isNaN(date.getTime())) return 'N/A';
-  return new Intl.DateTimeFormat('vi-VN', {
+  return new Intl.DateTimeFormat('es-PE', {
     month: '2-digit',
     day: '2-digit',
   }).format(date);
 }
 
 const localeTags: Record<string, string> = {
-  vi: 'vi-VN',
+  vi: 'es-PE',
   en: 'en-US',
   ja: 'ja-JP',
 };

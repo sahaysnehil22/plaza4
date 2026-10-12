@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { AdminDriverLocation } from '@foodflow/api-client';
+import type { AdminDriverLocation } from '@plaza4/api-client';
 import { apiGet } from '@/lib/api';
 import { getSocket } from '@/lib/socket';
 import { resolveRealtimeProvider, subscribeToSupabaseOutbox } from '@/lib/supabase-realtime';

@@ -1,11 +1,13 @@
 import { getRequestConfig } from 'next-intl/server';
-import { getSharedMessages, locales, defaultLocale } from '@foodflow/i18n';
-import type { Locale } from '@foodflow/i18n';
+import { getSharedMessages, locales, defaultLocale } from '@plaza4/i18n';
+import type { Locale } from '@plaza4/i18n';
+import esMessages from '../messages/es.json';
 import viMessages from '../messages/vi.json';
 import enMessages from '../messages/en.json';
 import jaMessages from '../messages/ja.json';
 
 const appMessages = {
+  es: esMessages,
   vi: viMessages,
   en: enMessages,
   ja: jaMessages,
@@ -13,7 +15,7 @@ const appMessages = {
 
 /**
  * next-intl request config for the admin app.
- * Merges shared (@foodflow/i18n) messages with admin-specific messages.
+ * Merges shared (@plaza4/i18n) messages with admin-specific messages.
  */
 export default getRequestConfig(async ({ requestLocale }) => {
   const locale = await requestLocale;

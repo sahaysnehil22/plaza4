@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useQuery } from '@tanstack/react-query';
 import { ArrowDownLeft, ArrowUpRight, Wallet } from 'lucide-react';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import { apiGet } from '@/lib/api';
 import { formatCurrency, formatDate } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';

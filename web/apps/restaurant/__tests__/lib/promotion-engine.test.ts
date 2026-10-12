@@ -90,7 +90,7 @@ describe('computeDiscountAmount', () => {
     expect(computeDiscountAmount('fixed', 100_000, 60_000)).toBe(60_000);
   });
 
-  it('rounds percentage discounts to VND integers', () => {
+  it('rounds percentage discounts to PEN integers', () => {
     expect(computeDiscountAmount('percent', 15, 99_999)).toBe(15_000);
   });
 

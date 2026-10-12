@@ -4,9 +4,9 @@ import { resolveApiBaseUrl } from '@/lib/api-base-url';
 describe('restaurant API base URL', () => {
   it('uses the configured public API URL', () => {
     expect(resolveApiBaseUrl({
-      NEXT_PUBLIC_API_URL: ' https://api.foodflow.test/restaurant ',
+      NEXT_PUBLIC_API_URL: ' https://api.plaza4.test/restaurant ',
       VERCEL_ENV: 'production',
-    })).toBe('https://api.foodflow.test/restaurant');
+    })).toBe('https://api.plaza4.test/restaurant');
   });
 
   it('keeps the localhost default for local development', () => {

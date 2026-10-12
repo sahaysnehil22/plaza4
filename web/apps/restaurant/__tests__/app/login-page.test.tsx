@@ -62,12 +62,12 @@ describe('Restaurant LoginPage', () => {
     mockedPost.mockResolvedValueOnce({
       accessToken: 'restaurant-access-token',
       refreshToken: 'restaurant-refresh-token',
-      user: { name: 'Partner', email: 'restaurant1@foodflow.vn', role: 'restaurant' },
+      user: { name: 'Partner', email: 'restaurant1@plaza4.pe', role: 'restaurant' },
     });
 
     render(<LoginPage />);
     fireEvent.change(screen.getByLabelText('Email'), {
-      target: { value: 'restaurant1@foodflow.vn' },
+      target: { value: 'restaurant1@plaza4.pe' },
     });
     fireEvent.change(screen.getByLabelText('Password'), {
       target: { value: 'Partner@123' },
@@ -77,7 +77,7 @@ describe('Restaurant LoginPage', () => {
     await waitFor(() => {
       expect(mockedPost).toHaveBeenCalledWith(
         '/auth/login',
-        { email: 'restaurant1@foodflow.vn', password: 'Partner@123' },
+        { email: 'restaurant1@plaza4.pe', password: 'Partner@123' },
         { requireAuth: false },
       );
     });

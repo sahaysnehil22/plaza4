@@ -55,7 +55,7 @@ describe('Restaurant AuthProvider', () => {
     const staleValidation = deferred<{ email: string; role: string }>();
     const restaurant = {
       id: 'restaurant-1',
-      name: 'FoodFlow Test Restaurant',
+      name: 'Plaza 4 Test Restaurant',
       membership: { role: 'manager', permissions: ['orders', 'menu'] },
     };
     localStorage.setItem('restaurant_token', 'stale-token');

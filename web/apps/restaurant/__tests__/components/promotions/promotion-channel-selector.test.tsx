@@ -8,7 +8,7 @@ vi.mock('next-intl', () => ({
       title: 'Distribution channels',
       toggleAria: `Toggle ${params?.channel ?? 'channel'} channel`,
       'channels.in_app.label': 'In-app',
-      'channels.in_app.description': 'Show the promotion inside FoodFlow customer surfaces.',
+      'channels.in_app.description': 'Show the promotion inside Plaza 4 customer surfaces.',
       'channels.push.label': 'Push notification',
       'channels.push.description': 'Notify eligible customers through the push provider.',
       'channels.email.label': 'Email',

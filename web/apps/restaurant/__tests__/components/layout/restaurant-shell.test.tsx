@@ -15,7 +15,7 @@ vi.mock('@/components/chatbot/ai-chatbot-widget', () => ({
 
 vi.mock('@/lib/api', () => ({
   clearToken: vi.fn(),
-  getStoredRestaurant: () => ({ name: 'FoodFlow Test Restaurant' }),
+  getStoredRestaurant: () => ({ name: 'Plaza 4 Test Restaurant' }),
 }));
 
 vi.mock('@/lib/auth-provider', () => ({

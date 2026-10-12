@@ -52,7 +52,7 @@ ARG NEXT_PUBLIC_MAP_STYLE_URL
 LABEL org.opencontainers.image.source="https://github.com/JasonTM17/FoodDelivery_App"
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.revision=$BUILD_SHA
-LABEL org.opencontainers.image.title="foodflow-restaurant"
+LABEL org.opencontainers.image.title="plaza4-restaurant"
 
 ENV NODE_ENV=production
 ENV BUILD_SHA=$BUILD_SHA
