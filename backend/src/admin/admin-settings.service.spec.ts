@@ -48,7 +48,7 @@ describe('AdminSettingsService', () => {
       SEPAY_ACCOUNT_NUMBER: '1234567890',
       SEPAY_BANK_NAME: 'Vietcombank',
       SEPAY_WEBHOOK_SECRET: 'live-sepay-webhook-secret',
-      FCM_PROJECT_ID: 'foodflow-production',
+      FCM_PROJECT_ID: 'plaza4-production',
       WEBHOOK_SECRET: 'live-webhook-secret',
     })[key])
 
@@ -71,7 +71,7 @@ describe('AdminSettingsService', () => {
       SMTP_HOST: 'smtp.example.com',
       SMTP_USER: 'your-smtp-user',
       SMTP_PASS: 'your-smtp-password',
-      SMTP_FROM: 'noreply@foodflow.vn',
+      SMTP_FROM: 'noreply@plaza4.pe',
       TWILIO_ACCOUNT_SID: 'your-twilio-account-sid',
       TWILIO_AUTH_TOKEN: 'your-twilio-auth-token',
       TWILIO_FROM_NUMBER: 'your-twilio-from-number',
@@ -107,7 +107,7 @@ describe('AdminSettingsService', () => {
       loginAuditEnabled: true,
     })
     expect(branding.settings).toEqual(expect.objectContaining({
-      platformName: 'FoodFlow',
+      platformName: 'Plaza 4',
       supportEmail: '',
       contactPhone: '',
       ogImageUrl: null,
@@ -129,7 +129,7 @@ describe('AdminSettingsService', () => {
     })
     platformSetting.upsert.mockResolvedValue({
       key: 'general',
-      value: { platformName: 'FoodFlow Admin', maintenanceMode: true, defaultLocale: 'vi' },
+      value: { platformName: 'Plaza 4 Admin', maintenanceMode: true, defaultLocale: 'vi' },
       updatedAt: new Date('2026-07-02T00:00:00.000Z'),
     })
 

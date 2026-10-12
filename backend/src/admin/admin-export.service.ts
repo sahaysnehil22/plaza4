@@ -78,14 +78,14 @@ export class AdminExportService {
     const date = job.createdAt.toISOString().slice(0, 10)
     if (job.format === ExportFormat.xlsx) {
       return {
-        filename: `foodflow-${job.resource}-${date}.xlsx`,
+        filename: `plaza4-${job.resource}-${date}.xlsx`,
         contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
         body: toXlsx(rows),
       }
     }
 
     return {
-      filename: `foodflow-${job.resource}-${date}.csv`,
+      filename: `plaza4-${job.resource}-${date}.csv`,
       contentType: 'text/csv; charset=utf-8',
       body: toCsv(rows),
     }

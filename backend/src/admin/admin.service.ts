@@ -144,10 +144,10 @@ export class AdminService {
       isActive = body.status === 'active'
     }
     if (typeof isActive !== 'boolean') {
-      throw new BadRequestException('isActive or status is required')
+      throw new BadRequestException('Se requiere isActive o status')
     }
     if (actorId && userId === actorId && isActive === false) {
-      throw new BadRequestException('Cannot deactivate your own admin account')
+      throw new BadRequestException('No puedes desactivar tu propia cuenta de administrador')
     }
     if (isActive === false) {
       const target = await this.prisma.user.findUnique({
@@ -251,7 +251,7 @@ export class AdminService {
       isActive = body.status === 'active'
     }
     if (typeof isActive !== 'boolean') {
-      throw new BadRequestException('isActive or status is required')
+      throw new BadRequestException('Se requiere isActive o status')
     }
     const restaurant = await this.prisma.restaurant.update({
       where: { id: restaurantId },

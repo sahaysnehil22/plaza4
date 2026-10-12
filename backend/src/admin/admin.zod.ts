@@ -48,7 +48,7 @@ export const toggleUserStatusSchema = z
     status: z.enum(['active', 'banned']).optional(),
   })
   .refine((v) => typeof v.isActive === 'boolean' || typeof v.status === 'string', {
-    message: 'isActive or status is required',
+    message: 'Se requiere isActive o status',
   })
 
 export const toggleRestaurantStatusSchema = z
@@ -57,7 +57,7 @@ export const toggleRestaurantStatusSchema = z
     status: z.enum(['active', 'disabled']).optional(),
   })
   .refine((v) => typeof v.isActive === 'boolean' || typeof v.status === 'string', {
-    message: 'isActive or status is required',
+    message: 'Se requiere isActive o status',
   })
 
 export const updateSupportTicketSchema = z.object({

@@ -54,7 +54,7 @@ describe('AdminService list endpoints', () => {
         phone: '0900000010',
         logoUrl: null,
         createdAt: new Date('2026-01-01T00:00:00Z'),
-        profiles: [{ user: { fullName: 'Owner One', email: 'owner@foodflow.vn' } }],
+        profiles: [{ user: { fullName: 'Owner One', email: 'owner@plaza4.pe' } }],
         _count: { orders: 12 },
       },
     ])
@@ -70,7 +70,7 @@ describe('AdminService list endpoints', () => {
       rating: 4.5,
       totalOrders: 12,
       status: 'active',
-      owner: { name: 'Owner One', email: 'owner@foodflow.vn' },
+      owner: { name: 'Owner One', email: 'owner@plaza4.pe' },
     })
   })
 
@@ -124,7 +124,7 @@ describe('AdminService getUsers mapping', () => {
     prisma.user.findMany.mockResolvedValue([
       {
         id: 'u1',
-        email: 'customer1@foodflow.vn',
+        email: 'customer1@plaza4.pe',
         phone: '0900000310',
         fullName: 'Customer One',
         role: 'customer',
@@ -156,7 +156,7 @@ describe('AdminService getUsers mapping', () => {
     userMock.count.mockResolvedValue(2)
     userMock.update.mockResolvedValue({
       id: 'u1',
-      email: 'customer1@foodflow.vn',
+      email: 'customer1@plaza4.pe',
       phone: '090',
       fullName: 'Customer One',
       role: 'customer',

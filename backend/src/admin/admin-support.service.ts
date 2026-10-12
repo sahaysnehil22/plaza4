@@ -60,7 +60,7 @@ export class AdminSupportService {
     })
     if (!internal) {
       await this.notifications.create({
-        userId: ticket.userId, title: 'Cập nhật yêu cầu hỗ trợ', body,
+        userId: ticket.userId, title: 'Actualización de tu solicitud de soporte', body,
         type: 'support.reply', payload: { ticketId: id },
       })
     }

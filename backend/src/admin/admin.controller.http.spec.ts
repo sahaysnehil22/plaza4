@@ -14,7 +14,7 @@ import { RolesGuard } from '../auth/roles.guard'
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const request = require('supertest') as typeof import('supertest')
 
-const ADMIN_USER = { sub: 'admin-jwt-sub-1', role: 'admin', email: 'admin@foodflow.vn' }
+const ADMIN_USER = { sub: 'admin-jwt-sub-1', role: 'admin', email: 'admin@plaza4.pe' }
 
 describe('AdminController HTTP (Zod body pipes)', () => {
   let app: INestApplication

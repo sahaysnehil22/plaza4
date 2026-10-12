@@ -89,7 +89,7 @@ describe('AdminExportService', () => {
 
     const result = await service.getDownload('export-1')
 
-    expect(result.filename).toBe('foodflow-audit_logs-2026-07-02.csv')
+    expect(result.filename).toBe('plaza4-audit_logs-2026-07-02.csv')
     expect(result.contentType).toBe('text/csv; charset=utf-8')
     expect(String(result.body).startsWith('\uFEFF')).toBe(true)
     expect(String(result.body)).toContain('"\'=HYPERLINK(""bad"")"')
@@ -104,7 +104,7 @@ describe('AdminExportService', () => {
 
     const result = await service.getDownload('export-1')
 
-    expect(result.filename).toBe('foodflow-audit_logs-2026-07-02.xlsx')
+    expect(result.filename).toBe('plaza4-audit_logs-2026-07-02.xlsx')
     expect(result.contentType).toBe('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
     expect(Buffer.isBuffer(result.body)).toBe(true)
     expect((result.body as Buffer).subarray(0, 2).toString('utf8')).toBe('PK')

@@ -106,7 +106,7 @@ describe('AiChatService', () => {
     }))
   })
 
-  it('resolves a FoodFlow order code to an owned UUID before grounding', async () => {
+  it('resolves a Plaza 4 order code to an owned UUID before grounding', async () => {
     const ownedOrderId = 'eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee'
     prisma.order.findFirst.mockResolvedValueOnce({ id: ownedOrderId })
 

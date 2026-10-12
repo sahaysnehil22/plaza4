@@ -2,13 +2,13 @@
 
 ## Purpose
 
-FoodFlow AI provides authenticated, provider-backed support chat. It includes scoped grounding tools, conversation memory, output filtering, persisted user history, direct DeepSeek requests, and database telemetry for real provider attempts.
+Plaza 4 AI provides authenticated, provider-backed support chat. It includes scoped grounding tools, conversation memory, output filtering, persisted user history, direct DeepSeek requests, and database telemetry for real provider attempts.
 
 The module must never fabricate account-specific facts. Order, driver, restaurant, refund, recommendation, and ticket data come from internal tools scoped to the authenticated actor.
 
 ## API surface
 
-- `POST /ai/chat` — one role-scoped, safety-filtered provider reply. Messages are trimmed and limited to 4,000 characters; `sessionId` is a server-issued UUID, while `orderId` accepts a validated UUID or FoodFlow order code that is resolved to an owned order. Provider/context failures return HTTP 503 instead of a fallback answer.
+- `POST /ai/chat` — one role-scoped, safety-filtered provider reply. Messages are trimmed and limited to 4,000 characters; `sessionId` is a server-issued UUID, while `orderId` accepts a validated UUID or Plaza 4 order code that is resolved to an owned order. Provider/context failures return HTTP 503 instead of a fallback answer.
 - `GET /ai/history?sessionId=<uuid>` — at most fifty persisted turns for the authenticated user. Invalid session IDs are rejected; omitted IDs select the user's latest active AI-support session.
 - `POST /ai/stream` — authenticated SSE that emits a completed `response`, not fabricated word tokens.
 

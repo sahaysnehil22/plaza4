@@ -76,7 +76,7 @@ export class AdminDashboardService {
     const previousDriverActivity = countsFromBucketRows(previousDriverActivityRows, { ...buckets, start: buckets.previousStart, end: buckets.start })
     return {
       kpis: [
-        kpi('revenue', 'Revenue', revenue, formatVnd(revenue), percentageRatio(revenue, previousRevenue), revenueSparkline, '/analytics'),
+        kpi('revenue', 'Revenue', revenue, formatPen(revenue), percentageRatio(revenue, previousRevenue), revenueSparkline, '/analytics'),
         kpi('orders', 'Orders', orders.length, orders.length.toLocaleString('en-US'), percentageRatio(orders.length, previousOrders.length), orderSparkline, '/orders'),
         kpi('users', 'Active users', totalUsers, totalUsers.toLocaleString('en-US'), percentageRatio(totalUsers, previousUsers), userSparkline, '/users'),
         kpi('restaurants', 'Restaurants', totalRestaurants, totalRestaurants.toLocaleString('en-US'), percentageRatio(totalRestaurants, previousRestaurants), restaurantSparkline, '/restaurants'),
@@ -271,5 +271,5 @@ function percentageRatio(current: number, previous: number) { return previous > 
 function round1(value: number) { return Math.round(value * 10) / 10 }
 function toInteger(value: number | bigint) { return typeof value === 'bigint' ? Number(value) : Math.trunc(value) }
 function average(values: number[]) { return values.length > 0 ? values.reduce((sum, value) => sum + value, 0) / values.length : 0 }
-function formatVnd(value: number) { return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', maximumFractionDigits: 0 }).format(value) }
+function formatPen(value: number) { return new Intl.NumberFormat('es-PE', { style: 'currency', currency: 'PEN', maximumFractionDigits: 0 }).format(value) }
 function kpi(key: string, label: string, value: number, formattedValue: string, delta: number, sparkline: number[], drillDownHref: string) { return { key, label, value, formattedValue, delta, sparkline, drillDownHref } }

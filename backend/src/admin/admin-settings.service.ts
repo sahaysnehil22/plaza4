@@ -13,10 +13,10 @@ const SETTINGS_SECTIONS: AdminSettingsSection[] = ['general', 'branding', 'compl
 
 const DEFAULT_SETTINGS: Record<AdminSettingsSection, AdminSettingsValue> = {
   general: {
-    platformName: 'FoodFlow',
-    defaultLocale: 'vi',
-    timezone: 'Asia/Bangkok',
-    currency: 'VND',
+    platformName: 'Plaza 4',
+    defaultLocale: 'es',
+    timezone: 'America/Lima',
+    currency: 'PEN',
     maintenanceMode: false,
     registrationEnabled: true,
     notifications: {
@@ -37,7 +37,7 @@ const DEFAULT_SETTINGS: Record<AdminSettingsSection, AdminSettingsValue> = {
     },
   },
   branding: {
-    platformName: 'FoodFlow',
+    platformName: 'Plaza 4',
     tagline: 'Fast food delivery, done well',
     supportEmail: '',
     contactPhone: '',

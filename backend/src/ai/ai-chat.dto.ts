@@ -16,7 +16,7 @@ export class AiChatRequestDto {
   @IsUUID()
   sessionId?: string
 
-  @ApiPropertyOptional({ description: 'Customer-scoped order UUID or FoodFlow order code.' })
+  @ApiPropertyOptional({ description: 'Customer-scoped order UUID or Plaza 4 order code.' })
   @Transform(({ value }) => typeof value === 'string' ? value.trim() : value)
   @IsOptional()
   @MaxLength(36)
