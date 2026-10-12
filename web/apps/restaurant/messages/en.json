@@ -25,14 +25,14 @@
     "restaurantOnly": "This dashboard is available to restaurant accounts only."
   },
   "sidebar": {
-    "brand": "FoodFlow Restaurant",
+    "brand": "Plaza 4 Restaurant",
     "defaultName": "Restaurant",
     "manage": "Manage",
     "collapse": "Collapse sidebar",
     "expand": "Expand sidebar",
     "navigation": "Restaurant navigation",
     "openNavigation": "Open restaurant menu",
-    "mobileTitle": "FoodFlow restaurant menu",
+    "mobileTitle": "Plaza 4 restaurant menu",
     "mobileDescription": "Choose an area to manage your restaurant",
     "settingsGroup": "Settings",
     "settingsGeneral": "General",
@@ -176,7 +176,7 @@
       "mapErrorTitle": "Delivery map is unavailable",
       "mapErrorDescription": "Open map tiles could not be loaded. Check the network connection and retry.",
       "driverMarkerLabel": "Current driver GPS position",
-      "telemetryUnavailable": "No real driver GPS or route has been recorded yet. FoodFlow will not fabricate an ETA.",
+      "telemetryUnavailable": "No real driver GPS or route has been recorded yet. Plaza 4 will not fabricate an ETA.",
       "noSnapshotDescription": "Tracking will appear when the backend records a driver assignment and telemetry.",
       "etaLabel": "ETA",
       "etaMinutes": "{minutes} min",
@@ -515,14 +515,15 @@
     }
   },
   "metadata": {
-    "title": "FoodFlow Restaurant",
-    "titleTemplate": "%s | FoodFlow Restaurant",
-    "description": "Manage restaurant orders, menus, revenue, and operations with FoodFlow."
+    "title": "Plaza 4 Restaurant",
+    "titleTemplate": "%s | Plaza 4 Restaurant",
+    "description": "Manage restaurant orders, menus, revenue, and operations with Plaza 4."
   },
   "localeSwitcher": {
     "triggerAria": "Switch language. Current language: {language}",
     "menuAria": "Language selector",
     "languages": {
+      "es": "Spanish",
       "vi": "Vietnamese",
       "en": "English",
       "ja": "Japanese"
@@ -817,7 +818,7 @@
       },
       "operations": {
         "title": "Operations",
-        "minOrder": "Minimum order (VND)",
+        "minOrder": "Minimum order (PEN)",
         "acceptingOrders": "Accepting orders",
         "acceptingOrdersDescription": "Turn on to show the restaurant and accept new orders"
       },
@@ -1043,8 +1044,8 @@
       "typeTitle": "Promotion type",
       "percentValue": "Percent discount *",
       "fixedValue": "Fixed discount *",
-      "maxDiscount": "Maximum discount (VND)",
-      "minOrder": "Minimum order (VND)",
+      "maxDiscount": "Maximum discount (PEN)",
+      "minOrder": "Minimum order (PEN)",
       "appliesToTitle": "Applies to",
       "appliesTo": {
         "all": "All",
@@ -1155,7 +1156,7 @@
       "channels": {
         "in_app": {
           "label": "In-app",
-          "description": "Show the promotion inside FoodFlow customer surfaces."
+          "description": "Show the promotion inside Plaza 4 customer surfaces."
         },
         "push": {
           "label": "Push notification",
@@ -1337,7 +1338,7 @@
   "chatbot": {
     "open": "Open AI assistant",
     "close": "Close chat",
-    "title": "FoodFlow Assistant",
+    "title": "Plaza 4 Assistant",
     "subtitle": "Ask about orders, support, or the dashboard",
     "placeholder": "Type a message...",
     "send": "Send",
