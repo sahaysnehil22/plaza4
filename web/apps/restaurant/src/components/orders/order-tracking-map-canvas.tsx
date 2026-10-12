@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import type { OrderTrackingResponse } from '@foodflow/api-client';
+import type { OrderTrackingResponse } from '@plaza4/api-client';
 import {
   AttributionControl,
   type GeoJSONSource,
@@ -11,8 +11,8 @@ import {
   NavigationControl,
 } from 'maplibre-gl';
 
-const ROUTE_SOURCE_ID = 'foodflow-order-route';
-const ROUTE_LAYER_ID = 'foodflow-order-route-line';
+const ROUTE_SOURCE_ID = 'plaza4-order-route';
+const ROUTE_LAYER_ID = 'plaza4-order-route-line';
 const VIETNAM_MAX_BOUNDS: [[number, number], [number, number]] = [
   [102.14, 8.18],
   [109.47, 23.4],
@@ -158,7 +158,7 @@ export function OrderTrackingMapCanvas({
     driverMarkerRef.current = null;
     if (driverLocation) {
       const markerElement = document.createElement('span');
-      markerElement.className = 'foodflow-tracking-driver-marker';
+      markerElement.className = 'plaza4-tracking-driver-marker';
       markerElement.title = driverMarkerLabel;
       markerElement.setAttribute('role', 'img');
       markerElement.setAttribute('aria-label', driverMarkerLabel);

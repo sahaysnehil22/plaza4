@@ -22,7 +22,7 @@ interface StaffScheduleGridProps {
 const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'] as const;
 const hours = Array.from({ length: 16 }, (_, index) => index + 6);
 const hourLabels = hours.map(hour => `${hour.toString().padStart(2, '0')}:00`);
-const dateLocales: Record<string, string> = { en: 'en-US', ja: 'ja-JP', vi: 'vi-VN' };
+const dateLocales: Record<string, string> = { en: 'en-US', ja: 'ja-JP', vi: 'es-PE' };
 
 export function StaffScheduleGrid({
   shifts,
@@ -34,7 +34,7 @@ export function StaffScheduleGrid({
   const locale = useLocale();
   const weekStart = useMemo(() => startOfWeek(new Date(), { weekStartsOn: 1 }), []);
   const dayFormatter = useMemo(
-    () => new Intl.DateTimeFormat(dateLocales[locale] ?? 'vi-VN', { day: '2-digit', month: '2-digit' }),
+    () => new Intl.DateTimeFormat(dateLocales[locale] ?? 'es-PE', { day: '2-digit', month: '2-digit' }),
     [locale],
   );
 

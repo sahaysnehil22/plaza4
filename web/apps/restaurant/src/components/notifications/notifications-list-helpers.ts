@@ -75,7 +75,7 @@ export const tabs: Array<NotificationCategory | 'all'> = ['all', 'order', 'messa
 export const dateLocales: Record<string, string> = {
   en: 'en-US',
   ja: 'ja-JP',
-  vi: 'vi-VN',
+  vi: 'es-PE',
 };
 
 export function getCategory(type: string): NotificationCategory {

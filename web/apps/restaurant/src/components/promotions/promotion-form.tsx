@@ -30,8 +30,8 @@ export function PromotionForm({ initialData, onSubmit, isSubmitting: externalIsS
   const [description, setDescription] = useState(initialData?.description || '');
   const [type, setType] = useState<PromotionType>(initialData?.type || 'percent');
   const [discountValue, setDiscountValue] = useState(initialData?.discountValue?.toString() || '');
-  const [minOrderVnd, setMinOrderVnd] = useState(initialData?.minOrderVnd?.toString() || '');
-  const [maxDiscountVnd, setMaxDiscountVnd] = useState(initialData?.maxDiscountVnd?.toString() || '');
+  const [minOrderPen, setMinOrderPen] = useState(initialData?.minOrderPen?.toString() || '');
+  const [maxDiscountPen, setMaxDiscountPen] = useState(initialData?.maxDiscountPen?.toString() || '');
   const [appliesTo, setAppliesTo] = useState<'all' | 'category' | 'items'>(initialData?.appliesTo || 'all');
   const [categoryId, setCategoryId] = useState(initialData?.categoryId || '');
   const [itemIds, setItemIds] = useState<string[]>(initialData?.itemIds || []);
@@ -65,8 +65,8 @@ export function PromotionForm({ initialData, onSubmit, isSubmitting: externalIsS
       description: description.trim(),
       type,
       discountValue: parseFloat(discountValue) || 0,
-      minOrderVnd: minOrderVnd ? parseFloat(minOrderVnd) : undefined,
-      maxDiscountVnd: maxDiscountVnd ? parseFloat(maxDiscountVnd) : undefined,
+      minOrderPen: minOrderPen ? parseFloat(minOrderPen) : undefined,
+      maxDiscountPen: maxDiscountPen ? parseFloat(maxDiscountPen) : undefined,
       appliesTo,
       categoryId: appliesTo === 'category' ? categoryId : undefined,
       itemIds: appliesTo === 'items' ? itemIds : undefined,
@@ -142,12 +142,12 @@ export function PromotionForm({ initialData, onSubmit, isSubmitting: externalIsS
             {type === 'percent' && (
               <div>
                 <label className="label">{t('maxDiscount')}</label>
-                <input type="number" value={maxDiscountVnd} onChange={(e) => setMaxDiscountVnd(e.target.value)} className="input-field" min={0} />
+                <input type="number" value={maxDiscountPen} onChange={(e) => setMaxDiscountPen(e.target.value)} className="input-field" min={0} />
               </div>
             )}
             <div>
               <label className="label">{t('minOrder')}</label>
-              <input type="number" value={minOrderVnd} onChange={(e) => setMinOrderVnd(e.target.value)} className="input-field" min={0} />
+              <input type="number" value={minOrderPen} onChange={(e) => setMinOrderPen(e.target.value)} className="input-field" min={0} />
             </div>
           </div>
         )}

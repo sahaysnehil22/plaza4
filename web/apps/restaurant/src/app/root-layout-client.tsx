@@ -12,7 +12,7 @@ export function RootLayoutClient({
   const pathname = usePathname()
   const isLoginPage =
     pathname === '/login' ||
-    ['vi', 'en', 'ja'].some((locale) => pathname === `/${locale}/login`)
+    ['es', 'vi', 'en', 'ja'].some((locale) => pathname === `/${locale}/login`)
 
   if (isLoginPage) {
     return <AuthProvider>{children}</AuthProvider>

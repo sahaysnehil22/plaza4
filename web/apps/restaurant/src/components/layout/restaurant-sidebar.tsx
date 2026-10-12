@@ -3,7 +3,7 @@
 import type { Ref } from 'react';
 import { ChevronLeft, ChevronRight, LogOut } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { FoodFlowLogo } from '@foodflow/ui/foodflow-logo';
+import { Plaza4Logo } from '@plaza4/ui/plaza4-logo';
 import { Link, usePathname } from '@/navigation';
 import { LocaleSwitcher } from '@/components/locale-switcher';
 import { useAuth } from '@/lib/auth-provider';
@@ -33,7 +33,7 @@ export function RestaurantSidebar({
   showCollapseToggle = true,
 }: RestaurantSidebarProps) {
   const rawPathname = usePathname();
-  const pathname = rawPathname.replace(/^\/(vi|en|ja)/, '') || '/';
+  const pathname = rawPathname.replace(/^\/(es|vi|en|ja)/, '') || '/';
   const { logout } = useAuth();
   const t = useTranslations();
   const restaurant = getStoredRestaurant();
@@ -94,7 +94,7 @@ export function RestaurantSidebar({
           collapsed && 'justify-center px-2',
         )}
       >
-        <FoodFlowLogo
+        <Plaza4Logo
           label={t('sidebar.brand')}
           showWordmark={false}
           markClassName="h-9 w-9"

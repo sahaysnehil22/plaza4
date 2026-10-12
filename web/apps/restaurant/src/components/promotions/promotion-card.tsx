@@ -16,13 +16,13 @@ interface PromotionCardProps {
 const dateLocales: Record<string, string> = {
   en: 'en-US',
   ja: 'ja-JP',
-  vi: 'vi-VN',
+  vi: 'es-PE',
 };
 
 export function PromotionCard({ promotion, onClick, onArchive, onPause }: PromotionCardProps) {
   const t = useTranslations('promotions');
   const locale = useLocale();
-  const dateLocale = dateLocales[locale] ?? 'vi-VN';
+  const dateLocale = dateLocales[locale] ?? 'es-PE';
 
   return (
     <div

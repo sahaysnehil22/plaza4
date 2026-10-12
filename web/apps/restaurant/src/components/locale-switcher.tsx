@@ -7,6 +7,7 @@ import { usePathname, useRouter } from '@/navigation';
 import { cn } from '@/lib/utils';
 
 const LOCALE_OPTIONS = [
+  { code: 'es', label: 'ES', flag: '🇵🇪' },
   { code: 'vi', label: 'VI', flag: '🇻🇳' },
   { code: 'en', label: 'EN', flag: '🇺🇸' },
   { code: 'ja', label: 'JA', flag: '🇯🇵' },
@@ -23,7 +24,7 @@ export function LocaleSwitcher({ collapsed = false, onNavigate }: LocaleSwitcher
   const t = useTranslations('localeSwitcher');
   const menuId = useId();
   const locale = useLocale();
-  const current = isLocaleCode(locale) ? locale : 'vi';
+  const current = isLocaleCode(locale) ? locale : 'es';
   const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);

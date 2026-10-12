@@ -3,13 +3,13 @@
 import { useRef, useState } from 'react';
 import { Menu } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { FoodFlowLogo } from '@foodflow/ui/foodflow-logo';
+import { Plaza4Logo } from '@plaza4/ui/plaza4-logo';
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetTitle,
-} from '@foodflow/ui/sheet';
+} from '@plaza4/ui/sheet';
 import { AiChatbotWidget } from '@/components/chatbot/ai-chatbot-widget';
 import { cn } from '@/lib/utils';
 import { RestaurantSidebar } from './restaurant-sidebar';
@@ -68,7 +68,7 @@ export function RestaurantLayoutClient({ children }: { children: React.ReactNode
         )}
       >
         <header className="flex h-16 shrink-0 items-center justify-between border-b border-gray-200 bg-white px-4 lg:hidden">
-          <FoodFlowLogo
+          <Plaza4Logo
             label={t('sidebar.brand')}
             markClassName="h-9 w-9"
             wordmarkClassName="text-gray-900"

@@ -5,7 +5,7 @@ import {
   type AiChatHistory,
   type AiChatRequest,
   type AiChatReply,
-} from '@foodflow/api-client'
+} from '@plaza4/api-client'
 
 /** Injectable POST for unit tests — real path is `/ai/chat`. */
 export type AiChatPoster = (

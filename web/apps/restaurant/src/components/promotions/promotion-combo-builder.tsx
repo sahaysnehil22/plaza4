@@ -63,7 +63,7 @@ export function PromotionComboBuilder({ type, value, onChange }: PromotionComboB
             onChange={(e) => onChange({ ...config, comboPrice: parseInt(e.target.value, 10) || 0 })}
             className="input-field w-32"
             min={0}
-            placeholder="VND"
+            placeholder="PEN"
           />
         </div>
       )}

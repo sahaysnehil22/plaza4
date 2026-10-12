@@ -12,8 +12,8 @@ export function PromotionDetailLimitsCard({ promo }: { promo: Promotion }) {
     <div className="card">
       <h2 className="text-base font-semibold text-gray-900 mb-4">{t('limitsTitle')}</h2>
       <dl className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <PromotionDetailField label={t('minOrder')} value={promo.minOrderVnd ? formatCurrency(promo.minOrderVnd) : t('none')} />
-        <PromotionDetailField label={t('maxDiscount')} value={promo.maxDiscountVnd ? formatCurrency(promo.maxDiscountVnd) : t('unlimited')} />
+        <PromotionDetailField label={t('minOrder')} value={promo.minOrderPen ? formatCurrency(promo.minOrderPen) : t('none')} />
+        <PromotionDetailField label={t('maxDiscount')} value={promo.maxDiscountPen ? formatCurrency(promo.maxDiscountPen) : t('unlimited')} />
         <PromotionDetailField label={t('maxUsage')} value={promo.maxUsage?.toString() || t('unlimited')} />
         <PromotionDetailField label={t('perUserLimit')} value={promo.perUserLimit.toString()} />
       </dl>

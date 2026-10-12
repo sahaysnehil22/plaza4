@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { RefreshCw, SendHorizontal } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import type { RestaurantOrderChatMessage, RestaurantOrderChatMessagesPayload } from '@foodflow/api-client';
+import type { RestaurantOrderChatMessage, RestaurantOrderChatMessagesPayload } from '@plaza4/api-client';
 import { api } from '@/lib/api';
 import { connectToOrder, leaveOrder, type OrderChatMessageEvent } from '@/lib/socket';
 import { cn } from '@/lib/utils';

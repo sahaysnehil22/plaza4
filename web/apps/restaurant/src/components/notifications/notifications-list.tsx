@@ -88,7 +88,7 @@ export function NotificationsList() {
     const diffHours = Math.floor((Date.now() - date.getTime()) / 3_600_000);
     if (diffHours < 1) return t('justNow');
     if (diffHours < 24) return t('hoursAgo', { count: diffHours });
-    return date.toLocaleDateString(dateLocales[locale] ?? 'vi-VN');
+    return date.toLocaleDateString(dateLocales[locale] ?? 'es-PE');
   };
 
   if (isLoading) {

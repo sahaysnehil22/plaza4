@@ -24,7 +24,7 @@ const roleIcons: Record<StaffRole, ReactNode> = {
 const dateLocales: Record<string, string> = {
   en: 'en-US',
   ja: 'ja-JP',
-  vi: 'vi-VN',
+  vi: 'es-PE',
 };
 
 const EMPTY_VALUE = '\u2014';
@@ -32,7 +32,7 @@ const EMPTY_VALUE = '\u2014';
 export function StaffListTable({ staff, onInvite, onEdit, selectedId }: StaffListTableProps) {
   const t = useTranslations('staff');
   const locale = useLocale();
-  const dateLocale = dateLocales[locale] ?? 'vi-VN';
+  const dateLocale = dateLocales[locale] ?? 'es-PE';
 
   return (
     <div className="space-y-4" data-testid="staff-list-table">
