@@ -35,7 +35,7 @@ const NEGATIVE_KEYWORDS: RegExp[] = [
 const POSITIVE_KEYWORDS: RegExp[] = [
   /cảm\s*ơn|thank\s*(you|u)|tuyệt\s*(vời|quá)|ngon\s*lắm/i,
   /nhanh\s*(lắm|quá)|tốt\s*lắm|hài\s*lòng|ổn\s*rồi|ok\s*rồi/i,
-  /hoàn\s*hảo|xuất\s*sắc|thích\s*lắm|yêu\s*FoodFlow|great|excellent/i,
+  /hoàn\s*hảo|xuất\s*sắc|thích\s*lắm|yêu\s*Plaza 4|great|excellent/i,
 ]
 
 @Injectable()

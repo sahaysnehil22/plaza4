@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Authentication + authorization layer cho FoodFlow. Phát hành JWT access tokens (15min TTL) + opaque refresh tokens (7-day rolling), enforce role-based access (customer/driver/restaurant/admin), rate-limit login, account lockout sau N failed attempts. Gọi bởi: mọi controller protected (qua `JwtAuthGuard`), gateway WebSocket, AI service-to-service calls.
+Authentication + authorization layer cho Plaza 4. Phát hành JWT access tokens (15min TTL) + opaque refresh tokens (7-day rolling), enforce role-based access (customer/driver/restaurant/admin), rate-limit login, account lockout sau N failed attempts. Gọi bởi: mọi controller protected (qua `JwtAuthGuard`), gateway WebSocket, AI service-to-service calls.
 
 ## API surface
 

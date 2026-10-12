@@ -29,19 +29,19 @@ type RagRestaurantSource = Prisma.RestaurantGetPayload<{ select: typeof ragResta
 export function mapMenuItemToKnowledgeEntry(item: RagMenuItemSource): KnowledgeEntry {
   return {
     docType: 'menu',
-    locale: 'vi',
-    title: `Món ${item.name} — ${item.restaurant.name}`,
+    locale: 'es',
+    title: `Plato ${item.name} — ${item.restaurant.name}`,
     content: [
-      `Tên món: ${item.name}`,
-      item.description ? `Mô tả: ${item.description}` : null,
-      `Giá: ${Number(item.basePrice).toLocaleString('vi-VN')}đ`,
-      `Danh mục: ${item.category.name}`,
-      `Nhà hàng: ${item.restaurant.name}`,
+      `Nombre del plato: ${item.name}`,
+      item.description ? `Descripción: ${item.description}` : null,
+      `Precio: S/ ${Number(item.basePrice).toLocaleString('es-PE')}`,
+      `Categoría: ${item.category.name}`,
+      `Restaurante: ${item.restaurant.name}`,
       item.restaurant.cuisineTypes.length
-        ? `Ẩm thực: ${item.restaurant.cuisineTypes.join(', ')}`
+        ? `Tipo de cocina: ${item.restaurant.cuisineTypes.join(', ')}`
         : null,
-      `Khu vực: ${item.restaurant.city}`,
-      item.isPopular ? 'Đây là món phổ biến được nhiều khách đặt.' : null,
+      `Zona: ${item.restaurant.city}`,
+      item.isPopular ? 'Este es un plato popular que muchos clientes piden.' : null,
     ].filter(Boolean).join('\n'),
     sourceId: item.id,
   }
@@ -50,16 +50,16 @@ export function mapMenuItemToKnowledgeEntry(item: RagMenuItemSource): KnowledgeE
 export function mapRestaurantToKnowledgeEntry(restaurant: RagRestaurantSource): KnowledgeEntry {
   return {
     docType: 'restaurant',
-    locale: 'vi',
-    title: `Nhà hàng ${restaurant.name}`,
+    locale: 'es',
+    title: `Restaurante ${restaurant.name}`,
     content: [
-      `Tên: ${restaurant.name}`,
-      restaurant.description ? `Giới thiệu: ${restaurant.description}` : null,
-      restaurant.cuisineTypes.length ? `Ẩm thực: ${restaurant.cuisineTypes.join(', ')}` : null,
-      `Phân khúc giá: ${restaurant.priceRange}`,
-      `Đánh giá: ${Number(restaurant.rating).toFixed(1)}/5`,
-      `Thời gian chuẩn bị trung bình: ${restaurant.prepTimeAvgMinutes} phút`,
-      `Địa chỉ: ${restaurant.addressLine}, ${restaurant.city}`,
+      `Nombre: ${restaurant.name}`,
+      restaurant.description ? `Descripción: ${restaurant.description}` : null,
+      restaurant.cuisineTypes.length ? `Tipo de cocina: ${restaurant.cuisineTypes.join(', ')}` : null,
+      `Rango de precios: ${restaurant.priceRange}`,
+      `Calificación: ${Number(restaurant.rating).toFixed(1)}/5`,
+      `Tiempo promedio de preparación: ${restaurant.prepTimeAvgMinutes} minutos`,
+      `Dirección: ${restaurant.addressLine}, ${restaurant.city}`,
     ].filter(Boolean).join('\n'),
     sourceId: restaurant.id,
   }

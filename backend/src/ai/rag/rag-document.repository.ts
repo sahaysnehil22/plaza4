@@ -94,7 +94,7 @@ export class RagDocumentRepository {
       UPDATE rag_documents AS document
       SET is_active = false, updated_at = NOW()
       WHERE document.doc_type = 'menu'
-        AND document.locale = 'vi'
+        AND document.locale = 'es'
         AND document.source_id IS NOT NULL
         AND document.is_active = true
         AND NOT EXISTS (
@@ -113,7 +113,7 @@ export class RagDocumentRepository {
       UPDATE rag_documents AS document
       SET is_active = false, updated_at = NOW()
       WHERE document.doc_type = 'restaurant'
-        AND document.locale = 'vi'
+        AND document.locale = 'es'
         AND document.source_id IS NOT NULL
         AND document.is_active = true
         AND NOT EXISTS (

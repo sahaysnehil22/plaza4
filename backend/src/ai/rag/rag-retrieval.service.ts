@@ -23,7 +23,7 @@ export class RagRetrievalService {
 
     const topK = options.topK ?? this.topK()
     const minSimilarity = options.minSimilarity ?? this.minSimilarity()
-    const locale = options.locale ?? 'vi'
+    const locale = options.locale ?? 'es'
 
     const vector = await this.embedding.embed(this.buildQueryText(query))
     if (!vector) return []

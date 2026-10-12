@@ -144,7 +144,7 @@ export class DeepSeekChatProviderService {
   private systemPrompt(actorRole?: string): string {
     const safeRole = normalizeActorRole(actorRole)
     return [
-      'You are FoodFlow AI, an operations and support assistant for a food delivery platform.',
+      'You are Plaza 4 AI, an operations and support assistant for a food delivery platform.',
       `The authenticated actor is a ${safeRole}. Do not claim permissions or data beyond that role.`,
       roleInstruction(safeRole),
       'Reply in the same language as the authenticated user. Keep answers concise, kind, and practical: at most three short sentences and no more than two emoji.',

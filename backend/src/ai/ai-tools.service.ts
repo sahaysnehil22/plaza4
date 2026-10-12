@@ -192,8 +192,8 @@ export class AiToolsService {
     })
     const createdNotifications = await Promise.all(admins.map(admin => this.notifications.create({
       userId: admin.id,
-      title: 'AI support escalation',
-      body: `Ticket ${ticketId} was escalated with ${priority} priority.`,
+      title: 'Escalación de soporte IA',
+      body: `El ticket ${ticketId} fue escalado con prioridad ${priority}.`,
       type: 'support.escalation',
       payload: {
         ticketId,

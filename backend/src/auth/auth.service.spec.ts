@@ -42,7 +42,7 @@ describe('AuthService', () => {
   const mockConfigValues: Record<string, string | number> = {
     NODE_ENV: 'test',
     PASSWORD_RESET_TOKEN_TTL_MINUTES: 60,
-    PASSWORD_RESET_URL_BASE: 'https://admin.foodflow.test/reset-password',
+    PASSWORD_RESET_URL_BASE: 'https://admin.plaza4.test/reset-password',
     JWT_SECRET: 'test-secret',
   }
 
@@ -74,7 +74,7 @@ describe('AuthService', () => {
     Object.assign(mockConfigValues, {
       NODE_ENV: 'test',
       PASSWORD_RESET_TOKEN_TTL_MINUTES: 60,
-      PASSWORD_RESET_URL_BASE: 'https://admin.foodflow.test/reset-password',
+      PASSWORD_RESET_URL_BASE: 'https://admin.plaza4.test/reset-password',
       JWT_SECRET: 'test-secret',
     })
     mockEd25519.canSign.mockReturnValue(false)
@@ -168,11 +168,11 @@ describe('AuthService', () => {
     it('stores only a hashed reset token and enqueues the reset email for active users', async () => {
       mockUsersService.findByEmail.mockResolvedValueOnce({
         id: 'user-1',
-        email: 'admin@foodflow.vn',
+        email: 'admin@plaza4.pe',
         isActive: true,
       })
 
-      await service.requestPasswordReset({ email: 'admin@foodflow.vn' })
+      await service.requestPasswordReset({ email: 'admin@plaza4.pe' })
 
       expect(mockPrisma.passwordResetToken.deleteMany).toHaveBeenCalledWith({
         where: { userId: 'user-1', usedAt: null },
@@ -186,7 +186,7 @@ describe('AuthService', () => {
       })
       const storedHash = mockPrisma.passwordResetToken.create.mock.calls[0][0].data.token
       const queuedBody = mockSmtpQueue.add.mock.calls[0][1].body
-      expect(queuedBody).toContain('https://admin.foodflow.test/reset-password?token=')
+      expect(queuedBody).toContain('https://admin.plaza4.test/reset-password?token=')
       expect(queuedBody).not.toContain(storedHash)
     })
 
@@ -195,11 +195,11 @@ describe('AuthService', () => {
       mockConfigValues.NODE_ENV = 'production'
       mockUsersService.findByEmail.mockResolvedValueOnce({
         id: 'user-1',
-        email: 'admin@foodflow.vn',
+        email: 'admin@plaza4.pe',
         isActive: true,
       })
 
-      await service.requestPasswordReset({ email: 'admin@foodflow.vn' })
+      await service.requestPasswordReset({ email: 'admin@plaza4.pe' })
 
       expect(mockPrisma.passwordResetToken.create).toHaveBeenCalled()
       expect(mockSmtpQueue.add).not.toHaveBeenCalled()

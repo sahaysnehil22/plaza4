@@ -113,11 +113,11 @@ export class AuthService {
     const email = dto.email.trim().toLowerCase()
     const user = await this.usersService.findByEmail(email)
     if (!user) {
-      throw new UnauthorizedException('Invalid email or password')
+      throw new UnauthorizedException('Correo o contraseña inválidos')
     }
 
     if (!user.isActive) {
-      throw new UnauthorizedException('Your account has been deactivated. Contact support.')
+      throw new UnauthorizedException('Tu cuenta fue desactivada. Contacta a soporte.')
     }
 
     // Check account lockout
@@ -142,7 +142,7 @@ export class AuthService {
           data: { lockedUntil: new Date(Date.now() + 15 * 60 * 1000) },
         })
       }
-      throw new UnauthorizedException('Invalid email or password')
+      throw new UnauthorizedException('Correo o contraseña inválidos')
     }
 
     // Reset lockout counters on successful login
@@ -169,16 +169,16 @@ export class AuthService {
     }
 
     if (await this.refreshTokenStore.isUserRevoked(payload.sub, payload.iat)) {
-      throw new UnauthorizedException('Refresh token revoked')
+      throw new UnauthorizedException('Token de actualización revocado')
     }
 
     if (!(await this.refreshTokenStore.blocklistIfNew(payload.jti))) {
-      throw new UnauthorizedException('Refresh token revoked')
+      throw new UnauthorizedException('Token de actualización revocado')
     }
 
     const user = await this.usersService.findById(payload.sub)
     if (!user || !user.isActive) {
-      throw new UnauthorizedException('User not found or account is inactive')
+      throw new UnauthorizedException('Usuario no encontrado o cuenta inactiva')
     }
 
     return this.buildAuthResult(user)
@@ -251,7 +251,7 @@ export class AuthService {
         data: { usedAt },
       })
       if (updated.count === 0) {
-        throw new BadRequestException('Token already used')
+        throw new BadRequestException('El token ya fue usado')
       }
 
       await tx.user.update({
@@ -377,8 +377,8 @@ export class AuthService {
         'send-email',
         {
           userId,
-          title: 'FoodFlow password reset',
-          body: `We received a password reset request for your FoodFlow account. Use this secure link within ${ttlMinutes} minutes: ${resetUrl}. If you did not request this, you can ignore this email.`,
+          title: 'Restablecer tu contraseña de Plaza 4',
+          body: `Recibimos una solicitud para restablecer la contraseña de tu cuenta de Plaza 4. Usa este enlace seguro dentro de ${ttlMinutes} minutos: ${resetUrl}. Si no solicitaste esto, puedes ignorar este correo.`,
           critical: true,
         } satisfies SmtpJobData,
         {

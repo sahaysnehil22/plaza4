@@ -5,7 +5,7 @@ const INJECTION_PATTERNS: RegExp[] = [
   /forget\s+(everything|all|previous|prior|instructions?)/gi,
   /you\s+are\s+now\s+(a|an)\s+/gi,
   /new\s+persona\s*:/gi,
-  /\bsystem\s*:\s*(?!FoodFlow)/gi,
+  /\bsystem\s*:\s*(?!Plaza 4)/gi,
   /<\/?system>/gi,
   /\[SYSTEM\]/gi,
   /\[\[INST\]\]/gi,

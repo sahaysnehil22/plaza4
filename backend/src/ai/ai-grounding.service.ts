@@ -158,5 +158,5 @@ function detectLocale(message: string): string {
   if (/[\u3040-\u30ff\u3400-\u9fff]/.test(message)) return 'ja'
   const isAsciiOnly = [...message].every(c => c.charCodeAt(0) <= 0x7f)
   if (isAsciiOnly && /[a-z]/i.test(message)) return 'en'
-  return 'vi'
+  return 'es'
 }

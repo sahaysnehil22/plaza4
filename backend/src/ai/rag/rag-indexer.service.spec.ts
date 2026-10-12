@@ -11,7 +11,7 @@ function menuItem(id: string) {
     basePrice: 50_000,
     isPopular: false,
     category: { name: 'Món chính' },
-    restaurant: { name: 'FoodFlow', cuisineTypes: ['Vietnamese'], city: 'TP.HCM' },
+    restaurant: { name: 'Plaza 4', cuisineTypes: ['Vietnamese'], city: 'TP.HCM' },
   }
 }
 

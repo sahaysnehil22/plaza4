@@ -9,7 +9,7 @@ import { OutputFilterService } from './output-filter.service'
 import { SentimentDetectionService } from './sentiment-detection.service'
 import { AiUsageTelemetryService } from './ai-usage-telemetry.service'
 
-type AiChatLanguage = 'vi' | 'en' | 'ja'
+type AiChatLanguage = 'es' | 'vi' | 'en' | 'ja'
 const MAX_MESSAGE_LENGTH = 4000
 
 export interface AiChatRequest {
@@ -388,7 +388,7 @@ export class AiChatService {
 function detectLanguage(message: string): AiChatLanguage {
   if (/[\u3040-\u30ff\u3400-\u9fff]/.test(message)) return 'ja'
   if (isAscii(message) && /[a-z]/i.test(message)) return 'en'
-  return 'vi'
+  return 'es'
 }
 
 function isAscii(value: string): boolean {
