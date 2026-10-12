@@ -41,7 +41,7 @@ describe('PayoutLedgerService', () => {
           recipientType: 'restaurant',
           recipientId: 'rest-1',
           amount: 64_000,
-          currency: 'VND',
+          currency: 'PEN',
           status: 'pending',
         }],
         skipDuplicates: true,

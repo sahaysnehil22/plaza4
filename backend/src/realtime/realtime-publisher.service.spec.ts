@@ -13,10 +13,10 @@ describe('RealtimePublisherService', () => {
         REALTIME_PROVIDER: 'supabase',
       })[key]),
       getOrThrow: jest.fn((key: string) => ({
-        SUPABASE_URL: 'https://foodflow.supabase.co/',
+        SUPABASE_URL: 'https://plaza4.supabase.co/',
         SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_test',
         SUPABASE_REALTIME_JWT_PRIVATE_KEY: privatePem,
-        SUPABASE_REALTIME_JWT_KEY_ID: 'foodflow-test-es256',
+        SUPABASE_REALTIME_JWT_KEY_ID: 'plaza4-test-es256',
       })[key]),
     }
   }
@@ -33,7 +33,7 @@ describe('RealtimePublisherService', () => {
     await expect(service.publish('private:admin:orders', 'admin:new_order', { orderId: 'order-1' }))
       .resolves.toEqual({ provider: 'supabase', queued: true })
     expect(fetchMock).toHaveBeenCalledWith(
-      'https://foodflow.supabase.co/realtime/v1/api/broadcast/private%3Aadmin%3Aorders/events/admin%3Anew_order?private=true',
+      'https://plaza4.supabase.co/realtime/v1/api/broadcast/private%3Aadmin%3Aorders/events/admin%3Anew_order?private=true',
       expect.objectContaining({
         method: 'POST',
         headers: expect.objectContaining({
@@ -53,7 +53,7 @@ describe('RealtimePublisherService', () => {
       exp: number;
     }
     expect(payload).toMatchObject({
-      iss: 'https://foodflow.supabase.co/auth/v1',
+      iss: 'https://plaza4.supabase.co/auth/v1',
       role: 'service_role',
     })
     expect(payload.exp - payload.iat).toBe(60)

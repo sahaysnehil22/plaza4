@@ -117,7 +117,7 @@ export class RestaurantsService {
         },
       },
     })
-    if (!restaurant) throw new NotFoundException('Restaurant not found')
+    if (!restaurant) throw new NotFoundException('Restaurante no encontrado')
     return restaurant
   }
 
@@ -144,7 +144,7 @@ export class RestaurantsService {
         },
       },
     })
-    if (!restaurant) throw new NotFoundException('Restaurant not found')
+    if (!restaurant) throw new NotFoundException('Restaurante no encontrado')
     return {
       categories: restaurant.categories.map(category => ({
         id: category.id,
@@ -180,7 +180,7 @@ export class RestaurantsService {
       where: { id },
       select: { id: true },
     })
-    if (!restaurant) throw new NotFoundException('Restaurant not found')
+    if (!restaurant) throw new NotFoundException('Restaurante no encontrado')
 
     const [items, total] = await Promise.all([
       this.prisma.review.findMany({

@@ -248,7 +248,7 @@ export class OrdersService {
     if (!address) throw new NotFoundException('ADDRESS_NOT_FOUND')
 
     const subtotal = cart.items.reduce((sum, i) => sum + Number(i.unitPrice) * i.quantity, 0)
-    const deliveryFee = this.deliveryPricing.getBaseDeliveryFeeVnd()
+    const deliveryFee = this.deliveryPricing.getBaseDeliveryFeePen()
 
     if (Number(subtotal) < Number(restaurant.minOrderAmount)) {
       throw new UnprocessableEntityException('MIN_ORDER_NOT_MET')

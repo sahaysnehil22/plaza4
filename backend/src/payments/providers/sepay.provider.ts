@@ -93,7 +93,7 @@ export class SepayProvider {
 
   async refund(transactionRef: string, amount: number, _reason: string): Promise<void> {
     this.logger.warn(
-      `SePay bank-transfer refund for ${transactionRef} (${amount} VND) requires audited manual review`,
+      `SePay bank-transfer refund for ${transactionRef} (${amount} PEN) requires audited manual review`,
     )
     throw new ServiceUnavailableException('SEPAY_BANK_TRANSFER_REFUND_REQUIRES_MANUAL_REVIEW')
   }

@@ -139,7 +139,7 @@ export class RefundProcessor extends WorkerHost {
             changedBy: 'system',
             note: kind === 'full'
               ? `Refund processed: ${reason}`
-              : `Partial refund processed: ${amount} VND. Reason: ${reason}`,
+              : `Partial refund processed: ${amount} PEN. Reason: ${reason}`,
           },
         })
         await tx.payoutLedger.create({
@@ -150,7 +150,7 @@ export class RefundProcessor extends WorkerHost {
             recipientType: 'platform',
             recipientId: null,
             amount: -amount,
-            currency: 'VND',
+            currency: 'PEN',
             status: 'pending',
           },
         })

@@ -73,7 +73,7 @@ export class RestaurantPromotionsService {
       data: {
         restaurantId, createdById: userId, code: dto.code, name: dto.name,
         description: dto.description, type: mapPromotionType(dto.type), value: dto.discountValue,
-        minOrderAmount: dto.minOrderVnd ?? 0, maxDiscount: dto.maxDiscountVnd,
+        minOrderAmount: dto.minOrderPen ?? 0, maxDiscount: dto.maxDiscountPen,
         usageLimit: dto.maxUsage ?? 2_147_483_647, maxPerUser: dto.perUserLimit,
         startsAt: new Date(dto.schedule.validFrom), expiresAt: new Date(dto.schedule.validUntil),
         status: (dto.status ?? 'draft') as PromotionStatus,
@@ -114,8 +114,8 @@ export class RestaurantPromotionsService {
           ...(dto.description !== undefined ? { description: dto.description } : {}),
           ...(dto.type !== undefined ? { type: mapPromotionType(dto.type) } : {}),
           ...(dto.discountValue !== undefined ? { value: dto.discountValue } : {}),
-          ...(dto.minOrderVnd !== undefined ? { minOrderAmount: dto.minOrderVnd } : {}),
-          ...(dto.maxDiscountVnd !== undefined ? { maxDiscount: dto.maxDiscountVnd } : {}),
+          ...(dto.minOrderPen !== undefined ? { minOrderAmount: dto.minOrderPen } : {}),
+          ...(dto.maxDiscountPen !== undefined ? { maxDiscount: dto.maxDiscountPen } : {}),
           ...(dto.maxUsage !== undefined ? { usageLimit: dto.maxUsage } : {}),
           ...(dto.perUserLimit !== undefined ? { maxPerUser: dto.perUserLimit } : {}),
           ...(dto.status !== undefined ? { status: dto.status as PromotionStatus, isActive: dto.status === 'active' } : {}),
@@ -236,7 +236,7 @@ export class RestaurantPromotionsService {
     return {
       id: promotion.id, code: promotion.code, name: promotion.name, description: promotion.description,
       type: unmapPromotionType(promotion.type), discountValue: Number(promotion.value),
-      minOrderVnd: Number(promotion.minOrderAmount), maxDiscountVnd: promotion.maxDiscount ? Number(promotion.maxDiscount) : undefined,
+      minOrderPen: Number(promotion.minOrderAmount), maxDiscountPen: promotion.maxDiscount ? Number(promotion.maxDiscount) : undefined,
       appliesTo: categoryId ? 'category' : itemIds.length ? 'items' : 'all', categoryId, itemIds,
       target: promotion.targeting ?? { audience: 'all' },
       schedule: { validFrom: promotion.startsAt, validUntil: promotion.expiresAt, recurring: promotion.recurrence },

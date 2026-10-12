@@ -26,7 +26,7 @@ jest.mock('@supabase/supabase-js', () => ({
 describe('ReviewsPhotoService', () => {
   beforeEach(() => {
     jest.clearAllMocks()
-    mockMinioClient.presignedPutObject.mockResolvedValue('https://storage.foodflow.test/upload-url')
+    mockMinioClient.presignedPutObject.mockResolvedValue('https://storage.plaza4.test/upload-url')
     mockSupabaseBucket.createSignedUploadUrl.mockResolvedValue({
       data: { signedUrl: 'https://supabase.storage.test/upload/sign/path?token=abc' },
       error: null,
@@ -43,11 +43,11 @@ describe('ReviewsPhotoService', () => {
       accessKey: 'minioadmin',
     }))
     expect(mockMinioClient.presignedPutObject).toHaveBeenCalledWith(
-      'foodflow',
+      'plaza4',
       expect.stringMatching(/^reviews\/photos\/\d+-[a-f0-9]+\.webp$/),
       900,
     )
-    expect(result.url).toBe('https://storage.foodflow.test/upload-url')
+    expect(result.url).toBe('https://storage.plaza4.test/upload-url')
   })
 
   it('does not construct a localhost review photo client in production when credentials are missing', () => {
@@ -63,7 +63,7 @@ describe('ReviewsPhotoService', () => {
       STORAGE_PROVIDER: 'supabase',
       SUPABASE_URL: 'https://lvanszgszzfopusboich.supabase.co',
       SUPABASE_SERVICE_ROLE_KEY: 'service-role-test-key',
-      SUPABASE_STORAGE_BUCKET: 'foodflow-production',
+      SUPABASE_STORAGE_BUCKET: 'plaza4-production',
     }))
 
     const result = await service.getUploadUrl('image/avif')
@@ -74,7 +74,7 @@ describe('ReviewsPhotoService', () => {
       'service-role-test-key',
       { auth: { persistSession: false, autoRefreshToken: false } },
     )
-    expect(mockSupabaseClient.storage.from).toHaveBeenCalledWith('foodflow-production')
+    expect(mockSupabaseClient.storage.from).toHaveBeenCalledWith('plaza4-production')
     expect(mockSupabaseBucket.createSignedUploadUrl).toHaveBeenCalledWith(
       expect.stringMatching(/^reviews\/photos\/\d+-[a-f0-9]+\.avif$/),
     )
@@ -92,7 +92,7 @@ function makeConfig(overrides: Record<string, string | number | undefined> = {})
     MINIO_PORT: 9000,
     MINIO_ACCESS_KEY: 'minioadmin',
     MINIO_SECRET_KEY: 'minioadmin',
-    MINIO_BUCKET: 'foodflow',
+    MINIO_BUCKET: 'plaza4',
     MINIO_PUBLIC_URL: 'http://localhost:9000',
     STORAGE_PROVIDER: 'minio',
     ...overrides,

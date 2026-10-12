@@ -8,4 +8,4 @@ export const realtimeChannels = {
   driver: (driverId: string) => `private:driver:${driverId}`,
 } as const
 
-export type FoodFlowRealtimeChannel = string
+export type Plaza4RealtimeChannel = string

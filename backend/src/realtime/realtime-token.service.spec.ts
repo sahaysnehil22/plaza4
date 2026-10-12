@@ -10,7 +10,7 @@ describe('RealtimeTokenService', () => {
   const config = {
     get: jest.fn((key: string) => {
       if (key === 'SUPABASE_REALTIME_JWT_PRIVATE_KEY') return privatePem
-      if (key === 'SUPABASE_REALTIME_JWT_KEY_ID') return 'foodflow-test-es256'
+      if (key === 'SUPABASE_REALTIME_JWT_KEY_ID') return 'plaza4-test-es256'
       return undefined
     }),
   }
@@ -40,7 +40,7 @@ describe('RealtimeTokenService', () => {
     ].sort())
     expect(payload.realtime_channels).toEqual(result.channels)
     expect(payload.app_role).toBe(UserRole.admin)
-    expect(decoded.header).toMatchObject({ alg: 'ES256', kid: 'foodflow-test-es256' })
+    expect(decoded.header).toMatchObject({ alg: 'ES256', kid: 'plaza4-test-es256' })
     expect(result.expiresAt).toMatch(/Z$/)
   })
 

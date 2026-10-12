@@ -15,7 +15,7 @@ Payment intent lifecycle, SePay VietQR provider integration, webhook handling v�
 
 - `cash` releases the order to `restaurant_pending` with payment still pending; cash is collected after fulfillment.
 - `wallet` is the only wallet API and database value; capture uses confirmed wallet balance and a debit `wallet_transactions` row. New wallet transaction references use the public `WALLET-*` prefix.
-- `sepay` builds the documented `https://vietqr.app/img` URL from the configured beneficiary account, bank and exact VND amount. It does not call an undocumented intent endpoint.
+- `sepay` builds the documented `https://vietqr.app/img` URL from the configured beneficiary account, bank and exact PEN amount. It does not call an undocumented intent endpoint.
 - The order stays `pending_payment` until an inbound `transferType=in` webhook has a matching account, payment code and exact amount.
 - HMAC verification uses the untouched request body and SePay's `{timestamp}.{raw_body}` signing message; timestamps outside ±5 minutes are rejected.
 - `payment_webhook_receipts` stores SePay's stable transaction `id` behind a database unique constraint, so automatic retries and historical manual replays remain idempotent after cache expiry or process restarts.
@@ -27,7 +27,7 @@ Payment intent lifecycle, SePay VietQR provider integration, webhook handling v�
 
 | Name | Required | Default | Description |
 |---|---|---|---|
-| `SEPAY_ACCOUNT_NUMBER` | yes | — | FoodFlow beneficiary account or VA used by the VietQR image |
+| `SEPAY_ACCOUNT_NUMBER` | yes | — | Plaza 4 beneficiary account or VA used by the VietQR image |
 | `SEPAY_BANK_NAME` | yes | — | Official VietQR bank short name, alias, code or BIN |
 | `SEPAY_WEBHOOK_SECRET` | yes | — | Rotated HMAC secret configured on the SePay webhook |
 | `SEPAY_API_KEY` | no | — | Reserved for authenticated SePay API reconciliation; not used to generate VietQR |

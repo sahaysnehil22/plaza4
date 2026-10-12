@@ -45,7 +45,7 @@ export class EligibilityService {
     }
 
     if (Number(promotion.minOrderAmount) > 0 && cart.subtotal < Number(promotion.minOrderAmount)) {
-      const amount = Number(promotion.minOrderAmount).toLocaleString('vi-VN')
+      const amount = Number(promotion.minOrderAmount).toLocaleString('es-PE')
       return { valid: false, error: this.t('errors.promotion_min_order', { amount }) }
     }
 

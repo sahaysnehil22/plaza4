@@ -11,13 +11,13 @@ describe('resolveProcessEntrypoint', () => {
 
   it('fails closed for an unknown role', () => {
     expect(() => resolveProcessEntrypoint('workre')).toThrow(
-      'Unsupported FOODFLOW_PROCESS_ROLE: workre',
+      'Unsupported PLAZA4_PROCESS_ROLE: workre',
     )
   })
 
   it.each([undefined, '', '  '])('requires an explicit role in production for %p', role => {
     expect(() => resolveProcessEntrypoint(role, 'production')).toThrow(
-      'FOODFLOW_PROCESS_ROLE is required in production',
+      'PLAZA4_PROCESS_ROLE is required in production',
     )
   })
 })

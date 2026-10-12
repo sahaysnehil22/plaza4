@@ -50,12 +50,12 @@ export class CreateRestaurantPromotionDto {
   @IsOptional()
   @IsNumber()
   @Min(0)
-  minOrderVnd?: number
+  minOrderPen?: number
 
   @IsOptional()
   @IsNumber()
   @Min(0)
-  maxDiscountVnd?: number
+  maxDiscountPen?: number
 
   @IsIn(['all', 'category', 'items'])
   appliesTo: string

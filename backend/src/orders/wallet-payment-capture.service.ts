@@ -22,7 +22,7 @@ export class WalletPaymentCaptureService {
   constructor(private readonly prisma: PrismaService) {}
 
   async capture(input: WalletPaymentCaptureInput): Promise<WalletPaymentCaptureResult> {
-    const amountInVnd = Math.trunc(input.amount)
+    const amountInPen = Math.trunc(input.amount)
 
     try {
       await this.prisma.$transaction(async (tx) => {
@@ -33,14 +33,14 @@ export class WalletPaymentCaptureService {
           _sum: { amountDelta: true },
         })
         const available = balance._sum.amountDelta ?? 0
-        if (available < amountInVnd) {
+        if (available < amountInPen) {
           throw new Error('INSUFFICIENT_WALLET_BALANCE')
         }
 
         await tx.walletTransaction.create({
           data: {
             userId: input.order.customerId,
-            amountDelta: -amountInVnd,
+            amountDelta: -amountInPen,
             type: 'debit',
             reason: 'order_payment',
             refId: input.order.id,
