@@ -1,14 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import type { AdminExportJob, AdminExportJobsPayload } from '@foodflow/api-client';
-import { ApiClientError } from '@foodflow/api-client';
+import type { AdminExportJob, AdminExportJobsPayload } from '@plaza4/api-client';
+import { ApiClientError } from '@plaza4/api-client';
 import { useQuery } from '@tanstack/react-query';
 import { FileText, RefreshCw, ShieldX } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import { PageHeader } from '@/components/layout/admin-page-header';
-import { Skeleton } from '@foodflow/ui/skeleton';
+import { Skeleton } from '@plaza4/ui/skeleton';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Select,
@@ -49,7 +49,7 @@ export default function ExportJobsPage() {
       const url = URL.createObjectURL(blob);
       const anchor = document.createElement('a');
       anchor.href = url;
-      anchor.download = `foodflow-${job.resource}-${job.id.slice(0, 8)}.${job.format}`;
+      anchor.download = `plaza4-${job.resource}-${job.id.slice(0, 8)}.${job.format}`;
       anchor.click();
       anchor.remove();
       window.setTimeout(() => URL.revokeObjectURL(url), 0);

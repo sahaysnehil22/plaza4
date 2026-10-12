@@ -4,7 +4,7 @@ import type {
   AdminExportResource,
   AdminExportStatus,
   CreateAdminExportRequest,
-} from '@foodflow/api-client';
+} from '@plaza4/api-client';
 import { FileSpreadsheet, FileText } from 'lucide-react';
 
 export type AdminExportPeriod = NonNullable<CreateAdminExportRequest['period']>;

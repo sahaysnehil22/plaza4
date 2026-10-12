@@ -37,7 +37,7 @@ export interface FunnelStep {
 const localeTags: Record<string, string> = {
   en: 'en-US',
   ja: 'ja-JP',
-  vi: 'vi-VN',
+  vi: 'es-PE',
 }
 
 function toSafeCount(value: unknown): number {
@@ -68,19 +68,19 @@ export function buildFunnel(rows: OrderStatusPoint[]): FunnelStep[] {
 }
 
 export function formatInteger(value: number, locale: string): string {
-  return new Intl.NumberFormat(localeTags[locale] ?? 'vi-VN').format(value)
+  return new Intl.NumberFormat(localeTags[locale] ?? 'es-PE').format(value)
 }
 
 export function formatCurrency(value: number, locale: string): string {
-  return new Intl.NumberFormat(localeTags[locale] ?? 'vi-VN', {
-    currency: 'VND',
+  return new Intl.NumberFormat(localeTags[locale] ?? 'es-PE', {
+    currency: 'PEN',
     maximumFractionDigits: 0,
     style: 'currency',
   }).format(value)
 }
 
 export function formatPercent(value: number, locale: string): string {
-  return new Intl.NumberFormat(localeTags[locale] ?? 'vi-VN', {
+  return new Intl.NumberFormat(localeTags[locale] ?? 'es-PE', {
     maximumFractionDigits: 1,
     minimumFractionDigits: 0,
     style: 'percent',

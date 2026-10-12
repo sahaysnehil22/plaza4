@@ -1,13 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { ApiClientError, type AdminDriver } from '@foodflow/api-client';
+import { ApiClientError, type AdminDriver } from '@plaza4/api-client';
 import { useQuery } from '@tanstack/react-query';
 import { ChevronLeft, ChevronRight, MapPin, RefreshCw, ShieldX, Users } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import { PageHeader } from '@/components/layout/admin-page-header';
-import { Skeleton } from '@foodflow/ui/skeleton';
+import { Skeleton } from '@plaza4/ui/skeleton';
 import { AdminDriversTable } from '@/components/drivers/admin-drivers-table';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';

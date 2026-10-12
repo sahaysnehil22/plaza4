@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import type { AdminDispatchHeatmapPoint } from '@foodflow/api-client';
+import type { AdminDispatchHeatmapPoint } from '@plaza4/api-client';
 import { apiGet } from '@/lib/api';
 import { MapPin, AlertCircle } from 'lucide-react';
 

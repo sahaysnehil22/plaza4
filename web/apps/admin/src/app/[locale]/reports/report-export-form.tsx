@@ -1,6 +1,6 @@
 'use client';
 
-import type { AdminExportFormat, AdminExportResource } from '@foodflow/api-client';
+import type { AdminExportFormat, AdminExportResource } from '@plaza4/api-client';
 import { Download, Loader2 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';

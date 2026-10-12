@@ -1,6 +1,6 @@
 'use client';
 
-import type { AdminExportJob } from '@foodflow/api-client';
+import type { AdminExportJob } from '@plaza4/api-client';
 import { CheckCircle, Clock, Download, FileText, Loader2, XCircle } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { Badge } from '@/components/ui/badge';

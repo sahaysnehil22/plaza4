@@ -14,11 +14,11 @@ import { buildFunnel, formatCurrency, formatInteger, formatPercent, type AdminCh
 const dateLocaleTags: Record<string, string> = {
   en: 'en-US',
   ja: 'ja-JP',
-  vi: 'vi-VN',
+  vi: 'es-PE',
 }
 
 function formatDateLabel(date: string, locale: string): string {
-  return new Intl.DateTimeFormat(dateLocaleTags[locale] ?? 'vi-VN', {
+  return new Intl.DateTimeFormat(dateLocaleTags[locale] ?? 'es-PE', {
     day: '2-digit',
     month: '2-digit',
   }).format(new Date(`${date}T00:00:00`))

@@ -9,8 +9,8 @@ import type { AuditLogEntry, AuditLogFilters } from '@/components/audit/audit-lo
 import { AuditLogFilterBar } from '@/components/audit/audit-log-filter-bar';
 import { AuditLogTable } from '@/components/audit/audit-log-table';
 import { PageHeader } from '@/components/layout/admin-page-header';
-import { EmptyState } from '@foodflow/ui/empty-state';
-import { Skeleton } from '@foodflow/ui/skeleton';
+import { EmptyState } from '@plaza4/ui/empty-state';
+import { Skeleton } from '@plaza4/ui/skeleton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -55,7 +55,7 @@ export default function AuditLogsPage() {
       const url = URL.createObjectURL(blob);
       const anchor = document.createElement('a');
       anchor.href = url;
-      anchor.download = `foodflow-audit-${new Date().toISOString().slice(0, 10)}.csv`;
+      anchor.download = `plaza4-audit-${new Date().toISOString().slice(0, 10)}.csv`;
       anchor.click();
       anchor.remove();
       window.setTimeout(() => URL.revokeObjectURL(url), 0);

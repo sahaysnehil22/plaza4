@@ -10,7 +10,7 @@ import { Switch } from '@/components/ui/switch';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { apiPost } from '@/lib/api';
 import { useAuth } from '@/lib/auth-provider';
-import { FoodFlowLogo } from '@foodflow/ui/foodflow-logo';
+import { Plaza4Logo } from '@plaza4/ui/plaza4-logo';
 import { Loader2, AlertTriangle, XCircle } from 'lucide-react';
 
 const MAX_FAIL = 5;
@@ -71,7 +71,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 p-4">
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="space-y-1 text-center">
-          <FoodFlowLogo showWordmark={false} markClassName="h-16 w-16" className="mx-auto mb-4 justify-center" />
+          <Plaza4Logo showWordmark={false} markClassName="h-16 w-16" className="mx-auto mb-4 justify-center" />
           <CardTitle className="text-2xl font-bold">{t('title')}</CardTitle>
           <CardDescription>{t('description')}</CardDescription>
         </CardHeader>

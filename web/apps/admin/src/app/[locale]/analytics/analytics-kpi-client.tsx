@@ -35,11 +35,11 @@ const kpiLabelKeys: Record<string, string> = {
 const localeTags: Record<string, string> = {
   en: 'en-US',
   ja: 'ja-JP',
-  vi: 'vi-VN',
+  vi: 'es-PE',
 }
 
 function formatDelta(delta: number, locale: string): string {
-  return new Intl.NumberFormat(localeTags[locale] ?? 'vi-VN', {
+  return new Intl.NumberFormat(localeTags[locale] ?? 'es-PE', {
     maximumFractionDigits: 1,
     style: 'percent',
   }).format(Math.abs(delta))

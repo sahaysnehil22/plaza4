@@ -2,7 +2,7 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { useTranslations } from 'next-intl';
-import type { AdminPromotionAnalytics } from '@foodflow/api-client';
+import type { AdminPromotionAnalytics } from '@plaza4/api-client';
 import { apiGet } from '@/lib/api';
 import { formatCurrency } from '@/lib/utils';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -11,7 +11,7 @@ import { Percent, TrendingUp } from 'lucide-react';
 
 function formatRoiRatio(roi: number | null) {
   if (roi === null) return '—';
-  return `${(roi * 100).toLocaleString('vi-VN', { maximumFractionDigits: 1 })}%`;
+  return `${(roi * 100).toLocaleString('es-PE', { maximumFractionDigits: 1 })}%`;
 }
 
 export default function PromotionFunnelClient({ promotionId }: { promotionId: string }) {
@@ -48,7 +48,7 @@ export default function PromotionFunnelClient({ promotionId }: { promotionId: st
         <CardContent className="space-y-3 text-sm">
           <div className="flex justify-between">
             <span className="text-muted-foreground">{t('used')}</span>
-            <span className="font-medium">{data.redemptions.toLocaleString('vi-VN')}</span>
+            <span className="font-medium">{data.redemptions.toLocaleString('es-PE')}</span>
           </div>
           <Separator />
           <div className="flex justify-between">

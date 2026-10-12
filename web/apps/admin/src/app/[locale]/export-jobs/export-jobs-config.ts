@@ -1,4 +1,4 @@
-import type { AdminExportJobsPayload, AdminExportStatus } from '@foodflow/api-client';
+import type { AdminExportJobsPayload, AdminExportStatus } from '@plaza4/api-client';
 import { FileArchive, FileSpreadsheet, FileText } from 'lucide-react';
 
 export type ExportJobsStatusFilter = 'all' | AdminExportStatus;

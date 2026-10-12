@@ -7,7 +7,7 @@ import type {
   AdminExportJobsPayload,
   AdminExportResource,
   CreateAdminExportRequest,
-} from '@foodflow/api-client';
+} from '@plaza4/api-client';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslations } from 'next-intl';
 import { PageHeader } from '@/components/layout/admin-page-header';
@@ -78,7 +78,7 @@ export default function ReportsPage() {
       const url = URL.createObjectURL(blob);
       const anchor = document.createElement('a');
       anchor.href = url;
-      anchor.download = `foodflow-${job.resource}-${job.id.slice(0, 8)}.${job.format}`;
+      anchor.download = `plaza4-${job.resource}-${job.id.slice(0, 8)}.${job.format}`;
       anchor.click();
       anchor.remove();
       window.setTimeout(() => URL.revokeObjectURL(url), 0);

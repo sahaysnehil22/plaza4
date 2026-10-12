@@ -1,6 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { locales } from '@foodflow/i18n';
+import { locales } from '@plaza4/i18n';
 import { RootLayoutClient } from '../root-layout-client';
 
 interface LocaleLayoutProps {

@@ -1,10 +1,10 @@
 'use client';
 
-import { ApiClientError, type AdminExportJob } from '@foodflow/api-client';
+import { ApiClientError, type AdminExportJob } from '@plaza4/api-client';
 import { CheckCircle, Clock, Download, FileText, Loader2, RefreshCw, ShieldX, XCircle } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
-import { EmptyState } from '@foodflow/ui/empty-state';
-import { Skeleton } from '@foodflow/ui/skeleton';
+import { EmptyState } from '@plaza4/ui/empty-state';
+import { Skeleton } from '@plaza4/ui/skeleton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { exportFormats, statusBadgeVariants } from './report-export-config';

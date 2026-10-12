@@ -3,7 +3,7 @@
 import { useParams } from 'next/navigation';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useTranslations } from 'next-intl';
-import type { AdminPromotionAnalytics } from '@foodflow/api-client';
+import type { AdminPromotionAnalytics } from '@plaza4/api-client';
 import { apiGet, apiPatch } from '@/lib/api';
 import type { AdminPromotion } from '@/components/promotions/admin-promotions-types';
 import { formatDate, formatCurrency } from '@/lib/utils';

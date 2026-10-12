@@ -1,4 +1,4 @@
-import { Skeleton } from '@foodflow/ui/skeleton';
+import { Skeleton } from '@plaza4/ui/skeleton';
 
 export default function ReportsLoading() {
   return (
