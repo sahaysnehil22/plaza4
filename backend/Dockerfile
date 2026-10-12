@@ -10,8 +10,8 @@ RUN pnpm install --frozen-lockfile
 COPY prisma/ ./prisma/
 COPY tsconfig.json tsconfig.build.json nest-cli.json ./
 COPY src/ ./src/
-RUN DATABASE_URL=postgresql://foodflow:foodflow_dev@localhost:5432/foodflow \
-  DIRECT_URL=postgresql://foodflow:foodflow_dev@localhost:5432/foodflow \
+RUN DATABASE_URL=postgresql://plaza4:plaza4_dev@localhost:5432/plaza4 \
+  DIRECT_URL=postgresql://plaza4:plaza4_dev@localhost:5432/plaza4 \
   pnpm prisma generate && pnpm build
 
 FROM gcr.io/distroless/nodejs22-debian13@sha256:39d204f9061e310d3e090edd185f48b1e9f70ef4771819a555ed716ccb42d229 AS migrator
@@ -20,7 +20,7 @@ ARG BUILD_SHA
 LABEL org.opencontainers.image.source="https://github.com/JasonTM17/FoodDelivery_App"
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.revision=$BUILD_SHA
-LABEL org.opencontainers.image.title="foodflow-migrate"
+LABEL org.opencontainers.image.title="plaza4-migrate"
 
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/dist ./dist
@@ -40,7 +40,7 @@ ENV BUILD_SHA=$BUILD_SHA
 LABEL org.opencontainers.image.source="https://github.com/JasonTM17/FoodDelivery_App"
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.revision=$BUILD_SHA
-LABEL org.opencontainers.image.title="foodflow-backend"
+LABEL org.opencontainers.image.title="plaza4-backend"
 
 COPY --from=prod-deps /app/node_modules ./node_modules
 COPY --from=builder /app/dist ./dist

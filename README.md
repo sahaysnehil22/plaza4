@@ -1,4 +1,4 @@
-# FoodFlow — Food Delivery Operations Platform
+# Plaza 4 — Food Delivery Operations Platform
 
 Documentation: **English** · [Tiếng Việt](docs/readme.vi.md) · [日本語](docs/readme.ja.md)
 
@@ -11,13 +11,13 @@ Documentation: **English** · [Tiếng Việt](docs/readme.vi.md) · [日本語]
   <img src="https://img.shields.io/github/license/JasonTM17/FoodDelivery_App" alt="MIT license" />
 </p>
 
-FoodFlow is a multi-tenant food-delivery system with a NestJS API, professional Admin and Restaurant dashboards, and Flutter customer/driver applications. Its managed-production design uses Supabase for PostgreSQL/PostGIS, Realtime, and Storage; Railway for the API, worker, and Redis; and Vercel for the Admin and Restaurant dashboards. Docker Compose keeps a separate Socket.IO/Redis/MinIO compatibility profile for local development and self-hosting.
+Plaza 4 is a multi-tenant food-delivery system with a NestJS API, professional Admin and Restaurant dashboards, and Flutter customer/driver applications. Its managed-production design uses Supabase for PostgreSQL/PostGIS, Realtime, and Storage; Railway for the API, worker, and Redis; and Vercel for the Admin and Restaurant dashboards. Docker Compose keeps a separate Socket.IO/Redis/MinIO compatibility profile for local development and self-hosting.
 
 > **Release status — 2026-07-14:** runtime candidate `52f433641d5093f6d064cfba6c1cd99c8cb035e9` passed 144 Jest suites / 1065 tests, typecheck, lint, build, all triggered GitHub workflows, multi-architecture runtime smoke, and High/Critical image scans. Railway migrate/API/worker run the immutable SHA images; all 38 migrations are applied and public health/readiness report database, Redis, and Supabase Storage up. Current Admin and Restaurant Vercel deployments are Ready and their production health/login routes return 200. A controlled production GPS update reached private Supabase Broadcast and PostGIS in 1437 ms, with test data removed afterward. This is **not** full production certification: controlled-device FCM, the Android/iOS background-location matrix, authenticated browser role journeys, and configured payment/messaging/AI/owned-routing integrations still need evidence.
 
 ## Product preview
 
-FoodFlow has four distinct product surfaces. Choose the [Admin](docs/admin-guide.md), [Restaurant](docs/restaurant-guide.md), [Customer](docs/customer-guide.md), or [Driver](docs/driver-guide.md) guide, then see the [full product gallery](docs/product-gallery.md) and [mobile overview](docs/customer-driver-guide.md). The manifest records source heads, runtimes, capture times, and privacy boundaries. Web media came from Google Chrome against the isolated local E2E stack; mobile media came from Flutter debug APKs on an Android API 35 x86_64 AVD. All are current local product/regression evidence from dirty working trees or local images—not production or release certification.
+Plaza 4 has four distinct product surfaces. Choose the [Admin](docs/admin-guide.md), [Restaurant](docs/restaurant-guide.md), [Customer](docs/customer-guide.md), or [Driver](docs/driver-guide.md) guide, then see the [full product gallery](docs/product-gallery.md) and [mobile overview](docs/customer-driver-guide.md). The manifest records source heads, runtimes, capture times, and privacy boundaries. Web media came from Google Chrome against the isolated local E2E stack; mobile media came from Flutter debug APKs on an Android API 35 x86_64 AVD. All are current local product/regression evidence from dirty working trees or local images—not production or release certification.
 
 | Surface    | Product runtime                  | Current visual evidence                  | How to review the product                                                                                 |
 | ---------- | -------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -29,8 +29,8 @@ FoodFlow has four distinct product surfaces. Choose the [Admin](docs/admin-guide
 The mobile captures use simulated GPS and the isolated local stack. Their manifest records a dirty workspace, so authentic release media still requires a clean-head device/emulator recapture from the chosen release candidate. The documentation deliberately does not relabel local media as production evidence.
 
 <p align="center">
-  <img src="docs/screenshots/admin/02-overview.png" alt="FoodFlow Admin overview" width="48%" />
-  <img src="docs/screenshots/restaurant/04-menu.png" alt="FoodFlow Restaurant menu" width="48%" />
+  <img src="docs/screenshots/admin/02-overview.png" alt="Plaza 4 Admin overview" width="48%" />
+  <img src="docs/screenshots/restaurant/04-menu.png" alt="Plaza 4 Restaurant menu" width="48%" />
 </p>
 
 | Flow | Preview |
@@ -64,7 +64,7 @@ Customer and Driver have no local web URLs. Use their explicit Flutter entrypoin
 - Keyless MapLibre/OpenFreeMap basemaps plus backend Google Directions/owned OSRM routing when configured; route snapshots and telemetry fail closed instead of inventing coordinates, polylines, or ETA.
 - DeepSeek-backed support through the backend adapter, with fail-closed configuration/provider errors, persisted usage telemetry, and no embedded provider key.
 
-Google Maps is not required to boot FoodFlow. When neither Google Directions nor an owned OSRM service is configured, route calculation returns `503 DIRECTIONS_PROVIDER_NOT_CONFIGURED`; the API and worker remain healthy. Railway currently runs with `RAG_ENABLED=false` because no DeepSeek credential is configured.
+Google Maps is not required to boot Plaza 4. When neither Google Directions nor an owned OSRM service is configured, route calculation returns `503 DIRECTIONS_PROVIDER_NOT_CONFIGURED`; the API and worker remain healthy. Railway currently runs with `RAG_ENABLED=false` because no DeepSeek credential is configured.
 
 ## Production and local architecture
 
@@ -99,10 +99,10 @@ The table below records the matching multi-architecture Docker Hub and public GH
 
 | Artifact       | SHA tag                                                                                                                                        | Matching remote digest                                                    |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| API + worker   | [`nguyenson1710/foodflow-backend:sha-52f433641d5093f6d064cfba6c1cd99c8cb035e9`](https://hub.docker.com/r/nguyenson1710/foodflow-backend)       | `sha256:6d56cbefe7e9644703d957ae7a1abe96966d831b2567172edafc3063fc2e1f10` |
-| Prisma migrate | [`nguyenson1710/foodflow-migrate:sha-52f433641d5093f6d064cfba6c1cd99c8cb035e9`](https://hub.docker.com/r/nguyenson1710/foodflow-migrate)       | `sha256:f5131517198105f466ebb3daf2d52d5d56541f6b97dc0ec2cb99936e85e73f43` |
-| Admin          | [`nguyenson1710/foodflow-admin:sha-52f433641d5093f6d064cfba6c1cd99c8cb035e9`](https://hub.docker.com/r/nguyenson1710/foodflow-admin)           | `sha256:481bf07929b66cd8a23ab9d4ed95f37f585e78c868af3bacd49b6186b26bcfe6` |
-| Restaurant     | [`nguyenson1710/foodflow-restaurant:sha-52f433641d5093f6d064cfba6c1cd99c8cb035e9`](https://hub.docker.com/r/nguyenson1710/foodflow-restaurant) | `sha256:38c35c1470152cb42debdf284444572e2d2127e42d71939384b804cbe1e1fa1f` |
+| API + worker   | [`nguyenson1710/plaza4-backend:sha-52f433641d5093f6d064cfba6c1cd99c8cb035e9`](https://hub.docker.com/r/nguyenson1710/plaza4-backend)       | `sha256:6d56cbefe7e9644703d957ae7a1abe96966d831b2567172edafc3063fc2e1f10` |
+| Prisma migrate | [`nguyenson1710/plaza4-migrate:sha-52f433641d5093f6d064cfba6c1cd99c8cb035e9`](https://hub.docker.com/r/nguyenson1710/plaza4-migrate)       | `sha256:f5131517198105f466ebb3daf2d52d5d56541f6b97dc0ec2cb99936e85e73f43` |
+| Admin          | [`nguyenson1710/plaza4-admin:sha-52f433641d5093f6d064cfba6c1cd99c8cb035e9`](https://hub.docker.com/r/nguyenson1710/plaza4-admin)           | `sha256:481bf07929b66cd8a23ab9d4ed95f37f585e78c868af3bacd49b6186b26bcfe6` |
+| Restaurant     | [`nguyenson1710/plaza4-restaurant:sha-52f433641d5093f6d064cfba6c1cd99c8cb035e9`](https://hub.docker.com/r/nguyenson1710/plaza4-restaurant) | `sha256:38c35c1470152cb42debdf284444572e2d2127e42d71939384b804cbe1e1fa1f` |
 
 The worker runs from the backend image with `dist/workers/main.js`; it is not a separately maintained release artifact. All four GHCR packages are public, linked to `JasonTM17/FoodDelivery_App`, and grant the repository Actions write access. Docker Hub and GHCR digests match for every SHA tag. No semver or `latest` tag was promoted.
 
@@ -204,7 +204,7 @@ powershell -File infra/scripts/local-release-gate.ps1 -RunE2E
 
 The gate covers frozen installs, Prisma validation, backend typecheck/lint/Jest/build, web typecheck/ESLint/Vitest/build, OpenAPI Spectral, Compose config, Chromium + Firefox, Flutter analyze/test, and high-confidence secret checks. Additional release evidence includes axe serious/critical, visual regression, tenant isolation, realtime authorization, maps/routes, AI fail-closed/live smoke, and multi-architecture image scans.
 
-The 2026-07-14 clean-volume Docker project `foodflow-batch4-e2e` applied all 38 migrations, seeded 201 users, 50 restaurants, 352 menu items, 509 orders, and 123 reviews, then indexed 402 RAG documents. A transaction check rejected a second default address for the same user. With explicit E2E URLs, the current rebuilt stack passed all 68 cases in Chrome desktop (173.0 s), Firefox (172.9 s), and Pixel 5 mobile Chrome (117.3 s): 204/204 total. `flutter analyze` remained clean and the full Customer/Driver suite passed 367 tests. Direct Chrome review also found the public Admin and Restaurant sign-in forms usable at desktop and Pixel 5 widths, with no console errors or horizontal overflow. None of this local evidence validates remote provider state, a deployed image, or live Firebase delivery.
+The 2026-07-14 clean-volume Docker project `plaza4-batch4-e2e` applied all 38 migrations, seeded 201 users, 50 restaurants, 352 menu items, 509 orders, and 123 reviews, then indexed 402 RAG documents. A transaction check rejected a second default address for the same user. With explicit E2E URLs, the current rebuilt stack passed all 68 cases in Chrome desktop (173.0 s), Firefox (172.9 s), and Pixel 5 mobile Chrome (117.3 s): 204/204 total. `flutter analyze` remained clean and the full Customer/Driver suite passed 367 tests. Direct Chrome review also found the public Admin and Restaurant sign-in forms usable at desktop and Pixel 5 widths, with no console errors or horizontal overflow. None of this local evidence validates remote provider state, a deployed image, or live Firebase delivery.
 
 ## Deployment order
 

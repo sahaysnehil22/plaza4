@@ -8,7 +8,7 @@
 
 ## Reporting a Vulnerability
 
-FoodFlow takes security seriously. If you discover a vulnerability, please do **not** open a public issue.
+Plaza 4 takes security seriously. If you discover a vulnerability, please do **not** open a public issue.
 
 ### Disclosure Process
 

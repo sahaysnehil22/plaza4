@@ -1,8 +1,8 @@
-# FoodFlow Backend
+# Plaza 4 Backend
 
 ## 1. Purpose
 
-NestJS API server for the FoodFlow food delivery platform. Provides REST API, WebSocket realtime tracking, BullMQ job processing, JWT authentication with RBAC (customer, driver, restaurant, admin), and an LLM-first AI chatbot adapter. Called by the Flutter mobile apps and Next.js web dashboards. Calls PostgreSQL+PostGIS for spatial queries, Redis for caching/sessions/job queues, and MinIO for object storage.
+NestJS API server for the Plaza 4 food delivery platform. Provides REST API, WebSocket realtime tracking, BullMQ job processing, JWT authentication with RBAC (customer, driver, restaurant, admin), and an LLM-first AI chatbot adapter. Called by the Flutter mobile apps and Next.js web dashboards. Calls PostgreSQL+PostGIS for spatial queries, Redis for caching/sessions/job queues, and MinIO for object storage.
 
 ## 2. API Surface
 
@@ -33,16 +33,16 @@ Full reference: [Swagger UI](http://localhost:3001/api/docs) when running, or se
 | `JWT_REFRESH_SECRET` | Yes | — | Refresh token signing key |
 | `PASSWORD_RESET_URL_BASE` | No | `http://localhost:3000/reset-password` | Admin/web reset URL used when composing password reset email links |
 | `PASSWORD_RESET_TOKEN_TTL_MINUTES` | No | `60` | One-time password reset token lifetime |
-| `DELIVERY_BASE_FEE_VND` | Yes | — | Configured base checkout delivery fee in VND; required so runtime does not use hardcoded business data |
+| `DELIVERY_BASE_FEE_PEN` | Yes | — | Configured base checkout delivery fee in PEN; required so runtime does not use hardcoded business data |
 | `MINIO_ENDPOINT` | Yes | `localhost` | MinIO host |
 | `MINIO_PORT` | Yes | `9000` | MinIO API port |
 | `MINIO_ACCESS_KEY` | Yes | `minioadmin` | MinIO access key |
 | `MINIO_SECRET_KEY` | Yes | `minioadmin` | MinIO secret key |
-| `MINIO_BUCKET` | Yes | `foodflow` | Bucket name |
+| `MINIO_BUCKET` | Yes | `plaza4` | Bucket name |
 | `MINIO_PUBLIC_URL` | Yes | `http://localhost:9000` | Public-facing MinIO URL |
 | `GOOGLE_MAPS_API_KEY` | No | — | Google Maps Geocoding API key |
 | `SMTP_HOST` / `SMTP_PORT` / `SMTP_SECURE` | No | — / `587` / `false` | SMTP worker transport for email delivery; password reset requests enqueue here when configured |
-| `SMTP_USER` / `SMTP_PASS` / `SMTP_FROM` | No | — / — / `noreply@foodflow.vn` | SMTP credentials and sender address; keep credentials in secret manager / ignored `.env` |
+| `SMTP_USER` / `SMTP_PASS` / `SMTP_FROM` | No | — / — / `noreply@plaza4.pe` | SMTP credentials and sender address; keep credentials in secret manager / ignored `.env` |
 | `DEEPSEEK_API_KEY` | No | — | DeepSeek API key for direct chatbot replies. Keep in secret manager / ignored `.env`, never commit |
 | `OSRM_URL` | Production yes | local/test `https://router.project-osrm.org` | Owned routing fallback for shipper route ETA; production fails closed without it |
 | `DEEPSEEK_BASE_URL` | No | `https://api.deepseek.com` | DeepSeek OpenAI-compatible base URL |

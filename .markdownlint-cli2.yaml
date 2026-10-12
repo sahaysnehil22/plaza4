@@ -1,4 +1,4 @@
-# FoodFlow retains a few intentional presentation conventions in long-form docs:
+# Plaza 4 retains a few intentional presentation conventions in long-form docs:
 # long command lines, HTML-backed badges, and compact tables. Keep structural,
 # heading, link, list, fence, and whitespace rules enabled everywhere else.
 config:

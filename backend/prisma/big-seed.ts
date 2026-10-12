@@ -4,81 +4,75 @@ import { SeedPriceRange, toDatabasePriceRange } from './seed-database-values'
 
 const prisma = new PrismaClient()
 
-// ─── HCMC Districts with real coordinates ───
+// ─── Lima districts with real coordinates ───
 const DISTRICTS = [
-  { name: 'Quận 1', lat: 10.7757, lng: 106.7004 },
-  { name: 'Quận 2', lat: 10.7869, lng: 106.7388 },
-  { name: 'Quận 3', lat: 10.7791, lng: 106.6860 },
-  { name: 'Quận 4', lat: 10.7628, lng: 106.7053 },
-  { name: 'Quận 5', lat: 10.7540, lng: 106.6665 },
-  { name: 'Quận 7', lat: 10.7340, lng: 106.7200 },
-  { name: 'Quận 10', lat: 10.7740, lng: 106.6670 },
-  { name: 'Phú Nhuận', lat: 10.7980, lng: 106.6800 },
-  { name: 'Bình Thạnh', lat: 10.8106, lng: 106.7090 },
-  { name: 'Tân Bình', lat: 10.8000, lng: 106.6500 },
-  { name: 'Gò Vấp', lat: 10.8370, lng: 106.6650 },
-  { name: 'Tân Phú', lat: 10.7900, lng: 106.6280 },
+  { name: 'Miraflores', lat: -12.1196, lng: -77.0295 },
+  { name: 'San Isidro', lat: -12.0931, lng: -77.0465 },
+  { name: 'Surco', lat: -12.1392, lng: -76.9934 },
+  { name: 'La Molina', lat: -12.0772, lng: -76.9270 },
+  { name: 'Barranco', lat: -12.1462, lng: -77.0208 },
+  { name: 'Jesús María', lat: -12.0741, lng: -77.0521 },
+  { name: 'Lince', lat: -12.0833, lng: -77.0303 },
+  { name: 'Pueblo Libre', lat: -12.0772, lng: -77.0627 },
+  { name: 'San Miguel', lat: -12.0872, lng: -77.0872 },
+  { name: 'Callao', lat: -12.0553, lng: -77.1183 },
+  { name: 'Los Olivos', lat: -11.9734, lng: -77.0722 },
+  { name: 'Villa El Salvador', lat: -12.2106, lng: -76.9372 },
 ]
 
 const STREETS = [
-  'Nguyễn Huệ', 'Lê Lợi', 'Đồng Khởi', 'Hai Bà Trưng', 'Lý Tự Trọng',
-  'Nguyễn Đình Chiểu', 'Võ Văn Tần', 'Trần Hưng Đạo', 'Nguyễn Trãi',
-  'Cách Mạng Tháng 8', 'Phan Xích Long', 'Hoàng Sa', 'Trường Sa',
-  'Điện Biên Phủ', 'Nam Kỳ Khởi Nghĩa', 'Nguyễn Văn Trỗi',
+  'Av. Larco', 'Av. Arequipa', 'Av. Benavides', 'Av. Pardo', 'Calle Schell',
+  'Av. Grau', 'Av. Brasil', 'Av. La Marina', 'Av. Universitaria',
+  'Av. Javier Prado', 'Av. Angamos', 'Malecón Cisneros', 'Av. del Ejército',
+  'Calle Berlín', 'Av. Tacna', 'Jr. de la Unión',
 ]
 
-// ─── Real Vietnamese restaurant data ───
+// ─── Peruvian restaurant demo data ───
 const RESTAURANT_TEMPLATES = [
-  { name: 'Phở Thìn', cuisine: ['Vietnamese'], price: 'low', prep: 8, slug: 'pho-thin' },
-  { name: 'Phở Hùng', cuisine: ['Vietnamese'], price: 'low', prep: 10, slug: 'pho-hung' },
-  { name: 'Phở Lệ', cuisine: ['Vietnamese'], price: 'medium', prep: 12, slug: 'pho-le' },
-  { name: 'Bún Bò Huế 123', cuisine: ['Vietnamese'], price: 'low', prep: 10, slug: 'bun-bo-123' },
-  { name: 'Bún Bò Gốc Huế', cuisine: ['Vietnamese'], price: 'medium', prep: 12, slug: 'bun-bo-goc-hue' },
-  { name: 'Cơm Tấm Mộc', cuisine: ['Vietnamese'], price: 'low', prep: 8, slug: 'com-tam-moc' },
-  { name: 'Cơm Tấm Bụi Sài Gòn', cuisine: ['Vietnamese'], price: 'low', prep: 10, slug: 'com-tam-bui' },
-  { name: 'Bánh Mì Huỳnh Hoa', cuisine: ['Vietnamese', 'Street Food'], price: 'low', prep: 5, slug: 'banh-mi-huynh-hoa' },
-  { name: 'Bánh Mì Bà Năm', cuisine: ['Vietnamese', 'Street Food'], price: 'low', prep: 5, slug: 'banh-mi-ba-nam' },
-  { name: 'Bún Chả Hà Nội 36', cuisine: ['Vietnamese'], price: 'low', prep: 10, slug: 'bun-cha-36' },
-  { name: 'Bún Chả Tuyết', cuisine: ['Vietnamese'], price: 'medium', prep: 12, slug: 'bun-cha-tuyet' },
-  { name: 'Cơm Gà Xối Mỡ', cuisine: ['Vietnamese'], price: 'low', prep: 15, slug: 'com-ga-xoi-mo' },
-  { name: 'Cơm Gà Hải Nam', cuisine: ['Vietnamese', 'Chinese'], price: 'medium', prep: 12, slug: 'com-ga-hai-nam' },
-  { name: 'Hủ Tiếu Nam Vang', cuisine: ['Vietnamese', 'Chinese'], price: 'low', prep: 8, slug: 'hu-tieu-nam-vang' },
-  { name: 'Hủ Tiếu Mỹ Tho', cuisine: ['Vietnamese'], price: 'low', prep: 8, slug: 'hu-tieu-my-tho' },
-  { name: 'Bánh Xèo 46A', cuisine: ['Vietnamese'], price: 'low', prep: 15, slug: 'banh-xeo-46a' },
-  { name: 'Bánh Khọt Vũng Tàu', cuisine: ['Vietnamese'], price: 'medium', prep: 15, slug: 'banh-khot-vung-tau' },
-  { name: 'Lẩu Dê 404', cuisine: ['Vietnamese', 'Hotpot'], price: 'high', prep: 20, slug: 'lau-de-404' },
-  { name: 'Lẩu Bò 58', cuisine: ['Vietnamese', 'Hotpot'], price: 'high', prep: 20, slug: 'lau-bo-58' },
-  { name: 'Ốc Đào', cuisine: ['Vietnamese', 'Seafood'], price: 'medium', prep: 15, slug: 'oc-dao' },
-  { name: 'Ốc Oanh', cuisine: ['Vietnamese', 'Seafood'], price: 'medium', prep: 15, slug: 'oc-oanh' },
-  { name: 'Chè Thái Ý', cuisine: ['Vietnamese', 'Desserts'], price: 'low', prep: 5, slug: 'che-thai-y' },
-  { name: 'Chè Mười Sáu', cuisine: ['Vietnamese', 'Desserts'], price: 'low', prep: 5, slug: 'che-muoi-sau' },
-  { name: 'Trà Sữa Gong Cha', cuisine: ['Drinks'], price: 'low', prep: 5, slug: 'gong-cha' },
-  { name: 'Trà Sữa Phúc Long', cuisine: ['Drinks'], price: 'low', prep: 5, slug: 'phuc-long' },
-  { name: 'Cà Phê Cộng', cuisine: ['Drinks', 'Vietnamese'], price: 'low', prep: 5, slug: 'cong-caphe' },
-  { name: 'Cà Phê Đen Đá', cuisine: ['Drinks', 'Vietnamese'], price: 'low', prep: 5, slug: 'ca-phe-den-da' },
-  { name: 'Pizza 4Ps', cuisine: ['Italian', 'Japanese'], price: 'high', prep: 20, slug: 'pizza-4ps' },
-  { name: 'Pizza Home', cuisine: ['Italian'], price: 'medium', prep: 18, slug: 'pizza-home' },
-  { name: 'Sushi Uchi', cuisine: ['Japanese'], price: 'high', prep: 15, slug: 'sushi-uchi' },
-  { name: 'Sushi Nhí', cuisine: ['Japanese'], price: 'medium', prep: 15, slug: 'sushi-nhi' },
-  { name: 'Mì Ramen Ipidu', cuisine: ['Japanese'], price: 'medium', prep: 12, slug: 'ramen-ipidu' },
-  { name: 'Bò Né 3 Ngon', cuisine: ['Vietnamese', 'Western'], price: 'medium', prep: 15, slug: 'bo-ne-3-ngon' },
-  { name: 'Gà Rán KFC Lý Tự Trọng', cuisine: ['Fast Food'], price: 'medium', prep: 8, slug: 'kfc-ly-tu-trong' },
-  { name: 'Gà Rán Popeyes', cuisine: ['Fast Food'], price: 'medium', prep: 8, slug: 'popeyes' },
-  { name: 'Burger King Saigon', cuisine: ['Fast Food', 'Western'], price: 'medium', prep: 10, slug: 'burger-king' },
-  { name: 'Bún Đậu Mắm Tôm', cuisine: ['Vietnamese'], price: 'low', prep: 10, slug: 'bun-dau-mam-tom' },
-  { name: 'Bánh Cuốn Nóng', cuisine: ['Vietnamese'], price: 'low', prep: 8, slug: 'banh-cuon-nong' },
-  { name: 'Bánh Ướt Thịt Nướng', cuisine: ['Vietnamese'], price: 'low', prep: 10, slug: 'banh-uot-thit-nuong' },
-  { name: 'Mì Quảng Đà Nẵng', cuisine: ['Vietnamese'], price: 'low', prep: 10, slug: 'mi-quang-da-nang' },
-  { name: 'Bánh Canh Cua', cuisine: ['Vietnamese', 'Seafood'], price: 'medium', prep: 12, slug: 'banh-canh-cua' },
-  { name: 'Dimsum Hà Tôn Quyền', cuisine: ['Chinese'], price: 'medium', prep: 10, slug: 'dimsum-ha-ton-quyen' },
-  { name: 'Cơm Niêu Sài Gòn', cuisine: ['Vietnamese'], price: 'low', prep: 12, slug: 'com-nieu-sai-gon' },
-  { name: 'Gỏi Cuốn Tôm Thịt', cuisine: ['Vietnamese'], price: 'low', prep: 8, slug: 'goi-cuon-tom-thit' },
-  { name: 'Nước Mía Siêu Sạch', cuisine: ['Drinks'], price: 'low', prep: 5, slug: 'nuoc-mia-sieu-sach' },
-  { name: 'Sinh Tố 142', cuisine: ['Drinks', 'Desserts'], price: 'low', prep: 8, slug: 'sinh-to-142' },
-  { name: 'Yaourt Đá Xay', cuisine: ['Desserts', 'Drinks'], price: 'low', prep: 5, slug: 'yaourt-da-xay' },
-  { name: 'Bò Bía Ngọt', cuisine: ['Vietnamese', 'Desserts'], price: 'low', prep: 5, slug: 'bo-bia-ngot' },
-  { name: 'Kem Bạch Đằng', cuisine: ['Desserts'], price: 'low', prep: 5, slug: 'kem-bach-dang' },
-  { name: 'Bánh Flan Sài Gòn', cuisine: ['Desserts'], price: 'low', prep: 8, slug: 'banh-flan-sai-gon' },
+  { name: 'Pollería El Buen Sabor', cuisine: ['Peruvian'], price: 'low', prep: 15, slug: 'polleria-el-buen-sabor' },
+  { name: 'Cevichería Mar y Tierra', cuisine: ['Peruvian', 'Seafood'], price: 'medium', prep: 20, slug: 'cevicheria-mar-y-tierra' },
+  { name: 'Anticuchos Doña Rosa', cuisine: ['Peruvian', 'Street Food'], price: 'low', prep: 10, slug: 'anticuchos-dona-rosa' },
+  { name: 'Pizzería La Toscana', cuisine: ['Italian'], price: 'medium', prep: 20, slug: 'pizzeria-la-toscana' },
+  { name: 'Sushi Nikkei Lima', cuisine: ['Japanese', 'Peruvian'], price: 'high', prep: 25, slug: 'sushi-nikkei-lima' },
+  { name: 'Hamburguesería El Faro', cuisine: ['Fast Food'], price: 'medium', prep: 12, slug: 'hamburgueseria-el-faro' },
+  { name: 'Chifa Cantón', cuisine: ['Chinese', 'Peruvian'], price: 'low', prep: 15, slug: 'chifa-canton' },
+  { name: 'Parrilla Don Pepe', cuisine: ['Peruvian', 'Grill'], price: 'high', prep: 30, slug: 'parrilla-don-pepe' },
+  { name: 'Tacu Tacu La Esquina', cuisine: ['Peruvian'], price: 'low', prep: 12, slug: 'tacu-tacu-la-esquina' },
+  { name: 'Lomo Saltado El Wok', cuisine: ['Peruvian', 'Chinese'], price: 'low', prep: 15, slug: 'lomo-saltado-el-wok' },
+  { name: 'Causa Limeña Gourmet', cuisine: ['Peruvian'], price: 'medium', prep: 10, slug: 'causa-limena-gourmet' },
+  { name: 'Rocoto Relleno Arequipa', cuisine: ['Peruvian'], price: 'medium', prep: 20, slug: 'rocoto-relleno-arequipa' },
+  { name: 'Ají de Gallina Casero', cuisine: ['Peruvian'], price: 'low', prep: 12, slug: 'aji-de-gallina-casero' },
+  { name: 'Papa a la Huancaína Express', cuisine: ['Peruvian'], price: 'low', prep: 8, slug: 'papa-huancaina-express' },
+  { name: 'Seco de Cordero Norteño', cuisine: ['Peruvian'], price: 'medium', prep: 25, slug: 'seco-de-cordero-norteno' },
+  { name: 'Arroz con Pollo Criollo', cuisine: ['Peruvian'], price: 'low', prep: 15, slug: 'arroz-con-pollo-criollo' },
+  { name: 'Tallarines Verdes Pesto', cuisine: ['Peruvian', 'Italian'], price: 'low', prep: 12, slug: 'tallarines-verdes-pesto' },
+  { name: 'Sopa Criolla Caliente', cuisine: ['Peruvian'], price: 'low', prep: 10, slug: 'sopa-criolla-caliente' },
+  { name: 'Chicharrón de Cerdo', cuisine: ['Peruvian'], price: 'medium', prep: 18, slug: 'chicharron-de-cerdo' },
+  { name: 'Pachamanca Andina', cuisine: ['Peruvian'], price: 'high', prep: 40, slug: 'pachamanca-andina' },
+  { name: 'Tiradito Nikkei Fusión', cuisine: ['Peruvian', 'Japanese'], price: 'medium', prep: 15, slug: 'tiradito-nikkei-fusion' },
+  { name: 'Jalea Mixta del Puerto', cuisine: ['Peruvian', 'Seafood'], price: 'medium', prep: 20, slug: 'jalea-mixta-del-puerto' },
+  { name: 'Arroz Chaufa Oriental', cuisine: ['Chinese', 'Peruvian'], price: 'low', prep: 12, slug: 'arroz-chaufa-oriental' },
+  { name: 'Aeropuerto Chifa Fusión', cuisine: ['Chinese', 'Peruvian'], price: 'medium', prep: 15, slug: 'aeropuerto-chifa-fusion' },
+  { name: 'Pollo a la Brasa El Carbón', cuisine: ['Peruvian', 'Grill'], price: 'low', prep: 20, slug: 'pollo-a-la-brasa-el-carbon' },
+  { name: 'Broaster Crocante', cuisine: ['Fast Food'], price: 'low', prep: 10, slug: 'broaster-crocante' },
+  { name: 'Empanadas La Abuela', cuisine: ['Peruvian', 'Street Food'], price: 'low', prep: 8, slug: 'empanadas-la-abuela' },
+  { name: 'Tamales Piuranos', cuisine: ['Peruvian'], price: 'low', prep: 10, slug: 'tamales-piuranos' },
+  { name: 'Humitas Dulces', cuisine: ['Peruvian', 'Desserts'], price: 'low', prep: 8, slug: 'humitas-dulces' },
+  { name: 'Picarones Doña Meche', cuisine: ['Peruvian', 'Desserts'], price: 'low', prep: 8, slug: 'picarones-dona-meche' },
+  { name: 'Suspiro Limeño Dulcería', cuisine: ['Peruvian', 'Desserts'], price: 'medium', prep: 10, slug: 'suspiro-limeno-dulceria' },
+  { name: 'Mazamorra Morada Bar', cuisine: ['Peruvian', 'Desserts'], price: 'low', prep: 5, slug: 'mazamorra-morada-bar' },
+  { name: 'Juguería La Cosecha', cuisine: ['Drinks'], price: 'low', prep: 5, slug: 'jugueria-la-cosecha' },
+  { name: 'Café Orgánico Cusco', cuisine: ['Drinks', 'Peruvian'], price: 'low', prep: 5, slug: 'cafe-organico-cusco' },
+  { name: 'Emoliente Caliente', cuisine: ['Drinks', 'Peruvian'], price: 'low', prep: 5, slug: 'emoliente-caliente' },
+  { name: 'Chicha Morada El Jarro', cuisine: ['Drinks'], price: 'low', prep: 5, slug: 'chicha-morada-el-jarro' },
+  { name: 'Pizza Artesanal Napoli', cuisine: ['Italian'], price: 'high', prep: 20, slug: 'pizza-artesanal-napoli' },
+  { name: 'Trattoria Bella Vista', cuisine: ['Italian'], price: 'medium', prep: 18, slug: 'trattoria-bella-vista' },
+  { name: 'Ramen Fusión Lima', cuisine: ['Japanese'], price: 'medium', prep: 12, slug: 'ramen-fusion-lima' },
+  { name: 'Makis Acevichados', cuisine: ['Japanese', 'Peruvian'], price: 'medium', prep: 15, slug: 'makis-acevichados' },
+  { name: 'Sanguchería El Encuentro', cuisine: ['Fast Food', 'Peruvian'], price: 'low', prep: 8, slug: 'sangucheria-el-encuentro' },
+  { name: 'Salchipapa El Trome', cuisine: ['Fast Food'], price: 'low', prep: 10, slug: 'salchipapa-el-trome' },
+  { name: 'Tacos al Pastor CDMX', cuisine: ['Mexican'], price: 'medium', prep: 12, slug: 'tacos-al-pastor-cdmx' },
+  { name: 'Heladería Artesanal Fresa', cuisine: ['Desserts'], price: 'low', prep: 5, slug: 'heladeria-artesanal-fresa' },
 ]
 
 // ─── Menu data by restaurant type ───
@@ -88,108 +82,108 @@ type SeedMenuTemplate = {
 }
 
 const MENU_DATA: Record<string, SeedMenuTemplate> = {
-  pho: {
-    cat: 'Phở', items: [
-      { name: 'Phở bò tái', price: 55000 }, { name: 'Phở bò chín', price: 55000 },
-      { name: 'Phở tái nạm', price: 65000 }, { name: 'Phở tái gầu', price: 65000 },
-      { name: 'Phở gà', price: 50000 }, { name: 'Phở đặc biệt', price: 85000 },
-      { name: 'Phở không thịt', price: 35000 },
+  polleria: {
+    cat: 'Pollería', items: [
+      { name: 'Pollo a la brasa entero', price: 55 }, { name: 'Medio pollo a la brasa', price: 32 },
+      { name: 'Cuarto de pollo + papas', price: 18 }, { name: 'Alitas BBQ x8', price: 22 },
+      { name: 'Papas fritas familiares', price: 12 }, { name: 'Ensalada fresca', price: 10 },
     ]
   },
-  bun_bo: {
-    cat: 'Bún Bò', items: [
-      { name: 'Bún bò đặc biệt', price: 55000 }, { name: 'Bún bò thập cẩm', price: 45000 },
-      { name: 'Bún bò chay', price: 35000 }, { name: 'Bún bò giò heo', price: 60000 },
+  cevicheria: {
+    cat: 'Cevichería', items: [
+      { name: 'Ceviche clásico', price: 28 }, { name: 'Ceviche mixto', price: 32 },
+      { name: 'Tiradito de pescado', price: 26 }, { name: 'Jalea mixta', price: 30 },
+      { name: 'Arroz con mariscos', price: 34 }, { name: 'Leche de tigre', price: 12 },
     ]
   },
-  com_tam: {
-    cat: 'Cơm Tấm', items: [
-      { name: 'Cơm tấm sườn', price: 40000 }, { name: 'Cơm tấm sườn bì chả', price: 50000 },
-      { name: 'Cơm tấm gà nướng', price: 50000 }, { name: 'Cơm tấm đặc biệt', price: 65000 },
-      { name: 'Cơm tấm sườn cốt lết', price: 55000 },
+  criolla: {
+    cat: 'Criolla', items: [
+      { name: 'Anticuchos x3', price: 12 }, { name: 'Rachi frito', price: 10 },
+      { name: 'Mollejitas al palo', price: 12 }, { name: 'Choclo con queso', price: 8 },
+      { name: 'Papa rellena', price: 9 },
     ]
   },
-  banh_mi: {
-    cat: 'Bánh Mì', items: [
-      { name: 'Bánh mì đặc biệt', price: 35000 }, { name: 'Bánh mì thịt nướng', price: 30000 },
-      { name: 'Bánh mì chay', price: 20000 }, { name: 'Bánh mì xíu mại', price: 25000 },
-      { name: 'Bánh mì bò kho', price: 40000 },
+  pizzeria: {
+    cat: 'Pizzería', items: [
+      { name: 'Pizza margarita', price: 32 }, { name: 'Pizza pepperoni', price: 38 },
+      { name: 'Pizza hawaiana', price: 36 }, { name: 'Pizza cuatro quesos', price: 42 },
+      { name: 'Pizza napolitana', price: 34 },
     ]
   },
-  pizza: {
-    cat: 'Pizza', items: [
-      { name: 'Margherita', price: 199000 }, { name: 'Pepperoni', price: 249000 },
-      { name: '4 Formaggi', price: 299000 }, { name: 'Hawaii', price: 229000 },
-      { name: 'Diavola', price: 269000 },
+  nikkei: {
+    cat: 'Nikkei', items: [
+      { name: 'Maki acevichado x10', price: 32 }, { name: 'Nigiri mixto x6', price: 28 },
+      { name: 'Tiradito nikkei', price: 26 }, { name: 'Yakimeshi de pollo', price: 24 },
+      { name: 'Gohan especial', price: 22 },
     ]
   },
-  sushi: {
-    cat: 'Sushi', items: [
-      { name: 'Salmon Sashimi 5pc', price: 199000 }, { name: 'Maguro Nigiri 2pc', price: 149000 },
-      { name: 'California Roll 8pc', price: 169000 }, { name: 'Dragon Roll 8pc', price: 229000 },
-      { name: 'Unagi Roll 8pc', price: 249000 },
+  hamburgueseria: {
+    cat: 'Hamburguesas', items: [
+      { name: 'Clásica de la casa', price: 18 }, { name: 'Doble queso', price: 24 },
+      { name: 'BBQ tocino', price: 22 }, { name: 'Papas fritas', price: 10 },
+      { name: 'Nuggets x10', price: 12 },
     ]
   },
-  drinks: {
-    cat: 'Thức uống', items: [
-      { name: 'Trà sữa trân châu', price: 45000 }, { name: 'Trà đào cam sả', price: 40000 },
-      { name: 'Cà phê sữa đá', price: 35000 }, { name: 'Bạc xỉu', price: 35000 },
-      { name: 'Sinh tố bơ', price: 50000 }, { name: 'Nước ép cam', price: 40000 },
+  chifa: {
+    cat: 'Chifa', items: [
+      { name: 'Arroz chaufa de pollo', price: 16 }, { name: 'Tallarín saltado', price: 18 },
+      { name: 'Pollo tipakay', price: 22 }, { name: 'Wantán frito x8', price: 12 },
+      { name: 'Sopa wantán', price: 10 },
     ]
   },
-  fast_food: {
-    cat: 'Gà Rán', items: [
-      { name: 'Gà rán 2 miếng', price: 55000 }, { name: 'Gà rán 4 miếng', price: 99000 },
-      { name: 'Burger gà', price: 45000 }, { name: 'Combo gà + khoai', price: 89000 },
-      { name: 'Gà viên chiên', price: 35000 },
+  parrilla: {
+    cat: 'Parrilla', items: [
+      { name: 'Parrillada personal', price: 45 }, { name: 'Lomo fino 300g', price: 55 },
+      { name: 'Bife de chorizo', price: 48 }, { name: 'Anticucho premium', price: 25 },
     ]
   },
-  hotpot: {
-    cat: 'Lẩu', items: [
-      { name: 'Lẩu thập cẩm', price: 299000 }, { name: 'Lẩu riêu cua', price: 249000 },
-      { name: 'Lẩu hải sản', price: 399000 },
+  criolla_casera: {
+    cat: 'Criolla', items: [
+      { name: 'Lomo saltado', price: 24 }, { name: 'Ají de gallina', price: 20 },
+      { name: 'Seco de cordero', price: 26 }, { name: 'Arroz con pollo', price: 18 },
+      { name: 'Causa limeña', price: 14 }, { name: 'Tacu tacu con lomo', price: 26 },
     ]
   },
-  seafood: {
-    cat: 'Hải sản', items: [
-      { name: 'Ốc hương rang muối', price: 89000 }, { name: 'Nghêu hấp sả', price: 69000 },
-      { name: 'Sò điệp nướng mỡ hành', price: 99000 }, { name: 'Càng ghẹ rang me', price: 149000 },
+  postres: {
+    cat: 'Postres', items: [
+      { name: 'Picarones x4', price: 8 }, { name: 'Suspiro limeño', price: 12 },
+      { name: 'Mazamorra morada', price: 7 }, { name: 'Helado artesanal', price: 10 },
+      { name: 'Torta de chocolate', price: 14 },
     ]
   },
-  desserts: {
-    cat: 'Tráng miệng', items: [
-      { name: 'Chè Thái', price: 30000 }, { name: 'Chè bà ba', price: 25000 },
-      { name: 'Yaourt đá xay', price: 20000 }, { name: 'Kem chuối', price: 15000 },
-      { name: 'Bánh flan', price: 15000 },
+  bebidas: {
+    cat: 'Bebidas', items: [
+      { name: 'Chicha morada 1L', price: 10 }, { name: 'Inca Kola 1.5L', price: 9 },
+      { name: 'Limonada frozen', price: 8 }, { name: 'Jugo surtido', price: 9 },
+      { name: 'Café pasado', price: 5 }, { name: 'Emoliente caliente', price: 6 },
     ]
   },
-  bun_cha: {
-    cat: 'Bún Chả', items: [
-      { name: 'Bún chả Hà Nội', price: 45000 }, { name: 'Bún chả que tre', price: 55000 },
-      { name: 'Nem rán 4 cái', price: 35000 },
+  sangucheria: {
+    cat: 'Sanguchería', items: [
+      { name: 'Butifarra', price: 12 }, { name: 'Chicharrón', price: 14 },
+      { name: 'Pollo deshilachado', price: 12 }, { name: 'Triple play', price: 10 },
     ]
   },
 }
 
 const CATEGORY_MAP: Record<string, string[]> = {
-  pho: ['Phở', 'Thức uống'],
-  bun_bo: ['Bún Bò', 'Thức uống'],
-  com_tam: ['Cơm Tấm', 'Thức uống'],
-  banh_mi: ['Bánh Mì', 'Thức uống'],
-  pizza: ['Pizza', 'Mì Ý', 'Thức uống'],
-  sushi: ['Sushi', 'Sashimi', 'Thức uống'],
-  drinks: ['Thức uống', 'Bánh ngọt'],
-  fast_food: ['Gà Rán', 'Burger', 'Thức uống'],
-  hotpot: ['Lẩu', 'Thức uống'],
-  seafood: ['Hải sản', 'Thức uống'],
-  desserts: ['Tráng miệng', 'Thức uống'],
-  bun_cha: ['Bún Chả', 'Thức uống'],
+  polleria: ['Pollería', 'Bebidas'],
+  cevicheria: ['Cevichería', 'Bebidas'],
+  criolla: ['Criolla', 'Bebidas'],
+  pizzeria: ['Pizzería', 'Bebidas'],
+  nikkei: ['Nikkei', 'Bebidas'],
+  hamburgueseria: ['Hamburguesas', 'Bebidas'],
+  chifa: ['Chifa', 'Bebidas'],
+  parrilla: ['Parrilla', 'Bebidas'],
+  criolla_casera: ['Criolla', 'Bebidas'],
+  postres: ['Postres', 'Bebidas'],
+  bebidas: ['Bebidas', 'Postres'],
+  sangucheria: ['Sanguchería', 'Bebidas'],
 }
-
-// ─── Driver Vietnamese names ───
-const DRIVER_LAST_NAMES = ['Nguyễn', 'Trần', 'Lê', 'Phạm', 'Hoàng', 'Huỳnh', 'Phan', 'Vũ', 'Võ', 'Đặng', 'Bùi', 'Đỗ', 'Hồ', 'Ngô', 'Dương', 'Lý']
-const DRIVER_MIDDLE_NAMES = ['Văn', 'Thị', 'Hữu', 'Đức', 'Minh', 'Thanh', 'Quốc', 'Tuấn', 'Ngọc', 'Hồng']
-const DRIVER_FIRST_NAMES = ['An', 'Bình', 'Cường', 'Dũng', 'Em', 'Giang', 'Hải', 'Hùng', 'Khang', 'Linh', 'Long', 'Mai', 'Nam', 'Phong', 'Quân', 'Tâm', 'Thảo', 'Trang', 'Tuấn', 'Việt']
+// ─── Driver Peruvian names ───
+const DRIVER_LAST_NAMES = ['Pérez', 'Torres', 'Quispe', 'Huamán', 'Fernández', 'García', 'Rojas', 'Mendoza', 'Aguilar', 'Castillo', 'Vargas', 'Ramos', 'Flores', 'Gutiérrez', 'Chávez', 'Paredes']
+const DRIVER_MIDDLE_NAMES = ['del', 'de la', 'San', 'Santa', 'del Valle']
+const DRIVER_FIRST_NAMES = ['Juan', 'María', 'Carlos', 'Rosa', 'Luis', 'Ana', 'Pedro', 'Carmen', 'Jorge', 'Lucía', 'Miguel', 'Elena', 'Diego', 'Sofía', 'Andrés', 'Valeria', 'Raúl', 'Daniela', 'Oscar', 'Paola']
 
 let seedState = 0x5f3759df
 
@@ -228,7 +222,7 @@ async function upsertCanonicalAiSmokeOrders(
   driverIds: string[],
 ): Promise<number> {
   const customer = await prisma.user.findUnique({
-    where: { email: 'customer1@foodflow.vn' },
+    where: { email: 'customer1@plaza4.pe' },
     select: { id: true },
   })
   const restaurantId = restaurantIds[0]
@@ -373,13 +367,13 @@ async function main() {
     )
   }
 
-  console.log('🌱 FoodFlow BIG SEED — generating rich data...\n')
+  console.log('🌱 Plaza 4 BIG SEED — generating rich data...\n')
 
   // ─── 1. Admin ───
   const adminHash = await bcrypt.hash('Admin@123', 12)
   await prisma.user.upsert({
-    where: { email: 'admin@foodflow.vn' },
-    update: {}, create: { email: 'admin@foodflow.vn', passwordHash: adminHash, fullName: 'Admin FoodFlow', role: 'admin', phone: '0900000000', isActive: true },
+    where: { email: 'admin@plaza4.pe' },
+    update: {}, create: { email: 'admin@plaza4.pe', passwordHash: adminHash, fullName: 'Plaza 4 Admin', role: 'admin', phone: '990000000', isActive: true },
   })
   console.log('✅ Admin created')
 
@@ -398,17 +392,17 @@ async function main() {
 
     // Create owner
     const ownerHash = await bcrypt.hash('Partner@123', 12)
-    const ownerEmail = `restaurant${i + 1}@foodflow.vn`
+    const ownerEmail = `restaurant${i + 1}@plaza4.pe`
     const owner = await prisma.user.upsert({
       where: { email: ownerEmail },
       update: {},
-      create: { email: ownerEmail, passwordHash: ownerHash, fullName: `Quản lý ${t.name}`, role: 'restaurant', phone: `0900000${String(100 + i).slice(-3)}`, isActive: true },
+      create: { email: ownerEmail, passwordHash: ownerHash, fullName: `Gerente ${t.name}`, role: 'restaurant', phone: `9${String(10000000 + i).slice(-8)}`, isActive: true },
     })
 
     // Create restaurant with PostGIS point
     await prisma.$executeRawUnsafe(
       `INSERT INTO restaurants (id, name, slug, description, logo_url, cover_url, location, address_line, city, district, phone, cuisine_types, price_range, rating, total_reviews, is_open, is_active, prep_time_avg_minutes, min_order_amount, created_at)
-       VALUES (gen_random_uuid(), $1, $2, $3, $4, $5, ST_SetSRID(ST_MakePoint($6, $7), 4326), $8, 'TP. Hồ Chí Minh', $9, $10, $11::text[], $12::"PriceRange", $13, $14, true, true, $15, $16, NOW())
+       VALUES (gen_random_uuid(), $1, $2, $3, $4, $5, ST_SetSRID(ST_MakePoint($6, $7), 4326), $8, 'Lima', $9, $10, $11::text[], $12::"PriceRange", $13, $14, true, true, $15, $16, NOW())
        ON CONFLICT (slug) DO UPDATE SET
          name = EXCLUDED.name,
          description = EXCLUDED.description,
@@ -427,16 +421,16 @@ async function main() {
          is_active = EXCLUDED.is_active,
          prep_time_avg_minutes = EXCLUDED.prep_time_avg_minutes,
          min_order_amount = EXCLUDED.min_order_amount`,
-      t.name, slug, `${t.name} - Món ngon mỗi ngày tại ${district.name}`,
+      t.name, slug, `${t.name} - Sabor peruano todos los días en ${district.name}`,
       `https://picsum.photos/seed/${slug}/200/200`, `https://picsum.photos/seed/${slug}-cover/800/400`,
       lng, lat,
       `${streetNum} ${street}, ${district.name}`,
       district.name,
-      `090${String(1000000 + i).slice(-7)}`,
+      `9${String(10000000 + i).slice(-8)}`,
       `{${t.cuisine.join(',')}}`,
       toDatabasePriceRange(t.price as SeedPriceRange),
       jitter(4.0, 20), randInt(10, 500),
-      t.prep, randInt(0, 3) * 10000,
+      t.prep, randInt(0, 3) * 10,
     )
 
     // Public restaurant routes and the dynamic RAG index intentionally include
@@ -473,22 +467,20 @@ async function main() {
     const existingMenuItems = await prisma.menuItem.count({ where: { restaurantId: restaurant.id } })
     if (existingMenuItems === 0) {
       const cuisineType = t.cuisine[0]
-      let menuType = 'pho'
-      if (t.slug.includes('pho')) menuType = 'pho'
-      else if (t.slug.includes('bun-bo')) menuType = 'bun_bo'
-      else if (t.slug.includes('com-tam') || t.slug.includes('com-ga') || t.slug.includes('com-nieu')) menuType = 'com_tam'
-      else if (t.slug.includes('banh-mi')) menuType = 'banh_mi'
-      else if (t.slug.includes('pizza')) menuType = 'pizza'
-      else if (t.slug.includes('sushi') || t.slug.includes('ramen')) menuType = 'sushi'
-      else if (t.slug.includes('che') || t.slug.includes('sinh-to') || t.slug.includes('kem') || t.slug.includes('yaourt') || t.slug.includes('flan') || t.slug.includes('bo-bia')) menuType = 'desserts'
-      else if (t.slug.includes('tra-sua') || t.slug.includes('ca-phe') || t.slug.includes('nuoc-mia') || t.slug.includes('gong') || t.slug.includes('phuc-long') || t.slug.includes('cong-')) menuType = 'drinks'
-      else if (t.slug.includes('kfc') || t.slug.includes('popeyes') || t.slug.includes('burger') || t.slug.includes('ga-ran')) menuType = 'fast_food'
-      else if (t.slug.includes('lau')) menuType = 'hotpot'
-      else if (t.slug.includes('oc') || t.slug.includes('banh-canh-cua')) menuType = 'seafood'
-      else if (t.slug.includes('bun-cha')) menuType = 'bun_cha'
+      let menuType = 'criolla_casera'
+      if (t.slug.includes('polleria') || t.slug.includes('broaster') || t.slug.includes('pollo-a-la-brasa')) menuType = 'polleria'
+      else if (t.slug.includes('cevicheria') || t.slug.includes('jalea') || t.slug.includes('tiradito')) menuType = 'cevicheria'
+      else if (t.slug.includes('anticucho') || t.slug.includes('sangucheria') || t.slug.includes('tacu') || t.slug.includes('empanada') || t.slug.includes('tamal')) menuType = 'criolla'
+      else if (t.slug.includes('pizzeria') || t.slug.includes('trattoria')) menuType = 'pizzeria'
+      else if (t.slug.includes('sushi') || t.slug.includes('nikkei') || t.slug.includes('maki') || t.slug.includes('ramen')) menuType = 'nikkei'
+      else if (t.slug.includes('hamburgueseria') || t.slug.includes('salchipapa')) menuType = 'hamburgueseria'
+      else if (t.slug.includes('chifa') || t.slug.includes('chaufa') || t.slug.includes('wok') || t.slug.includes('tallarin')) menuType = 'chifa'
+      else if (t.slug.includes('parrilla')) menuType = 'parrilla'
+      else if (t.slug.includes('picarones') || t.slug.includes('suspiro') || t.slug.includes('mazamorra') || t.slug.includes('heladeria') || t.slug.includes('humitas')) menuType = 'postres'
+      else if (t.slug.includes('jugueria') || t.slug.includes('cafe') || t.slug.includes('emoliente') || t.slug.includes('chicha')) menuType = 'bebidas'
 
-      const menuTemplate = MENU_DATA[menuType] ?? MENU_DATA.pho
-      const cats = CATEGORY_MAP[menuType] ?? ['Món chính', 'Thức uống']
+      const menuTemplate = MENU_DATA[menuType] ?? MENU_DATA.criolla_casera
+      const cats = CATEGORY_MAP[menuType] ?? ['Plato principal', 'Bebidas']
 
       for (let ci = 0; ci < cats.length; ci++) {
         const category = await prisma.category.create({
@@ -520,22 +512,22 @@ async function main() {
     const firstName = pick(DRIVER_FIRST_NAMES)
     const fullName = `${lastName} ${middleName} ${firstName}`
     const driverHash = await bcrypt.hash('Driver@123', 12)
-    const email = `driver${i + 1}@foodflow.vn`
+    const email = `driver${i + 1}@plaza4.pe`
 
     const driver = await prisma.user.upsert({
       where: { email }, update: {},
-      create: { email, passwordHash: driverHash, fullName, role: 'driver', phone: `090${String(2000000 + i).slice(-7)}`, isActive: true },
+      create: { email, passwordHash: driverHash, fullName, role: 'driver', phone: `9${String(20000000 + i).slice(-8)}`, isActive: true },
     })
 
     const dist = pick(DISTRICTS)
     const profileData = {
       licenseNumber: `LIC-${String(100000 + i)}`,
       vehicleType: chance(0.9) ? VehicleType.motorbike : VehicleType.car,
-      vehiclePlate: `59${String.fromCharCode(65 + randInt(0, 25))}1-${String(10000 + i).slice(-5)}`,
+      vehiclePlate: `${String.fromCharCode(65 + randInt(0, 25))}${String.fromCharCode(65 + randInt(0, 25))}${String.fromCharCode(65 + randInt(0, 25))}-${String(100 + i).slice(-3)}`,
       isVerified: i < 10 || chance(0.85),
       rating: jitter(4.2, 20),
       totalDeliveries: randInt(20, 2000),
-      totalEarnings: randInt(2000000, 80000000),
+      totalEarnings: randInt(2000, 80000),
       currentLat: jitter(dist.lat, 3),
       currentLng: jitter(dist.lng, 3),
     }
@@ -555,11 +547,11 @@ async function main() {
     const firstName = pick(DRIVER_FIRST_NAMES)
     const fullName = `${lastName} ${firstName}`
     const customerHash = await bcrypt.hash('Customer@123', 12)
-    const email = `customer${i + 1}@foodflow.vn`
+    const email = `customer${i + 1}@plaza4.pe`
 
     const customer = await prisma.user.upsert({
       where: { email }, update: {},
-      create: { email, passwordHash: customerHash, fullName, role: 'customer', phone: `090${String(3000000 + i).slice(-7)}`, isActive: true },
+      create: { email, passwordHash: customerHash, fullName, role: 'customer', phone: `9${String(30000000 + i).slice(-8)}`, isActive: true },
     })
 
     await prisma.customerProfile.upsert({
@@ -575,11 +567,11 @@ async function main() {
       const dist = pick(DISTRICTS)
       const addrLat = jitter(dist.lat, 3)
       const addrLng = jitter(dist.lng, 3)
-      const labels = ['Nhà', 'Công ty', 'Trường học', 'Nhà bạn']
+      const labels = ['Casa', 'Oficina', 'Casa de un amigo']
       await prisma.$executeRawUnsafe(
         `INSERT INTO addresses (id, user_id, label, address_line, location, is_default, created_at)
          VALUES (gen_random_uuid(), $1::uuid, $2, $3, ST_SetSRID(ST_MakePoint($4, $5), 4326), $6, NOW())`,
-        customer.id, a < labels.length ? labels[a] : `Địa chỉ ${a + 1}`,
+        customer.id, a < labels.length ? labels[a] : `Dirección ${a + 1}`,
         `${randInt(1, 500)} ${pick(STREETS)}, ${dist.name}`,
         addrLng, addrLat, a === 0,
       )
@@ -591,16 +583,16 @@ async function main() {
 
   // ─── 5. Promotions ───
   const promos = [
-    { code: 'WELCOME20', type: 'percentage', value: 20, minOrder: 50000, maxDiscount: 50000, limit: 1000 },
-    { code: 'WELCOME30', type: 'percentage', value: 30, minOrder: 100000, maxDiscount: 70000, limit: 500 },
-    { code: 'FREESHIP', type: 'fixed', value: 15000, minOrder: 100000, maxDiscount: 15000, limit: 1000 },
-    { code: 'SUMMER50', type: 'percentage', value: 50, minOrder: 200000, maxDiscount: 100000, limit: 200 },
-    { code: 'NEWYEAR25', type: 'percentage', value: 25, minOrder: 150000, maxDiscount: 80000, limit: 300 },
-    { code: 'LUNCH10', type: 'fixed', value: 10000, minOrder: 50000, maxDiscount: 10000, limit: 2000 },
-    { code: 'DINNER20', type: 'percentage', value: 20, minOrder: 200000, maxDiscount: 60000, limit: 500 },
-    { code: 'DRINKFREE', type: 'fixed', value: 15000, minOrder: 80000, maxDiscount: 15000, limit: 800 },
-    { code: 'RAIN50', type: 'percentage', value: 50, minOrder: 50000, maxDiscount: 40000, limit: 100 },
-    { code: 'BIGORDER', type: 'percentage', value: 15, minOrder: 300000, maxDiscount: 100000, limit: 300 },
+    { code: 'WELCOME20', type: 'percentage', value: 20, minOrder: 30, maxDiscount: 20, limit: 1000 },
+    { code: 'WELCOME30', type: 'percentage', value: 30, minOrder: 50, maxDiscount: 25, limit: 500 },
+    { code: 'FREESHIP', type: 'fixed', value: 6, minOrder: 40, maxDiscount: 6, limit: 1000 },
+    { code: 'SUMMER50', type: 'percentage', value: 50, minOrder: 80, maxDiscount: 40, limit: 200 },
+    { code: 'NEWYEAR25', type: 'percentage', value: 25, minOrder: 60, maxDiscount: 30, limit: 300 },
+    { code: 'LUNCH10', type: 'fixed', value: 5, minOrder: 25, maxDiscount: 5, limit: 2000 },
+    { code: 'DINNER20', type: 'percentage', value: 20, minOrder: 80, maxDiscount: 25, limit: 500 },
+    { code: 'DRINKFREE', type: 'fixed', value: 6, minOrder: 35, maxDiscount: 6, limit: 800 },
+    { code: 'RAIN50', type: 'percentage', value: 50, minOrder: 25, maxDiscount: 18, limit: 100 },
+    { code: 'BIGORDER', type: 'percentage', value: 15, minOrder: 120, maxDiscount: 40, limit: 300 },
   ]
   for (const p of promos) {
     await prisma.$executeRawUnsafe(
@@ -677,8 +669,8 @@ async function main() {
       (sum, { item, quantity }) => sum + Number(item.basePrice) * quantity,
       0,
     )
-    const deliveryFee = randInt(10000, 30000)
-    const promotionDiscount = chance(0.3) ? randInt(5000, 30000) : 0
+    const deliveryFee = randInt(4, 10)
+    const promotionDiscount = chance(0.3) ? randInt(3, 15) : 0
     const total = subtotal + deliveryFee - promotionDiscount
     const daysAgo = randInt(0, 60)
     const createdAt = new Date(Date.now() - daysAgo * 86400000 - randInt(0, 86400000))

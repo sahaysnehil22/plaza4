@@ -4,8 +4,8 @@
 
 | Channel | Purpose |
 |---------|---------|
-| [GitHub Issues](https://github.com/JasonTM17/foodflow/issues) | Bug reports |
-| [GitHub Discussions](https://github.com/JasonTM17/foodflow/discussions) | Questions, ideas, community |
+| [GitHub Issues](https://github.com/JasonTM17/plaza4/issues) | Bug reports |
+| [GitHub Discussions](https://github.com/JasonTM17/plaza4/discussions) | Questions, ideas, community |
 | Email (jasonbmt06@gmail.com) | Security vulnerabilities (see [SECURITY.md](SECURITY.md)) |
 
 ## Before You Open an Issue
@@ -30,7 +30,7 @@ When reporting a bug, include:
 - **Actual behavior**: what actually happened (error messages, logs, screenshots)
 - **Minimal reproduction**: the smallest example that triggers the bug
 
-Use the [Bug Report template](https://github.com/JasonTM17/foodflow/issues/new?template=bug_report.md) when available.
+Use the [Bug Report template](https://github.com/JasonTM17/plaza4/issues/new?template=bug_report.md) when available.
 
 ## Feature Request
 
@@ -41,7 +41,7 @@ When suggesting a feature:
 - **Alternatives considered**: other approaches you have thought about
 - **Impact**: who benefits and how?
 
-Use the [Feature Request template](https://github.com/JasonTM17/foodflow/issues/new?template=feature_request.md) when available.
+Use the [Feature Request template](https://github.com/JasonTM17/plaza4/issues/new?template=feature_request.md) when available.
 
 ## Community Resources
 

@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import { createFoodFlowApp } from '../src/bootstrap/create-foodflow-app'
+import { createPlaza4App } from '../src/bootstrap/create-plaza4-app'
 
 type ExpressHandler = (req: IncomingMessage, res: ServerResponse) => void
 
@@ -7,7 +7,7 @@ let cachedHandler: ExpressHandler | null = null
 
 async function getHandler(): Promise<ExpressHandler> {
   if (!cachedHandler) {
-    const app = await createFoodFlowApp({
+    const app = await createPlaza4App({
       enableWebSockets: false,
       setupSwagger: process.env.NODE_ENV !== 'production',
     })
