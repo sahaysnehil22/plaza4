@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/customer/providers/ai_chat_provider.dart';
-import 'package:foodflow_customer/customer/services/ai_chat_service.dart';
+import 'package:plaza4_customer/customer/providers/ai_chat_provider.dart';
+import 'package:plaza4_customer/customer/services/ai_chat_service.dart';
 
 void main() {
   group('AiChatRequest', () {

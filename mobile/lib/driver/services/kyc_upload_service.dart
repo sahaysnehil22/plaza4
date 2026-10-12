@@ -94,7 +94,7 @@ class KycUploadService {
       if (image == null) {
         return const KycUploadResult.failure(KycUploadError.cancelled);
       }
-      return uploadImageBytes(
+      return await uploadImageBytes(
         documentType: documentType,
         bytes: await image.readAsBytes(),
       );

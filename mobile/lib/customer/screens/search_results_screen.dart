@@ -7,6 +7,7 @@ import '../../shared/theme/app_text_styles.dart';
 import '../../shared/widgets/empty_state.dart';
 import '../../shared/widgets/error_state.dart';
 import '../../shared/widgets/loading_shimmer.dart';
+import '../../shared/utils/currency_formatter.dart';
 import '../../shared/utils/app_error_messages.dart';
 import '../providers/search_provider.dart';
 import '../widgets/search_filter_chips.dart';
@@ -335,7 +336,7 @@ class _SearchResultsScreenState extends ConsumerState<SearchResultsScreen> {
                   if (item.price != null) ...[
                     const SizedBox(height: 4),
                     Text(
-                      _formatCurrency(item.price!),
+                      formatPen(context, item.price!),
                       style: AppTextStyles.priceSmall,
                     ),
                   ],
@@ -364,10 +365,5 @@ class _SearchResultsScreenState extends ConsumerState<SearchResultsScreen> {
     );
   }
 
-  String _formatCurrency(int vnd) {
-    if (vnd >= 1000) {
-      return '${(vnd / 1000).round()}KS/';
-    }
-    return '$vndS/';
-  }
 }
+
