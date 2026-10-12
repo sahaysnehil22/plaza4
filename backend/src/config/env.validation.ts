@@ -1,8 +1,8 @@
 import { z } from 'zod'
 
 const LOCAL_DEFAULTS = {
-  DATABASE_URL: 'postgresql://foodflow:foodflow_dev@localhost:5432/foodflow',
-  DIRECT_URL: 'postgresql://foodflow:foodflow_dev@localhost:5432/foodflow',
+  DATABASE_URL: 'postgresql://plaza4:plaza4_dev@localhost:5432/plaza4',
+  DIRECT_URL: 'postgresql://plaza4:plaza4_dev@localhost:5432/plaza4',
   REDIS_URL: 'redis://localhost:6379',
   JWT_SECRET: 'local-development-jwt-secret-change-me-000000000000000000000000000000',
   JWT_REFRESH_SECRET: 'local-development-refresh-secret-change-me-0000000000000000000000',
@@ -11,7 +11,7 @@ const LOCAL_DEFAULTS = {
 } as const
 
 const productionRequiredKeys = [
-  'FOODFLOW_PROCESS_ROLE',
+  'PLAZA4_PROCESS_ROLE',
   'DATABASE_URL',
   'DIRECT_URL',
   'REDIS_URL',
@@ -19,7 +19,7 @@ const productionRequiredKeys = [
   'JWT_REFRESH_SECRET',
   'PASSWORD_RESET_URL_BASE',
   'CORS_ORIGINS',
-  'DELIVERY_BASE_FEE_VND',
+  'DELIVERY_BASE_FEE_PEN',
 ] as const
 
 const optionalProviderKeys = [
@@ -116,7 +116,7 @@ const deepSeekBaseUrl = z
 export const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
   PORT: z.coerce.number().int().positive().default(3001),
-  FOODFLOW_PROCESS_ROLE: z.enum(['api', 'worker']).optional(),
+  PLAZA4_PROCESS_ROLE: z.enum(['api', 'worker']).optional(),
   REALTIME_PROVIDER: z.enum(['socketio', 'supabase']).default('socketio'),
   STORAGE_PROVIDER: z.enum(['minio', 'supabase']).default('minio'),
   QUEUE_PROVIDER: z.enum(['bullmq', 'supabase-postgres']).default('bullmq'),
@@ -136,13 +136,13 @@ export const envSchema = z.object({
   PASSWORD_RESET_URL_BASE: z.string().url().optional(),
   PASSWORD_RESET_TOKEN_TTL_MINUTES: z.coerce.number().int().positive().max(1440).default(60),
   CORS_ORIGINS: z.string().default('http://localhost:3000'),
-  DELIVERY_BASE_FEE_VND: z.coerce.number().int().nonnegative().max(1_000_000),
+  DELIVERY_BASE_FEE_PEN: z.coerce.number().nonnegative().max(1_000),
   MINIO_ENDPOINT: z.string().default('localhost'),
   MINIO_PORT: z.coerce.number().int().positive().default(9000),
   MINIO_ACCESS_KEY: z.string().min(3).optional(),
   MINIO_SECRET_KEY: z.string().min(8).optional(),
-  MINIO_BUCKET: z.string().default('foodflow'),
-  MINIO_KYC_BUCKET: z.string().default('foodflow-kyc'),
+  MINIO_BUCKET: z.string().default('plaza4'),
+  MINIO_KYC_BUCKET: z.string().default('plaza4-kyc'),
   MINIO_PUBLIC_URL: z.string().url().default('http://localhost:9000'),
   STORAGE_MAX_UPLOAD_MB: z.coerce.number().int().positive().max(50).default(5),
   DRIVER_KYC_MAX_UPLOAD_MB: z.coerce.number().int().positive().max(4).default(4),
@@ -193,7 +193,7 @@ export const envSchema = z.object({
   SUPABASE_ALLOW_LEGACY_KEYS: z.enum(['true', 'false']).default('false'),
   SUPABASE_SERVICE_ROLE_KEY: z.string().optional(),
   SUPABASE_STORAGE_BUCKET: z.string().optional(),
-  SUPABASE_KYC_BUCKET: z.literal('foodflow-private').optional(),
+  SUPABASE_KYC_BUCKET: z.literal('plaza4-private').optional(),
   // Ed25519 dual-verify (Phase 1 cutover — Phase 2 will flip signing)
   JWT_ED25519_PRIVATE_KEY: z.string().optional(),
   JWT_ED25519_PUBLIC_KEY: z.string().optional(),

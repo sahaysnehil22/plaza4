@@ -7,18 +7,25 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 export const VN_TZ = 'Asia/Ho_Chi_Minh'
+export const PE_TZ = 'America/Lima'
 
-export function now(): Date { return dayjs().tz(VN_TZ).toDate() }
+export function now(): Date { return dayjs().tz(PE_TZ).toDate() }
 
-export function today(): Date { return dayjs().tz(VN_TZ).startOf('day').toDate() }
+export function today(): Date { return dayjs().tz(PE_TZ).startOf('day').toDate() }
 
-export function daysAgo(days: number): Date { return dayjs().tz(VN_TZ).subtract(days, 'day').toDate() }
+export function daysAgo(days: number): Date { return dayjs().tz(PE_TZ).subtract(days, 'day').toDate() }
 
-export function formatDate(date: Date, format = 'DD/MM/YYYY'): string { return dayjs(date).tz(VN_TZ).format(format) }
+export function formatDate(date: Date, format = 'DD/MM/YYYY'): string { return dayjs(date).tz(PE_TZ).format(format) }
 
-export function formatDateTime(date: Date): string { return dayjs(date).tz(VN_TZ).format('DD/MM/YYYY HH:mm') }
+export function formatDateTime(date: Date): string { return dayjs(date).tz(PE_TZ).format('DD/MM/YYYY HH:mm') }
 
 const REL_TIME: Record<Locale, { now: string; min: (n: number) => string; hr: (n: number) => string; day: (n: number) => string }> = {
+  es: {
+    now: 'ahora mismo',
+    min: (n) => `hace ${n} minuto${n === 1 ? '' : 's'}`,
+    hr: (n) => `hace ${n} hora${n === 1 ? '' : 's'}`,
+    day: (n) => `hace ${n} día${n === 1 ? '' : 's'}`,
+  },
   vi: {
     now: 'vừa xong',
     min: (n) => `${n} phút trước`,
@@ -39,8 +46,8 @@ const REL_TIME: Record<Locale, { now: string; min: (n: number) => string; hr: (n
   },
 }
 
-export function timeSince(date: Date, lang: Locale = 'vi'): string {
-  const t = REL_TIME[lang] ?? REL_TIME.vi
+export function timeSince(date: Date, lang: Locale = 'es'): string {
+  const t = REL_TIME[lang] ?? REL_TIME.es
   const seconds = Math.floor((Date.now() - date.getTime()) / 1000)
   if (seconds < 60) return t.now
   const minutes = Math.floor(seconds / 60)

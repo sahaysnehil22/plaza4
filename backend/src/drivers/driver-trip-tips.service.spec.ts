@@ -39,7 +39,7 @@ describe('DriverTripTipsService', () => {
       id: 'tip-1',
       tripId: 'order-1',
       amount: 20000,
-      currency: 'VND',
+      currency: 'PEN',
       status: 'reported',
       createdAt: now.toISOString(),
       updatedAt: now.toISOString(),
@@ -65,7 +65,7 @@ function reportRow(overrides: { id: string; orderId: string }) {
   return {
     driverId: 'driver-1',
     amount: 20000,
-    currency: 'VND',
+    currency: 'PEN',
     status: 'reported',
     createdAt: now,
     updatedAt: now,

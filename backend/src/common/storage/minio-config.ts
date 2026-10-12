@@ -21,7 +21,7 @@ const LOCAL_MINIO_DEFAULTS = {
   port: 9000,
   accessKey: 'minioadmin',
   secretKey: 'minioadmin',
-  bucket: 'foodflow',
+  bucket: 'plaza4',
   publicUrl: 'http://localhost:9000',
 } as const
 

@@ -11,15 +11,15 @@ export const ROLES = {
 export type Role = (typeof ROLES)[keyof typeof ROLES]
 
 export const ROLE_LABELS: Record<string, string> = {
-  customer: 'Khách hàng',
-  driver: 'Tài xế',
-  restaurant: 'Nhà hàng',
-  admin: 'Quản trị viên',
+  customer: 'Cliente',
+  driver: 'Repartidor',
+  restaurant: 'Restaurante',
+  admin: 'Administrador',
 }
 
 export function getRoleLabel(
   role: string,
-  lang: Locale = 'vi',
+  lang: Locale = 'es',
   i18n?: I18nService,
 ): string {
   if (i18n) {

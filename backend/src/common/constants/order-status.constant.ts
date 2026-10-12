@@ -4,26 +4,26 @@ import type { Locale } from '../types/locale.types'
 export type { Locale }
 
 export const ORDER_STATUS_LABELS: Record<string, string> = {
-  created: 'Mới tạo',
-  pending_payment: 'Chờ thanh toán',
-  paid: 'Đã thanh toán',
-  restaurant_pending: 'Chờ nhà hàng',
-  restaurant_accepted: 'Nhà hàng đã nhận',
-  preparing: 'Đang chuẩn bị',
-  ready_for_pickup: 'Sẵn sàng giao',
-  driver_assigned: 'Đã có tài xế',
-  driver_arriving_restaurant: 'Tài xế đến nhà hàng',
-  picked_up: 'Đã lấy hàng',
-  delivering: 'Đang giao',
-  delivered: 'Đã giao',
-  completed: 'Hoàn thành',
-  cancelled: 'Đã hủy',
-  refunded: 'Đã hoàn tiền',
+  created: 'Creado',
+  pending_payment: 'Pago pendiente',
+  paid: 'Pagado',
+  restaurant_pending: 'En espera del restaurante',
+  restaurant_accepted: 'Restaurante aceptó',
+  preparing: 'En preparación',
+  ready_for_pickup: 'Listo para recojo',
+  driver_assigned: 'Repartidor asignado',
+  driver_arriving_restaurant: 'Repartidor llegando al restaurante',
+  picked_up: 'Recogido',
+  delivering: 'En camino',
+  delivered: 'Entregado',
+  completed: 'Completado',
+  cancelled: 'Cancelado',
+  refunded: 'Reembolsado',
 }
 
 export function getOrderStatusLabel(
   status: string,
-  lang: Locale = 'vi',
+  lang: Locale = 'es',
   i18n?: I18nService,
 ): string {
   if (i18n) {

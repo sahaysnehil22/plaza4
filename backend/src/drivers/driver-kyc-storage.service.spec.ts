@@ -56,7 +56,7 @@ describe('DriverKycStorageService', () => {
       STORAGE_PROVIDER: 'supabase',
       SUPABASE_URL: 'https://project.supabase.co',
       SUPABASE_SERVICE_ROLE_KEY: 'service-role-test-key',
-      SUPABASE_KYC_BUCKET: 'foodflow-kyc',
+      SUPABASE_KYC_BUCKET: 'plaza4-kyc',
     }))
 
     const grant = await service.createUploadGrant(
@@ -72,7 +72,7 @@ describe('DriverKycStorageService', () => {
       'service-role-test-key',
       { auth: { persistSession: false, autoRefreshToken: false } },
     )
-    expect(mockSupabase.storage.from).toHaveBeenCalledWith('foodflow-kyc')
+    expect(mockSupabase.storage.from).toHaveBeenCalledWith('plaza4-kyc')
     expect(grant).toEqual({
       uploadUrl: 'https://supabase.test/signed-put',
       objectKey: expect.stringMatching(
@@ -110,7 +110,7 @@ describe('DriverKycStorageService', () => {
       STORAGE_PROVIDER: 'supabase',
       SUPABASE_URL: 'https://project.supabase.co',
       SUPABASE_SERVICE_ROLE_KEY: 'service-role-test-key',
-      SUPABASE_KYC_BUCKET: 'foodflow-kyc',
+      SUPABASE_KYC_BUCKET: 'plaza4-kyc',
     }))
 
     await expect(service.createUploadGrant(
@@ -126,7 +126,7 @@ describe('DriverKycStorageService', () => {
       STORAGE_PROVIDER: 'supabase',
       SUPABASE_URL: 'https://project.supabase.co',
       SUPABASE_SERVICE_ROLE_KEY: 'service-role-test-key',
-      SUPABASE_KYC_BUCKET: 'foodflow-kyc',
+      SUPABASE_KYC_BUCKET: 'plaza4-kyc',
     }))
     const documents = makeDocuments('another-driver')
 
@@ -140,7 +140,7 @@ describe('DriverKycStorageService', () => {
       STORAGE_PROVIDER: 'supabase',
       SUPABASE_URL: 'https://project.supabase.co',
       SUPABASE_SERVICE_ROLE_KEY: 'service-role-test-key',
-      SUPABASE_KYC_BUCKET: 'foodflow-kyc',
+      SUPABASE_KYC_BUCKET: 'plaza4-kyc',
     }))
     const documents = makeDocuments('driver-1')
 
@@ -159,7 +159,7 @@ describe('DriverKycStorageService', () => {
       STORAGE_PROVIDER: 'supabase',
       SUPABASE_URL: 'https://project.supabase.co',
       SUPABASE_SERVICE_ROLE_KEY: 'service-role-test-key',
-      SUPABASE_KYC_BUCKET: 'foodflow-kyc',
+      SUPABASE_KYC_BUCKET: 'plaza4-kyc',
     }))
 
     await expect(service.createSignedReadUrls('driver-1', makeDocuments('driver-2')))
@@ -176,7 +176,7 @@ describe('DriverKycStorageService', () => {
       STORAGE_PROVIDER: 'supabase',
       SUPABASE_URL: 'https://project.supabase.co',
       SUPABASE_SERVICE_ROLE_KEY: 'service-role-test-key',
-      SUPABASE_KYC_BUCKET: 'foodflow-kyc',
+      SUPABASE_KYC_BUCKET: 'plaza4-kyc',
     }))
 
     await expect(service.validateSubmissionObjects('driver-1', makeDocuments('driver-1')))
@@ -196,7 +196,7 @@ describe('DriverKycStorageService', () => {
     await expect(service.validateSubmissionObjects('driver-1', makeDocuments('driver-1')))
       .resolves.toBeUndefined()
     expect(mockMinio.statObject).toHaveBeenCalledWith(
-      'foodflow-kyc',
+      'plaza4-kyc',
       expect.stringMatching(/^kyc\/driver-1\//),
     )
     expect(mockMinio.getPartialObject).toHaveBeenCalledTimes(4)
@@ -227,7 +227,7 @@ function makeConfig(overrides: Record<string, string | number | undefined> = {})
     MINIO_PORT: 9000,
     MINIO_ACCESS_KEY: 'minioadmin',
     MINIO_SECRET_KEY: 'minioadmin',
-    MINIO_KYC_BUCKET: 'foodflow-kyc',
+    MINIO_KYC_BUCKET: 'plaza4-kyc',
     DRIVER_KYC_MAX_UPLOAD_MB: 4,
     ...overrides,
   }

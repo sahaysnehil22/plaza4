@@ -176,7 +176,7 @@ export class CartService {
     if (!cart.restaurantId) throw new BadRequestException('CART_NO_RESTAURANT')
 
     const subtotal = cart.items.reduce((sum, i) => sum + Number(i.unitPrice) * i.quantity, 0)
-    const deliveryFee = Number(process.env.DELIVERY_BASE_FEE_VND ?? 15000)
+    const deliveryFee = Number(process.env.DELIVERY_BASE_FEE_PEN ?? 6)
     const { discountAmount } = await this.promotionsService.preview(
       dto.code,
       {

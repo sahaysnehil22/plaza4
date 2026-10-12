@@ -11,7 +11,7 @@ describe('websocketCorsOrigins', () => {
     else process.env.NODE_ENV = originalNodeEnv
   })
 
-  it('supports every local FoodFlow web port by default', () => {
+  it('supports every local Plaza 4 web port by default', () => {
     delete process.env.CORS_ORIGINS
 
     expect(websocketCorsOrigins()).toEqual([

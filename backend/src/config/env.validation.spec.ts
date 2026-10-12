@@ -2,45 +2,45 @@ import { validateEnv } from './env.validation'
 
 const productionEnv = {
   NODE_ENV: 'production',
-  FOODFLOW_PROCESS_ROLE: 'api',
-  DATABASE_URL: 'postgresql://foodflow:secret@db.foodflow.vn:5432/foodflow',
-  DIRECT_URL: 'postgresql://foodflow:secret@db-direct.foodflow.vn:5432/foodflow',
-  REDIS_URL: 'rediss://:secret@redis.foodflow.vn:6380',
+  PLAZA4_PROCESS_ROLE: 'api',
+  DATABASE_URL: 'postgresql://plaza4:secret@db.plaza4.pe:5432/plaza4',
+  DIRECT_URL: 'postgresql://plaza4:secret@db-direct.plaza4.pe:5432/plaza4',
+  REDIS_URL: 'rediss://:secret@redis.plaza4.pe:6380',
   JWT_SECRET: 'a'.repeat(64),
   JWT_REFRESH_SECRET: 'b'.repeat(64),
-  PASSWORD_RESET_URL_BASE: 'https://admin.foodflow.vn/reset-password',
-  CORS_ORIGINS: 'https://admin.foodflow.vn,https://restaurant.foodflow.vn',
-  DELIVERY_BASE_FEE_VND: '15000',
-  MINIO_ENDPOINT: 's3.foodflow.vn',
-  MINIO_ACCESS_KEY: 'foodflow-production-access-key',
+  PASSWORD_RESET_URL_BASE: 'https://admin.plaza4.pe/reset-password',
+  CORS_ORIGINS: 'https://admin.plaza4.pe,https://restaurant.plaza4.pe',
+  DELIVERY_BASE_FEE_PEN: '6',
+  MINIO_ENDPOINT: 's3.plaza4.pe',
+  MINIO_ACCESS_KEY: 'plaza4-production-access-key',
   MINIO_SECRET_KEY: 'c'.repeat(64),
-  MINIO_KYC_BUCKET: 'foodflow-kyc',
-  MINIO_PUBLIC_URL: 'https://cdn.foodflow.vn',
+  MINIO_KYC_BUCKET: 'plaza4-kyc',
+  MINIO_PUBLIC_URL: 'https://cdn.plaza4.pe',
   THROTTLER_MEMORY_FALLBACK: 'false',
   GOOGLE_MAPS_API_KEY: 'prod-google-maps-browser-key',
-  OSRM_URL: 'https://osrm.foodflow.vn',
+  OSRM_URL: 'https://osrm.plaza4.pe',
   DEEPSEEK_API_KEY: 'prod-deepseek-api-key',
   SEPAY_API_KEY: 'prod-sepay-api-key',
   SEPAY_ACCOUNT_NUMBER: '1234567890',
   SEPAY_BANK_NAME: 'Vietcombank',
   SEPAY_WEBHOOK_SECRET: 's'.repeat(64),
   WEBHOOK_SECRET: 'prod-generic-webhook-secret',
-  SMTP_HOST: 'smtp.foodflow.vn',
-  SMTP_USER: 'smtp-foodflow-user',
-  SMTP_PASS: 'smtp-foodflow-password',
-  SMTP_FROM: 'noreply@foodflow.vn',
-  FCM_PROJECT_ID: 'foodflow-production',
+  SMTP_HOST: 'smtp.plaza4.pe',
+  SMTP_USER: 'smtp-plaza4-user',
+  SMTP_PASS: 'smtp-plaza4-password',
+  SMTP_FROM: 'noreply@plaza4.pe',
+  FCM_PROJECT_ID: 'plaza4-production',
   TWILIO_ACCOUNT_SID: 'prod-twilio-account-sid',
   TWILIO_AUTH_TOKEN: 'prod-twilio-auth-token',
   TWILIO_FROM_NUMBER: '+84900000000',
   SUPABASE_URL: 'https://lvanszgszzfopusboich.supabase.co',
-  SUPABASE_SECRET_KEY: 'sb_secret_foodflow_production',
+  SUPABASE_SECRET_KEY: 'sb_secret_plaza4_production',
   SUPABASE_SERVICE_ROLE_KEY: `eyJ${'x'.repeat(64)}`,
-  SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_foodflow_production',
+  SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_plaza4_production',
   SUPABASE_REALTIME_JWT_PRIVATE_KEY: 'test-es256-private-key',
-  SUPABASE_REALTIME_JWT_KEY_ID: 'foodflow-es256-2026-07',
-  SUPABASE_STORAGE_BUCKET: 'foodflow-public',
-  SUPABASE_KYC_BUCKET: 'foodflow-private',
+  SUPABASE_REALTIME_JWT_KEY_ID: 'plaza4-es256-2026-07',
+  SUPABASE_STORAGE_BUCKET: 'plaza4-public',
+  SUPABASE_KYC_BUCKET: 'plaza4-private',
 }
 
 const optionalProviderKeys = [
@@ -71,23 +71,23 @@ describe('validateEnv', () => {
   it('rejects an unknown API or worker process role', () => {
     expect(() => validateEnv({
       NODE_ENV: 'test',
-      DELIVERY_BASE_FEE_VND: '15000',
-      FOODFLOW_PROCESS_ROLE: 'workre',
-    })).toThrow(/FOODFLOW_PROCESS_ROLE/)
+      DELIVERY_BASE_FEE_PEN: '6',
+      PLAZA4_PROCESS_ROLE: 'workre',
+    })).toThrow(/PLAZA4_PROCESS_ROLE/)
   })
 
   it('keeps local defaults for development and test environments only', () => {
-    const env = validateEnv({ NODE_ENV: 'test', DELIVERY_BASE_FEE_VND: '15000' })
+    const env = validateEnv({ NODE_ENV: 'test', DELIVERY_BASE_FEE_PEN: '6' })
 
-    expect(env.DATABASE_URL).toBe('postgresql://foodflow:foodflow_dev@localhost:5432/foodflow')
-    expect(env.DIRECT_URL).toBe('postgresql://foodflow:foodflow_dev@localhost:5432/foodflow')
+    expect(env.DATABASE_URL).toBe('postgresql://plaza4:plaza4_dev@localhost:5432/plaza4')
+    expect(env.DIRECT_URL).toBe('postgresql://plaza4:plaza4_dev@localhost:5432/plaza4')
     expect(env.REDIS_URL).toBe('redis://localhost:6379')
     expect(env.JWT_SECRET.length).toBeGreaterThanOrEqual(64)
     expect(env.JWT_REFRESH_SECRET.length).toBeGreaterThanOrEqual(64)
     expect(env.THROTTLER_MEMORY_FALLBACK).toBe('false')
     expect(env.THROTTLER_TTL_MS).toBe(60_000)
     expect(env.THROTTLER_LIMIT).toBe(100)
-    expect(env.DELIVERY_BASE_FEE_VND).toBe(15_000)
+    expect(env.DELIVERY_BASE_FEE_PEN).toBe(6)
     expect(env.DEEPSEEK_BASE_URL).toBe('https://api.deepseek.com')
     expect(env.DEEPSEEK_MODEL).toBe('deepseek-v4-flash')
     expect(env.RAG_ENABLED).toBe('true')
@@ -102,7 +102,7 @@ describe('validateEnv', () => {
   it('accepts bounded non-production throttle overrides for load-test runs', () => {
     const env = validateEnv({
       NODE_ENV: 'test',
-      DELIVERY_BASE_FEE_VND: '15000',
+      DELIVERY_BASE_FEE_PEN: '6',
       THROTTLER_TTL_MS: '60000',
       THROTTLER_LIMIT: '50000',
     })
@@ -124,7 +124,7 @@ describe('validateEnv', () => {
   it('rejects unsafe RAG sync frequency, batch size, and concurrency values', () => {
     expect(() => validateEnv({
       NODE_ENV: 'test',
-      DELIVERY_BASE_FEE_VND: '15000',
+      DELIVERY_BASE_FEE_PEN: '6',
       RAG_SYNC_INTERVAL_MS: '1000',
       RAG_SYNC_BATCH_SIZE: '5000',
       RAG_SYNC_CONCURRENCY: '50',
@@ -138,9 +138,9 @@ describe('validateEnv', () => {
 
     expect(validateEnv({
       ...productionEnv,
-      FCM_SERVICE_ACCOUNT_JSON: JSON.stringify({ project_id: 'foodflow-production' }),
+      FCM_SERVICE_ACCOUNT_JSON: JSON.stringify({ project_id: 'plaza4-production' }),
     })).toMatchObject({
-      FCM_PROJECT_ID: 'foodflow-production',
+      FCM_PROJECT_ID: 'plaza4-production',
     })
   })
 
@@ -171,7 +171,7 @@ describe('validateEnv', () => {
 
     expect(() => validateEnv({
       ...providersDisabledEnv,
-      SMTP_HOST: 'smtp.foodflow.vn',
+      SMTP_HOST: 'smtp.plaza4.pe',
     })).toThrow(/missing SMTP_USER, SMTP_PASS/)
 
     expect(() => validateEnv({
@@ -181,14 +181,14 @@ describe('validateEnv', () => {
 
     expect(() => validateEnv({
       ...providersDisabledEnv,
-      FCM_SERVICE_ACCOUNT_JSON: JSON.stringify({ project_id: 'foodflow-prod' }),
+      FCM_SERVICE_ACCOUNT_JSON: JSON.stringify({ project_id: 'plaza4-prod' }),
     })).toThrow(/missing FCM_PROJECT_ID/)
   })
 
   it('rejects malformed Firebase service account JSON without exposing its value', () => {
     expect(() => validateEnv({
       NODE_ENV: 'test',
-      DELIVERY_BASE_FEE_VND: '15000',
+      DELIVERY_BASE_FEE_PEN: '6',
       FCM_SERVICE_ACCOUNT_JSON: '{not-json}',
     })).toThrow(/FCM_SERVICE_ACCOUNT_JSON: Must be a JSON object/)
   })
@@ -196,7 +196,7 @@ describe('validateEnv', () => {
   it('treats a blank optional service account value as ADC configuration', () => {
     expect(validateEnv({
       NODE_ENV: 'test',
-      DELIVERY_BASE_FEE_VND: '15000',
+      DELIVERY_BASE_FEE_PEN: '6',
       FCM_SERVICE_ACCOUNT_JSON: '   ',
     }).FCM_SERVICE_ACCOUNT_JSON).toBeUndefined()
   })
@@ -255,7 +255,7 @@ describe('validateEnv', () => {
   it('keeps the KYC upload limit and managed private bucket aligned with migrations', () => {
     expect(() => validateEnv({
       NODE_ENV: 'test',
-      DELIVERY_BASE_FEE_VND: '15000',
+      DELIVERY_BASE_FEE_PEN: '6',
       DRIVER_KYC_MAX_UPLOAD_MB: '5',
     })).toThrow(/DRIVER_KYC_MAX_UPLOAD_MB/)
 
@@ -291,7 +291,7 @@ describe('validateEnv', () => {
     expect(() =>
       validateEnv({
         ...productionEnv,
-        DATABASE_URL: 'postgresql://foodflow:foodflow_dev@localhost:5432/foodflow',
+        DATABASE_URL: 'postgresql://plaza4:plaza4_dev@localhost:5432/plaza4',
         JWT_SECRET: 'dev-secret',
         OSRM_URL: 'https://router.project-osrm.org',
         DEEPSEEK_API_KEY: 'your-deepseek-api-key',
@@ -304,13 +304,13 @@ describe('validateEnv', () => {
   it('rejects DeepSeek credential exfiltration endpoints and unsupported models', () => {
     expect(() => validateEnv({
       NODE_ENV: 'test',
-      DELIVERY_BASE_FEE_VND: '15000',
+      DELIVERY_BASE_FEE_PEN: '6',
       DEEPSEEK_BASE_URL: 'https://attacker.example/api',
     })).toThrow(/official DeepSeek API origin/)
 
     expect(() => validateEnv({
       NODE_ENV: 'test',
-      DELIVERY_BASE_FEE_VND: '15000',
+      DELIVERY_BASE_FEE_PEN: '6',
       DEEPSEEK_MODEL: 'deepseek-v4-pro',
     })).toThrow(/deepseek-v4-flash/)
   })

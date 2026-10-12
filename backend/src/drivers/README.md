@@ -34,8 +34,8 @@ Driver entity: profile, KYC documents, vehicle info, online/offline status, real
 | `DRIVER_OFFLINE_TIMEOUT_MIN` | `5` | Auto-offline if no heartbeat |
 | `DRIVER_KYC_RETRY_LIMIT` | `3` | Max KYC submissions before manual review |
 | `DRIVER_KYC_MAX_UPLOAD_MB` | `4` | Maximum JPEG/PNG/WebP document size; keep aligned with the private bucket limit |
-| `MINIO_KYC_BUCKET` | `foodflow-kyc` | Dedicated private KYC bucket for local/self-hosted storage |
-| `SUPABASE_KYC_BUCKET` | `foodflow-kyc` | Dedicated private KYC bucket for managed production |
+| `MINIO_KYC_BUCKET` | `plaza4-kyc` | Dedicated private KYC bucket for local/self-hosted storage |
+| `SUPABASE_KYC_BUCKET` | `plaza4-kyc` | Dedicated private KYC bucket for managed production |
 
 ## Test
 

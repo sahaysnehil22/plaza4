@@ -109,7 +109,7 @@ describe('DriversService', () => {
           createdAt: new Date('2026-07-03T08:31:00Z'),
           order: {
             orderCode: 'FD0000000001',
-            restaurant: { name: 'FoodFlow Kitchen' },
+            restaurant: { name: 'Plaza 4 Kitchen' },
             deliveryTask: { deliveredAt: completedAt },
           },
         },
@@ -141,7 +141,7 @@ describe('DriversService', () => {
           {
             orderId: 'order-1',
             orderCode: 'FD0000000001',
-            restaurantName: 'FoodFlow Kitchen',
+            restaurantName: 'Plaza 4 Kitchen',
             amount: 25000,
             completedAt: completedAt.toISOString(),
           },
@@ -216,7 +216,7 @@ describe('DriversService', () => {
       estimatedDeliveryTimeMinutes: 14,
       routePolyline: 'encoded-route',
       restaurant: {
-        name: 'FoodFlow Kitchen',
+        name: 'Plaza 4 Kitchen',
         logoUrl: null,
         addressLine: '1 Kitchen Street',
         phone: '0900000001',
@@ -351,7 +351,7 @@ describe('DriversService', () => {
       expect(mockPrisma.$queryRaw).toHaveBeenCalled()
       expect(summary.period).toBe('7d')
       expect(summary.byDay).toHaveLength(7)
-      expect(summary.totalVnd).toBe(70000)
+      expect(summary.totalPen).toBe(70000)
       expect(summary.tripCount).toBe(3)
       expect(summary.avgPerTrip).toBe(23333)
       expect(summary.byDay.at(-2)).toEqual({ date: yesterday, amount: 40000, tripCount: 2 })
@@ -365,7 +365,7 @@ describe('DriversService', () => {
 
       expect(summary.period).toBe('7d')
       expect(summary.byDay).toHaveLength(7)
-      expect(summary.totalVnd).toBe(0)
+      expect(summary.totalPen).toBe(0)
       expect(summary.tripCount).toBe(0)
       expect(summary.avgPerTrip).toBe(0)
     })
