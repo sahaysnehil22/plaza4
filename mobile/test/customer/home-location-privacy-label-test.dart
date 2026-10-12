@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/customer/screens/home_screen.dart';
-import 'package:foodflow_customer/l10n/app_localizations.dart';
+import 'package:plaza4_customer/customer/screens/home_screen.dart';
+import 'package:plaza4_customer/l10n/app_localizations.dart';
 
 void main() {
   test(

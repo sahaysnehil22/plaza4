@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/customer/router/route_names.dart';
-import 'package:foodflow_customer/customer/screens/splash_screen.dart';
-import 'package:foodflow_customer/l10n/app_localizations.dart';
-import 'package:foodflow_customer/shared/providers/auth_provider.dart';
+import 'package:plaza4_customer/customer/router/route_names.dart';
+import 'package:plaza4_customer/customer/screens/splash_screen.dart';
+import 'package:plaza4_customer/l10n/app_localizations.dart';
+import 'package:plaza4_customer/shared/providers/auth_provider.dart';
 import 'package:go_router/go_router.dart';
 
 class _TestAuthNotifier extends AuthNotifier {

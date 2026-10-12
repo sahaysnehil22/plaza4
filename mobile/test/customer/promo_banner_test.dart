@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:foodflow_customer/customer/widgets/promo_banner.dart';
+import 'package:plaza4_customer/customer/widgets/promo_banner.dart';
 
 void main() {
   testWidgets('fits the customer home carousel height without overflow', (

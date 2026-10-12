@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/customer/screens/restaurant_list_screen.dart';
-import 'package:foodflow_customer/shared/models/restaurant.dart';
+import 'package:plaza4_customer/customer/screens/restaurant_list_screen.dart';
+import 'package:plaza4_customer/shared/models/restaurant.dart';
 
 void main() {
   group('restaurantListInitialCameraPosition', () {

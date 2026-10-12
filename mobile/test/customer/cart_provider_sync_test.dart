@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/shared/api/api_client.dart';
-import 'package:foodflow_customer/shared/models/menu_item.dart';
-import 'package:foodflow_customer/shared/providers/cart_provider.dart';
+import 'package:plaza4_customer/shared/api/api_client.dart';
+import 'package:plaza4_customer/shared/models/menu_item.dart';
+import 'package:plaza4_customer/shared/providers/cart_provider.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
