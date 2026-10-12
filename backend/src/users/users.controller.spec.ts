@@ -47,7 +47,7 @@ describe('UsersController', () => {
   })
 
   it('uses JwtPayload.sub for profile updates and avatar uploads', async () => {
-    storageService.uploadAvatar.mockResolvedValueOnce({ url: 'https://cdn.foodflow.test/avatar.png' })
+    storageService.uploadAvatar.mockResolvedValueOnce({ url: 'https://cdn.plaza4.test/avatar.png' })
 
     await controller.updateProfile(user, { fullName: 'Nguyen Van A' })
     await controller.uploadAvatar(user, { buffer: Buffer.from('image') } as never)

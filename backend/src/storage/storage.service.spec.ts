@@ -38,7 +38,7 @@ describe('StorageService', () => {
     mockMinioClient.removeObject.mockResolvedValue(undefined)
     mockSupabaseBucket.upload.mockResolvedValue({ data: { path: 'stored' }, error: null })
     mockSupabaseBucket.remove.mockResolvedValue({ data: [], error: null })
-    mockSupabaseBucket.getPublicUrl.mockReturnValue({ data: { publicUrl: 'https://storage.foodflow.test/object.png' } })
+    mockSupabaseBucket.getPublicUrl.mockReturnValue({ data: { publicUrl: 'https://storage.plaza4.test/object.png' } })
   })
 
   it('uploads image files only after validating the declared MIME against magic bytes', async () => {
@@ -56,13 +56,13 @@ describe('StorageService', () => {
       accessKey: 'minioadmin',
     }))
     expect(mockMinioClient.putObject).toHaveBeenCalledWith(
-      'foodflow',
+      'plaza4',
       expect.stringMatching(/^restaurants\/restaurant-1\/\d+-[a-f0-9]+\.png$/),
       png.buffer,
       png.size,
       { 'Content-Type': 'image/png' },
     )
-    expect(result.url).toMatch(/^http:\/\/localhost:9000\/foodflow\/restaurants\/restaurant-1\//)
+    expect(result.url).toMatch(/^http:\/\/localhost:9000\/plaza4\/restaurants\/restaurant-1\//)
   })
 
   it('rejects spoofed image uploads before touching object storage', async () => {
@@ -106,7 +106,7 @@ describe('StorageService', () => {
       STORAGE_PROVIDER: 'supabase',
       SUPABASE_URL: 'https://lvanszgszzfopusboich.supabase.co',
       SUPABASE_SERVICE_ROLE_KEY: 'service-role-test-key',
-      SUPABASE_STORAGE_BUCKET: 'foodflow-production',
+      SUPABASE_STORAGE_BUCKET: 'plaza4-production',
     }))
     const png = makeFile({
       originalname: 'logo.png',
@@ -122,7 +122,7 @@ describe('StorageService', () => {
       'service-role-test-key',
       { auth: { persistSession: false, autoRefreshToken: false } },
     )
-    expect(mockSupabaseClient.storage.from).toHaveBeenCalledWith('foodflow-production')
+    expect(mockSupabaseClient.storage.from).toHaveBeenCalledWith('plaza4-production')
     expect(mockSupabaseBucket.upload).toHaveBeenCalledWith(
       expect.stringMatching(/^restaurants\/restaurant-1\/\d+-[a-f0-9]+\.png$/),
       png.buffer,
@@ -130,7 +130,7 @@ describe('StorageService', () => {
     )
     expect(result).toEqual({
       key: expect.stringMatching(/^restaurants\/restaurant-1\/\d+-[a-f0-9]+\.png$/),
-      url: 'https://storage.foodflow.test/object.png',
+      url: 'https://storage.plaza4.test/object.png',
     })
   })
 })
@@ -142,7 +142,7 @@ function makeConfig(overrides: Record<string, string | number | undefined> = {})
     MINIO_PORT: 9000,
     MINIO_ACCESS_KEY: 'minioadmin',
     MINIO_SECRET_KEY: 'minioadmin',
-    MINIO_BUCKET: 'foodflow',
+    MINIO_BUCKET: 'plaza4',
     MINIO_PUBLIC_URL: 'http://localhost:9000',
     STORAGE_PROVIDER: 'minio',
     ...overrides,

@@ -5,10 +5,10 @@ async function bootstrap() {
   const app = await NestFactory.createApplicationContext(WorkersModule)
   app.enableShutdownHooks()
   await app.init()
-  console.log('FoodFlow Worker started')
+  console.log('Plaza 4 Worker started')
 }
 
 void bootstrap().catch(() => {
-  console.error('FoodFlow Worker failed to start')
+  console.error('Plaza 4 Worker failed to start')
   process.exitCode = 1
 })

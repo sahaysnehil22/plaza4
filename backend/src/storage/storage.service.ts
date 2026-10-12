@@ -117,7 +117,7 @@ export class StorageService {
 
   private validateFile(file: UploadedFile): void {
     if (!file.buffer || file.size === 0) {
-      throw new BadRequestException('Uploaded file is empty')
+      throw new BadRequestException('El archivo subido está vacío')
     }
 
     if (file.size > this.maxFileSizeBytes) {
@@ -146,7 +146,7 @@ export class StorageService {
       }
     } catch (err) {
       this.logger.error(`Failed to check/create bucket: ${(err as Error).message}`)
-      throw new InternalServerErrorException('Storage service unavailable.')
+      throw new InternalServerErrorException('Servicio de almacenamiento no disponible.')
     }
   }
 

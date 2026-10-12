@@ -1,30 +1,30 @@
-name: foodflow-batch4-e2e
+name: plaza4-batch4-e2e
 
-# Isolated release-test overlay. It deliberately avoids the default FoodFlow
+# Isolated release-test overlay. It deliberately avoids the default Plaza 4
 # container names, ports, and volumes so a dirty/root development stack can
 # keep running untouched while Batch 4 is validated from this worktree.
 services:
   postgres:
-    container_name: foodflow-batch4-e2e-postgres
+    container_name: plaza4-batch4-e2e-postgres
     ports: !override
       - "15432:5432"
 
   redis:
-    container_name: foodflow-batch4-e2e-redis
+    container_name: plaza4-batch4-e2e-redis
     ports: !override
       - "16379:6379"
 
   minio:
-    container_name: foodflow-batch4-e2e-minio
+    container_name: plaza4-batch4-e2e-minio
     ports: !override
       - "19000:9000"
       - "19001:9001"
 
   migrate:
-    container_name: foodflow-batch4-e2e-migrate
+    container_name: plaza4-batch4-e2e-migrate
 
   backend:
-    container_name: foodflow-batch4-e2e-backend
+    container_name: plaza4-batch4-e2e-backend
     ports: !override
       - "13001:3001"
     environment:
@@ -32,10 +32,10 @@ services:
       MINIO_PUBLIC_URL: http://localhost:19000
 
   worker:
-    container_name: foodflow-batch4-e2e-worker
+    container_name: plaza4-batch4-e2e-worker
 
   admin:
-    container_name: foodflow-batch4-e2e-admin
+    container_name: plaza4-batch4-e2e-admin
     ports: !override
       - "13000:3000"
     build:
@@ -55,7 +55,7 @@ services:
       NEXT_PUBLIC_ADMIN_URL: http://localhost:13000
 
   restaurant:
-    container_name: foodflow-batch4-e2e-restaurant
+    container_name: plaza4-batch4-e2e-restaurant
     ports: !override
       - "13002:3002"
     build:

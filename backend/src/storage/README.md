@@ -18,7 +18,7 @@ MinIO S3-compatible object storage abstraction. Direct upload via FormData valid
 | `MINIO_PORT` | no | `9000` | API port |
 | `MINIO_ACCESS_KEY` | yes | — | Service credentials |
 | `MINIO_SECRET_KEY` | yes | — | Service credentials |
-| `MINIO_BUCKET` | yes | `foodflow` | Default bucket |
+| `MINIO_BUCKET` | yes | `plaza4` | Default bucket |
 | `MINIO_PUBLIC_URL` | yes | — | CDN base URL for served files |
 | `STORAGE_MAX_UPLOAD_MB` | no | `5` | Max single file size, capped at 50 MB |
 

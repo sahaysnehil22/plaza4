@@ -1,8 +1,8 @@
-# FoodFlow Mobile
+# Plaza 4 Mobile
 
 ## Purpose
 
-This Flutter workspace builds two FoodFlow applications:
+This Flutter workspace builds two Plaza 4 applications:
 
 | App | Entry point | Runtime scope |
 |---|---|---|
@@ -53,8 +53,8 @@ or Android upload passwords in Dart defines or source control.
 
 ## FCM client setup
 
-Customer and Driver are separate Android applications (`vn.foodflow.customer`
-and `vn.foodflow.driver`). Register each package in the intended Firebase
+Customer and Driver are separate Android applications (`pe.plaza4.customer`
+and `pe.plaza4.driver`). Register each package in the intended Firebase
 project and provide values whose `FIREBASE_APP_ID` matches the selected flavor.
 The tracked `firebase_core 3.15.2` and `firebase_messaging 15.2.10` pair keeps
 the project iOS 13 deployment target. The iOS target also needs a Firebase app
@@ -94,7 +94,7 @@ in-app notifications remain usable.
 
 The backend sends an operating-system notification payload for background and
 terminated app delivery. On Android, a foreground message uses the
-`foodflow_notifications` high-importance channel; on iOS, Firebase presents
+`plaza4_notifications` high-importance channel; on iOS, Firebase presents
 the native foreground alert. A notification tap accepts only a local app deep
 link (never an external URL). While the Driver notification inbox is open, it
 also listens to the authenticated realtime notification stream and
@@ -192,14 +192,14 @@ Release signing must come from secure CI/host configuration:
 
 | Name | Description |
 |---|---|
-| `FOODFLOW_UPLOAD_STORE_FILE` | Android upload keystore path |
-| `FOODFLOW_UPLOAD_STORE_PASSWORD` | Keystore password |
-| `FOODFLOW_UPLOAD_KEY_ALIAS` | Upload key alias |
-| `FOODFLOW_UPLOAD_KEY_PASSWORD` | Upload key password |
+| `PLAZA4_UPLOAD_STORE_FILE` | Android upload keystore path |
+| `PLAZA4_UPLOAD_STORE_PASSWORD` | Keystore password |
+| `PLAZA4_UPLOAD_KEY_ALIAS` | Upload key alias |
+| `PLAZA4_UPLOAD_KEY_PASSWORD` | Upload key password |
 
 Every Android assemble/bundle release variant fails when these values are
-absent. The customer and driver flavors install as `vn.foodflow.customer` and
-`vn.foodflow.driver`.
+absent. The customer and driver flavors install as `pe.plaza4.customer` and
+`pe.plaza4.driver`.
 
 For local iOS development, create the ignored file below:
 

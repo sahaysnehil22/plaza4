@@ -1,4 +1,4 @@
-package vn.foodflow.foodflow_customer
+package pe.plaza4.plaza4_customer
 
 import io.flutter.embedding.android.FlutterActivity
 

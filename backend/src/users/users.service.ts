@@ -28,7 +28,7 @@ export class UsersService {
         restaurantProfile: { include: { restaurant: true } },
       },
     })
-    if (!user) throw new NotFoundException('User not found')
+    if (!user) throw new NotFoundException('Usuario no encontrado')
     return user
   }
 
@@ -139,7 +139,7 @@ export class UsersService {
 
   async updateProfile(userId: string, dto: UpdateUserDto) {
     const user = await this.prisma.user.findUnique({ where: { id: userId } })
-    if (!user) throw new NotFoundException('User not found')
+    if (!user) throw new NotFoundException('Usuario no encontrado')
     return this.prisma.user.update({
       where: { id: userId },
       data: {
@@ -189,7 +189,7 @@ async function lockAddressDefaults(
     WHERE id = CAST(${userId} AS uuid)
     FOR UPDATE
   `)
-  if (!rows[0]) throw new NotFoundException('User not found')
+  if (!rows[0]) throw new NotFoundException('Usuario no encontrado')
 }
 
 function optionalAddressCoordinates(

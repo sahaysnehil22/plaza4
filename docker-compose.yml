@@ -2,13 +2,13 @@ services:
   postgres:
     build:
       context: ./infra/docker/postgres
-    image: foodflow-postgres:16-3.4-pgvector
-    container_name: foodflow-postgres
+    image: plaza4-postgres:16-3.4-pgvector
+    container_name: plaza4-postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-foodflow}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-foodflow_dev}
-      POSTGRES_DB: ${POSTGRES_DB:-foodflow}
+      POSTGRES_USER: ${POSTGRES_USER:-plaza4}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-plaza4_dev}
+      POSTGRES_DB: ${POSTGRES_DB:-plaza4}
     ports:
       - "${POSTGRES_HOST_PORT:-5432}:5432"
     volumes:
@@ -22,7 +22,7 @@ services:
 
   redis:
     image: redis:7-alpine
-    container_name: foodflow-redis
+    container_name: plaza4-redis
     restart: unless-stopped
     ports:
       - "6379:6379"
@@ -37,7 +37,7 @@ services:
 
   minio:
     image: minio/minio:latest
-    container_name: foodflow-minio
+    container_name: plaza4-minio
     restart: unless-stopped
     environment:
       MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
@@ -61,13 +61,13 @@ services:
       target: migrator
       args:
         BUILD_SHA: ${BUILD_SHA:-local}
-    container_name: foodflow-migrate
+    container_name: plaza4-migrate
     restart: "no"
     environment:
       # DATABASE_URL/DIRECT_URL are canonical so credentials with URL-special
       # characters are supplied safely as a fully URL-encoded connection URI.
-      DATABASE_URL: ${DATABASE_URL:-postgresql://foodflow:foodflow_dev@postgres:5432/foodflow}
-      DIRECT_URL: ${DIRECT_URL:-${DATABASE_URL:-postgresql://foodflow:foodflow_dev@postgres:5432/foodflow}}
+      DATABASE_URL: ${DATABASE_URL:-postgresql://plaza4:plaza4_dev@postgres:5432/plaza4}
+      DIRECT_URL: ${DIRECT_URL:-${DATABASE_URL:-postgresql://plaza4:plaza4_dev@postgres:5432/plaza4}}
     depends_on:
       postgres:
         condition: service_healthy
@@ -78,7 +78,7 @@ services:
       dockerfile: Dockerfile
       args:
         BUILD_SHA: ${BUILD_SHA:-local}
-    container_name: foodflow-backend
+    container_name: plaza4-backend
     restart: unless-stopped
     ports:
       - "3001:3001"
@@ -87,10 +87,10 @@ services:
       REALTIME_PROVIDER: socketio
       STORAGE_PROVIDER: minio
       QUEUE_PROVIDER: bullmq
-      DATABASE_URL: ${DATABASE_URL:-postgresql://foodflow:foodflow_dev@postgres:5432/foodflow}
-      DIRECT_URL: ${DIRECT_URL:-${DATABASE_URL:-postgresql://foodflow:foodflow_dev@postgres:5432/foodflow}}
+      DATABASE_URL: ${DATABASE_URL:-postgresql://plaza4:plaza4_dev@postgres:5432/plaza4}
+      DIRECT_URL: ${DIRECT_URL:-${DATABASE_URL:-postgresql://plaza4:plaza4_dev@postgres:5432/plaza4}}
       REDIS_URL: redis://redis:6379
-      DELIVERY_BASE_FEE_VND: "${DELIVERY_BASE_FEE_VND:-15000}"
+      DELIVERY_BASE_FEE_PEN: "${DELIVERY_BASE_FEE_PEN:-15000}"
       AUTH_PUBLIC_THROTTLE_LIMIT: "500"
       THROTTLER_TTL_MS: "${THROTTLER_TTL_MS:-60000}"
       THROTTLER_LIMIT: "${THROTTLER_LIMIT:-100}"
@@ -103,7 +103,7 @@ services:
       # Production uses Supabase Storage; these defaults are local-only.
       MINIO_ACCESS_KEY: ${MINIO_ROOT_USER:-minioadmin}
       MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD:-minioadmin}
-      MINIO_BUCKET: foodflow
+      MINIO_BUCKET: plaza4
       MINIO_PUBLIC_URL: http://localhost:9000
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://localhost:3002,http://localhost:3003,http://[::1]:3000,http://[::1]:3002,http://[::1]:3003}
     depends_on:
@@ -126,7 +126,7 @@ services:
   worker:
     extends:
       service: backend
-    container_name: foodflow-worker
+    container_name: plaza4-worker
     command: ["dist/workers/main.js"]
     ports: !reset []
     healthcheck:
@@ -145,7 +145,7 @@ services:
         NEXT_PUBLIC_ADMIN_URL: ${NEXT_PUBLIC_ADMIN_URL:-http://localhost:3000}
         NEXT_PUBLIC_MAP_PROVIDER: ${NEXT_PUBLIC_MAP_PROVIDER:-openfreemap}
         NEXT_PUBLIC_MAP_STYLE_URL: ${NEXT_PUBLIC_MAP_STYLE_URL:-https://tiles.openfreemap.org/styles/liberty}
-    container_name: foodflow-admin
+    container_name: plaza4-admin
     restart: unless-stopped
     ports:
       - "3000:3000"
@@ -178,7 +178,7 @@ services:
         NEXT_PUBLIC_RESTAURANT_URL: ${NEXT_PUBLIC_RESTAURANT_URL:-http://localhost:3002}
         NEXT_PUBLIC_MAP_PROVIDER: ${NEXT_PUBLIC_MAP_PROVIDER:-openfreemap}
         NEXT_PUBLIC_MAP_STYLE_URL: ${NEXT_PUBLIC_MAP_STYLE_URL:-https://tiles.openfreemap.org/styles/liberty}
-    container_name: foodflow-restaurant
+    container_name: plaza4-restaurant
     restart: unless-stopped
     ports:
       - "3002:3002"

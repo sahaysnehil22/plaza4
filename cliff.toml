@@ -1,11 +1,11 @@
-# cliff.toml — FoodFlow Changelog Configuration
+# cliff.toml — Plaza 4 Changelog Configuration
 # Generates professional release notes from conventional commits.
 
 [changelog]
 header = """
 # Changelog
 
-All notable changes to FoodFlow will be documented in this file.
+All notable changes to Plaza 4 will be documented in this file.
 
 """
 
@@ -90,7 +90,7 @@ ignore_tags = ""
 topo_order = false
 sort_commits = "oldest"
 link_parsers = [
-  { pattern = "#(\\d+)", href = "https://github.com/JasonTM17/foodflow/issues/$1" },
-  { pattern = "https://github.com/JasonTM17/foodflow/pull/(\\d+)", href = "https://github.com/JasonTM17/foodflow/pull/$1" },
+  { pattern = "#(\\d+)", href = "https://github.com/JasonTM17/plaza4/issues/$1" },
+  { pattern = "https://github.com/JasonTM17/plaza4/pull/(\\d+)", href = "https://github.com/JasonTM17/plaza4/pull/$1" },
 ]
 limit_commits = 500

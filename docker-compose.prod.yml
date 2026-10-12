@@ -1,5 +1,5 @@
 # Self-hosted production / Docker Hub compatibility overlay (no local build).
-# FoodFlow's managed production target is Supabase + Railway + Vercel. This
+# Plaza 4's managed production target is Supabase + Railway + Vercel. This
 # override remains the self-hosted production-style compatibility profile.
 #
 #   $env:IMAGE_TAG = "v4.0.0"   # or sha-<full commit>
@@ -49,12 +49,12 @@ services:
 
   # Migrations: use published migrator image (builder stage with pnpm+prisma).
   migrate:
-    image: nguyenson1710/foodflow-migrate:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
+    image: nguyenson1710/plaza4-migrate:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
     pull_policy: always
     restart: "no"
     environment:
-      DATABASE_URL: ${DATABASE_URL:-postgresql://foodflow:${POSTGRES_PASSWORD}@postgres:5432/foodflow}
-      DIRECT_URL: ${DIRECT_URL:-postgresql://foodflow:${POSTGRES_PASSWORD}@postgres:5432/foodflow}
+      DATABASE_URL: ${DATABASE_URL:-postgresql://plaza4:${POSTGRES_PASSWORD}@postgres:5432/plaza4}
+      DIRECT_URL: ${DIRECT_URL:-postgresql://plaza4:${POSTGRES_PASSWORD}@postgres:5432/plaza4}
     depends_on:
       postgres:
         condition: service_healthy
@@ -62,7 +62,7 @@ services:
   # Backend + worker load the full production env file (fail-closed validation).
   # Explicit environment: overrides keep compose-network hosts correct.
   backend:
-    image: nguyenson1710/foodflow-backend:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
+    image: nguyenson1710/plaza4-backend:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
     pull_policy: always
     restart: always
     env_file:
@@ -73,19 +73,19 @@ services:
       REALTIME_PROVIDER: socketio
       STORAGE_PROVIDER: minio
       QUEUE_PROVIDER: bullmq
-      DATABASE_URL: ${DATABASE_URL:-postgresql://foodflow:${POSTGRES_PASSWORD}@postgres:5432/foodflow}
-      DIRECT_URL: ${DIRECT_URL:-postgresql://foodflow:${POSTGRES_PASSWORD}@postgres:5432/foodflow}
+      DATABASE_URL: ${DATABASE_URL:-postgresql://plaza4:${POSTGRES_PASSWORD}@postgres:5432/plaza4}
+      DIRECT_URL: ${DIRECT_URL:-postgresql://plaza4:${POSTGRES_PASSWORD}@postgres:5432/plaza4}
       REDIS_URL: ${REDIS_URL:-redis://:${REDIS_PASSWORD}@redis:6379}
       JWT_SECRET: ${JWT_SECRET:?required}
       JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:?required}
-      DELIVERY_BASE_FEE_VND: ${DELIVERY_BASE_FEE_VND:-15000}
+      DELIVERY_BASE_FEE_PEN: ${DELIVERY_BASE_FEE_PEN:-15000}
       CORS_ORIGINS: ${CORS_ORIGINS:?required}
       PASSWORD_RESET_URL_BASE: ${PASSWORD_RESET_URL_BASE:?required}
       MINIO_ENDPOINT: ${MINIO_ENDPOINT:-minio}
       MINIO_PORT: ${MINIO_PORT:-9000}
       MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY:?required}
       MINIO_SECRET_KEY: ${MINIO_SECRET_KEY:?required}
-      MINIO_BUCKET: ${MINIO_BUCKET:-foodflow}
+      MINIO_BUCKET: ${MINIO_BUCKET:-plaza4}
       MINIO_PUBLIC_URL: ${MINIO_PUBLIC_URL:?required}
       THROTTLER_MEMORY_FALLBACK: "false"
       AUTH_PUBLIC_THROTTLE_LIMIT: ${AUTH_PUBLIC_THROTTLE_LIMIT:-100}
@@ -114,10 +114,10 @@ services:
       start_period: 20s
 
   worker:
-    image: nguyenson1710/foodflow-backend:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
+    image: nguyenson1710/plaza4-backend:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
     pull_policy: always
     restart: always
-    container_name: foodflow-worker
+    container_name: plaza4-worker
     command: ["dist/workers/main.js"]
     env_file:
       - path: .env.production
@@ -127,19 +127,19 @@ services:
       REALTIME_PROVIDER: socketio
       STORAGE_PROVIDER: minio
       QUEUE_PROVIDER: bullmq
-      DATABASE_URL: ${DATABASE_URL:-postgresql://foodflow:${POSTGRES_PASSWORD}@postgres:5432/foodflow}
-      DIRECT_URL: ${DIRECT_URL:-postgresql://foodflow:${POSTGRES_PASSWORD}@postgres:5432/foodflow}
+      DATABASE_URL: ${DATABASE_URL:-postgresql://plaza4:${POSTGRES_PASSWORD}@postgres:5432/plaza4}
+      DIRECT_URL: ${DIRECT_URL:-postgresql://plaza4:${POSTGRES_PASSWORD}@postgres:5432/plaza4}
       REDIS_URL: ${REDIS_URL:-redis://:${REDIS_PASSWORD}@redis:6379}
       JWT_SECRET: ${JWT_SECRET:?required}
       JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:?required}
-      DELIVERY_BASE_FEE_VND: ${DELIVERY_BASE_FEE_VND:-15000}
+      DELIVERY_BASE_FEE_PEN: ${DELIVERY_BASE_FEE_PEN:-15000}
       CORS_ORIGINS: ${CORS_ORIGINS:?required}
       PASSWORD_RESET_URL_BASE: ${PASSWORD_RESET_URL_BASE:?required}
       MINIO_ENDPOINT: ${MINIO_ENDPOINT:-minio}
       MINIO_PORT: ${MINIO_PORT:-9000}
       MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY:?required}
       MINIO_SECRET_KEY: ${MINIO_SECRET_KEY:?required}
-      MINIO_BUCKET: ${MINIO_BUCKET:-foodflow}
+      MINIO_BUCKET: ${MINIO_BUCKET:-plaza4}
       MINIO_PUBLIC_URL: ${MINIO_PUBLIC_URL:?required}
       THROTTLER_MEMORY_FALLBACK: "false"
       GOOGLE_MAPS_API_KEY: ${GOOGLE_MAPS_API_KEY:?required}
@@ -167,7 +167,7 @@ services:
         condition: service_healthy
 
   admin:
-    image: nguyenson1710/foodflow-admin:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
+    image: nguyenson1710/plaza4-admin:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
     pull_policy: always
     restart: always
     environment:
@@ -179,7 +179,7 @@ services:
       start_period: 15s
 
   restaurant:
-    image: nguyenson1710/foodflow-restaurant:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
+    image: nguyenson1710/plaza4-restaurant:${IMAGE_TAG:?IMAGE_TAG must be an immutable release or sha tag}
     pull_policy: always
     restart: always
     environment:
