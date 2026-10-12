@@ -8,7 +8,7 @@ const shouldUseStandaloneOutput =
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   ...(shouldUseStandaloneOutput ? { output: 'standalone' } : {}),
-  transpilePackages: ['@foodflow/i18n', '@foodflow/ui'],
+  transpilePackages: ['@plaza4/i18n', '@plaza4/ui'],
 };
 
 export default withNextIntl(nextConfig);

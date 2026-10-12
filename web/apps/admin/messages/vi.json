@@ -25,7 +25,7 @@
       "discountSettings": "Thiết lập giảm giá",
       "type": "Loại *",
       "discountPercentage": "Phần trăm giảm (%) *",
-      "discountAmount": "Số tiền giảm (VND) *",
+      "discountAmount": "Số tiền giảm (PEN) *",
       "conditions": "Điều kiện và giới hạn",
       "perUserLimit": "Giới hạn mỗi người dùng",
       "maxUsage": "Tổng lượt dùng (để trống nếu không giới hạn)",
@@ -125,9 +125,9 @@
     }
   },
   "login": {
-    "title": "FoodFlow Admin",
+    "title": "Plaza 4 Admin",
     "description": "Đăng nhập để quản lý hệ thống",
-    "emailPlaceholder": "admin@foodflow.com",
+    "emailPlaceholder": "admin@plaza4.com",
     "adminOnly": "Bảng điều khiển này chỉ dành cho quản trị viên.",
     "rememberMe": "Ghi nhớ đăng nhập",
     "forgotPassword": "Quên mật khẩu?",
@@ -138,19 +138,19 @@
   },
   "forgotPassword": {
     "title": "Đặt lại mật khẩu",
-    "description": "Nhập email quản trị gắn với tài khoản FoodFlow của bạn.",
-    "emailPlaceholder": "admin@foodflow.com",
+    "description": "Nhập email quản trị gắn với tài khoản Plaza 4 của bạn.",
+    "emailPlaceholder": "admin@plaza4.com",
     "submit": "Gửi hướng dẫn đặt lại",
     "submitting": "Đang gửi hướng dẫn...",
     "successTitle": "Kiểm tra hộp thư",
     "successDescription": "Nếu tài khoản tồn tại và kênh email đã được cấu hình, hướng dẫn đặt lại mật khẩu sẽ được gửi.",
-    "neutralNotice": "Vì lý do bảo mật, FoodFlow không tiết lộ email có tồn tại hay không.",
+    "neutralNotice": "Vì lý do bảo mật, Plaza 4 không tiết lộ email có tồn tại hay không.",
     "backToLogin": "Quay lại đăng nhập",
     "error": "Không thể yêu cầu đặt lại mật khẩu. Vui lòng thử lại."
   },
   "resetPassword": {
     "title": "Tạo mật khẩu mới",
-    "description": "Dùng liên kết một lần an toàn trong email FoodFlow.",
+    "description": "Dùng liên kết một lần an toàn trong email Plaza 4.",
     "newPassword": "Mật khẩu mới",
     "confirmPassword": "Xác nhận mật khẩu",
     "passwordPlaceholder": "Tối thiểu 8 ký tự",
@@ -175,17 +175,18 @@
     "accountMenu": "Mở menu tài khoản",
     "switchLanguage": "Chuyển ngôn ngữ",
     "languages": {
+      "es": "Tiếng Tây Ban Nha",
       "vi": "Tiếng Việt",
       "en": "Tiếng Anh",
       "ja": "Tiếng Nhật"
     }
   },
   "sidebar": {
-    "brand": "FoodFlow",
+    "brand": "Plaza 4",
     "adminBadge": "Admin",
     "logout": "Đăng xuất",
     "navigation": "Điều hướng quản trị",
-    "mobileTitle": "Menu quản trị FoodFlow",
+    "mobileTitle": "Menu quản trị Plaza 4",
     "mobileDescription": "Chọn một khu vực để quản lý nền tảng"
   },
   "breadcrumb": {
@@ -206,7 +207,7 @@
   },
   "overview": {
     "title": "Tổng quan",
-    "description": "Tổng quan hoạt động của hệ thống FoodFlow",
+    "description": "Tổng quan hoạt động của hệ thống Plaza 4",
     "todayOrders": "Đơn hàng hôm nay",
     "todayRevenue": "Doanh thu hôm nay",
     "totalOrders": "Tổng đơn hàng",
@@ -842,7 +843,7 @@
   },
   "settings": {
     "title": "Cài đặt hệ thống",
-    "description": "Cấu hình nền tảng FoodFlow",
+    "description": "Cấu hình nền tảng Plaza 4",
     "save": "Lưu cài đặt",
     "saving": "Đang lưu...",
     "saveError": "Không thể lưu cài đặt",
@@ -929,7 +930,7 @@
     "loadErrorTitle": "Không thể tải ticket hỗ trợ",
     "loadErrorDescription": "Hàng đợi hỗ trợ đang tạm thời không khả dụng. Hãy thử lại trước khi xử lý để không che mất ticket thật.",
     "contractErrorTitle": "Phản hồi hỗ trợ chưa đầy đủ",
-    "contractErrorDescription": "API không trả về danh sách tickets, nên FoodFlow sẽ không hiển thị giả như hàng đợi trống.",
+    "contractErrorDescription": "API không trả về danh sách tickets, nên Plaza 4 sẽ không hiển thị giả như hàng đợi trống.",
     "retry": "Thử lại",
     "emptyColumn": "Không có ticket",
     "orderShort": "Đơn: #{id}",
@@ -1093,7 +1094,7 @@
     }
   },
   "aiMonitor": {
-    "title": "Giám sát AI FoodFlow",
+    "title": "Giám sát AI Plaza 4",
     "description": "Theo dõi cấu hình chatbot DeepSeek và mức độ sẵn sàng của telemetry thật",
     "loadErrorTitle": "Không thể tải màn hình giám sát AI",
     "loadErrorDescription": "Kiểm tra kết nối backend hoặc thử lại sau vài giây.",
@@ -1132,7 +1133,7 @@
     "configurationRequiredDescription": "Chủ nền tảng cần thêm DEEPSEEK_API_KEY đã rotate vào secret store phía máy chủ, sau đó deploy lại và xác minh một yêu cầu chat thật. Không dán key vào màn hình này hoặc source control.",
     "telemetrySourceNote": "Token và độ trễ chỉ được ghi sau các yêu cầu nhà cung cấp thật.",
     "refresh": "Làm mới",
-    "costUnavailableDescription": "Chi phí chỉ có khi đã kết nối nguồn billing của nhà cung cấp; FoodFlow không ước lượng từ token."
+    "costUnavailableDescription": "Chi phí chỉ có khi đã kết nối nguồn billing của nhà cung cấp; Plaza 4 không ước lượng từ token."
   },
   "analytics": {
     "title": "Phân tích",
@@ -1373,7 +1374,7 @@
     "retry": "Thử lại",
     "sePayDescription": "Cấu hình tạo giao dịch và webhook có chữ ký",
     "aiChatbot": "Chatbot AI DeepSeek",
-    "aiChatbotDescription": "LLM chạy trực tiếp cho hỗ trợ khách hàng FoodFlow",
+    "aiChatbotDescription": "LLM chạy trực tiếp cho hỗ trợ khách hàng Plaza 4",
     "pushNotifications": "Firebase Cloud Messaging",
     "fcmDescription": "Nhà cung cấp thông báo đẩy phía máy chủ",
     "outboundWebhooks": "Webhook ra ngoài",
@@ -1395,7 +1396,7 @@
   },
   "settingsBranding": {
     "title": "Thương hiệu",
-    "description": "Tùy chỉnh bộ nhận diện thương hiệu của FoodFlow",
+    "description": "Tùy chỉnh bộ nhận diện thương hiệu của Plaza 4",
     "save": "Lưu thương hiệu",
     "saving": "Đang lưu...",
     "brandIdentity": "Nhận diện thương hiệu",
@@ -1551,7 +1552,7 @@
   "chatbot": {
     "open": "Mở trợ lý AI",
     "close": "Đóng chat",
-    "title": "Trợ lý FoodFlow",
+    "title": "Trợ lý Plaza 4",
     "subtitle": "Hỏi về đơn hàng, hỗ trợ hoặc bảng điều khiển",
     "placeholder": "Nhập tin nhắn...",
     "send": "Gửi",

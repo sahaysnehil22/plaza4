@@ -1,5 +1,5 @@
 {
-  "name": "foodflow-admin",
+  "name": "plaza4-admin",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,9 +12,9 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@foodflow/api-client": "workspace:^",
-    "@foodflow/i18n": "workspace:^",
-    "@foodflow/ui": "workspace:^",
+    "@plaza4/api-client": "workspace:^",
+    "@plaza4/i18n": "workspace:^",
+    "@plaza4/ui": "workspace:^",
     "@hookform/resolvers": "^3.3.4",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dialog": "^1.1.16",
