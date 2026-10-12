@@ -1,12 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/driver/providers/earnings_chart_provider.dart';
+import 'package:plaza4_customer/driver/providers/earnings_chart_provider.dart';
 
 void main() {
   group('EarningsSummary.fromJson', () {
     test('parses chart-ready payout ledger summary', () {
       final summary = EarningsSummary.fromJson({
         'period': '7d',
-        'totalVnd': 70000,
+        'totalPen': 70000,
         'tripCount': 3,
         'avgPerTrip': 23333,
         'byDay': [
@@ -16,7 +16,7 @@ void main() {
       });
 
       expect(summary.period, '7d');
-      expect(summary.totalVnd, 70000);
+      expect(summary.totalPen, 70000);
       expect(summary.tripCount, 3);
       expect(summary.avgPerTrip, 23333);
       expect(summary.byDay, hasLength(2));
@@ -27,7 +27,7 @@ void main() {
     test('defaults missing totals to zero without local generated data', () {
       final summary = EarningsSummary.fromJson({});
 
-      expect(summary.totalVnd, 0);
+      expect(summary.totalPen, 0);
       expect(summary.tripCount, 0);
       expect(summary.avgPerTrip, 0);
       expect(summary.byDay, isEmpty);

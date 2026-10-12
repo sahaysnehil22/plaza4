@@ -2,8 +2,8 @@ import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/driver/models/driver_onboarding_draft.dart';
-import 'package:foodflow_customer/driver/services/kyc_upload_service.dart';
+import 'package:plaza4_customer/driver/models/driver_onboarding_draft.dart';
+import 'package:plaza4_customer/driver/services/kyc_upload_service.dart';
 
 void main() {
   test('detects only the image signatures accepted by the backend', () {

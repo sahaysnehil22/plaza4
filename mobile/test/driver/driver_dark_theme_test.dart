@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/driver/theme/driver_dark_theme.dart';
+import 'package:plaza4_customer/driver/theme/driver_dark_theme.dart';
 
 void main() {
   test('dark theme text styles use the semantic on-surface color', () {

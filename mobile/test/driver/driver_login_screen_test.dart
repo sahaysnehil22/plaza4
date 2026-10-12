@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:foodflow_customer/driver/screens/login_screen.dart';
-import 'package:foodflow_customer/l10n/app_localizations.dart';
+import 'package:plaza4_customer/driver/screens/login_screen.dart';
+import 'package:plaza4_customer/l10n/app_localizations.dart';
 
 Widget _app(Locale locale) {
   return ProviderScope(
@@ -30,7 +30,7 @@ void main() {
       await tester.pumpWidget(_app(Locale(entry.key)));
       await tester.pump();
 
-      expect(find.bySemanticsLabel('FoodFlow'), findsOneWidget);
+      expect(find.bySemanticsLabel('Plaza 4'), findsOneWidget);
       expect(find.text('FoodFlow Driver'), findsOneWidget);
       expect(find.text(entry.value.$1), findsOneWidget);
       expect(find.byTooltip(entry.value.$2), findsOneWidget);

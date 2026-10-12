@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/driver/providers/driver_provider.dart'
+import 'package:plaza4_customer/driver/providers/driver_provider.dart'
     show DispatchOffer, DriverEarnings;
 
 void main() {

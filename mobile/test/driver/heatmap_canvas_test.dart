@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:foodflow_customer/driver/providers/heatmap_provider.dart';
-import 'package:foodflow_customer/driver/widgets/heatmap_canvas.dart';
+import 'package:plaza4_customer/driver/providers/heatmap_provider.dart';
+import 'package:plaza4_customer/driver/widgets/heatmap_canvas.dart';
 
 void main() {
   group('heatmap camera target', () {
