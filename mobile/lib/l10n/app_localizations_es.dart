@@ -4,7 +4,7 @@ import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
 
-/// The translations for Spanish (`es`).
+/// The translations for Spanish Castilian (`es`).
 class AppLocalizationsEs extends AppLocalizations {
   AppLocalizationsEs([String locale = 'es']) : super(locale);
 
@@ -168,6 +168,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String greetingNamed(String name) {
     return '¡Hola, $name!';
+  }
 
   @override
   String get homeQuestion => '¿Qué quieres comer hoy?';
@@ -406,8 +407,6 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get languageJa => '日本語';
 
-  String get languageEs => 'Español';
-
   @override
   String get orderStatusPending => 'Pendiente';
 
@@ -463,6 +462,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String cartPromoApplied(String code) {
     return 'Código $code aplicado';
+  }
 
   @override
   String get cartSubtotal => 'Subtotal';
@@ -658,14 +658,17 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String orderHistoryTabActive(int count) {
     return 'Activos ($count)';
+  }
 
   @override
   String orderHistoryTabCompleted(int count) {
     return 'Completados ($count)';
+  }
 
   @override
   String orderHistoryTabCancelled(int count) {
     return 'Cancelados ($count)';
+  }
 
   @override
   String get orderHistoryNoActive => 'No tienes pedidos activos';
@@ -709,7 +712,8 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String addressDeleteContent(String label) {
-    return '¿Eliminar "$label"?';
+    return '¿Eliminar \"$label\"?';
+  }
 
   @override
   String get addressAddSuccess => 'Dirección agregada';
@@ -861,10 +865,12 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverStatusPauseMinutes(int minutes) {
     return '$minutes min';
+  }
 
   @override
   String driverStatusPauseHours(int hours) {
     return '$hours h';
+  }
 
   @override
   String get driverStatusResumeNow => 'Volver a recibir pedidos ahora';
@@ -877,11 +883,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String driverStatusDurationMinutes(int minutes) {
-    return '$minutesm';
+    return '${minutes}m';
+  }
 
   @override
   String driverStatusDurationHoursMinutes(int hours, int minutes) {
-    return '$hoursh $minutesm';
+    return '${hours}h ${minutes}m';
+  }
 
   @override
   String get driverStatusInfoText =>
@@ -933,10 +941,12 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverDateFrom(String date) {
     return 'Desde el $date';
+  }
 
   @override
   String driverDateTo(String date) {
     return 'Hasta el $date';
+  }
 
   @override
   String get driverStepRestaurant => 'Restaurante';
@@ -956,14 +966,17 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverPeakProgress(int completed, int target) {
     return '$completed/$target pedidos';
+  }
 
   @override
   String driverPeakRewardEarned(String amount) {
     return 'Recompensa ganada: $amount';
+  }
 
   @override
   String driverPeakRewardRemaining(int count, String amount) {
     return 'Completa $count pedidos más para ganar $amount';
+  }
 
   @override
   String get driverEarningsDaily => 'Ganancias del día';
@@ -971,10 +984,12 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverDaysCount(int count) {
     return '$count días';
+  }
 
   @override
   String driverRatingsReviewCount(int count) {
     return '$count reseñas';
+  }
 
   @override
   String get driverEarningsTitle => 'Ganancias';
@@ -1016,6 +1031,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverRatingsStars(int count) {
     return '$count estrellas';
+  }
 
   @override
   String get driverRatingsEmpty => 'Aún no tienes calificaciones';
@@ -1029,6 +1045,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverRatingsOrder(String code) {
     return 'Pedido: $code';
+  }
 
   @override
   String get driverRatingsToday => 'Hoy';
@@ -1039,10 +1056,12 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverHistoryTodayAt(String time) {
     return 'Hoy, $time';
+  }
 
   @override
   String driverHistoryYesterdayAt(String time) {
     return 'Ayer, $time';
+  }
 
   @override
   String get driverTripDetailTitle => 'Detalles del viaje';
@@ -1063,6 +1082,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverTripDetailOrder(String code) {
     return 'Pedido: $code';
+  }
 
   @override
   String get driverTripSummaryDistance => 'Distancia';
@@ -1082,6 +1102,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverTripSummaryMinutes(int minutes) {
     return '$minutes min';
+  }
 
   @override
   String get driverRouteReplayTooltip => 'Reproducir ruta';
@@ -1247,6 +1268,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverNavEtaMinutes(int minutes) {
     return 'Aprox. $minutes min';
+  }
 
   @override
   String get driverNavEtaUnavailable => 'Esperando el ETA de la ruta';
@@ -1342,6 +1364,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driverDispatchCountdownDecision(int seconds) {
     return 'Quedan $seconds segundos para decidir';
+  }
 
   @override
   String get driverDispatchCountdownUrgent => '¡Casi sin tiempo!';
@@ -1398,6 +1421,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String loyaltyPoints(int count) {
     return '$count pts';
+  }
 
   @override
   String get loyaltyTierBronze => 'Bronce';
@@ -1417,6 +1441,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String loyaltyPointsToNextTier(int points) {
     return 'Te faltan $points puntos para subir de nivel';
+  }
 
   @override
   String get loyaltyHistory => 'Historial de puntos';
@@ -1501,10 +1526,12 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String referralShareMessage(String code) {
     return '¡Usa el código $code y obtén un premio en tu primer pedido de Plaza 4!';
+  }
 
   @override
   String referralInviteCount(int count) {
     return 'Invitaste a $count amigos';
+  }
 
   @override
   String get referralBonusEarned => 'Bono ganado';
@@ -1579,6 +1606,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String filterMinutes(int min) {
     return '$min min';
+  }
 
   @override
   String get filterFreeDelivery => 'Envío gratis';
@@ -1702,10 +1730,12 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driver_incentives_progress(int current, int target) {
     return '$current/$target pedidos';
+  }
 
   @override
   String driver_incentives_reward(String amount) {
     return 'Recompensa: $amount';
+  }
 
   @override
   String get driver_incentives_empty => 'No hay incentivos disponibles';
@@ -1719,6 +1749,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driver_incentives_expires(String date) {
     return 'Vence: $date';
+  }
 
   @override
   String get driver_heatmap_title => 'Mapa de demanda';
@@ -1769,10 +1800,12 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driver_heatmap_order_count(int count) {
     return '$count pedidos';
+  }
 
   @override
   String driver_heatmap_avg_payout(String amount) {
     return 'Promedio de $amount/pedido';
+  }
 
   @override
   String get driver_bank_title => 'Cuenta bancaria';
@@ -2011,6 +2044,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String driver_settings_version(String version) {
     return 'Versión $version';
+  }
 
   @override
   String get favoritesTitle => 'Favoritos';
@@ -2046,7 +2080,8 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String searchNoResults(String query) {
-    return 'Sin resultados para "$query"';
+    return 'Sin resultados para \"$query\"';
+  }
 
   @override
   String get searchNoResultsSubtitle =>
@@ -2108,14 +2143,17 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String vouchersPercentOff(int percent) {
     return '$percent% de descuento';
+  }
 
   @override
   String vouchersMinOrder(String amount) {
     return 'Pedido mín. $amount';
+  }
 
   @override
   String vouchersExpiresAt(String date) {
     return 'Vence: $date';
+  }
 
   @override
   String get cancelOrderTitle => 'Cancelar pedido';
@@ -2170,7 +2208,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get helpFaqCancelOrderA =>
-      'Puedes cancelar un pedido dentro de los 2 minutos de haberlo hecho. Ve a "Pedidos" → selecciona el pedido → toca "Cancelar".';
+      'Puedes cancelar un pedido dentro de los 2 minutos de haberlo hecho. Ve a \"Pedidos\" → selecciona el pedido → toca \"Cancelar\".';
 
   @override
   String get helpFaqLateDeliveryQ => '¿Qué hago si mi pedido llega tarde?';
@@ -2191,14 +2229,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get helpFaqTopUpWalletA =>
-      'Ve a "Perfil" → "Billetera" → toca "Recargar" y selecciona el monto deseado.';
+      'Ve a \"Perfil\" → \"Billetera\" → toca \"Recargar\" y selecciona el monto deseado.';
 
   @override
   String get helpFaqAddAddressQ => '¿Cómo agrego una dirección de entrega?';
 
   @override
   String get helpFaqAddAddressA =>
-      'Ve a "Perfil" → "Mis direcciones" → toca "Agregar dirección" e ingresa los datos.';
+      'Ve a \"Perfil\" → \"Mis direcciones\" → toca \"Agregar dirección\" e ingresa los datos.';
 
   @override
   String get helpFaqMissingOrderQ => 'No recibí mi pedido, ¿qué hago?';
@@ -2219,6 +2257,5 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get helpFaqTrackOrderA =>
-      'Después de hacer tu pedido, ve a "Pedidos" → selecciona el pedido activo → toca "Rastrear".';
-
+      'Después de hacer tu pedido, ve a \"Pedidos\" → selecciona el pedido activo → toca \"Rastrear\".';
 }

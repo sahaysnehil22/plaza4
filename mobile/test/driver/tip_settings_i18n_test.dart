@@ -72,7 +72,7 @@ void main() {
       expect(chips, findsNWidgets(4));
       for (final chip in tester.widgetList<ChoiceChip>(chips)) {
         final label = chip.label as Text;
-        expect(label.data, contains('₫'));
+        expect(label.data, contains('S/'));
         expect(label.data, isNot(contains('Kđ')));
       }
       expect(tester.getSize(chips.first).height, greaterThanOrEqualTo(48));

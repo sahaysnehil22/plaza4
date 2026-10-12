@@ -22,12 +22,12 @@ void _setLocaleForWidgetTest(WidgetRef ref, Locale locale) {
 
 void main() {
   group('locale_provider state', () {
-    test('defaults to Vietnamese', () {
+    test('defaults to Spanish', () {
       final container = ProviderContainer();
       addTearDown(container.dispose);
 
       final locale = container.read(localeProvider);
-      expect(locale.languageCode, equals('vi'));
+      expect(locale.languageCode, equals('es'));
     });
 
     test('setLocale updates state to English', () async {
@@ -54,7 +54,7 @@ void main() {
   });
 
   group('rendered strings change on locale switch', () {
-    testWidgets('defaults to Vietnamese — loginTitle is Đăng nhập', (
+    testWidgets('defaults to Spanish — loginTitle is Iniciar sesión', (
       tester,
     ) async {
       await tester.pumpWidget(
@@ -81,7 +81,7 @@ void main() {
       );
       await _pumpLocaleFrame(tester);
 
-      expect(find.text('Đăng nhập'), findsOneWidget);
+      expect(find.text('Iniciar sesión'), findsOneWidget);
     });
 
     testWidgets('switching to English updates loginTitle to Login', (
@@ -112,6 +112,8 @@ void main() {
           ),
         ),
       );
+      await _pumpLocaleFrame(tester);
+      _setLocaleForWidgetTest(capturedRef, const Locale('vi'));
       await _pumpLocaleFrame(tester);
 
       // Initial locale is Vietnamese
@@ -187,6 +189,8 @@ void main() {
         ),
       );
       await _pumpLocaleFrame(tester);
+      _setLocaleForWidgetTest(capturedRef, const Locale('vi'));
+      await _pumpLocaleFrame(tester);
       expect(find.text('Giỏ hàng'), findsOneWidget);
 
       _setLocaleForWidgetTest(capturedRef, const Locale('en'));
@@ -223,6 +227,8 @@ void main() {
         ),
       );
       await _pumpLocaleFrame(tester);
+      _setLocaleForWidgetTest(capturedRef, const Locale('vi'));
+      await _pumpLocaleFrame(tester);
       expect(find.text('Đánh giá đơn hàng'), findsOneWidget);
 
       _setLocaleForWidgetTest(capturedRef, const Locale('en'));
@@ -258,6 +264,8 @@ void main() {
           ),
         ),
       );
+      await _pumpLocaleFrame(tester);
+      _setLocaleForWidgetTest(capturedRef, const Locale('vi'));
       await _pumpLocaleFrame(tester);
       expect(find.text('Giao hàng'), findsOneWidget);
 
@@ -299,6 +307,8 @@ void main() {
         ),
       );
       await _pumpLocaleFrame(tester);
+      _setLocaleForWidgetTest(capturedRef, const Locale('vi'));
+      await _pumpLocaleFrame(tester);
       expect(find.text('Xác nhận lấy hàng'), findsOneWidget);
 
       _setLocaleForWidgetTest(capturedRef, const Locale('en'));
@@ -338,6 +348,8 @@ void main() {
         ),
       );
       await _pumpLocaleFrame(tester);
+      _setLocaleForWidgetTest(capturedRef, const Locale('vi'));
+      await _pumpLocaleFrame(tester);
       expect(find.text('Thu nhập chuyến này'), findsOneWidget);
 
       _setLocaleForWidgetTest(capturedRef, const Locale('en'));
@@ -375,6 +387,8 @@ void main() {
           ),
         ),
       );
+      await _pumpLocaleFrame(tester);
+      _setLocaleForWidgetTest(capturedRef, const Locale('vi'));
       await _pumpLocaleFrame(tester);
       expect(find.text('Nhận đơn'), findsOneWidget);
 
@@ -491,7 +505,7 @@ void main() {
         ),
       );
       await _pumpLocaleFrame(tester);
-      expect(find.text('Đã áp dụng mã SAVE20'), findsOneWidget);
+      expect(find.text('Código SAVE20 aplicado'), findsOneWidget);
     });
 
     testWidgets('orderHistoryTabActive renders with count placeholder', (
@@ -518,7 +532,7 @@ void main() {
         ),
       );
       await _pumpLocaleFrame(tester);
-      expect(find.text('Đang hoạt động (3)'), findsOneWidget);
+      expect(find.text('Activos (3)'), findsOneWidget);
     });
   });
 }

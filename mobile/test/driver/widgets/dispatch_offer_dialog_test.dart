@@ -60,7 +60,7 @@ void main() {
     testWidgets('renders delivery fee', (tester) async {
       await tester.pumpWidget(_buildDialog());
       expect(find.textContaining('15.000'), findsOneWidget);
-      expect(find.textContaining('₫'), findsOneWidget);
+      expect(find.textContaining('S/'), findsOneWidget);
     });
 
     testWidgets('countdown starts at 30', (tester) async {

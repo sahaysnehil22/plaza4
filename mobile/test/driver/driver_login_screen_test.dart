@@ -31,7 +31,7 @@ void main() {
       await tester.pump();
 
       expect(find.bySemanticsLabel('Plaza 4'), findsOneWidget);
-      expect(find.text('FoodFlow Driver'), findsOneWidget);
+      expect(find.text('Plaza 4 Driver'), findsOneWidget);
       expect(find.text(entry.value.$1), findsOneWidget);
       expect(find.byTooltip(entry.value.$2), findsOneWidget);
       expect(find.byType(TextFormField), findsNWidgets(2));

@@ -88,7 +88,7 @@ void main() {
       expect(find.textContaining('23.000'), findsOneWidget);
       expect(find.textContaining('18.000'), findsOneWidget);
       expect(find.textContaining('5.000'), findsOneWidget);
-      expect(find.textContaining('₫'), findsNWidgets(3));
+      expect(find.textContaining('S/'), findsNWidgets(3));
     });
 
     testWidgets('does not invent a bonus when completion args omit it', (
@@ -104,7 +104,7 @@ void main() {
 
       expect(find.textContaining('18.000'), findsWidgets);
       expect(find.textContaining('5.000'), findsNothing);
-      expect(find.textContaining('₫'), findsWidgets);
+      expect(find.textContaining('S/'), findsWidgets);
     });
 
     testWidgets(

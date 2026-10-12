@@ -108,12 +108,12 @@ void main() {
       expect(find.byType(HomeScreen), findsOneWidget);
     });
 
-    testWidgets('shows FoodFlow Driver app bar title', (tester) async {
+    testWidgets('shows Plaza 4 Driver app bar title', (tester) async {
       await tester.pumpWidget(
         _buildHome(const DriverState(isAuthenticated: true)),
       );
       await tester.pumpAndSettle();
-      expect(find.text('FoodFlow Driver'), findsOneWidget);
+      expect(find.text('Plaza 4 Driver'), findsOneWidget);
     });
 
     testWidgets('shows Hôm nay section header', (tester) async {
@@ -205,7 +205,7 @@ void main() {
       await tester.pumpWidget(_buildHome(state));
       await tester.pumpAndSettle();
       expect(find.textContaining('120.000'), findsOneWidget);
-      expect(find.textContaining('₫'), findsOneWidget);
+      expect(find.textContaining('S/'), findsOneWidget);
     });
 
     testWidgets('displays order count from todayStats', (tester) async {

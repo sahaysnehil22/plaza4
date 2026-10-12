@@ -44,7 +44,7 @@ String _text(WidgetTester tester, Key key) {
 
 void main() {
   testWidgets(
-    'currency formatting is localized and keeps explicit VND symbol',
+    'currency formatting is localized and keeps explicit PEN symbol',
     (tester) async {
       for (final locale in const [Locale('vi'), Locale('en'), Locale('ja')]) {
         await tester.pumpWidget(
@@ -57,7 +57,7 @@ void main() {
         await tester.pumpAndSettle();
 
         final currency = _text(tester, const Key('currency'));
-        expect(currency, contains('₫'));
+        expect(currency, contains('S/'));
         expect(currency, isNot(contains('12345đ')));
         expect(_text(tester, const Key('positive')), startsWith('+'));
         expect(_text(tester, const Key('negative')), startsWith('-'));
