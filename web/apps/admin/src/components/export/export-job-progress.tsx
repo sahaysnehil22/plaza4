@@ -40,7 +40,7 @@ export default function ExportJobProgress({
   const locale = useLocale();
   const t = useTranslations('exportJobs');
   const badge = statusConfig[job.status] || statusConfig.queued;
-  const localeTag = locale === 'ja' ? 'ja-JP' : locale === 'en' ? 'en-US' : 'vi-VN';
+  const localeTag = locale === 'ja' ? 'ja-JP' : locale === 'en' ? 'en-US' : 'es-PE';
 
   return (
     <div className={cn('space-y-3 rounded-lg border p-4', className)} data-testid="export-job-progress">

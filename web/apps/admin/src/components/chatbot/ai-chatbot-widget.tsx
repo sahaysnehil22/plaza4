@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useId, useRef, useState } from 'react'
-import { ApiClientError, type AiChatHistory, type AiChatReply } from '@foodflow/api-client'
+import { ApiClientError, type AiChatHistory, type AiChatReply } from '@plaza4/api-client'
 import { Loader2, MessageCircle, RefreshCw, Send, Sparkles, X } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { apiGet, apiPost } from '@/lib/api'
@@ -15,7 +15,7 @@ export type ChatbotMessage = {
 }
 
 export type AiChatbotWidgetProps = {
-  /** Override for tests; production always calls the authenticated FoodFlow API. */
+  /** Override for tests; production always calls the authenticated Plaza 4 API. */
   sendChat?: (message: string, sessionId?: string) => Promise<AiChatReply>
   loadHistory?: (sessionId?: string) => Promise<AiChatHistory>
   className?: string

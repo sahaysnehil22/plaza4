@@ -2,7 +2,7 @@
 
 import { DollarSign, Pencil, Percent, Trash2 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';

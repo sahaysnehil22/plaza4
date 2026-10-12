@@ -21,9 +21,9 @@ const VIETNAM_MAX_BOUNDS: [[number, number], [number, number]] = [
 ];
 const VIETNAM_CENTER: [number, number] = [108.0, 14.0];
 const VIETNAM_DEFAULT_ZOOM = 5.2;
-const BOUNDARY_SOURCE_ID = 'foodflow-vietnam-boundary';
-const BOUNDARY_FILL_LAYER_ID = 'foodflow-vietnam-boundary-fill';
-const BOUNDARY_LINE_LAYER_ID = 'foodflow-vietnam-boundary-line';
+const BOUNDARY_SOURCE_ID = 'plaza4-vietnam-boundary';
+const BOUNDARY_FILL_LAYER_ID = 'plaza4-vietnam-boundary-fill';
+const BOUNDARY_LINE_LAYER_ID = 'plaza4-vietnam-boundary-line';
 
 const statusColors: Record<DriverLocation['status'], string> = {
   online: '#16a34a',
@@ -269,7 +269,7 @@ function createDriverMarkerElement(driver: DriverLocation, label: string): HTMLB
   const element = document.createElement('button');
   const isStale = driver.isStale === true;
   element.type = 'button';
-  element.className = 'foodflow-driver-marker';
+  element.className = 'plaza4-driver-marker';
   element.title = label;
   element.setAttribute('aria-label', label);
   element.style.backgroundColor = statusColors[driver.status];

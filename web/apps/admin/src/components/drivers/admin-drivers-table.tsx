@@ -1,6 +1,6 @@
 'use client';
 
-import type { AdminDriver } from '@foodflow/api-client';
+import type { AdminDriver } from '@plaza4/api-client';
 import { Star } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { Badge } from '@/components/ui/badge';

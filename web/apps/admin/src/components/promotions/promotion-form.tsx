@@ -38,7 +38,7 @@ export default function PromotionForm({ defaultValues, editId, onSuccess }: Prom
       name: '',
       discountType: 'percent',
       discountValue: 0,
-      minOrderVnd: 0,
+      minOrderPen: 0,
       audience: 'all',
       perUserLimit: 1,
       active: true,

@@ -98,9 +98,9 @@ export function PromotionFormDetails({ form }: PromotionFormSectionProps) {
             {errors.discountValue && <p className="text-xs text-destructive">{errors.discountValue.message}</p>}
           </div>
           <div className="space-y-2">
-            <Label htmlFor="maxDiscountVnd">{t('fields.maxDiscount')}</Label>
-            <Input id="maxDiscountVnd" type="number" {...register('maxDiscountVnd')} />
-            {errors.maxDiscountVnd && <p className="text-xs text-destructive">{errors.maxDiscountVnd.message}</p>}
+            <Label htmlFor="maxDiscountPen">{t('fields.maxDiscount')}</Label>
+            <Input id="maxDiscountPen" type="number" {...register('maxDiscountPen')} />
+            {errors.maxDiscountPen && <p className="text-xs text-destructive">{errors.maxDiscountPen.message}</p>}
           </div>
         </CardContent>
       </Card>

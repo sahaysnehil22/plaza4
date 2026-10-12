@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { AlertCircle, Clock } from 'lucide-react';
-import { EmptyState } from '@foodflow/ui/empty-state';
+import { EmptyState } from '@plaza4/ui/empty-state';
 import { Link } from '@/navigation';
 import { formatCurrency, timeSince } from '@/lib/utils';
 import { useRealtimeOrders } from '@/hooks/use-realtime-orders';

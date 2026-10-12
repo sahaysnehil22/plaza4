@@ -33,8 +33,8 @@ export function PromotionFormRules({ form }: PromotionFormSectionProps) {
         </CardHeader>
         <CardContent className="grid gap-4 sm:grid-cols-2">
           <div className="space-y-2">
-            <Label htmlFor="minOrderVnd">{t('fields.minOrder')}</Label>
-            <Input id="minOrderVnd" type="number" {...register('minOrderVnd')} />
+            <Label htmlFor="minOrderPen">{t('fields.minOrder')}</Label>
+            <Input id="minOrderPen" type="number" {...register('minOrderPen')} />
           </div>
           <div className="space-y-2">
             <Label htmlFor="perUserLimit">{t('form.perUserLimit')}</Label>

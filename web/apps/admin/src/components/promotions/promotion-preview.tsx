@@ -55,14 +55,14 @@ export default function PromotionPreview({ values }: PromotionPreviewProps) {
               <Icon className="h-4 w-4 text-primary" />
               <span className="text-sm font-medium text-primary">{offerLabel}</span>
             </div>
-            {values.minOrderVnd && values.minOrderVnd > 0 ? (
+            {values.minOrderPen && values.minOrderPen > 0 ? (
               <p className="text-xs text-muted-foreground">
-                {t('preview.minimumOrder', { value: formatCurrency(values.minOrderVnd) })}
+                {t('preview.minimumOrder', { value: formatCurrency(values.minOrderPen) })}
               </p>
             ) : null}
-            {values.maxDiscountVnd && values.maxDiscountVnd > 0 ? (
+            {values.maxDiscountPen && values.maxDiscountPen > 0 ? (
               <p className="text-xs text-muted-foreground">
-                {t('preview.maximumDiscount', { value: formatCurrency(values.maxDiscountVnd) })}
+                {t('preview.maximumDiscount', { value: formatCurrency(values.maxDiscountPen) })}
               </p>
             ) : null}
             <div className="flex flex-wrap gap-1">

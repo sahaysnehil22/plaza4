@@ -12,6 +12,7 @@ import {
 import { Button } from '@/components/ui/button';
 
 const LOCALE_OPTIONS = [
+  { code: 'es', label: 'ES', flag: '🇵🇪' },
   { code: 'vi', label: 'VI', flag: '🇻🇳' },
   { code: 'en', label: 'EN', flag: '🇺🇸' },
   { code: 'ja', label: 'JA', flag: '🇯🇵' },
