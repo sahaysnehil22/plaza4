@@ -69,7 +69,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get registerAsDriver => 'ドライバーとして登録';
 
   @override
-  String get driverLoginTitle => 'FoodFlow Driver';
+  String get driverLoginTitle => 'Plaza 4 Driver';
 
   @override
   String get driverLoginSubtitle => 'ログインして配達依頼の受付を開始';
@@ -96,7 +96,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get registerCreateAccount => '新しいアカウントを作成';
 
   @override
-  String get registerSubtitle => 'FoodFlowを始めるには情報を入力してください';
+  String get registerSubtitle => 'Plaza 4を始めるには情報を入力してください';
 
   @override
   String get fullNameLabel => '氏名';
@@ -329,7 +329,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get supportSubtitle => 'ヘルプセンター';
 
   @override
-  String get aboutApp => 'FoodFlowについて';
+  String get aboutApp => 'Plaza 4について';
 
   @override
   String get aboutSubtitle => 'バージョン 1.0.0';
@@ -476,6 +476,11 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get cartViewCart => 'カートを見る';
+
+  @override
+  String cartAddedItem(String name) {
+    return 'カートに$nameを追加しました';
+  }
 
   @override
   String get cartDelete => '削除';
@@ -1185,7 +1190,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get locationPermissionSubtitle =>
-      'FoodFlowは近くのレストランを探し、正確に配達するためにあなたの位置情報が必要です。';
+      'Plaza 4は近くのレストランを探し、正確に配達するためにあなたの位置情報が必要です。';
 
   @override
   String get locationPermissionAllow => '許可する';
@@ -1342,7 +1347,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get onboardingGetStarted => '始める';
 
   @override
-  String get onboardingWelcomeTitle => 'FoodFlowへようこそ';
+  String get onboardingWelcomeTitle => 'Plaza 4へようこそ';
 
   @override
   String get onboardingWelcomeSubtitle => 'お気に入りのグルメを注文、素早くお届け';
@@ -1470,7 +1475,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String referralShareMessage(String code) {
-    return 'FoodFlowの初回注文で特典を受け取るにはコード $code を使ってください！';
+    return 'Plaza 4の初回注文で特典を受け取るにはコード $code を使ってください！';
   }
 
   @override
@@ -1649,7 +1654,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get driver_onboarding_agreement_terms =>
-      '1. FoodFlow 配達パートナーサービス\n\nFoodFlow の配達パートナーとして登録することで、承認された稼働エリアで配達サービスを提供することに同意します。\n\n2. 要件\n\n• 有効な運転免許証と必要な車両書類を維持すること。\n• 登録プロフィールに一致する安全で保険加入済みの車両を使用すること。\n• プロとしての対応、適切な評価、交通法規の遵守を維持すること。\n• 顧客、店舗、注文情報を機密として扱うこと。\n\n3. 報酬と精算\n\n報酬は完了した注文、距離、インセンティブ、承認済み調整に基づいて計算されます。週次精算は FoodFlow に保存された銀行口座へ支払われます。\n\n4. 行動基準\n\n配達パートナーは顧客、店舗、サポート担当者に対して礼儀正しく行動する必要があります。不正、乱用、危険な配達、虚偽報告はアカウント停止または終了の対象になります。\n\n5. 終了\n\nFoodFlow は、本規約、安全規則、法的要件に違反した場合、アクセスを一時停止または終了できます。';
+      '1. Plaza 4 配達パートナーサービス\n\nPlaza 4 の配達パートナーとして登録することで、承認された稼働エリアで配達サービスを提供することに同意します。\n\n2. 要件\n\n• 有効な運転免許証と必要な車両書類を維持すること。\n• 登録プロフィールに一致する安全で保険加入済みの車両を使用すること。\n• プロとしての対応、適切な評価、交通法規の遵守を維持すること。\n• 顧客、店舗、注文情報を機密として扱うこと。\n\n3. 報酬と精算\n\n報酬は完了した注文、距離、インセンティブ、承認済み調整に基づいて計算されます。週次精算は Plaza 4 に保存された銀行口座へ支払われます。\n\n4. 行動基準\n\n配達パートナーは顧客、店舗、サポート担当者に対して礼儀正しく行動する必要があります。不正、乱用、危険な配達、虚偽報告はアカウント停止または終了の対象になります。\n\n5. 終了\n\nPlaza 4 は、本規約、安全規則、法的要件に違反した場合、アクセスを一時停止または終了できます。';
 
   @override
   String get driver_onboarding_agreement_failed =>
@@ -1835,7 +1840,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get driver_tip_custom_title => 'または別の金額を入力';
 
   @override
-  String get driver_tip_custom_hint => '金額を入力（VND）';
+  String get driver_tip_custom_hint => '金額を入力（PEN）';
 
   @override
   String get driver_tip_skip => 'スキップ';
@@ -2134,7 +2139,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get helpFaqPaymentMethodsQ => '利用可能な支払い方法は？';
 
   @override
-  String get helpFaqPaymentMethodsA => '現在、代金引換とFoodFlow電子ウォレットに対応しています。';
+  String get helpFaqPaymentMethodsA => '現在、代金引換とPlaza 4電子ウォレットに対応しています。';
 
   @override
   String get helpFaqTopUpWalletQ => 'ウォレットにチャージするには？';
@@ -2161,7 +2166,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get helpFaqRewardPointsA =>
-      'ポイント残高は確認済みのロイヤルティ台帳から計算されます。獲得特典や紹介特典はFoodFlowで記録された後に表示されます。';
+      'ポイント残高は確認済みのロイヤルティ台帳から計算されます。獲得特典や紹介特典はPlaza 4で記録された後に表示されます。';
 
   @override
   String get helpFaqTrackOrderQ => '注文をリアルタイムで追跡するには？';
