@@ -141,7 +141,7 @@ class _VouchersScreenState extends ConsumerState<VouchersScreen>
               ? l10nCard.vouchersPercentOff(voucher.percentOff!)
               : null,
           minOrderLabel: l10nCard.vouchersMinOrder(
-            _formatVnd(voucher.minOrderAmount),
+            _formatPen(voucher.minOrderAmount),
           ),
           expiresAtLabel: l10nCard.vouchersExpiresAt(
             DateFormat('dd/MM/yyyy').format(voucher.expiresAt),
@@ -152,11 +152,11 @@ class _VouchersScreenState extends ConsumerState<VouchersScreen>
     );
   }
 
-  String _formatVnd(int vnd) {
+  String _formatPen(int vnd) {
     final fmt = NumberFormat.currency(
-      locale: 'vi_VN',
-      symbol: '₫',
-      decimalDigits: 0,
+      locale: 'es_PE',
+      symbol: 'S/',
+      decimalDigits: 2,
     );
     return fmt.format(vnd);
   }

@@ -18,9 +18,9 @@ class WalletScreen extends ConsumerStatefulWidget {
 
 class _WalletScreenState extends ConsumerState<WalletScreen> {
   final _currencyFmt = NumberFormat.currency(
-    locale: 'vi_VN',
-    symbol: '₫',
-    decimalDigits: 0,
+    locale: 'es_PE',
+    symbol: 'S/',
+    decimalDigits: 2,
   );
 
   @override

@@ -24,14 +24,14 @@ class DailyEarning {
 
 class EarningsSummary {
   final String period;
-  final int totalVnd;
+  final int totalPen;
   final int tripCount;
   final int avgPerTrip;
   final List<DailyEarning> byDay;
 
   const EarningsSummary({
     required this.period,
-    required this.totalVnd,
+    required this.totalPen,
     required this.tripCount,
     required this.avgPerTrip,
     required this.byDay,
@@ -44,7 +44,7 @@ class EarningsSummary {
         .toList(growable: false);
     return EarningsSummary(
       period: json['period'] as String? ?? '7d',
-      totalVnd: _readInt(json['totalVnd']),
+      totalPen: _readInt(json['totalPen']),
       tripCount: _readInt(json['tripCount']),
       avgPerTrip: _readInt(json['avgPerTrip']),
       byDay: days,

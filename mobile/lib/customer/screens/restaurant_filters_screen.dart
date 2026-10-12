@@ -111,10 +111,10 @@ class _RestaurantFiltersScreenState extends State<RestaurantFiltersScreen> {
               options: const ['low', 'medium', 'high'],
               selected: _priceRange,
               labelBuilder: (v) => v == 'low'
-                  ? '₫'
+                  ? 'S/'
                   : v == 'medium'
-                  ? '₫₫'
-                  : '₫₫₫',
+                  ? 'S/ S/'
+                  : 'S/ S/ S/',
               onSelect: (v) =>
                   setState(() => _priceRange = _priceRange == v ? null : v),
             ),

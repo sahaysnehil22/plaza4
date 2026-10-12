@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../l10n/app_localizations.dart';
-import '../../shared/theme/foodflow_colors.dart';
+import '../../shared/theme/plaza4_colors.dart';
 import '../../shared/utils/order_status_labels.dart';
 
 class StatusBadge extends StatelessWidget {
@@ -64,27 +64,27 @@ class StatusBadge extends StatelessWidget {
     Color c;
     switch (status) {
       case 'pending':
-        c = FoodFlowColors.orderPending;
+        c = Plaza4Colors.orderPending;
         break;
       case 'confirmed':
-        c = FoodFlowColors.orderConfirmed;
+        c = Plaza4Colors.orderConfirmed;
         break;
       case 'preparing':
-        c = FoodFlowColors.orderPreparing;
+        c = Plaza4Colors.orderPreparing;
         break;
       case 'picked_up':
       case 'delivering':
-        c = FoodFlowColors.orderDelivering;
+        c = Plaza4Colors.orderDelivering;
         break;
       case 'delivered':
-        c = FoodFlowColors.orderDelivered;
+        c = Plaza4Colors.orderDelivered;
         break;
       case 'canceled':
       case 'cancelled':
-        c = FoodFlowColors.orderCancelled;
+        c = Plaza4Colors.orderCancelled;
         break;
       default:
-        c = FoodFlowColors.neutral400;
+        c = Plaza4Colors.neutral400;
     }
     return (
       label: localizedOrderStatus(l10n, status),

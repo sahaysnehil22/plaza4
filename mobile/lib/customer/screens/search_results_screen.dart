@@ -366,8 +366,8 @@ class _SearchResultsScreenState extends ConsumerState<SearchResultsScreen> {
 
   String _formatCurrency(int vnd) {
     if (vnd >= 1000) {
-      return '${(vnd / 1000).round()}K₫';
+      return '${(vnd / 1000).round()}KS/';
     }
-    return '$vnd₫';
+    return '$vndS/';
   }
 }

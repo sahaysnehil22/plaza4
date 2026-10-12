@@ -237,7 +237,7 @@ class _DriverAppState extends ConsumerState<DriverApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'FoodFlow Driver',
+      title: 'Plaza 4 Driver',
       debugShowCheckedModeBanner: false,
       routerConfig: _router,
       theme: _darkTheme,

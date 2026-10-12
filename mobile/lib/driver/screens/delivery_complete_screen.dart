@@ -203,7 +203,7 @@ class _DeliveryCompleteScreenState extends State<DeliveryCompleteScreen>
           ),
           const SizedBox(height: 8),
           Text(
-            formatVnd(context, args.total),
+            formatPen(context, args.total),
             style: const TextStyle(
               fontSize: 32,
               fontWeight: FontWeight.w800,
@@ -215,13 +215,13 @@ class _DeliveryCompleteScreenState extends State<DeliveryCompleteScreen>
           const SizedBox(height: 12),
           _earningRow(
             l10n.driverHistoryDeliveryFee,
-            formatVnd(context, args.deliveryFee),
+            formatPen(context, args.deliveryFee),
           ),
           if (args.bonus > 0) ...[
             const SizedBox(height: 8),
             _earningRow(
               l10n.driverDeliveryBonus,
-              formatSignedVnd(context, args.bonus),
+              formatSignedPen(context, args.bonus),
               highlight: true,
             ),
           ],

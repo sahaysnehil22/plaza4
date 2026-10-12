@@ -14,9 +14,9 @@ class WalletTxTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final currencyFmt = NumberFormat.currency(
-      locale: 'vi_VN',
-      symbol: '₫',
-      decimalDigits: 0,
+      locale: 'es_PE',
+      symbol: 'S/',
+      decimalDigits: 2,
     );
 
     return Container(

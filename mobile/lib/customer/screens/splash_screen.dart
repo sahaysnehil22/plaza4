@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../l10n/app_localizations.dart';
 import '../../shared/providers/auth_provider.dart';
 import '../../shared/theme/app_colors.dart';
-import '../../shared/widgets/foodflow_mark.dart';
+import '../../shared/widgets/plaza4_mark.dart';
 import '../router/route_names.dart';
 
 class SplashScreen extends ConsumerStatefulWidget {
@@ -72,7 +72,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                FoodFlowMark(
+                Plaza4Mark(
                   size: 100,
                   borderRadius: 24,
                   boxShadow: [
@@ -85,7 +85,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                 ),
                 const SizedBox(height: 24),
                 const Text(
-                  'FoodFlow',
+                  'Plaza 4',
                   style: TextStyle(
                     fontSize: 36,
                     fontWeight: FontWeight.w800,

@@ -26,9 +26,9 @@ class VoucherCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final isExpired = voucher.status == 'expired' || voucher.isUsed;
     final currencyFmt = NumberFormat.currency(
-      locale: 'vi_VN',
-      symbol: '₫',
-      decimalDigits: 0,
+      locale: 'es_PE',
+      symbol: 'S/',
+      decimalDigits: 2,
     );
 
     return Container(
