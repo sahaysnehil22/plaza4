@@ -48,7 +48,7 @@ jobs:
           PLAZA4_UPLOAD_KEY_ALIAS: plaza4-upload
           PLAZA4_UPLOAD_KEY_PASSWORD: android
         run: |
-          flutter build apk --release \
+          flutter build apk --release --flavor customer \
             --dart-define=API_BASE_URL=https://plaza4-api.onrender.com/api \
             --dart-define=REALTIME_PROVIDER=supabase \
             --dart-define=SUPABASE_URL=https://njvktomekuoovczpglhq.supabase.co \
