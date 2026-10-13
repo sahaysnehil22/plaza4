@@ -1,1 +1,226 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyL3NlcnZpY2VzLmRhcnQnOwppbXBvcnQgJ3BhY2thZ2U6Zmx1dHRlcl9yaXZlcnBvZC9mbHV0dGVyX3JpdmVycG9kLmRhcnQnOwppbXBvcnQgJy4uLy4uL3NoYXJlZC9tb2RlbHMvbWVudV9pdGVtLmRhcnQnOwppbXBvcnQgJy4uLy4uL3NoYXJlZC9wcm92aWRlcnMvY2FydF9wcm92aWRlci5kYXJ0JzsKaW1wb3J0ICcuLi8uLi9zaGFyZWQvdGhlbWUvYXBwX2NvbG9ycy5kYXJ0JzsKCi8vLyBCbGlua2l0LXN0eWxlIGludGVyYWN0aXZlIFF1aWNrLUFkZCBTdGVwcGVyIGJ1dHRvbi4KLy8vCi8vLyBJZiBxdWFudGl0eSBpcyAwLCByZW5kZXJzIGEgaGlnaC1jb250cmFzdCAiKyBBw5FBRElSIiBwaWxsIGJ1dHRvbi4KLy8vIFdoZW4gdGFwcGVkIG9yIHdoZW4gaXRlbXMgZXhpc3QgaW4gdGhlIGNhcnQsIG1vcnBocyBzbW9vdGhseSBpbnRvCi8vLyBhIGNvbXBhY3QgU3RlcHBlciBgWy1dICBbcXR5XSAgWytdYCB3aXRoIHRhY3RpbGUgYm91bmNlIGFuZCBoYXB0aWMgcmVzcG9uc2UuCmNsYXNzIFF1aWNrQWRkU3RlcHBlciBleHRlbmRzIENvbnN1bWVyU3RhdGVmdWxXaWRnZXQgewogIGZpbmFsIE1lbnVJdGVtTW9kZWwgaXRlbTsKICBmaW5hbCBib29sIGNvbXBhY3Q7CiAgZmluYWwgVm9pZENhbGxiYWNrPyBvbkFkZGVkOwoKICBjb25zdCBRdWlja0FkZFN0ZXBwZXIoewogICAgc3VwZXIua2V5LAogICAgcmVxdWlyZWQgdGhpcy5pdGVtLAogICAgdGhpcy5jb21wYWN0ID0gZmFsc2UsCiAgICB0aGlzLm9uQWRkZWQsCiAgfSk7CgogIEBvdmVycmlkZQogIENvbnN1bWVyU3RhdGU8UXVpY2tBZGRTdGVwcGVyPiBjcmVhdGVTdGF0ZSgpID0+IF9RdWlja0FkZFN0ZXBwZXJTdGF0ZSgpOwp9CgpjbGFzcyBfUXVpY2tBZGRTdGVwcGVyU3RhdGUgZXh0ZW5kcyBDb25zdW1lclN0YXRlPFF1aWNrQWRkU3RlcHBlcj4KICAgIHdpdGggU2luZ2xlVGlja2VyUHJvdmlkZXJTdGF0ZU1peGluIHsKICBsYXRlIEFuaW1hdGlvbkNvbnRyb2xsZXIgX2FuaW1Db250cm9sbGVyOwogIGxhdGUgQW5pbWF0aW9uPGRvdWJsZT4gX3NjYWxlQW5pbWF0aW9uOwoKICBAb3ZlcnJpZGUKICB2b2lkIGluaXRTdGF0ZSgpIHsKICAgIHN1cGVyLmluaXRTdGF0ZSgpOwogICAgX2FuaW1Db250cm9sbGVyID0gQW5pbWF0aW9uQ29udHJvbGxlcigKICAgICAgdnN5bmM6IHRoaXMsCiAgICAgIGR1cmF0aW9uOiBjb25zdCBEdXJhdGlvbihtaWxsaXNlY29uZHM6IDE0MCksCiAgICAgIGxvd2VyQm91bmQ6IDAuOTAsCiAgICAgIHVwcGVyQm91bmQ6IDEuMCwKICAgICAgdmFsdWU6IDEuMCwKICAgICk7CiAgICBfc2NhbGVBbmltYXRpb24gPSBDdXJ2ZWRBbmltYXRpb24oCiAgICAgIHBhcmVudDogX2FuaW1Db250cm9sbGVyLAogICAgICBjdXJ2ZTogQ3VydmVzLmVhc2VPdXRDdWJpYywKICAgICk7CiAgfQoKICBAb3ZlcnJpZGUKICB2b2lkIGRpc3Bvc2UoKSB7CiAgICBfYW5pbUNvbnRyb2xsZXIuZGlzcG9zZSgpOwogICAgc3VwZXIuZGlzcG9zZSgpOwogIH0KCiAgdm9pZCBfdHJpZ2dlckJvdW5jZSgpIHsKICAgIF9hbmltQ29udHJvbGxlci5yZXZlcnNlKCkudGhlbigoXykgewogICAgICBpZiAobW91bnRlZCkgX2FuaW1Db250cm9sbGVyLmZvcndhcmQoKTsKICAgIH0pOwogICAgSGFwdGljRmVlZGJhY2subGlnaHRJbXBhY3QoKTsKICB9CgogIEBvdmVycmlkZQogIFdpZGdldCBidWlsZChCdWlsZENvbnRleHQgY29udGV4dCkgewogICAgZmluYWwgY2FydFN0YXRlID0gcmVmLndhdGNoKGNhcnRQcm92aWRlcik7CiAgICBmaW5hbCBjYXJ0ID0gY2FydFN0YXRlLmN1cnJlbnRDYXJ0OwoKICAgIC8vIEZpbmQgYWxsIG1hdGNoaW5nIGNhcnQgbGluZXMgZm9yIHRoaXMgbWVudSBpdGVtCiAgICBpbnQgY3VycmVudFF0eSA9IDA7CiAgICBpbnQ/IGl0ZW1JbmRleDsKICAgIGlmIChjYXJ0ICE9IG51bGwpIHsKICAgICAgZm9yIChpbnQgaSA9IDA7IGkgPCBjYXJ0Lml0ZW1zLmxlbmd0aDsgaSsrKSB7CiAgICAgICAgaWYgKGNhcnQuaXRlbXNbaV0ubWVudUl0ZW0uaWQgPT0gd2lkZ2V0Lml0ZW0uaWQpIHsKICAgICAgICAgIGN1cnJlbnRRdHkgKz0gY2FydC5pdGVtc1tpXS5xdWFudGl0eTsKICAgICAgICAgIGl0ZW1JbmRleCA9IGk7CiAgICAgICAgfQogICAgICB9CiAgICB9CgogICAgZmluYWwgaGFzUXVhbnRpdHkgPSBjdXJyZW50UXR5ID4gMDsKCiAgICByZXR1cm4gU2NhbGVUcmFuc2l0aW9uKAogICAgICBzY2FsZTogX3NjYWxlQW5pbWF0aW9uLAogICAgICBjaGlsZDogQW5pbWF0ZWRDb250YWluZXIoCiAgICAgICAgZHVyYXRpb246IGNvbnN0IER1cmF0aW9uKG1pbGxpc2Vjb25kczogMjAwKSwKICAgICAgICBjdXJ2ZTogQ3VydmVzLmVhc2VJbk91dCwKICAgICAgICBoZWlnaHQ6IHdpZGdldC5jb21wYWN0ID8gMzIgOiAzNiwKICAgICAgICBkZWNvcmF0aW9uOiBCb3hEZWNvcmF0aW9uKAogICAgICAgICAgY29sb3I6IGhhc1F1YW50aXR5ID8gQXBwQ29sb3JzLnByaW1hcnkgOiBDb2xvcnMud2hpdGUsCiAgICAgICAgICBib3JkZXJSYWRpdXM6IEJvcmRlclJhZGl1cy5jaXJjdWxhcigxMCksCiAgICAgICAgICBib3JkZXI6IEJvcmRlci5hbGwoCiAgICAgICAgICAgIGNvbG9yOiBoYXNRdWFudGl0eSA/IEFwcENvbG9ycy5wcmltYXJ5IDogQXBwQ29sb3JzLnByaW1hcnksCiAgICAgICAgICAgIHdpZHRoOiAxLjUsCiAgICAgICAgICApLAogICAgICAgICAgYm94U2hhZG93OiBbCiAgICAgICAgICAgIEJveFNoYWRvdygKICAgICAgICAgICAgICBjb2xvcjogaGFzUXVhbnRpdHkKICAgICAgICAgICAgICAgICAgPyBBcHBDb2xvcnMucHJpbWFyeS53aXRoVmFsdWVzKGFscGhhOiAwLjI4KQogICAgICAgICAgICAgICAgICA6IENvbG9ycy5ibGFjay53aXRoVmFsdWVzKGFscGhhOiAwLjA1KSwKICAgICAgICAgICAgICBibHVyUmFkaXVzOiA2LAogICAgICAgICAgICAgIG9mZnNldDogY29uc3QgT2Zmc2V0KDAsIDIpLAogICAgICAgICAgICApLAogICAgICAgICAgXSwKICAgICAgICApLAogICAgICAgIGNoaWxkOiBBbmltYXRlZFN3aXRjaGVyKAogICAgICAgICAgZHVyYXRpb246IGNvbnN0IER1cmF0aW9uKG1pbGxpc2Vjb25kczogMTgwKSwKICAgICAgICAgIHRyYW5zaXRpb25CdWlsZGVyOiAoY2hpbGQsIGFuaW1hdGlvbikgPT4KICAgICAgICAgICAgICBGYWRlVHJhbnNpdGlvbihvcGFjaXR5OiBhbmltYXRpb24sIGNoaWxkOiBjaGlsZCksCiAgICAgICAgICBjaGlsZDogaGFzUXVhbnRpdHkKICAgICAgICAgICAgICA/IF9idWlsZFN0ZXBwZXIoY29udGV4dCwgY3VycmVudFF0eSwgaXRlbUluZGV4ISkKICAgICAgICAgICAgICA6IF9idWlsZEFkZEJ1dHRvbihjb250ZXh0KSwKICAgICAgICApLAogICAgICApLAogICAgKTsKICB9CgogIFdpZGdldCBfYnVpbGRBZGRCdXR0b24oQnVpbGRDb250ZXh0IGNvbnRleHQpIHsKICAgIHJldHVybiBJbmtXZWxsKAogICAgICBrZXk6IGNvbnN0IFZhbHVlS2V5KCdidG5fYWRkJyksCiAgICAgIG9uVGFwOiAoKSB7CiAgICAgICAgX3RyaWdnZXJCb3VuY2UoKTsKICAgICAgICByZWYucmVhZChjYXJ0UHJvdmlkZXIubm90aWZpZXIpLmFkZEl0ZW0oCiAgICAgICAgICAgICAgaXRlbTogd2lkZ2V0Lml0ZW0sCiAgICAgICAgICAgICAgcXVhbnRpdHk6IDEsCiAgICAgICAgICAgICk7CiAgICAgICAgd2lkZ2V0Lm9uQWRkZWQ/LmNhbGwoKTsKICAgICAgfSwKICAgICAgYm9yZGVyUmFkaXVzOiBCb3JkZXJSYWRpdXMuY2lyY3VsYXIoMTApLAogICAgICBjaGlsZDogUGFkZGluZygKICAgICAgICBwYWRkaW5nOiBFZGdlSW5zZXRzLnN5bW1ldHJpYygKICAgICAgICAgIGhvcml6b250YWw6IHdpZGdldC5jb21wYWN0ID8gMTAgOiAxNCwKICAgICAgICApLAogICAgICAgIGNoaWxkOiBSb3coCiAgICAgICAgICBtYWluQXhpc1NpemU6IE1haW5BeGlzU2l6ZS5taW4sCiAgICAgICAgICBtYWluQXhpc0FsaWdubWVudDogTWFpbkF4aXNBbGlnbm1lbnQuY2VudGVyLAogICAgICAgICAgY2hpbGRyZW46IFsKICAgICAgICAgICAgY29uc3QgSWNvbigKICAgICAgICAgICAgICBJY29ucy5hZGRfcm91bmRlZCwKICAgICAgICAgICAgICBzaXplOiAxNiwKICAgICAgICAgICAgICBjb2xvcjogQXBwQ29sb3JzLnByaW1hcnksCiAgICAgICAgICAgICksCiAgICAgICAgICAgIGNvbnN0IFNpemVkQm94KHdpZHRoOiA0KSwKICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAnQcORQURJUicsCiAgICAgICAgICAgICAgc3R5bGU6IFRleHRTdHlsZSgKICAgICAgICAgICAgICAgIGNvbG9yOiBBcHBDb2xvcnMucHJpbWFyeSwKICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IEZvbnRXZWlnaHQudzgwMCwKICAgICAgICAgICAgICAgIGZvbnRTaXplOiB3aWRnZXQuY29tcGFjdCA/IDExIDogMTIuNSwKICAgICAgICAgICAgICAgIGxldHRlclNwYWNpbmc6IDAuNCwKICAgICAgICAgICAgICApLAogICAgICAgICAgICApLAogICAgICAgICAgXSwKICAgICAgICApLAogICAgICApLAogICAgKTsKICB9CgogIFdpZGdldCBfYnVpbGRTdGVwcGVyKEJ1aWxkQ29udGV4dCBjb250ZXh0LCBpbnQgcXVhbnRpdHksIGludCBpbmRleCkgewogICAgcmV0dXJuIFJvdygKICAgICAga2V5OiBjb25zdCBWYWx1ZUtleSgnc3RlcHBlcl9hY3RpdmUnKSwKICAgICAgbWFpbkF4aXNTaXplOiBNYWluQXhpc1NpemUubWluLAogICAgICBtYWluQXhpc0FsaWdubWVudDogTWFpbkF4aXNBbGlnbm1lbnQuY2VudGVyLAogICAgICBjaGlsZHJlbjogWwogICAgICAgIC8vIERlY3JlbWVudCBidXR0b24KICAgICAgICBJbmtXZWxsKAogICAgICAgICAgb25UYXA6ICgpIHsKICAgICAgICAgICAgX3RyaWdnZXJCb3VuY2UoKTsKICAgICAgICAgICAgcmVmLnJlYWQoY2FydFByb3ZpZGVyLm5vdGlmaWVyKS51cGRhdGVJdGVtUXVhbnRpdHkoCiAgICAgICAgICAgICAgICAgIGluZGV4LAogICAgICAgICAgICAgICAgICBxdWFudGl0eSAtIDEsCiAgICAgICAgICAgICAgICApOwogICAgICAgICAgfSwKICAgICAgICAgIGJvcmRlclJhZGl1czogY29uc3QgQm9yZGVyUmFkaXVzLmhvcml6b250YWwobGVmdDogUmFkaXVzLmNpcmN1bGFyKDgpKSwKICAgICAgICAgIGNoaWxkOiBDb250YWluZXIoCiAgICAgICAgICAgIHBhZGRpbmc6IEVkZ2VJbnNldHMuc3ltbWV0cmljKAogICAgICAgICAgICAgIGhvcml6b250YWw6IHdpZGdldC5jb21wYWN0ID8gNiA6IDgsCiAgICAgICAgICAgICAgdmVydGljYWw6IDQsCiAgICAgICAgICAgICksCiAgICAgICAgICAgIGNoaWxkOiBjb25zdCBJY29uKAogICAgICAgICAgICAgIEljb25zLnJlbW92ZV9yb3VuZGVkLAogICAgICAgICAgICAgIHNpemU6IDE2LAogICAgICAgICAgICAgIGNvbG9yOiBDb2xvcnMud2hpdGUsCiAgICAgICAgICAgICksCiAgICAgICAgICApLAogICAgICAgICksCiAgICAgICAgLy8gUXVhbnRpdHkgZGlzcGxheQogICAgICAgIFBhZGRpbmcoCiAgICAgICAgICBwYWRkaW5nOiBFZGdlSW5zZXRzLnN5bW1ldHJpYygKICAgICAgICAgICAgaG9yaXpvbnRhbDogd2lkZ2V0LmNvbXBhY3QgPyA2IDogOCwKICAgICAgICAgICksCiAgICAgICAgICBjaGlsZDogVGV4dCgKICAgICAgICAgICAgJyRxdWFudGl0eScsCiAgICAgICAgICAgIHN0eWxlOiBUZXh0U3R5bGUoCiAgICAgICAgICAgICAgY29sb3I6IENvbG9ycy53aGl0ZSwKICAgICAgICAgICAgICBmb250V2VpZ2h0OiBGb250V2VpZ2h0Lnc4MDAsCiAgICAgICAgICAgICAgZm9udFNpemU6IHdpZGdldC5jb21wYWN0ID8gMTIgOiAxMy41LAogICAgICAgICAgICApLAogICAgICAgICAgKSwKICAgICAgICApLAogICAgICAgIC8vIEluY3JlbWVudCBidXR0b24KICAgICAgICBJbmtXZWxsKAogICAgICAgICAgb25UYXA6ICgpIHsKICAgICAgICAgICAgX3RyaWdnZXJCb3VuY2UoKTsKICAgICAgICAgICAgcmVmLnJlYWQoY2FydFByb3ZpZGVyLm5vdGlmaWVyKS51cGRhdGVJdGVtUXVhbnRpdHkoCiAgICAgICAgICAgICAgICAgIGluZGV4LAogICAgICAgICAgICAgICAgICBxdWFudGl0eSArIDEsCiAgICAgICAgICAgICAgICApOwogICAgICAgICAgICB3aWRnZXQub25BZGRlZD8uY2FsbCgpOwogICAgICAgICAgfSwKICAgICAgICAgIGJvcmRlclJhZGl1czogY29uc3QgQm9yZGVyUmFkaXVzLmhvcml6b250YWwocmlnaHQ6IFJhZGl1cy5jaXJjdWxhcig4KSksCiAgICAgICAgICBjaGlsZDogQ29udGFpbmVyKAogICAgICAgICAgICBwYWRkaW5nOiBFZGdlSW5zZXRzLnN5bW1ldHJpYygKICAgICAgICAgICAgICBob3Jpem9udGFsOiB3aWRnZXQuY29tcGFjdCA/IDYgOiA4LAogICAgICAgICAgICAgIHZlcnRpY2FsOiA0LAogICAgICAgICAgICApLAogICAgICAgICAgICBjaGlsZDogY29uc3QgSWNvbigKICAgICAgICAgICAgICBJY29ucy5hZGRfcm91bmRlZCwKICAgICAgICAgICAgICBzaXplOiAxNiwKICAgICAgICAgICAgICBjb2xvcjogQ29sb3JzLndoaXRlLAogICAgICAgICAgICApLAogICAgICAgICAgKSwKICAgICAgICApLAogICAgICBdLAogICAgKTsKICB9Cn0K
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../shared/models/menu_item.dart';
+import '../../shared/providers/cart_provider.dart';
+import '../../shared/theme/app_colors.dart';
+
+/// Blinkit-style interactive Quick-Add Stepper button.
+///
+/// If quantity is 0, renders a high-contrast "+ AÑADIR" pill button.
+/// When tapped or when items exist in the cart, morphs smoothly into
+/// a compact Stepper `[-]  [qty]  [+]` with tactile bounce and haptic response.
+class QuickAddStepper extends ConsumerStatefulWidget {
+  final MenuItemModel item;
+  final bool compact;
+  final VoidCallback? onAdded;
+
+  const QuickAddStepper({
+    super.key,
+    required this.item,
+    this.compact = false,
+    this.onAdded,
+  });
+
+  @override
+  ConsumerState<QuickAddStepper> createState() => _QuickAddStepperState();
+}
+
+class _QuickAddStepperState extends ConsumerState<QuickAddStepper>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _animController;
+  late Animation<double> _scaleAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+    _animController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 140),
+      lowerBound: 0.90,
+      upperBound: 1.0,
+      value: 1.0,
+    );
+    _scaleAnimation = CurvedAnimation(
+      parent: _animController,
+      curve: Curves.easeOutCubic,
+    );
+  }
+
+  @override
+  void dispose() {
+    _animController.dispose();
+    super.dispose();
+  }
+
+  void _triggerBounce() {
+    _animController.reverse().then((_) {
+      if (mounted) _animController.forward();
+    });
+    HapticFeedback.lightImpact();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final cartState = ref.watch(cartProvider);
+    final cart = cartState.currentCart;
+
+    // Find all matching cart lines for this menu item
+    int currentQty = 0;
+    int? itemIndex;
+    if (cart != null) {
+      for (int i = 0; i < cart.items.length; i++) {
+        if (cart.items[i].menuItem.id == widget.item.id) {
+          currentQty += cart.items[i].quantity;
+          itemIndex = i;
+        }
+      }
+    }
+
+    final hasQuantity = currentQty > 0;
+
+    return ScaleTransition(
+      scale: _scaleAnimation,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeInOut,
+        height: widget.compact ? 32 : 36,
+        decoration: BoxDecoration(
+          color: hasQuantity ? AppColors.primary : Colors.white,
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(
+            color: hasQuantity ? AppColors.primary : AppColors.primary,
+            width: 1.5,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: hasQuantity
+                  ? AppColors.primary.withValues(alpha: 0.28)
+                  : Colors.black.withValues(alpha: 0.05),
+              blurRadius: 6,
+              offset: const Offset(0, 2),
+            ),
+          ],
+        ),
+        child: AnimatedSwitcher(
+          duration: const Duration(milliseconds: 180),
+          transitionBuilder: (child, animation) =>
+              FadeTransition(opacity: animation, child: child),
+          child: hasQuantity
+              ? _buildStepper(context, currentQty, itemIndex!)
+              : _buildAddButton(context),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildAddButton(BuildContext context) {
+    return InkWell(
+      key: const ValueKey('btn_add'),
+      onTap: () {
+        _triggerBounce();
+        ref.read(cartProvider.notifier).addItem(
+              item: widget.item,
+              quantity: 1,
+            );
+        widget.onAdded?.call();
+      },
+      borderRadius: BorderRadius.circular(10),
+      child: Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: widget.compact ? 10 : 14,
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(
+              Icons.add_rounded,
+              size: 16,
+              color: AppColors.primary,
+            ),
+            const SizedBox(width: 4),
+            Text(
+              'AÑADIR',
+              style: TextStyle(
+                color: AppColors.primary,
+                fontWeight: FontWeight.w800,
+                fontSize: widget.compact ? 11 : 12.5,
+                letterSpacing: 0.4,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStepper(BuildContext context, int quantity, int index) {
+    return Row(
+      key: const ValueKey('stepper_active'),
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        // Decrement button
+        InkWell(
+          onTap: () {
+            _triggerBounce();
+            ref.read(cartProvider.notifier).updateItemQuantity(
+                  index,
+                  quantity - 1,
+                );
+          },
+          borderRadius: const BorderRadius.horizontal(left: Radius.circular(8)),
+          child: Container(
+            padding: EdgeInsets.symmetric(
+              horizontal: widget.compact ? 6 : 8,
+              vertical: 4,
+            ),
+            child: const Icon(
+              Icons.remove_rounded,
+              size: 16,
+              color: Colors.white,
+            ),
+          ),
+        ),
+        // Quantity display
+        Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: widget.compact ? 6 : 8,
+          ),
+          child: Text(
+            '$quantity',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w800,
+              fontSize: widget.compact ? 12 : 13.5,
+            ),
+          ),
+        ),
+        // Increment button
+        InkWell(
+          onTap: () {
+            _triggerBounce();
+            ref.read(cartProvider.notifier).updateItemQuantity(
+                  index,
+                  quantity + 1,
+                );
+            widget.onAdded?.call();
+          },
+          borderRadius: const BorderRadius.horizontal(right: Radius.circular(8)),
+          child: Container(
+            padding: EdgeInsets.symmetric(
+              horizontal: widget.compact ? 6 : 8,
+              vertical: 4,
+            ),
+            child: const Icon(
+              Icons.add_rounded,
+              size: 16,
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}

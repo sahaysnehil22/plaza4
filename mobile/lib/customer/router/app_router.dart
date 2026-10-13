@@ -1,1 +1,272 @@
-aW1wb3J0ICdwYWNrYWdlOmdvX3JvdXRlci9nb19yb3V0ZXIuZGFydCc7CgppbXBvcnQgJy4uL3NjcmVlbnMvc3BsYXNoX3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL2xvZ2luX3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL3JlZ2lzdGVyX3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL2hvbWVfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvcmVzdGF1cmFudF9kZXRhaWxfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvZm9vZF9kZXRhaWxfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvY2FydF9zY3JlZW4uZGFydCc7CmltcG9ydCAnLi4vc2NyZWVucy9jaGVja291dF9zY3JlZW4uZGFydCc7CmltcG9ydCAnLi4vc2NyZWVucy9vcmRlcl90cmFja2luZ19zY3JlZW4uZGFydCc7CmltcG9ydCAnLi4vc2NyZWVucy9jaGF0X3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL29yZGVyX2hpc3Rvcnlfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvcHJvZmlsZV9zY3JlZW4uZGFydCc7CmltcG9ydCAnLi4vc2NyZWVucy9hZGRyZXNzX21hbmFnZW1lbnRfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvcmV2aWV3X3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL2xvY2F0aW9uX3Blcm1pc3Npb25fc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvcmVzdGF1cmFudF9saXN0X3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL25vdGlmaWNhdGlvbnNfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvb25ib2FyZGluZ193ZWxjb21lX3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL29uYm9hcmRpbmdfbG9jYXRpb25fc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvb25ib2FyZGluZ19ub3RpZmljYXRpb25fc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvbG95YWx0eV9zY3JlZW4uZGFydCc7CmltcG9ydCAnLi4vc2NyZWVucy93YWxsZXRfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvcmVmZXJyYWxfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvaGVscF9jZW50ZXJfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvcmVzdGF1cmFudF9maWx0ZXJzX3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL2FkZHJlc3NfcGlja2VyX3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi9zY3JlZW5zL2Zhdm9yaXRlc19zY3JlZW4uZGFydCc7CmltcG9ydCAnLi4vc2NyZWVucy9zZWFyY2hfcmVzdWx0c19zY3JlZW4uZGFydCc7CmltcG9ydCAnLi4vc2NyZWVucy92b3VjaGVyc19zY3JlZW4uZGFydCc7CmltcG9ydCAnLi4vc2NyZWVucy9jYW5jZWxfb3JkZXJfc2NyZWVuLmRhcnQnOwppbXBvcnQgJy4uL3NjcmVlbnMvY2F0ZWdvcnlfYnJvd3NlX3NjcmVlbi5kYXJ0JzsKaW1wb3J0ICcuLi8uLi9zaGFyZWQvbW9kZWxzL21lbnVfaXRlbS5kYXJ0JzsKaW1wb3J0ICdyb3V0ZV9ndWFyZHMuZGFydCc7CmltcG9ydCAncm91dGVfbmFtZXMuZGFydCc7CgovLy8gQi1NT0ItMTQ6IHNhZmUgY2FzdCBoZWxwZXJzIGZvciBHb1JvdXRlciBleHRyYXMuClN0cmluZz8gX2V4dHJhU3RyaW5nKE9iamVjdD8gZXh0cmEpIHsKICBpZiAoZXh0cmEgaXMgU3RyaW5nICYmIGV4dHJhLmlzTm90RW1wdHkpIHJldHVybiBleHRyYTsKICByZXR1cm4gbnVsbDsKfQoKTWFwPFN0cmluZywgZHluYW1pYz4gX2V4dHJhTWFwKE9iamVjdD8gZXh0cmEpIHsKICBpZiAoZXh0cmEgaXMgTWFwPFN0cmluZywgZHluYW1pYz4pIHJldHVybiBleHRyYTsKICBpZiAoZXh0cmEgaXMgTWFwKSByZXR1cm4gTWFwPFN0cmluZywgZHluYW1pYz4uZnJvbShleHRyYSk7CiAgcmV0dXJuIGNvbnN0IHt9Owp9CgovLy8gQ2VudHJhbCBHb1JvdXRlciBjb25maWd1cmF0aW9uIGZvciBjdXN0b21lci1mYWNpbmcgZmxvd3MuCi8vLwovLy8gVXNlcyBbYXV0aEd1YXJkXSByZWRpcmVjdCBmb3Igcm91dGUgcHJvdGVjdGlvbi4gUGF0aCBjb25zdGFudHMgY29tZSBmcm9tCi8vLyBbUm91dGVzXSB0byBwcmV2ZW50IHN0cmluZyBkcmlmdC4gTmV3IHJvdXRlcyBzaG91bGQgYmUgYWRkZWQgaGVyZSwgbm90Ci8vLyBpbiBtYWluX2N1c3RvbWVyLmRhcnQuCmZpbmFsIGFwcFJvdXRlciA9IEdvUm91dGVyKAogIGluaXRpYWxMb2NhdGlvbjogUm91dGVzLnNwbGFzaCwKICByZWRpcmVjdDogKGNvbnRleHQsIHN0YXRlKSA9PiBhdXRoR3VhcmQoY29udGV4dCwgc3RhdGUpLAogIHJvdXRlczogWwogICAgR29Sb3V0ZSgKICAgICAgcGF0aDogJy9zcGxhc2gnLAogICAgICBuYW1lOiAnc3BsYXNoJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBTcGxhc2hTY3JlZW4oKSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL2xvZ2luJywKICAgICAgbmFtZTogJ2xvZ2luJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBMb2dpblNjcmVlbigpLAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvcmVnaXN0ZXInLAogICAgICBuYW1lOiAncmVnaXN0ZXInLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpID0+IGNvbnN0IFJlZ2lzdGVyU2NyZWVuKCksCiAgICApLAogICAgR29Sb3V0ZSgKICAgICAgcGF0aDogJy9ob21lJywKICAgICAgbmFtZTogJ2hvbWUnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpID0+IGNvbnN0IEhvbWVTY3JlZW4oKSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL2NhdGVnb3J5LWJyb3dzZScsCiAgICAgIG5hbWU6ICdjYXRlZ29yeS1icm93c2UnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpIHsKICAgICAgICBmaW5hbCBjYXRlZ29yeUlkID0gX2V4dHJhU3RyaW5nKHN0YXRlLmV4dHJhKTsKICAgICAgICByZXR1cm4gQ2F0ZWdvcnlCcm93c2VTY3JlZW4oaW5pdGlhbENhdGVnb3J5SWQ6IGNhdGVnb3J5SWQpOwogICAgICB9LAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvcmVzdGF1cmFudC1kZXRhaWwnLAogICAgICBuYW1lOiAncmVzdGF1cmFudC1kZXRhaWwnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpIHsKICAgICAgICBmaW5hbCByZXN0YXVyYW50SWQgPSBfZXh0cmFTdHJpbmcoc3RhdGUuZXh0cmEpID8/ICcnOwogICAgICAgIHJldHVybiBSZXN0YXVyYW50RGV0YWlsU2NyZWVuKHJlc3RhdXJhbnRJZDogcmVzdGF1cmFudElkKTsKICAgICAgfSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL2Zvb2QtZGV0YWlsJywKICAgICAgbmFtZTogJ2Zvb2QtZGV0YWlsJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSB7CiAgICAgICAgZmluYWwgYXJncyA9IF9leHRyYU1hcChzdGF0ZS5leHRyYSk7CiAgICAgICAgZmluYWwgaXRlbSA9IGFyZ3NbJ2l0ZW0nXTsKICAgICAgICByZXR1cm4gRm9vZERldGFpbFNjcmVlbigKICAgICAgICAgIGl0ZW06IGl0ZW0gaXMgTWVudUl0ZW1Nb2RlbAogICAgICAgICAgICAgID8gaXRlbQogICAgICAgICAgICAgIDogTWVudUl0ZW1Nb2RlbCgKICAgICAgICAgICAgICAgICAgaWQ6ICcnLAogICAgICAgICAgICAgICAgICByZXN0YXVyYW50SWQ6ICcnLAogICAgICAgICAgICAgICAgICBuYW1lOiAnJywKICAgICAgICAgICAgICAgICAgcHJpY2U6IDAsCiAgICAgICAgICAgICAgICAgIGNhdGVnb3J5OiAnJywKICAgICAgICAgICAgICAgICksCiAgICAgICAgICByZXN0YXVyYW50TmFtZTogYXJnc1sncmVzdGF1cmFudE5hbWUnXSBhcyBTdHJpbmc/ID8/ICcnLAogICAgICAgICk7CiAgICAgIH0sCiAgICApLAogICAgR29Sb3V0ZSgKICAgICAgcGF0aDogJy9jYXJ0JywKICAgICAgbmFtZTogJ2NhcnQnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpID0+IGNvbnN0IENhcnRTY3JlZW4oKSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL2NoZWNrb3V0JywKICAgICAgbmFtZTogJ2NoZWNrb3V0JywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBDaGVja291dFNjcmVlbigpLAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvb3JkZXItdHJhY2tpbmcnLAogICAgICBuYW1lOiAnb3JkZXItdHJhY2tpbmcnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpIHsKICAgICAgICBmaW5hbCBvcmRlcklkID0gX2V4dHJhU3RyaW5nKHN0YXRlLmV4dHJhKSA/PyAnJzsKICAgICAgICByZXR1cm4gT3JkZXJUcmFja2luZ1NjcmVlbihvcmRlcklkOiBvcmRlcklkKTsKICAgICAgfSwKICAgICksCiAgICAvLyBCLU1PQi0wOTogcGF0aC1zdHlsZSBkZWVwIGxpbmsgL29yZGVycy86aWQg4oaSIHRyYWNraW5nIHdpdGggZXh0cmEuCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL29yZGVycy86b3JkZXJJZCcsCiAgICAgIG5hbWU6ICdvcmRlci1kZXRhaWwtZGVlcC1saW5rJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSB7CiAgICAgICAgZmluYWwgb3JkZXJJZCA9IHN0YXRlLnBhdGhQYXJhbWV0ZXJzWydvcmRlcklkJ10gPz8gJyc7CiAgICAgICAgcmV0dXJuIE9yZGVyVHJhY2tpbmdTY3JlZW4ob3JkZXJJZDogb3JkZXJJZCk7CiAgICAgIH0sCiAgICApLAogICAgR29Sb3V0ZSgKICAgICAgcGF0aDogJy9jaGF0JywKICAgICAgbmFtZTogJ2NoYXQnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpIHsKICAgICAgICBmaW5hbCBvcmRlcklkID0gX2V4dHJhU3RyaW5nKHN0YXRlLmV4dHJhKSA/PyAnJzsKICAgICAgICByZXR1cm4gQ2hhdFNjcmVlbihvcmRlcklkOiBvcmRlcklkKTsKICAgICAgfSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL29yZGVycycsCiAgICAgIG5hbWU6ICdvcmRlcnMnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpID0+IGNvbnN0IE9yZGVySGlzdG9yeVNjcmVlbigpLAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvcHJvZmlsZScsCiAgICAgIG5hbWU6ICdwcm9maWxlJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBQcm9maWxlU2NyZWVuKCksCiAgICApLAogICAgR29Sb3V0ZSgKICAgICAgcGF0aDogJy9hZGRyZXNzZXMnLAogICAgICBuYW1lOiAnYWRkcmVzc2VzJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBBZGRyZXNzTWFuYWdlbWVudFNjcmVlbigpLAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvcmV2aWV3JywKICAgICAgbmFtZTogJ3JldmlldycsCiAgICAgIGJ1aWxkZXI6IChjb250ZXh0LCBzdGF0ZSkgewogICAgICAgIGZpbmFsIG9yZGVySWQgPSBfZXh0cmFTdHJpbmcoc3RhdGUuZXh0cmEpID8/ICcnOwogICAgICAgIHJldHVybiBSZXZpZXdTY3JlZW4ob3JkZXJJZDogb3JkZXJJZCk7CiAgICAgIH0sCiAgICApLAogICAgR29Sb3V0ZSgKICAgICAgcGF0aDogJy9sb2NhdGlvbi1wZXJtaXNzaW9uJywKICAgICAgbmFtZTogJ2xvY2F0aW9uLXBlcm1pc3Npb24nLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpID0+IGNvbnN0IExvY2F0aW9uUGVybWlzc2lvblNjcmVlbigpLAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvcmVzdGF1cmFudHMnLAogICAgICBuYW1lOiAncmVzdGF1cmFudHMnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpID0+IGNvbnN0IFJlc3RhdXJhbnRMaXN0U2NyZWVuKCksCiAgICApLAogICAgR29Sb3V0ZSgKICAgICAgcGF0aDogJy9ub3RpZmljYXRpb25zJywKICAgICAgbmFtZTogJ25vdGlmaWNhdGlvbnMnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpID0+IGNvbnN0IE5vdGlmaWNhdGlvbnNTY3JlZW4oKSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL3NlYXJjaCcsCiAgICAgIG5hbWU6ICdzZWFyY2gnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpIHsKICAgICAgICBmaW5hbCBxdWVyeSA9IF9leHRyYVN0cmluZyhzdGF0ZS5leHRyYSkgPz8gJyc7CiAgICAgICAgcmV0dXJuIFNlYXJjaFJlc3VsdHNTY3JlZW4oaW5pdGlhbFF1ZXJ5OiBxdWVyeSk7CiAgICAgIH0sCiAgICApLAogICAgR29Sb3V0ZSgKICAgICAgcGF0aDogJy9mYXZvcml0ZXMnLAogICAgICBuYW1lOiAnZmF2b3JpdGVzJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBGYXZvcml0ZXNTY3JlZW4oKSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL3ZvdWNoZXJzJywKICAgICAgbmFtZTogJ3ZvdWNoZXJzJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBWb3VjaGVyc1NjcmVlbigpLAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvY2FuY2VsLW9yZGVyJywKICAgICAgbmFtZTogJ2NhbmNlbC1vcmRlcicsCiAgICAgIGJ1aWxkZXI6IChjb250ZXh0LCBzdGF0ZSkgewogICAgICAgIGZpbmFsIGFyZ3MgPSBfZXh0cmFNYXAoc3RhdGUuZXh0cmEpOwogICAgICAgIHJldHVybiBDYW5jZWxPcmRlclNjcmVlbigKICAgICAgICAgIG9yZGVySWQ6IGFyZ3NbJ29yZGVySWQnXSBhcyBTdHJpbmc/ID8/ICcnLAogICAgICAgICAgcmVzdGF1cmFudE5hbWU6IGFyZ3NbJ3Jlc3RhdXJhbnROYW1lJ10gYXMgU3RyaW5nPywKICAgICAgICAgIG9yZGVyU3VtbWFyeTogYXJnc1snb3JkZXJTdW1tYXJ5J10gYXMgU3RyaW5nPywKICAgICAgICAgIHRvdGFsQW1vdW50OiAoYXJnc1sndG90YWxBbW91bnQnXSBhcyBudW0/KT8udG9JbnQoKSwKICAgICAgICApOwogICAgICB9LAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvb25ib2FyZGluZycsCiAgICAgIG5hbWU6ICdvbmJvYXJkaW5nJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBPbmJvYXJkaW5nV2VsY29tZVNjcmVlbigpLAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvb25ib2FyZGluZy1sb2NhdGlvbicsCiAgICAgIG5hbWU6ICdvbmJvYXJkaW5nLWxvY2F0aW9uJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBPbmJvYXJkaW5nTG9jYXRpb25TY3JlZW4oKSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL29uYm9hcmRpbmctbm90aWZpY2F0aW9ucycsCiAgICAgIG5hbWU6ICdvbmJvYXJkaW5nLW5vdGlmaWNhdGlvbnMnLAogICAgICBidWlsZGVyOiAoY29udGV4dCwgc3RhdGUpID0+IGNvbnN0IE9uYm9hcmRpbmdOb3RpZmljYXRpb25TY3JlZW4oKSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL2xveWFsdHknLAogICAgICBuYW1lOiAnbG95YWx0eScsCiAgICAgIGJ1aWxkZXI6IChjb250ZXh0LCBzdGF0ZSkgPT4gY29uc3QgTG95YWx0eVNjcmVlbigpLAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvd2FsbGV0JywKICAgICAgbmFtZTogJ3dhbGxldCcsCiAgICAgIGJ1aWxkZXI6IChjb250ZXh0LCBzdGF0ZSkgPT4gY29uc3QgV2FsbGV0U2NyZWVuKCksCiAgICApLAogICAgR29Sb3V0ZSgKICAgICAgcGF0aDogJy9yZWZlcnJhbCcsCiAgICAgIG5hbWU6ICdyZWZlcnJhbCcsCiAgICAgIGJ1aWxkZXI6IChjb250ZXh0LCBzdGF0ZSkgPT4gY29uc3QgUmVmZXJyYWxTY3JlZW4oKSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL2hlbHAnLAogICAgICBuYW1lOiAnaGVscCcsCiAgICAgIGJ1aWxkZXI6IChjb250ZXh0LCBzdGF0ZSkgPT4gY29uc3QgSGVscENlbnRlclNjcmVlbigpLAogICAgKSwKICAgIEdvUm91dGUoCiAgICAgIHBhdGg6ICcvcmVzdGF1cmFudC1maWx0ZXJzJywKICAgICAgbmFtZTogJ3Jlc3RhdXJhbnQtZmlsdGVycycsCiAgICAgIGJ1aWxkZXI6IChjb250ZXh0LCBzdGF0ZSkgewogICAgICAgIGZpbmFsIGluaXRpYWwgPSBzdGF0ZS5leHRyYSBpcyBSZXN0YXVyYW50RmlsdGVycwogICAgICAgICAgICA/IHN0YXRlLmV4dHJhIGFzIFJlc3RhdXJhbnRGaWx0ZXJzCiAgICAgICAgICAgIDogbnVsbDsKICAgICAgICByZXR1cm4gUmVzdGF1cmFudEZpbHRlcnNTY3JlZW4oCiAgICAgICAgICBpbml0aWFsOiBpbml0aWFsID8/IGNvbnN0IFJlc3RhdXJhbnRGaWx0ZXJzKCksCiAgICAgICAgKTsKICAgICAgfSwKICAgICksCiAgICBHb1JvdXRlKAogICAgICBwYXRoOiAnL2FkZHJlc3MtcGlja2VyJywKICAgICAgbmFtZTogJ2FkZHJlc3MtcGlja2VyJywKICAgICAgYnVpbGRlcjogKGNvbnRleHQsIHN0YXRlKSA9PiBjb25zdCBBZGRyZXNzUGlja2VyU2NyZWVuKCksCiAgICApLAogIF0sCik7Cg==
+import 'package:go_router/go_router.dart';
+
+import '../screens/splash_screen.dart';
+import '../screens/login_screen.dart';
+import '../screens/register_screen.dart';
+import '../screens/home_screen.dart';
+import '../screens/restaurant_detail_screen.dart';
+import '../screens/food_detail_screen.dart';
+import '../screens/cart_screen.dart';
+import '../screens/checkout_screen.dart';
+import '../screens/order_tracking_screen.dart';
+import '../screens/chat_screen.dart';
+import '../screens/order_history_screen.dart';
+import '../screens/profile_screen.dart';
+import '../screens/address_management_screen.dart';
+import '../screens/review_screen.dart';
+import '../screens/location_permission_screen.dart';
+import '../screens/restaurant_list_screen.dart';
+import '../screens/notifications_screen.dart';
+import '../screens/onboarding_welcome_screen.dart';
+import '../screens/onboarding_location_screen.dart';
+import '../screens/onboarding_notification_screen.dart';
+import '../screens/loyalty_screen.dart';
+import '../screens/wallet_screen.dart';
+import '../screens/referral_screen.dart';
+import '../screens/help_center_screen.dart';
+import '../screens/restaurant_filters_screen.dart';
+import '../screens/address_picker_screen.dart';
+import '../screens/favorites_screen.dart';
+import '../screens/search_results_screen.dart';
+import '../screens/vouchers_screen.dart';
+import '../screens/cancel_order_screen.dart';
+import '../screens/category_browse_screen.dart';
+import '../../shared/models/menu_item.dart';
+import 'route_guards.dart';
+import 'route_names.dart';
+
+/// B-MOB-14: safe cast helpers for GoRouter extras.
+String? _extraString(Object? extra) {
+  if (extra is String && extra.isNotEmpty) return extra;
+  return null;
+}
+
+Map<String, dynamic> _extraMap(Object? extra) {
+  if (extra is Map<String, dynamic>) return extra;
+  if (extra is Map) return Map<String, dynamic>.from(extra);
+  return const {};
+}
+
+/// Central GoRouter configuration for customer-facing flows.
+///
+/// Uses [authGuard] redirect for route protection. Path constants come from
+/// [Routes] to prevent string drift. New routes should be added here, not
+/// in main_customer.dart.
+final appRouter = GoRouter(
+  initialLocation: Routes.splash,
+  redirect: (context, state) => authGuard(context, state),
+  routes: [
+    GoRoute(
+      path: '/splash',
+      name: 'splash',
+      builder: (context, state) => const SplashScreen(),
+    ),
+    GoRoute(
+      path: '/login',
+      name: 'login',
+      builder: (context, state) => const LoginScreen(),
+    ),
+    GoRoute(
+      path: '/register',
+      name: 'register',
+      builder: (context, state) => const RegisterScreen(),
+    ),
+    GoRoute(
+      path: '/home',
+      name: 'home',
+      builder: (context, state) => const HomeScreen(),
+    ),
+    GoRoute(
+      path: '/category-browse',
+      name: 'category-browse',
+      builder: (context, state) {
+        final categoryId = _extraString(state.extra);
+        return CategoryBrowseScreen(initialCategoryId: categoryId);
+      },
+    ),
+    GoRoute(
+      path: '/restaurant-detail',
+      name: 'restaurant-detail',
+      builder: (context, state) {
+        final restaurantId = _extraString(state.extra) ?? '';
+        return RestaurantDetailScreen(restaurantId: restaurantId);
+      },
+    ),
+    GoRoute(
+      path: '/food-detail',
+      name: 'food-detail',
+      builder: (context, state) {
+        final args = _extraMap(state.extra);
+        final item = args['item'];
+        return FoodDetailScreen(
+          item: item is MenuItemModel
+              ? item
+              : MenuItemModel(
+                  id: '',
+                  restaurantId: '',
+                  name: '',
+                  price: 0,
+                  category: '',
+                ),
+          restaurantName: args['restaurantName'] as String? ?? '',
+        );
+      },
+    ),
+    GoRoute(
+      path: '/cart',
+      name: 'cart',
+      builder: (context, state) => const CartScreen(),
+    ),
+    GoRoute(
+      path: '/checkout',
+      name: 'checkout',
+      builder: (context, state) => const CheckoutScreen(),
+    ),
+    GoRoute(
+      path: '/order-tracking',
+      name: 'order-tracking',
+      builder: (context, state) {
+        final orderId = _extraString(state.extra) ?? '';
+        return OrderTrackingScreen(orderId: orderId);
+      },
+    ),
+    // B-MOB-09: path-style deep link /orders/:id → tracking with extra.
+    GoRoute(
+      path: '/orders/:orderId',
+      name: 'order-detail-deep-link',
+      builder: (context, state) {
+        final orderId = state.pathParameters['orderId'] ?? '';
+        return OrderTrackingScreen(orderId: orderId);
+      },
+    ),
+    GoRoute(
+      path: '/chat',
+      name: 'chat',
+      builder: (context, state) {
+        final orderId = _extraString(state.extra) ?? '';
+        return ChatScreen(orderId: orderId);
+      },
+    ),
+    GoRoute(
+      path: '/orders',
+      name: 'orders',
+      builder: (context, state) => const OrderHistoryScreen(),
+    ),
+    GoRoute(
+      path: '/profile',
+      name: 'profile',
+      builder: (context, state) => const ProfileScreen(),
+    ),
+    GoRoute(
+      path: '/addresses',
+      name: 'addresses',
+      builder: (context, state) => const AddressManagementScreen(),
+    ),
+    GoRoute(
+      path: '/review',
+      name: 'review',
+      builder: (context, state) {
+        final orderId = _extraString(state.extra) ?? '';
+        return ReviewScreen(orderId: orderId);
+      },
+    ),
+    GoRoute(
+      path: '/location-permission',
+      name: 'location-permission',
+      builder: (context, state) => const LocationPermissionScreen(),
+    ),
+    GoRoute(
+      path: '/restaurants',
+      name: 'restaurants',
+      builder: (context, state) => const RestaurantListScreen(),
+    ),
+    GoRoute(
+      path: '/notifications',
+      name: 'notifications',
+      builder: (context, state) => const NotificationsScreen(),
+    ),
+    GoRoute(
+      path: '/search',
+      name: 'search',
+      builder: (context, state) {
+        final query = _extraString(state.extra) ?? '';
+        return SearchResultsScreen(initialQuery: query);
+      },
+    ),
+    GoRoute(
+      path: '/favorites',
+      name: 'favorites',
+      builder: (context, state) => const FavoritesScreen(),
+    ),
+    GoRoute(
+      path: '/vouchers',
+      name: 'vouchers',
+      builder: (context, state) => const VouchersScreen(),
+    ),
+    GoRoute(
+      path: '/cancel-order',
+      name: 'cancel-order',
+      builder: (context, state) {
+        final args = _extraMap(state.extra);
+        return CancelOrderScreen(
+          orderId: args['orderId'] as String? ?? '',
+          restaurantName: args['restaurantName'] as String?,
+          orderSummary: args['orderSummary'] as String?,
+          totalAmount: (args['totalAmount'] as num?)?.toInt(),
+        );
+      },
+    ),
+    GoRoute(
+      path: '/onboarding',
+      name: 'onboarding',
+      builder: (context, state) => const OnboardingWelcomeScreen(),
+    ),
+    GoRoute(
+      path: '/onboarding-location',
+      name: 'onboarding-location',
+      builder: (context, state) => const OnboardingLocationScreen(),
+    ),
+    GoRoute(
+      path: '/onboarding-notifications',
+      name: 'onboarding-notifications',
+      builder: (context, state) => const OnboardingNotificationScreen(),
+    ),
+    GoRoute(
+      path: '/loyalty',
+      name: 'loyalty',
+      builder: (context, state) => const LoyaltyScreen(),
+    ),
+    GoRoute(
+      path: '/wallet',
+      name: 'wallet',
+      builder: (context, state) => const WalletScreen(),
+    ),
+    GoRoute(
+      path: '/referral',
+      name: 'referral',
+      builder: (context, state) => const ReferralScreen(),
+    ),
+    GoRoute(
+      path: '/help',
+      name: 'help',
+      builder: (context, state) => const HelpCenterScreen(),
+    ),
+    GoRoute(
+      path: '/restaurant-filters',
+      name: 'restaurant-filters',
+      builder: (context, state) {
+        final initial = state.extra is RestaurantFilters
+            ? state.extra as RestaurantFilters
+            : null;
+        return RestaurantFiltersScreen(
+          initial: initial ?? const RestaurantFilters(),
+        );
+      },
+    ),
+    GoRoute(
+      path: '/address-picker',
+      name: 'address-picker',
+      builder: (context, state) => const AddressPickerScreen(),
+    ),
+  ],
+);

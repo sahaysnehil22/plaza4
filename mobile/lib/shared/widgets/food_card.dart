@@ -1,1 +1,183 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpjYWNoZWRfbmV0d29ya19pbWFnZS9jYWNoZWRfbmV0d29ya19pbWFnZS5kYXJ0JzsKaW1wb3J0ICcuLi8uLi9sMTBuL2FwcF9sb2NhbGl6YXRpb25zLmRhcnQnOwppbXBvcnQgJy4uL3RoZW1lL2FwcF9jb2xvcnMuZGFydCc7CmltcG9ydCAnLi4vdGhlbWUvYXBwX3RleHRfc3R5bGVzLmRhcnQnOwppbXBvcnQgJy4uL21vZGVscy9tZW51X2l0ZW0uZGFydCc7CmltcG9ydCAnLi4vdXRpbHMvY3VycmVuY3lfZm9ybWF0dGVyLmRhcnQnOwoKY2xhc3MgRm9vZENhcmQgZXh0ZW5kcyBTdGF0ZWxlc3NXaWRnZXQgewogIGZpbmFsIE1lbnVJdGVtTW9kZWwgaXRlbTsKICBmaW5hbCBWb2lkQ2FsbGJhY2s/IG9uQWRkVG9DYXJ0OwogIGZpbmFsIFZvaWRDYWxsYmFjaz8gb25UYXA7CgogIGNvbnN0IEZvb2RDYXJkKHtzdXBlci5rZXksIHJlcXVpcmVkIHRoaXMuaXRlbSwgdGhpcy5vbkFkZFRvQ2FydCwgdGhpcy5vblRhcH0pOwoKICBAb3ZlcnJpZGUKICBXaWRnZXQgYnVpbGQoQnVpbGRDb250ZXh0IGNvbnRleHQpIHsKICAgIGZpbmFsIGwxMG4gPSBBcHBMb2NhbGl6YXRpb25zLm9mKGNvbnRleHQpOwoKICAgIHJldHVybiBHZXN0dXJlRGV0ZWN0b3IoCiAgICAgIG9uVGFwOiBvblRhcCwKICAgICAgY2hpbGQ6IENvbnRhaW5lcigKICAgICAgICBtYXJnaW46IGNvbnN0IEVkZ2VJbnNldHMuc3ltbWV0cmljKGhvcml6b250YWw6IDE2LCB2ZXJ0aWNhbDogNCksCiAgICAgICAgZGVjb3JhdGlvbjogQm94RGVjb3JhdGlvbigKICAgICAgICAgIGNvbG9yOiBBcHBDb2xvcnMuY2FyZEJhY2tncm91bmQsCiAgICAgICAgICBib3JkZXJSYWRpdXM6IEJvcmRlclJhZGl1cy5jaXJjdWxhcigxMiksCiAgICAgICAgICBib3hTaGFkb3c6IFsKICAgICAgICAgICAgQm94U2hhZG93KAogICAgICAgICAgICAgIGNvbG9yOiBBcHBDb2xvcnMuc2hhZG93LAogICAgICAgICAgICAgIGJsdXJSYWRpdXM6IDQsCiAgICAgICAgICAgICAgb2Zmc2V0OiBjb25zdCBPZmZzZXQoMCwgMSksCiAgICAgICAgICAgICksCiAgICAgICAgICBdLAogICAgICAgICksCiAgICAgICAgY2hpbGQ6IEludHJpbnNpY0hlaWdodCgKICAgICAgICAgIGNoaWxkOiBSb3coCiAgICAgICAgICAgIGNoaWxkcmVuOiBbCiAgICAgICAgICAgICAgQ2xpcFJSZWN0KAogICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiBjb25zdCBCb3JkZXJSYWRpdXMuaG9yaXpvbnRhbCgKICAgICAgICAgICAgICAgICAgbGVmdDogUmFkaXVzLmNpcmN1bGFyKDEyKSwKICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICBjaGlsZDogU2l6ZWRCb3goCiAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAsCiAgICAgICAgICAgICAgICAgIGhlaWdodDogMTAwLAogICAgICAgICAgICAgICAgICBjaGlsZDogaXRlbS5pbWFnZVVybCAhPSBudWxsCiAgICAgICAgICAgICAgICAgICAgICA/IENhY2hlZE5ldHdvcmtJbWFnZSgKICAgICAgICAgICAgICAgICAgICAgICAgICBpbWFnZVVybDogaXRlbS5pbWFnZVVybCEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgZml0OiBCb3hGaXQuY292ZXIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI6IChfLCBfXykgPT4gQ29udGFpbmVyKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6IEFwcENvbG9ycy5zdXJmYWNlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY2hpbGQ6IGNvbnN0IENlbnRlcigKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY2hpbGQ6IENpcmN1bGFyUHJvZ3Jlc3NJbmRpY2F0b3Ioc3Ryb2tlV2lkdGg6IDIpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICAgIGVycm9yV2lkZ2V0OiAoXywgX18sIF9fXykgPT4gQ29udGFpbmVyKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6IEFwcENvbG9ycy5zdXJmYWNlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY2hpbGQ6IGNvbnN0IEljb24oCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEljb25zLmZhc3Rmb29kLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzaXplOiAzMiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6IEFwcENvbG9ycy50ZXh0SGludCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgOiBDb250YWluZXIoCiAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6IEFwcENvbG9ycy5zdXJmYWNlLAogICAgICAgICAgICAgICAgICAgICAgICAgIGNoaWxkOiBjb25zdCBJY29uKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgSWNvbnMuZmFzdGZvb2QsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzaXplOiAzMiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiBBcHBDb2xvcnMudGV4dEhpbnQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICBFeHBhbmRlZCgKICAgICAgICAgICAgICAgIGNoaWxkOiBQYWRkaW5nKAogICAgICAgICAgICAgICAgICBwYWRkaW5nOiBjb25zdCBFZGdlSW5zZXRzLmFsbCgxMCksCiAgICAgICAgICAgICAgICAgIGNoaWxkOiBDb2x1bW4oCiAgICAgICAgICAgICAgICAgICAgY3Jvc3NBeGlzQWxpZ25tZW50OiBDcm9zc0F4aXNBbGlnbm1lbnQuc3RhcnQsCiAgICAgICAgICAgICAgICAgICAgbWFpbkF4aXNBbGlnbm1lbnQ6IE1haW5BeGlzQWxpZ25tZW50LnNwYWNlQmV0d2VlbiwKICAgICAgICAgICAgICAgICAgICBjaGlsZHJlbjogWwogICAgICAgICAgICAgICAgICAgICAgQ29sdW1uKAogICAgICAgICAgICAgICAgICAgICAgICBjcm9zc0F4aXNBbGlnbm1lbnQ6IENyb3NzQXhpc0FsaWdubWVudC5zdGFydCwKICAgICAgICAgICAgICAgICAgICAgICAgY2hpbGRyZW46IFsKICAgICAgICAgICAgICAgICAgICAgICAgICBSb3coCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjaGlsZHJlbjogWwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBFeHBhbmRlZCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjaGlsZDogVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGl0ZW0ubmFtZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlOiBBcHBUZXh0U3R5bGVzLmJvZHlNZWRpdW0uY29weVdpdGgoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IEZvbnRXZWlnaHQudzYwMCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBtYXhMaW5lczogMiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG92ZXJmbG93OiBUZXh0T3ZlcmZsb3cuZWxsaXBzaXMsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGl0ZW0uaXNQb3B1bGFyKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IEljb24oCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBJY29ucy5sb2NhbF9maXJlX2RlcGFydG1lbnQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzaXplOiAxNiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiBBcHBDb2xvcnMuYWNjZW50LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGl0ZW0uZGVzY3JpcHRpb24gIT0gbnVsbCAmJgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpdGVtLmRlc2NyaXB0aW9uIS5pc05vdEVtcHR5KSAuLi5bCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb25zdCBTaXplZEJveChoZWlnaHQ6IDIpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaXRlbS5kZXNjcmlwdGlvbiEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlOiBBcHBUZXh0U3R5bGVzLmJvZHlTbWFsbCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbWF4TGluZXM6IDEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG92ZXJmbG93OiBUZXh0T3ZlcmZsb3cuZWxsaXBzaXMsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgUm93KAogICAgICAgICAgICAgICAgICAgICAgICBtYWluQXhpc0FsaWdubWVudDogTWFpbkF4aXNBbGlnbm1lbnQuc3BhY2VCZXR3ZWVuLAogICAgICAgICAgICAgICAgICAgICAgICBjaGlsZHJlbjogWwogICAgICAgICAgICAgICAgICAgICAgICAgIFJvdygKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNoaWxkcmVuOiBbCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9ybWF0UGVuKGNvbnRleHQsIGl0ZW0ucHJpY2UpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlOiBBcHBUZXh0U3R5bGVzLnByaWNlU21hbGwsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIChpdGVtLm9yaWdpbmFsUHJpY2UgIT0gbnVsbCkgLi4uWwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IFNpemVkQm94KHdpZHRoOiA2KSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9ybWF0UGVuKGNvbnRleHQsIGl0ZW0ub3JpZ2luYWxQcmljZSEpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU6IEFwcFRleHRTdHlsZXMuYm9keVNtYWxsLmNvcHlXaXRoKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZWNvcmF0aW9uOiBUZXh0RGVjb3JhdGlvbi5saW5lVGhyb3VnaCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBpZiAoaXRlbS5pc0F2YWlsYWJsZSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIEdlc3R1cmVEZXRlY3RvcigKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb25UYXA6IG9uQWRkVG9DYXJ0LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjaGlsZDogQ29udGFpbmVyKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IGNvbnN0IEVkZ2VJbnNldHMuYWxsKDYpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRlY29yYXRpb246IEJveERlY29yYXRpb24oCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogQXBwQ29sb3JzLnByaW1hcnksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IEJvcmRlclJhZGl1cy5jaXJjdWxhcig4KSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNoaWxkOiBjb25zdCBJY29uKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgSWNvbnMuYWRkLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2l6ZTogMTgsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogQXBwQ29sb3JzLnRleHRPblByaW1hcnksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBDb250YWluZXIoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IGNvbnN0IEVkZ2VJbnNldHMuc3ltbWV0cmljKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhvcml6b250YWw6IDgsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmVydGljYWw6IDQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRlY29yYXRpb246IEJveERlY29yYXRpb24oCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6IEFwcENvbG9ycy5lcnJvci53aXRoVmFsdWVzKGFscGhhOiAwLjEpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogQm9yZGVyUmFkaXVzLmNpcmN1bGFyKDgpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjaGlsZDogVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsMTBuLmZvb2RTb2xkT3V0LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlOiBjb25zdCBUZXh0U3R5bGUoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250U2l6ZTogMTEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiBGb250V2VpZ2h0Lnc2MDAsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogQXBwQ29sb3JzLmVycm9yLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICApLAogICAgICAgICAgICBdLAogICAgICAgICAgKSwKICAgICAgICApLAogICAgICApLAogICAgKTsKICB9Cn0K
+import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import '../../l10n/app_localizations.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_text_styles.dart';
+import '../models/menu_item.dart';
+import '../utils/currency_formatter.dart';
+
+class FoodCard extends StatelessWidget {
+  final MenuItemModel item;
+  final VoidCallback? onAddToCart;
+  final VoidCallback? onTap;
+
+  const FoodCard({super.key, required this.item, this.onAddToCart, this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+        decoration: BoxDecoration(
+          color: AppColors.cardBackground,
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.shadow,
+              blurRadius: 4,
+              offset: const Offset(0, 1),
+            ),
+          ],
+        ),
+        child: IntrinsicHeight(
+          child: Row(
+            children: [
+              ClipRRect(
+                borderRadius: const BorderRadius.horizontal(
+                  left: Radius.circular(12),
+                ),
+                child: SizedBox(
+                  width: 100,
+                  height: 100,
+                  child: item.imageUrl != null
+                      ? CachedNetworkImage(
+                          imageUrl: item.imageUrl!,
+                          fit: BoxFit.cover,
+                          placeholder: (_, __) => Container(
+                            color: AppColors.surface,
+                            child: const Center(
+                              child: CircularProgressIndicator(strokeWidth: 2),
+                            ),
+                          ),
+                          errorWidget: (_, __, ___) => Container(
+                            color: AppColors.surface,
+                            child: const Icon(
+                              Icons.fastfood,
+                              size: 32,
+                              color: AppColors.textHint,
+                            ),
+                          ),
+                        )
+                      : Container(
+                          color: AppColors.surface,
+                          child: const Icon(
+                            Icons.fastfood,
+                            size: 32,
+                            color: AppColors.textHint,
+                          ),
+                        ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  item.name,
+                                  style: AppTextStyles.bodyMedium.copyWith(
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                              if (item.isPopular)
+                                const Icon(
+                                  Icons.local_fire_department,
+                                  size: 16,
+                                  color: AppColors.accent,
+                                ),
+                            ],
+                          ),
+                          if (item.description != null &&
+                              item.description!.isNotEmpty) ...[
+                            const SizedBox(height: 2),
+                            Text(
+                              item.description!,
+                              style: AppTextStyles.bodySmall,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ],
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                formatPen(context, item.price),
+                                style: AppTextStyles.priceSmall,
+                              ),
+                              if (item.originalPrice != null) ...[
+                                const SizedBox(width: 6),
+                                Text(
+                                  formatPen(context, item.originalPrice!),
+                                  style: AppTextStyles.bodySmall.copyWith(
+                                    decoration: TextDecoration.lineThrough,
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                          if (item.isAvailable)
+                            GestureDetector(
+                              onTap: onAddToCart,
+                              child: Container(
+                                padding: const EdgeInsets.all(6),
+                                decoration: BoxDecoration(
+                                  color: AppColors.primary,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: const Icon(
+                                  Icons.add,
+                                  size: 18,
+                                  color: AppColors.textOnPrimary,
+                                ),
+                              ),
+                            )
+                          else
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 4,
+                              ),
+                              decoration: BoxDecoration(
+                                color: AppColors.error.withValues(alpha: 0.1),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Text(
+                                l10n.foodSoldOut,
+                                style: const TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w600,
+                                  color: AppColors.error,
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

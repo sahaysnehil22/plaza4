@@ -1,1 +1,130 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpzaGltbWVyL3NoaW1tZXIuZGFydCc7CgovLy8gQ2xlYW4gU2hpbW1lciBza2VsZXRvbiBsb2FkZXJzIGZvciBxdWljay1jb21tZXJjZSBzY3JlZW5zLgovLy8KLy8vIFByb3ZpZGVzIHBsYWNlaG9sZGVycyBmb3IgcHJvZHVjdCBjYXJkcywgY2F0ZWdvcnkgcmFpbHMsCi8vLyBmbGFzaCBkZWFscywgYW5kIHNlYXJjaCBncmlkcyB3aXRob3V0IHVzaW5nIGJhcmUgY2lyY3VsYXIgc3Bpbm5lcnMuCmNsYXNzIFBlcnV2aWFuUXVpY2tDb21tZXJjZVNoaW1tZXIgZXh0ZW5kcyBTdGF0ZWxlc3NXaWRnZXQgewogIGZpbmFsIGludCBjb3VudDsKICBmaW5hbCBib29sIGlzSG9yaXpvbnRhbDsKCiAgY29uc3QgUGVydXZpYW5RdWlja0NvbW1lcmNlU2hpbW1lcih7CiAgICBzdXBlci5rZXksCiAgICB0aGlzLmNvdW50ID0gNCwKICAgIHRoaXMuaXNIb3Jpem9udGFsID0gZmFsc2UsCiAgfSk7CgogIEBvdmVycmlkZQogIFdpZGdldCBidWlsZChCdWlsZENvbnRleHQgY29udGV4dCkgewogICAgaWYgKGlzSG9yaXpvbnRhbCkgewogICAgICByZXR1cm4gU2l6ZWRCb3goCiAgICAgICAgaGVpZ2h0OiAyMjAsCiAgICAgICAgY2hpbGQ6IExpc3RWaWV3LnNlcGFyYXRlZCgKICAgICAgICAgIHBhZGRpbmc6IGNvbnN0IEVkZ2VJbnNldHMuc3ltbWV0cmljKGhvcml6b250YWw6IDE2KSwKICAgICAgICAgIHNjcm9sbERpcmVjdGlvbjogQXhpcy5ob3Jpem9udGFsLAogICAgICAgICAgaXRlbUNvdW50OiBjb3VudCwKICAgICAgICAgIHNlcGFyYXRvckJ1aWxkZXI6IChfLCBfXykgPT4gY29uc3QgU2l6ZWRCb3god2lkdGg6IDEyKSwKICAgICAgICAgIGl0ZW1CdWlsZGVyOiAoXywgX18pID0+IF9idWlsZENhcmRTaGltbWVyKHdpZHRoOiAxNTApLAogICAgICAgICksCiAgICAgICk7CiAgICB9CgogICAgcmV0dXJuIEdyaWRWaWV3LmJ1aWxkZXIoCiAgICAgIHBhZGRpbmc6IGNvbnN0IEVkZ2VJbnNldHMuc3ltbWV0cmljKGhvcml6b250YWw6IDE2LCB2ZXJ0aWNhbDogOCksCiAgICAgIHNocmlua1dyYXA6IHRydWUsCiAgICAgIHBoeXNpY3M6IGNvbnN0IE5ldmVyU2Nyb2xsYWJsZVNjcm9sbFBoeXNpY3MoKSwKICAgICAgZ3JpZERlbGVnYXRlOiBjb25zdCBTbGl2ZXJHcmlkRGVsZWdhdGVXaXRoRml4ZWRDcm9zc0F4aXNDb3VudCgKICAgICAgICBjcm9zc0F4aXNDb3VudDogMiwKICAgICAgICBtYWluQXhpc1NwYWNpbmc6IDEyLAogICAgICAgIGNyb3NzQXhpc1NwYWNpbmc6IDEyLAogICAgICAgIGNoaWxkQXNwZWN0UmF0aW86IDAuNjYsCiAgICAgICksCiAgICAgIGl0ZW1Db3VudDogY291bnQsCiAgICAgIGl0ZW1CdWlsZGVyOiAoXywgX18pID0+IF9idWlsZENhcmRTaGltbWVyKCksCiAgICApOwogIH0KCiAgV2lkZ2V0IF9idWlsZENhcmRTaGltbWVyKHtkb3VibGU/IHdpZHRofSkgewogICAgcmV0dXJuIFNoaW1tZXIuZnJvbUNvbG9ycygKICAgICAgYmFzZUNvbG9yOiBjb25zdCBDb2xvcigweEZGRUVFRUVFKSwKICAgICAgaGlnaGxpZ2h0Q29sb3I6IGNvbnN0IENvbG9yKDB4RkZGNUY1RjUpLAogICAgICBjaGlsZDogQ29udGFpbmVyKAogICAgICAgIHdpZHRoOiB3aWR0aCwKICAgICAgICBwYWRkaW5nOiBjb25zdCBFZGdlSW5zZXRzLmFsbCgxMCksCiAgICAgICAgZGVjb3JhdGlvbjogQm94RGVjb3JhdGlvbigKICAgICAgICAgIGNvbG9yOiBDb2xvcnMud2hpdGUsCiAgICAgICAgICBib3JkZXJSYWRpdXM6IEJvcmRlclJhZGl1cy5jaXJjdWxhcigxNCksCiAgICAgICAgICBib3JkZXI6IEJvcmRlci5hbGwoY29sb3I6IGNvbnN0IENvbG9yKDB4RkZFMEUwRTApKSwKICAgICAgICApLAogICAgICAgIGNoaWxkOiBDb2x1bW4oCiAgICAgICAgICBjcm9zc0F4aXNBbGlnbm1lbnQ6IENyb3NzQXhpc0FsaWdubWVudC5zdGFydCwKICAgICAgICAgIGNoaWxkcmVuOiBbCiAgICAgICAgICAgIC8vIEltYWdlIGJveAogICAgICAgICAgICBDb250YWluZXIoCiAgICAgICAgICAgICAgaGVpZ2h0OiAxMTAsCiAgICAgICAgICAgICAgd2lkdGg6IGRvdWJsZS5pbmZpbml0eSwKICAgICAgICAgICAgICBkZWNvcmF0aW9uOiBCb3hEZWNvcmF0aW9uKAogICAgICAgICAgICAgICAgY29sb3I6IENvbG9ycy53aGl0ZSwKICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogQm9yZGVyUmFkaXVzLmNpcmN1bGFyKDEwKSwKICAgICAgICAgICAgICApLAogICAgICAgICAgICApLAogICAgICAgICAgICBjb25zdCBTaXplZEJveChoZWlnaHQ6IDEwKSwKICAgICAgICAgICAgLy8gVW5pdCBsaW5lCiAgICAgICAgICAgIENvbnRhaW5lcigKICAgICAgICAgICAgICBoZWlnaHQ6IDEwLAogICAgICAgICAgICAgIHdpZHRoOiA1MCwKICAgICAgICAgICAgICBkZWNvcmF0aW9uOiBCb3hEZWNvcmF0aW9uKAogICAgICAgICAgICAgICAgY29sb3I6IENvbG9ycy53aGl0ZSwKICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogQm9yZGVyUmFkaXVzLmNpcmN1bGFyKDQpLAogICAgICAgICAgICAgICksCiAgICAgICAgICAgICksCiAgICAgICAgICAgIGNvbnN0IFNpemVkQm94KGhlaWdodDogNiksCiAgICAgICAgICAgIC8vIFRpdGxlIGxpbmUgMQogICAgICAgICAgICBDb250YWluZXIoCiAgICAgICAgICAgICAgaGVpZ2h0OiAxMiwKICAgICAgICAgICAgICB3aWR0aDogZG91YmxlLmluZmluaXR5LAogICAgICAgICAgICAgIGRlY29yYXRpb246IEJveERlY29yYXRpb24oCiAgICAgICAgICAgICAgICBjb2xvcjogQ29sb3JzLndoaXRlLAogICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiBCb3JkZXJSYWRpdXMuY2lyY3VsYXIoNCksCiAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgKSwKICAgICAgICAgICAgY29uc3QgU2l6ZWRCb3goaGVpZ2h0OiA0KSwKICAgICAgICAgICAgLy8gVGl0bGUgbGluZSAyCiAgICAgICAgICAgIENvbnRhaW5lcigKICAgICAgICAgICAgICBoZWlnaHQ6IDEyLAogICAgICAgICAgICAgIHdpZHRoOiA5MCwKICAgICAgICAgICAgICBkZWNvcmF0aW9uOiBCb3hEZWNvcmF0aW9uKAogICAgICAgICAgICAgICAgY29sb3I6IENvbG9ycy53aGl0ZSwKICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogQm9yZGVyUmFkaXVzLmNpcmN1bGFyKDQpLAogICAgICAgICAgICAgICksCiAgICAgICAgICAgICksCiAgICAgICAgICAgIGNvbnN0IFNwYWNlcigpLAogICAgICAgICAgICAvLyBQcmljZSArIEJ1dHRvbgogICAgICAgICAgICBSb3coCiAgICAgICAgICAgICAgbWFpbkF4aXNBbGlnbm1lbnQ6IE1haW5BeGlzQWxpZ25tZW50LnNwYWNlQmV0d2VlbiwKICAgICAgICAgICAgICBjaGlsZHJlbjogWwogICAgICAgICAgICAgICAgQ29udGFpbmVyKAogICAgICAgICAgICAgICAgICBoZWlnaHQ6IDE2LAogICAgICAgICAgICAgICAgICB3aWR0aDogNTUsCiAgICAgICAgICAgICAgICAgIGRlY29yYXRpb246IEJveERlY29yYXRpb24oCiAgICAgICAgICAgICAgICAgICAgY29sb3I6IENvbG9ycy53aGl0ZSwKICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IEJvcmRlclJhZGl1cy5jaXJjdWxhcig0KSwKICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICBDb250YWluZXIoCiAgICAgICAgICAgICAgICAgIGhlaWdodDogMzAsCiAgICAgICAgICAgICAgICAgIHdpZHRoOiA1NSwKICAgICAgICAgICAgICAgICAgZGVjb3JhdGlvbjogQm94RGVjb3JhdGlvbigKICAgICAgICAgICAgICAgICAgICBjb2xvcjogQ29sb3JzLndoaXRlLAogICAgICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogQm9yZGVyUmFkaXVzLmNpcmN1bGFyKDgpLAogICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICBdLAogICAgICAgICAgICApLAogICAgICAgICAgXSwKICAgICAgICApLAogICAgICApLAogICAgKTsKICB9Cn0K
+import 'package:flutter/material.dart';
+import 'package:shimmer/shimmer.dart';
+
+/// Clean Shimmer skeleton loaders for quick-commerce screens.
+///
+/// Provides placeholders for product cards, category rails,
+/// flash deals, and search grids without using bare circular spinners.
+class PeruvianQuickCommerceShimmer extends StatelessWidget {
+  final int count;
+  final bool isHorizontal;
+
+  const PeruvianQuickCommerceShimmer({
+    super.key,
+    this.count = 4,
+    this.isHorizontal = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (isHorizontal) {
+      return SizedBox(
+        height: 220,
+        child: ListView.separated(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          scrollDirection: Axis.horizontal,
+          itemCount: count,
+          separatorBuilder: (_, __) => const SizedBox(width: 12),
+          itemBuilder: (_, __) => _buildCardShimmer(width: 150),
+        ),
+      );
+    }
+
+    return GridView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        mainAxisSpacing: 12,
+        crossAxisSpacing: 12,
+        childAspectRatio: 0.66,
+      ),
+      itemCount: count,
+      itemBuilder: (_, __) => _buildCardShimmer(),
+    );
+  }
+
+  Widget _buildCardShimmer({double? width}) {
+    return Shimmer.fromColors(
+      baseColor: const Color(0xFFEEEEEE),
+      highlightColor: const Color(0xFFF5F5F5),
+      child: Container(
+        width: width,
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: const Color(0xFFE0E0E0)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Image box
+            Container(
+              height: 110,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            const SizedBox(height: 10),
+            // Unit line
+            Container(
+              height: 10,
+              width: 50,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(4),
+              ),
+            ),
+            const SizedBox(height: 6),
+            // Title line 1
+            Container(
+              height: 12,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(4),
+              ),
+            ),
+            const SizedBox(height: 4),
+            // Title line 2
+            Container(
+              height: 12,
+              width: 90,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(4),
+              ),
+            ),
+            const Spacer(),
+            // Price + Button
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: 16,
+                  width: 55,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                ),
+                Container(
+                  height: 30,
+                  width: 55,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

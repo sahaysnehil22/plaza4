@@ -1,1 +1,438 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAnLi4vLi4vc2hhcmVkL21vZGVscy9tZW51X2l0ZW0uZGFydCc7CgovLy8gU2VlZCBkYXRhIGFuZCBjYXRhbG9nIGNvbnN0YW50cyBmb3IgUGxhemEgNCBRdWljay1Db21tZXJjZSAoUGVydSkuCi8vLwovLy8gRmVhdHVyZXMgYXV0aGVudGljIFBlcnV2aWFuIFNwYW5pc2ggbmFtaW5nLCBnZW51aW5lIHN0cmlwLXN0b3JlIGNhdGVnb3JpZXMsCi8vLyByZWFsaXN0aWMgU29sZXMgKFBFTikgcHJpY2luZywgYW5kIHBvcHVsYXIgTGltYSBxdWljay1jb21tZXJjZSBzZWFyY2ggdGFncy4KY2xhc3MgUGVydVNlZWREYXRhIHsKICBQZXJ1U2VlZERhdGEuXygpOwoKICBzdGF0aWMgY29uc3QgU3RyaW5nIHN0b3JlTmFtZSA9ICdQbGF6YSA0IEV4cHJlc3MnOwogIHN0YXRpYyBjb25zdCBTdHJpbmcgZGVmYXVsdExvY2F0aW9uID0gJ0F2LiBMYXJjbyA0NTAsIE1pcmFmbG9yZXMsIExpbWEnOwogIHN0YXRpYyBjb25zdCBTdHJpbmcgZGVsaXZlcnlFdGFCYWRnZSA9ICdFbnRyZWdhIGVuIDE1IG1pbic7CiAgc3RhdGljIGNvbnN0IGRvdWJsZSBzdGFuZGFyZERlbGl2ZXJ5RmVlID0gNi4wMDsgLy8gUy8gNi4wMCBhcyByZXF1ZXN0ZWQKICBzdGF0aWMgY29uc3QgZG91YmxlIGZyZWVEZWxpdmVyeVRocmVzaG9sZCA9IDM1LjAwOwogIHN0YXRpYyBjb25zdCBkb3VibGUgZWNvQmFnRmVlID0gMC44MDsgLy8gUy8gMC44MCBib2xzYSBlY29sw7NnaWNhCgogIC8vLyBRdWljayBjb21tZXJjZSBjYXRlZ29yaWVzIHRhaWxvcmVkIGZvciBhIFBlcnV2aWFuIHN0cmlwIHN0b3JlCiAgc3RhdGljIGZpbmFsIExpc3Q8UGVydUNhdGVnb3J5PiBjYXRlZ29yaWVzID0gWwogICAgY29uc3QgUGVydUNhdGVnb3J5KAogICAgICBpZDogJ2FiYXJyb3RlcycsCiAgICAgIG5hbWU6ICdBYmFycm90ZXMnLAogICAgICBzdWJ0aXRsZTogJ0Fycm96LCBhY2VpdGUsIGZpZGVvcycsCiAgICAgIGljb246IEljb25zLmtpdGNoZW5fcm91bmRlZCwKICAgICAgYmFkZ2U6ICdCw6FzaWNvcycsCiAgICAgIGNvbG9yOiBDb2xvcigweEZGMDBBODZCKSwKICAgICksCiAgICBjb25zdCBQZXJ1Q2F0ZWdvcnkoCiAgICAgIGlkOiAnZnJ1dGFzX3ZlcmR1cmFzJywKICAgICAgbmFtZTogJ0ZydXRhcyB5IFZlcmR1cmFzJywKICAgICAgc3VidGl0bGU6ICdQYWx0YXMsIGxpbW9uZXMsIGFqw61lcycsCiAgICAgIGljb246IEljb25zLmVjb19yb3VuZGVkLAogICAgICBiYWRnZTogJ0ZyZXNjbycsCiAgICAgIGNvbG9yOiBDb2xvcigweEZGNENBRjUwKSwKICAgICksCiAgICBjb25zdCBQZXJ1Q2F0ZWdvcnkoCiAgICAgIGlkOiAnY29taWRhX2NhbGllbnRlJywKICAgICAgbmFtZTogJ0NvbWlkYSBhbCBUb3F1ZScsCiAgICAgIHN1YnRpdGxlOiAnTG9tbyBzYWx0YWRvLCBwb2xsbycsCiAgICAgIGljb246IEljb25zLnJlc3RhdXJhbnRfbWVudV9yb3VuZGVkLAogICAgICBiYWRnZTogJ0FsIHdvaycsCiAgICAgIGNvbG9yOiBDb2xvcigweEZGRTUzOTM1KSwKICAgICksCiAgICBjb25zdCBQZXJ1Q2F0ZWdvcnkoCiAgICAgIGlkOiAncGFuYWRlcmlhJywKICAgICAgbmFtZTogJ1BhbmFkZXLDrWEnLAogICAgICBzdWJ0aXRsZTogJ1BhbiBmcmFuY8OpcywgY2lhYmF0dGEnLAogICAgICBpY29uOiBJY29ucy5iYWtlcnlfZGluaW5nX3JvdW5kZWQsCiAgICAgIGJhZGdlOiAnRGVsIGTDrWEnLAogICAgICBjb2xvcjogQ29sb3IoMHhGRkY1N0MwMCksCiAgICApLAogICAgY29uc3QgUGVydUNhdGVnb3J5KAogICAgICBpZDogJ2JlYmlkYXMnLAogICAgICBuYW1lOiAnQmViaWRhcyB5IExpY29yZXMnLAogICAgICBzdWJ0aXRsZTogJ0luY2EgS29sYSwgQ3VzcXVlw7FhJywKICAgICAgaWNvbjogSWNvbnMubG9jYWxfYmFyX3JvdW5kZWQsCiAgICAgIGJhZGdlOiAnSGVsYWRpdGFzJywKICAgICAgY29sb3I6IENvbG9yKDB4RkYxRTg4RTUpLAogICAgKSwKICAgIGNvbnN0IFBlcnVDYXRlZ29yeSgKICAgICAgaWQ6ICdsYWN0ZW9zX2VtYnV0aWRvcycsCiAgICAgIG5hbWU6ICdMw6FjdGVvcyB5IEh1ZXZvcycsCiAgICAgIHN1YnRpdGxlOiAnR2xvcmlhLCBxdWVzb3MsIGphbcOzbicsCiAgICAgIGljb246IEljb25zLmVnZ19vdXRsaW5lZCwKICAgICAgYmFkZ2U6IG51bGwsCiAgICAgIGNvbG9yOiBDb2xvcigweEZGOEUyNEFBKSwKICAgICksCiAgICBjb25zdCBQZXJ1Q2F0ZWdvcnkoCiAgICAgIGlkOiAnc25hY2tzJywKICAgICAgbmFtZTogJ1NuYWNrcyB5IER1bGNlcycsCiAgICAgIHN1YnRpdGxlOiAnUGlxdWVvcywgY2hvY29sYXRlcycsCiAgICAgIGljb246IEljb25zLmNvb2tpZV9yb3VuZGVkLAogICAgICBiYWRnZTogbnVsbCwKICAgICAgY29sb3I6IENvbG9yKDB4RkZGRkIzMDApLAogICAgKSwKICAgIGNvbnN0IFBlcnVDYXRlZ29yeSgKICAgICAgaWQ6ICdmYXJtYWNpYV9hc2VvJywKICAgICAgbmFtZTogJ0FzZW8geSBGYXJtYWNpYScsCiAgICAgIHN1YnRpdGxlOiAnUGFwZWwsIGFuYWxnw6lzaWNvcycsCiAgICAgIGljb246IEljb25zLm1lZGljYWxfc2VydmljZXNfcm91bmRlZCwKICAgICAgYmFkZ2U6IG51bGwsCiAgICAgIGNvbG9yOiBDb2xvcigweEZGMDBBQ0MxKSwKICAgICksCiAgXTsKCiAgLy8vIFBvcHVsYXIgc2VhcmNoZXMgaW4gUGVydQogIHN0YXRpYyBjb25zdCBMaXN0PFN0cmluZz4gdHJlbmRpbmdTZWFyY2hlc1BlcnUgPSBbCiAgICAnSW5jYSBLb2xhIDEuNUwnLAogICAgJ1BhbHRhIEZ1ZXJ0ZScsCiAgICAnTG9tbyBTYWx0YWRvJywKICAgICdQYW4gRnJhbmPDqXMnLAogICAgJ0xlY2hlIEdsb3JpYSBBenVsJywKICAgICdQb2xsbyBhIGxhIEJyYXNhJywKICAgICdBcnJveiBDb3N0ZcOxbycsCiAgICAnQ2VydmV6YSBDdXNxdWXDsWEnLAogICAgJ0dhbGxldGFzIENhc2lubycsCiAgICAnQWrDrSBBbWFyaWxsbycsCiAgXTsKCiAgLy8vIFJlYWxpc3RpYyBjYXRhbG9nIG9mIFBlcnV2aWFuIHByb2R1Y3RzCiAgc3RhdGljIGZpbmFsIExpc3Q8TWVudUl0ZW1Nb2RlbD4gYWxsUHJvZHVjdHMgPSBbCiAgICAvLyBDb21pZGEgQ2FsaWVudGUKICAgIE1lbnVJdGVtTW9kZWwoCiAgICAgIGlkOiAncHJvZC1sb21vLXNhbHRhZG8nLAogICAgICByZXN0YXVyYW50SWQ6ICdwbGF6YTQtZXhwcmVzcycsCiAgICAgIG5hbWU6ICdMb21vIFNhbHRhZG8gQ2zDoXNpY28nLAogICAgICBkZXNjcmlwdGlvbjoKICAgICAgICAgICdUcm96b3MgZGUgbG9tbyBmaW5vIHNhbHRlYWRvcyBhbCB3b2sgY29uIGNlYm9sbGEgbW9yYWRhLCB0b21hdGUsIGFqw60gYW1hcmlsbG8geSBjdWxhbnRyby4gU2VydmlkbyBjb24gcGFwYXMgZnJpdGFzIGNyb2NhbnRlcyB5IGFycm96IGNvbiBjaG9jbG8uJywKICAgICAgcHJpY2U6IDI0LjkwLAogICAgICBjYXRlZ29yeTogJ2NvbWlkYV9jYWxpZW50ZScsCiAgICAgIGltYWdlVXJsOgogICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTQ0MDI1MTYyLWQ3NjY5NDI2NTk0Nz93PTYwMCZhdXRvPWZvcm1hdCZmaXQ9Y3JvcCZxPTgwJywKICAgICAgaXNBdmFpbGFibGU6IHRydWUsCiAgICAgIG9wdGlvbkdyb3VwczogWwogICAgICAgIEl0ZW1PcHRpb25Hcm91cCgKICAgICAgICAgIGlkOiAnb3B0LXRlcm1pbm8nLAogICAgICAgICAgbmFtZTogJ1TDqXJtaW5vIGRlIGxhIGNhcm5lJywKICAgICAgICAgIHJlcXVpcmVkOiB0cnVlLAogICAgICAgICAgb3B0aW9uczogWwogICAgICAgICAgICBJdGVtT3B0aW9uKGlkOiAndGVybS1tZWRpbycsIG5hbWU6ICdUw6lybWlubyBtZWRpbycsIHByaWNlOiAwLjApLAogICAgICAgICAgICBJdGVtT3B0aW9uKGlkOiAndGVybS0zLTQnLCBuYW1lOiAnVHJlcyBjdWFydG9zJywgcHJpY2U6IDAuMCksCiAgICAgICAgICAgIEl0ZW1PcHRpb24oaWQ6ICd0ZXJtLWNvY2lkbycsIG5hbWU6ICdCaWVuIGNvY2lkbycsIHByaWNlOiAwLjApLAogICAgICAgICAgXSwKICAgICAgICApLAogICAgICAgIEl0ZW1PcHRpb25Hcm91cCgKICAgICAgICAgIGlkOiAnb3B0LXNhbHNhcycsCiAgICAgICAgICBuYW1lOiAnU2Fsc2FzIHkgQWrDrScsCiAgICAgICAgICB0eXBlOiAnbXVsdGknLAogICAgICAgICAgcmVxdWlyZWQ6IGZhbHNlLAogICAgICAgICAgb3B0aW9uczogWwogICAgICAgICAgICBJdGVtT3B0aW9uKGlkOiAnc2Fsc2EtYWppJywgbmFtZTogJ0Fqw60gcG9sbGVybyBkZSBsYSBjYXNhJywgcHJpY2U6IDAuMCksCiAgICAgICAgICAgIEl0ZW1PcHRpb24oaWQ6ICdzYWxzYS1tYXlvJywgbmFtZTogJ01heW9uZXNhIGNhc2VyYScsIHByaWNlOiAwLjApLAogICAgICAgICAgICBJdGVtT3B0aW9uKGlkOiAnc2Fsc2Etcm9jb3RvJywgbmFtZTogJ0NyZW1hIGRlIHJvY290bycsIHByaWNlOiAxLjApLAogICAgICAgICAgXSwKICAgICAgICApLAogICAgICBdLAogICAgKSwKICAgIE1lbnVJdGVtTW9kZWwoCiAgICAgIGlkOiAncHJvZC1wb2xsby1icmFzYScsCiAgICAgIHJlc3RhdXJhbnRJZDogJ3BsYXphNC1leHByZXNzJywKICAgICAgbmFtZTogJzEvNCBQb2xsbyBhIGxhIEJyYXNhIGNvbiBQYXBhcycsCiAgICAgIGRlc2NyaXB0aW9uOgogICAgICAgICAgJ0N1YXJ0byBkZSBwb2xsbyBtYXJpbmFkbyBlbiBoaWVyYmFzIHBlcnVhbmFzIHkgY2VydmV6YSBuZWdyYSwgaG9ybmVhZG8gYSBsYXMgYnJhc2FzLiBJbmNsdXllIHBhcGFzIGZyaXRhcyBuYXRpdmFzIHkgZW5zYWxhZGEgZnJlc2NhLicsCiAgICAgIHByaWNlOiAxOC45MCwKICAgICAgY2F0ZWdvcnk6ICdjb21pZGFfY2FsaWVudGUnLAogICAgICBpbWFnZVVybDoKICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU5ODUxNTIxNDIxMS04OWQzYzczYWU4M2I/dz02MDAmYXV0bz1mb3JtYXQmZml0PWNyb3AmcT04MCcsCiAgICAgIGlzQXZhaWxhYmxlOiB0cnVlLAogICAgICBvcHRpb25Hcm91cHM6IFsKICAgICAgICBJdGVtT3B0aW9uR3JvdXAoCiAgICAgICAgICBpZDogJ29wdC1waWV6YScsCiAgICAgICAgICBuYW1lOiAnUGllemEgZGUgcG9sbG8nLAogICAgICAgICAgcmVxdWlyZWQ6IHRydWUsCiAgICAgICAgICBvcHRpb25zOiBbCiAgICAgICAgICAgIEl0ZW1PcHRpb24oaWQ6ICdwaWV6YS1wZWNodWdhJywgbmFtZTogJ1BlY2h1Z2EgKyBBbGEnLCBwcmljZTogMC4wKSwKICAgICAgICAgICAgSXRlbU9wdGlvbihpZDogJ3BpZXphLXBpZXJuYScsIG5hbWU6ICdQaWVybmEgKyBFbmN1ZW50cm8nLCBwcmljZTogMC4wKSwKICAgICAgICAgIF0sCiAgICAgICAgKSwKICAgICAgXSwKICAgICksCiAgICBNZW51SXRlbU1vZGVsKAogICAgICBpZDogJ3Byb2QtYXJyb3otY2hhdWZhJywKICAgICAgcmVzdGF1cmFudElkOiAncGxhemE0LWV4cHJlc3MnLAogICAgICBuYW1lOiAnQXJyb3ogQ2hhdWZhIEVzcGVjaWFsIGRlIFBvbGxvJywKICAgICAgZGVzY3JpcHRpb246CiAgICAgICAgICAnU2FsdGVhZG8gY3Jpb2xsbyBhbCB3b2sgY29uIHNpbGxhbyBvcmllbnRhbCwgdHJvem9zIGRlIHBvbGxvIHRpZXJubywgdG9ydGlsbGEgZGUgaHVldm8geSBjZWJvbGxpdGEgY2hpbmEgZnJlc2NhLicsCiAgICAgIHByaWNlOiAyMS41MCwKICAgICAgY2F0ZWdvcnk6ICdjb21pZGFfY2FsaWVudGUnLAogICAgICBpbWFnZVVybDoKICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTYwMzEzMzg3Mjg3OC02ODRmMjA4ZmI4NGI/dz02MDAmYXV0bz1mb3JtYXQmZml0PWNyb3AmcT04MCcsCiAgICAgIGlzQXZhaWxhYmxlOiB0cnVlLAogICAgKSwKCiAgICAvLyBGcnV0YXMgeSBWZXJkdXJhcwogICAgTWVudUl0ZW1Nb2RlbCgKICAgICAgaWQ6ICdwcm9kLXBhbHRhLWZ1ZXJ0ZScsCiAgICAgIHJlc3RhdXJhbnRJZDogJ3BsYXphNC1leHByZXNzJywKICAgICAgbmFtZTogJ1BhbHRhIEZ1ZXJ0ZSBIYXNzIHggMSBrZycsCiAgICAgIGRlc2NyaXB0aW9uOgogICAgICAgICAgJ1BhbHRhcyBzZWxlY2Npb25hZGFzIGRlIHZhbGxlcyBwZXJ1YW5vcywgdGV4dHVyYSBjcmVtb3NhIGluaWd1YWxhYmxlLiBNYWR1cmFzIGxpc3RhcyBwYXJhIHR1IGRlc2F5dW5vIG8gZW5zYWxhZGEuJywKICAgICAgcHJpY2U6IDkuODAsCiAgICAgIGNhdGVnb3J5OiAnZnJ1dGFzX3ZlcmR1cmFzJywKICAgICAgaW1hZ2VVcmw6CiAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1MjMwNDk2NzM4NTctZWIxOGYxZDdiNTc4P3c9NjAwJmF1dG89Zm9ybWF0JmZpdD1jcm9wJnE9ODAnLAogICAgICBpc0F2YWlsYWJsZTogdHJ1ZSwKICAgICksCiAgICBNZW51SXRlbU1vZGVsKAogICAgICBpZDogJ3Byb2QtYWppLWFtYXJpbGxvJywKICAgICAgcmVzdGF1cmFudElkOiAncGxhemE0LWV4cHJlc3MnLAogICAgICBuYW1lOiAnQWrDrSBBbWFyaWxsbyBGcmVzY28geCA1MDBnJywKICAgICAgZGVzY3JpcHRpb246CiAgICAgICAgICAnRWwgYWxtYSBkZSBsYSBnYXN0cm9ub23DrWEgcGVydWFuYS4gVmFpbmFzIGZpcm1lcywgYXJvbWEgaW50ZW5zbyB5IHBpY29yIGJhbGFuY2VhZG8uJywKICAgICAgcHJpY2U6IDMuNTAsCiAgICAgIGNhdGVnb3J5OiAnZnJ1dGFzX3ZlcmR1cmFzJywKICAgICAgaW1hZ2VVcmw6CiAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1ODgyNTIzMDM3ODItY2I4MDExOWFiZDZkP3c9NjAwJmF1dG89Zm9ybWF0JmZpdD1jcm9wJnE9ODAnLAogICAgICBpc0F2YWlsYWJsZTogdHJ1ZSwKICAgICksCiAgICBNZW51SXRlbU1vZGVsKAogICAgICBpZDogJ3Byb2QtbGltb24tc3V0aWwnLAogICAgICByZXN0YXVyYW50SWQ6ICdwbGF6YTQtZXhwcmVzcycsCiAgICAgIG5hbWU6ICdMaW3Ds24gU3V0aWwgUGVydWFubyB4IDEga2cnLAogICAgICBkZXNjcmlwdGlvbjoKICAgICAgICAgICdMaW1vbmVzIGp1Z29zb3MgZGUgQ2h1bHVjYW5hcyBjb24gYWNpZGV6IHBlcmZlY3RhIHBhcmEgY2V2aWNoZSwgY2hpbGNhbm8geSBhZGVyZXpvcy4nLAogICAgICBwcmljZTogNS45MCwKICAgICAgY2F0ZWdvcnk6ICdmcnV0YXNfdmVyZHVyYXMnLAogICAgICBpbWFnZVVybDoKICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTUzNDk0MDU2MjM4Ni1kM2M1MmU0NjkzYTE/dz02MDAmYXV0bz1mb3JtYXQmZml0PWNyb3AmcT04MCcsCiAgICAgIGlzQXZhaWxhYmxlOiB0cnVlLAogICAgKSwKCiAgICAvLyBCZWJpZGFzCiAgICBNZW51SXRlbU1vZGVsKAogICAgICBpZDogJ3Byb2QtaW5jYS1rb2xhLTE1JywKICAgICAgcmVzdGF1cmFudElkOiAncGxhemE0LWV4cHJlc3MnLAogICAgICBuYW1lOiAnSW5jYSBLb2xhIDEuNUwgTm8gUmV0b3JuYWJsZScsCiAgICAgIGRlc2NyaXB0aW9uOgogICAgICAgICAgJ0xhIGJlYmlkYSBkZSBzYWJvciBuYWNpb25hbC4gQmllbiBoZWxhZGEsIGVsIGFjb21wYcOxYW1pZW50byBwZXJmZWN0byBwYXJhIGN1YWxxdWllciBjb21pZGEgcGVydWFuYS4nLAogICAgICBwcmljZTogNy41MCwKICAgICAgY2F0ZWdvcnk6ICdiZWJpZGFzJywKICAgICAgaW1hZ2VVcmw6CiAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE2MjI0ODM3NjcwMjgtM2Y2NmYzMmFlZjk3P3c9NjAwJmF1dG89Zm9ybWF0JmZpdD1jcm9wJnE9ODAnLAogICAgICBpc0F2YWlsYWJsZTogdHJ1ZSwKICAgICksCiAgICBNZW51SXRlbU1vZGVsKAogICAgICBpZDogJ3Byb2QtY3VzcXVlbmEtdHJpZ28nLAogICAgICByZXN0YXVyYW50SWQ6ICdwbGF6YTQtZXhwcmVzcycsCiAgICAgIG5hbWU6ICdDZXJ2ZXphIEN1c3F1ZcOxYSBUcmlnbyAzMTBtbCBQYWNrIHggNicsCiAgICAgIGRlc2NyaXB0aW9uOgogICAgICAgICAgJ0NlcnZlemEgcHJlbWl1bSBkZSBtYWx0YSB5IHRyaWdvIHNlbGVjdG8gZGUgbG9zIEFuZGVzLiBOb3RhcyBjw610cmljYXMgeSBjdWVycG8gcmVmcmVzY2FudGUuJywKICAgICAgcHJpY2U6IDMyLjUwLAogICAgICBjYXRlZ29yeTogJ2JlYmlkYXMnLAogICAgICBpbWFnZVVybDoKICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTYwODI3MDExOTI5My0xYjA1OGE1NWNlMjQ/dz02MDAmYXV0bz1mb3JtYXQmZml0PWNyb3AmcT04MCcsCiAgICAgIGlzQXZhaWxhYmxlOiB0cnVlLAogICAgKSwKICAgIE1lbnVJdGVtTW9kZWwoCiAgICAgIGlkOiAncHJvZC1jaGljaGEtbW9yYWRhJywKICAgICAgcmVzdGF1cmFudElkOiAncGxhemE0LWV4cHJlc3MnLAogICAgICBuYW1lOiAnQ2hpY2hhIE1vcmFkYSBBcnRlc2FuYWwgMUwnLAogICAgICBkZXNjcmlwdGlvbjoKICAgICAgICAgICdIZXJ2aWRhIGNvbiBtYcOteiBtb3JhZG8gcGVydWFubywgcGnDsWEsIG1hbnphbmEgY3Jpb2xsYSwgY2FuZWxhIHkgY2xhdm8gZGUgb2xvciwgY29uIHRvcXVlIGRlIGxpbcOzbi4nLAogICAgICBwcmljZTogOC41MCwKICAgICAgY2F0ZWdvcnk6ICdiZWJpZGFzJywKICAgICAgaW1hZ2VVcmw6CiAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1NTEwMjQ3MDktOGYyM2JlZmM2Zjg3P3c9NjAwJmF1dG89Zm9ybWF0JmZpdD1jcm9wJnE9ODAnLAogICAgICBpc0F2YWlsYWJsZTogdHJ1ZSwKICAgICksCgogICAgLy8gUGFuYWRlcsOtYQogICAgTWVudUl0ZW1Nb2RlbCgKICAgICAgaWQ6ICdwcm9kLXBhbi1mcmFuY2VzJywKICAgICAgcmVzdGF1cmFudElkOiAncGxhemE0LWV4cHJlc3MnLAogICAgICBuYW1lOiAnUGFuIEZyYW5jw6lzIEFydGVzYW5hbCB4IDEwIHVuZCcsCiAgICAgIGRlc2NyaXB0aW9uOgogICAgICAgICAgJ1JlY2nDqW4gaG9ybmVhZG8gZW4gUGxhemEgNC4gQ3JvY2FudGUgcG9yIGZ1ZXJhIGNvbiBtaWdhIHN1YXZlIHkgYWlyZWFkYS4gTGlzdG8gcGFyYSByZWxsZW5hciBjb24gcGFsdGEgbyBjaGljaGFycsOzbi4nLAogICAgICBwcmljZTogNC41MCwKICAgICAgY2F0ZWdvcnk6ICdwYW5hZGVyaWEnLAogICAgICBpbWFnZVVybDoKICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTUwOTQ0MDE1OTU5Ni0wMjQ5MDg4NzcyZmY/dz02MDAmYXV0bz1mb3JtYXQmZml0PWNyb3AmcT04MCcsCiAgICAgIGlzQXZhaWxhYmxlOiB0cnVlLAogICAgKSwKICAgIE1lbnVJdGVtTW9kZWwoCiAgICAgIGlkOiAncHJvZC1wYW4tY2lhYmF0dGEnLAogICAgICByZXN0YXVyYW50SWQ6ICdwbGF6YTQtZXhwcmVzcycsCiAgICAgIG5hbWU6ICdQYW4gQ2lhYmF0dGEgY29uIEFjZWl0dW5hIHggNiB1bmQnLAogICAgICBkZXNjcmlwdGlvbjoKICAgICAgICAgICdFbGFib3JhZG8gY29uIG1hc2EgbWFkcmUgeSB0cm96b3MgZGUgYWNlaXR1bmEgbmVncmEgZGUgQm90aWphIGRlIEljYS4nLAogICAgICBwcmljZTogNi4yMCwKICAgICAgY2F0ZWdvcnk6ICdwYW5hZGVyaWEnLAogICAgICBpbWFnZVVybDoKICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU4NjQ0NDI0ODkwMi0yZjY0ZWRkYzEzZGY/dz02MDAmYXV0bz1mb3JtYXQmZml0PWNyb3AmcT04MCcsCiAgICAgIGlzQXZhaWxhYmxlOiB0cnVlLAogICAgKSwKCiAgICAvLyBBYmFycm90ZXMKICAgIE1lbnVJdGVtTW9kZWwoCiAgICAgIGlkOiAncHJvZC1hcnJvei1jb3N0ZW5vJywKICAgICAgcmVzdGF1cmFudElkOiAncGxhemE0LWV4cHJlc3MnLAogICAgICBuYW1lOiAnQXJyb3ogQ29zdGXDsW8gRXh0cmEgMSBrZycsCiAgICAgIGRlc2NyaXB0aW9uOgogICAgICAgICAgJ0dyYW5vIGxhcmdvIHNlbGVjY2lvbmFkbywgbm8gc2UgYmF0ZSBuaSBzZSBxdWVtYS4gUmluZGUgbXVjaG8gbcOhcyBwYXJhIHRvZGEgbGEgZmFtaWxpYS4nLAogICAgICBwcmljZTogNC45MCwKICAgICAgY2F0ZWdvcnk6ICdhYmFycm90ZXMnLAogICAgICBpbWFnZVVybDoKICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU4NjIwMTM3NTc2MS04Mzg2NTAwMWUzMWM/dz02MDAmYXV0bz1mb3JtYXQmZml0PWNyb3AmcT04MCcsCiAgICAgIGlzQXZhaWxhYmxlOiB0cnVlLAogICAgKSwKICAgIE1lbnVJdGVtTW9kZWwoCiAgICAgIGlkOiAncHJvZC1hY2VpdGUtcHJpbW9yJywKICAgICAgcmVzdGF1cmFudElkOiAncGxhemE0LWV4cHJlc3MnLAogICAgICBuYW1lOiAnQWNlaXRlIFZlZ2V0YWwgUHJpbW9yIFByZW1pdW0gMUwnLAogICAgICBkZXNjcmlwdGlvbjoKICAgICAgICAgICdBY2VpdGUgMTAwJSBwdXJvIHZlZ2V0YWwgY29uIHZpdGFtaW5hIEUuIElkZWFsIHBhcmEgZnJpdHVyYXMgY3JvY2FudGVzIHkgYWRlcmV6b3MuJywKICAgICAgcHJpY2U6IDExLjUwLAogICAgICBjYXRlZ29yeTogJ2FiYXJyb3RlcycsCiAgICAgIGltYWdlVXJsOgogICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNDc0OTc5MjY2NDA0LTdlYWFjYmNkODdjNT93PTYwMCZhdXRvPWZvcm1hdCZmaXQ9Y3JvcCZxPTgwJywKICAgICAgaXNBdmFpbGFibGU6IHRydWUsCiAgICApLAogICAgTWVudUl0ZW1Nb2RlbCgKICAgICAgaWQ6ICdwcm9kLWZpZGVvcy1kb24tdml0dG9yaW8nLAogICAgICByZXN0YXVyYW50SWQ6ICdwbGF6YTQtZXhwcmVzcycsCiAgICAgIG5hbWU6ICdGaWRlb3MgRG9uIFZpdHRvcmlvIFNwYWdoZXR0aSA1MDBnJywKICAgICAgZGVzY3JpcHRpb246CiAgICAgICAgICAnUGFzdGEgZGUgc8OpbW9sYSBkZSB0cmlnbyBkdXJ1bSwgcXVlZGEgYWwgZGVudGUgc2llbXByZS4nLAogICAgICBwcmljZTogMy44MCwKICAgICAgY2F0ZWdvcnk6ICdhYmFycm90ZXMnLAogICAgICBpbWFnZVVybDoKICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTYxMjkyNzYwMTYwMS02NjM4NDA0NzM3Y2U/dz02MDAmYXV0bz1mb3JtYXQmZml0PWNyb3AmcT04MCcsCiAgICAgIGlzQXZhaWxhYmxlOiB0cnVlLAogICAgKSwKCiAgICAvLyBMw6FjdGVvcwogICAgTWVudUl0ZW1Nb2RlbCgKICAgICAgaWQ6ICdwcm9kLWxlY2hlLWdsb3JpYScsCiAgICAgIHJlc3RhdXJhbnRJZDogJ3BsYXphNC1leHByZXNzJywKICAgICAgbmFtZTogJ0xlY2hlIEV2YXBvcmFkYSBHbG9yaWEgQXp1bCA0MDBnJywKICAgICAgZGVzY3JpcHRpb246CiAgICAgICAgICAnTGEgbGVjaGUgdHJhZGljaW9uYWwgZGVsIFBlcsO6LiBGb3J0aWZpY2FkYSBjb24gdml0YW1pbmFzIEEgeSBEIHBhcmEgZWwgZGVzYXl1bm8uJywKICAgICAgcHJpY2U6IDQuMjAsCiAgICAgIGNhdGVnb3J5OiAnbGFjdGVvc19lbWJ1dGlkb3MnLAogICAgICBpbWFnZVVybDoKICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU2MzYzNjYxOS1lOTE0M2RhNzk3M2I/dz02MDAmYXV0bz1mb3JtYXQmZml0PWNyb3AmcT04MCcsCiAgICAgIGlzQXZhaWxhYmxlOiB0cnVlLAogICAgKSwKICAgIE1lbnVJdGVtTW9kZWwoCiAgICAgIGlkOiAncHJvZC1xdWVzby1hbmRpbm8nLAogICAgICByZXN0YXVyYW50SWQ6ICdwbGF6YTQtZXhwcmVzcycsCiAgICAgIG5hbWU6ICdRdWVzbyBBbmRpbm8gVHJhZGljaW9uYWwgVGFqYWRvIDI1MGcnLAogICAgICBkZXNjcmlwdGlvbjoKICAgICAgICAgICdRdWVzbyBtYWR1cmFkbyBkZSBDYWphbWFyY2EsIHNhYm9yIHN1YXZlIHkgdGV4dHVyYSBtYW50ZWNvc2EuJywKICAgICAgcHJpY2U6IDEyLjkwLAogICAgICBjYXRlZ29yeTogJ2xhY3Rlb3NfZW1idXRpZG9zJywKICAgICAgaW1hZ2VVcmw6CiAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE0ODYyOTc2NzgxNjItZWIyYTE5YjBhMzJkP3c9NjAwJmF1dG89Zm9ybWF0JmZpdD1jcm9wJnE9ODAnLAogICAgICBpc0F2YWlsYWJsZTogdHJ1ZSwKICAgICksCgogICAgLy8gU25hY2tzCiAgICBNZW51SXRlbU1vZGVsKAogICAgICBpZDogJ3Byb2QtZ2FsbGV0YXMtY2FzaW5vJywKICAgICAgcmVzdGF1cmFudElkOiAncGxhemE0LWV4cHJlc3MnLAogICAgICBuYW1lOiAnR2FsbGV0YXMgQ2FzaW5vIE1lbnRhIHggNiBwYXF1ZXRlcycsCiAgICAgIGRlc2NyaXB0aW9uOgogICAgICAgICAgJ0dhbGxldGFzIHBlcnVhbmFzIGRlIGNob2NvbGF0ZSByZWxsZW5hcyBjb24gY3JlbWEgZGUgbWVudGEgcmVmcmVzY2FudGUuJywKICAgICAgcHJpY2U6IDUuMjAsCiAgICAgIGNhdGVnb3J5OiAnc25hY2tzJywKICAgICAgaW1hZ2VVcmw6CiAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1NTg5NjEzNjMtZmE4ZmRmODJkYjM1P3c9NjAwJmF1dG89Zm9ybWF0JmZpdD1jcm9wJnE9ODAnLAogICAgICBpc0F2YWlsYWJsZTogdHJ1ZSwKICAgICksCiAgICBNZW51SXRlbU1vZGVsKAogICAgICBpZDogJ3Byb2QtcGlxdWVvLXNuYXgnLAogICAgICByZXN0YXVyYW50SWQ6ICdwbGF6YTQtZXhwcmVzcycsCiAgICAgIG5hbWU6ICdQaXF1ZW8gU25heCBGYW1pbGlhciAxNjBnJywKICAgICAgZGVzY3JpcHRpb246CiAgICAgICAgICAnTWl4IGRlIGNoaWZsZXMgbm9ydGXDsW9zLCBwYXBhcyBhbCBoaWxvLCB0b3J0ZWVzIHkgY2hpY2hhcnJvbmVzLicsCiAgICAgIHByaWNlOiA2LjgwLAogICAgICBjYXRlZ29yeTogJ3NuYWNrcycsCiAgICAgIGltYWdlVXJsOgogICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTY2NDc4OTg5MDM3LWVlYzE3MDc4NGQwYj93PTYwMCZhdXRvPWZvcm1hdCZmaXQ9Y3JvcCZxPTgwJywKICAgICAgaXNBdmFpbGFibGU6IHRydWUsCiAgICApLAogIF07CgogIC8vLyBGbGFzaCBEZWFscyAoT2ZlcnRhcyBSZWzDoW1wYWdvKSB3aXRoIGNvdW50ZG93biBhbmQgZGVlcCBkaXNjb3VudHMKICBzdGF0aWMgZmluYWwgTGlzdDxGbGFzaERlYWxJdGVtPiBmbGFzaERlYWxzID0gWwogICAgRmxhc2hEZWFsSXRlbSgKICAgICAgcHJvZHVjdDogYWxsUHJvZHVjdHMuZmlyc3RXaGVyZSgocCkgPT4gcC5pZCA9PSAncHJvZC1sb21vLXNhbHRhZG8nKSwKICAgICAgZGlzY291bnRQZXJjZW50OiAxNywKICAgICAgb3JpZ2luYWxQcmljZTogMjkuOTAsCiAgICAgIGRlYWxQcmljZTogMjQuOTAsCiAgICAgIGJhZGdlVGV4dDogJ8KhQWhvcnJhcyBTLyA1LjAwIScsCiAgICAgIGVuZHNJbkhvdXJzOiAyLAogICAgKSwKICAgIEZsYXNoRGVhbEl0ZW0oCiAgICAgIHByb2R1Y3Q6IGFsbFByb2R1Y3RzLmZpcnN0V2hlcmUoKHApID0+IHAuaWQgPT0gJ3Byb2QtcGFsdGEtZnVlcnRlJyksCiAgICAgIGRpc2NvdW50UGVyY2VudDogMjUsCiAgICAgIG9yaWdpbmFsUHJpY2U6IDEzLjAwLAogICAgICBkZWFsUHJpY2U6IDkuODAsCiAgICAgIGJhZGdlVGV4dDogJ8KhMjUlIERTQ1RPIScsCiAgICAgIGVuZHNJbkhvdXJzOiA0LAogICAgKSwKICAgIEZsYXNoRGVhbEl0ZW0oCiAgICAgIHByb2R1Y3Q6IGFsbFByb2R1Y3RzLmZpcnN0V2hlcmUoKHApID0+IHAuaWQgPT0gJ3Byb2QtaW5jYS1rb2xhLTE1JyksCiAgICAgIGRpc2NvdW50UGVyY2VudDogMjEsCiAgICAgIG9yaWdpbmFsUHJpY2U6IDkuNTAsCiAgICAgIGRlYWxQcmljZTogNy41MCwKICAgICAgYmFkZ2VUZXh0OiAnQ29tYm8gRXhwcmVzcycsCiAgICAgIGVuZHNJbkhvdXJzOiAxLAogICAgKSwKICAgIEZsYXNoRGVhbEl0ZW0oCiAgICAgIHByb2R1Y3Q6IGFsbFByb2R1Y3RzLmZpcnN0V2hlcmUoKHApID0+IHAuaWQgPT0gJ3Byb2QtcG9sbG8tYnJhc2EnKSwKICAgICAgZGlzY291bnRQZXJjZW50OiAxNSwKICAgICAgb3JpZ2luYWxQcmljZTogMjIuMDAsCiAgICAgIGRlYWxQcmljZTogMTguOTAsCiAgICAgIGJhZGdlVGV4dDogJ0JyYXNhIENhbGllbnRlJywKICAgICAgZW5kc0luSG91cnM6IDMsCiAgICApLAogIF07Cn0KCmNsYXNzIFBlcnVDYXRlZ29yeSB7CiAgZmluYWwgU3RyaW5nIGlkOwogIGZpbmFsIFN0cmluZyBuYW1lOwogIGZpbmFsIFN0cmluZyBzdWJ0aXRsZTsKICBmaW5hbCBJY29uRGF0YSBpY29uOwogIGZpbmFsIFN0cmluZz8gYmFkZ2U7CiAgZmluYWwgQ29sb3IgY29sb3I7CgogIGNvbnN0IFBlcnVDYXRlZ29yeSh7CiAgICByZXF1aXJlZCB0aGlzLmlkLAogICAgcmVxdWlyZWQgdGhpcy5uYW1lLAogICAgcmVxdWlyZWQgdGhpcy5zdWJ0aXRsZSwKICAgIHJlcXVpcmVkIHRoaXMuaWNvbiwKICAgIHRoaXMuYmFkZ2UsCiAgICByZXF1aXJlZCB0aGlzLmNvbG9yLAogIH0pOwp9CgpjbGFzcyBGbGFzaERlYWxJdGVtIHsKICBmaW5hbCBNZW51SXRlbU1vZGVsIHByb2R1Y3Q7CiAgZmluYWwgaW50IGRpc2NvdW50UGVyY2VudDsKICBmaW5hbCBkb3VibGUgb3JpZ2luYWxQcmljZTsKICBmaW5hbCBkb3VibGUgZGVhbFByaWNlOwogIGZpbmFsIFN0cmluZyBiYWRnZVRleHQ7CiAgZmluYWwgaW50IGVuZHNJbkhvdXJzOwoKICBjb25zdCBGbGFzaERlYWxJdGVtKHsKICAgIHJlcXVpcmVkIHRoaXMucHJvZHVjdCwKICAgIHJlcXVpcmVkIHRoaXMuZGlzY291bnRQZXJjZW50LAogICAgcmVxdWlyZWQgdGhpcy5vcmlnaW5hbFByaWNlLAogICAgcmVxdWlyZWQgdGhpcy5kZWFsUHJpY2UsCiAgICByZXF1aXJlZCB0aGlzLmJhZGdlVGV4dCwKICAgIHJlcXVpcmVkIHRoaXMuZW5kc0luSG91cnMsCiAgfSk7Cn0K
+import 'package:flutter/material.dart';
+import '../../shared/models/menu_item.dart';
+
+/// Seed data and catalog constants for Plaza 4 Quick-Commerce (Peru).
+///
+/// Features authentic Peruvian Spanish naming, genuine strip-store categories,
+/// realistic Soles (PEN) pricing, and popular Lima quick-commerce search tags.
+class PeruSeedData {
+  PeruSeedData._();
+
+  static const String storeName = 'Plaza 4 Express';
+  static const String defaultLocation = 'Av. Larco 450, Miraflores, Lima';
+  static const String deliveryEtaBadge = 'Entrega en 15 min';
+  static const double standardDeliveryFee = 6.00; // S/ 6.00 as requested
+  static const double freeDeliveryThreshold = 35.00;
+  static const double ecoBagFee = 0.80; // S/ 0.80 bolsa ecológica
+
+  /// Quick commerce categories tailored for a Peruvian strip store
+  static final List<PeruCategory> categories = [
+    const PeruCategory(
+      id: 'abarrotes',
+      name: 'Abarrotes',
+      subtitle: 'Arroz, aceite, fideos',
+      icon: Icons.kitchen_rounded,
+      badge: 'Básicos',
+      color: Color(0xFF00A86B),
+    ),
+    const PeruCategory(
+      id: 'frutas_verduras',
+      name: 'Frutas y Verduras',
+      subtitle: 'Paltas, limones, ajíes',
+      icon: Icons.eco_rounded,
+      badge: 'Fresco',
+      color: Color(0xFF4CAF50),
+    ),
+    const PeruCategory(
+      id: 'comida_caliente',
+      name: 'Comida al Toque',
+      subtitle: 'Lomo saltado, pollo',
+      icon: Icons.restaurant_menu_rounded,
+      badge: 'Al wok',
+      color: Color(0xFFE53935),
+    ),
+    const PeruCategory(
+      id: 'panaderia',
+      name: 'Panadería',
+      subtitle: 'Pan francés, ciabatta',
+      icon: Icons.bakery_dining_rounded,
+      badge: 'Del día',
+      color: Color(0xFFF57C00),
+    ),
+    const PeruCategory(
+      id: 'bebidas',
+      name: 'Bebidas y Licores',
+      subtitle: 'Inca Kola, Cusqueña',
+      icon: Icons.local_bar_rounded,
+      badge: 'Heladitas',
+      color: Color(0xFF1E88E5),
+    ),
+    const PeruCategory(
+      id: 'lacteos_embutidos',
+      name: 'Lácteos y Huevos',
+      subtitle: 'Gloria, quesos, jamón',
+      icon: Icons.egg_outlined,
+      badge: null,
+      color: Color(0xFF8E24AA),
+    ),
+    const PeruCategory(
+      id: 'snacks',
+      name: 'Snacks y Dulces',
+      subtitle: 'Piqueos, chocolates',
+      icon: Icons.cookie_rounded,
+      badge: null,
+      color: Color(0xFFFFB300),
+    ),
+    const PeruCategory(
+      id: 'farmacia_aseo',
+      name: 'Aseo y Farmacia',
+      subtitle: 'Papel, analgésicos',
+      icon: Icons.medical_services_rounded,
+      badge: null,
+      color: Color(0xFF00ACC1),
+    ),
+  ];
+
+  /// Popular searches in Peru
+  static const List<String> trendingSearchesPeru = [
+    'Inca Kola 1.5L',
+    'Palta Fuerte',
+    'Lomo Saltado',
+    'Pan Francés',
+    'Leche Gloria Azul',
+    'Pollo a la Brasa',
+    'Arroz Costeño',
+    'Cerveza Cusqueña',
+    'Galletas Casino',
+    'Ají Amarillo',
+  ];
+
+  /// Realistic catalog of Peruvian products
+  static final List<MenuItemModel> allProducts = [
+    // Comida Caliente
+    MenuItemModel(
+      id: 'prod-lomo-saltado',
+      restaurantId: 'plaza4-express',
+      name: 'Lomo Saltado Clásico',
+      description:
+          'Trozos de lomo fino salteados al wok con cebolla morada, tomate, ají amarillo y culantro. Servido con papas fritas crocantes y arroz con choclo.',
+      price: 24.90,
+      category: 'comida_caliente',
+      imageUrl:
+          'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+      optionGroups: [
+        ItemOptionGroup(
+          id: 'opt-termino',
+          name: 'Término de la carne',
+          required: true,
+          options: [
+            ItemOption(id: 'term-medio', name: 'Término medio', price: 0.0),
+            ItemOption(id: 'term-3-4', name: 'Tres cuartos', price: 0.0),
+            ItemOption(id: 'term-cocido', name: 'Bien cocido', price: 0.0),
+          ],
+        ),
+        ItemOptionGroup(
+          id: 'opt-salsas',
+          name: 'Salsas y Ají',
+          type: 'multi',
+          required: false,
+          options: [
+            ItemOption(id: 'salsa-aji', name: 'Ají pollero de la casa', price: 0.0),
+            ItemOption(id: 'salsa-mayo', name: 'Mayonesa casera', price: 0.0),
+            ItemOption(id: 'salsa-rocoto', name: 'Crema de rocoto', price: 1.0),
+          ],
+        ),
+      ],
+    ),
+    MenuItemModel(
+      id: 'prod-pollo-brasa',
+      restaurantId: 'plaza4-express',
+      name: '1/4 Pollo a la Brasa con Papas',
+      description:
+          'Cuarto de pollo marinado en hierbas peruanas y cerveza negra, horneado a las brasas. Incluye papas fritas nativas y ensalada fresca.',
+      price: 18.90,
+      category: 'comida_caliente',
+      imageUrl:
+          'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+      optionGroups: [
+        ItemOptionGroup(
+          id: 'opt-pieza',
+          name: 'Pieza de pollo',
+          required: true,
+          options: [
+            ItemOption(id: 'pieza-pechuga', name: 'Pechuga + Ala', price: 0.0),
+            ItemOption(id: 'pieza-pierna', name: 'Pierna + Encuentro', price: 0.0),
+          ],
+        ),
+      ],
+    ),
+    MenuItemModel(
+      id: 'prod-arroz-chaufa',
+      restaurantId: 'plaza4-express',
+      name: 'Arroz Chaufa Especial de Pollo',
+      description:
+          'Salteado criollo al wok con sillao oriental, trozos de pollo tierno, tortilla de huevo y cebollita china fresca.',
+      price: 21.50,
+      category: 'comida_caliente',
+      imageUrl:
+          'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+
+    // Frutas y Verduras
+    MenuItemModel(
+      id: 'prod-palta-fuerte',
+      restaurantId: 'plaza4-express',
+      name: 'Palta Fuerte Hass x 1 kg',
+      description:
+          'Paltas seleccionadas de valles peruanos, textura cremosa inigualable. Maduras listas para tu desayuno o ensalada.',
+      price: 9.80,
+      category: 'frutas_verduras',
+      imageUrl:
+          'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+    MenuItemModel(
+      id: 'prod-aji-amarillo',
+      restaurantId: 'plaza4-express',
+      name: 'Ají Amarillo Fresco x 500g',
+      description:
+          'El alma de la gastronomía peruana. Vainas firmes, aroma intenso y picor balanceado.',
+      price: 3.50,
+      category: 'frutas_verduras',
+      imageUrl:
+          'https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+    MenuItemModel(
+      id: 'prod-limon-sutil',
+      restaurantId: 'plaza4-express',
+      name: 'Limón Sutil Peruano x 1 kg',
+      description:
+          'Limones jugosos de Chulucanas con acidez perfecta para ceviche, chilcano y aderezos.',
+      price: 5.90,
+      category: 'frutas_verduras',
+      imageUrl:
+          'https://images.unsplash.com/photo-1534940562386-d3c52e4693a1?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+
+    // Bebidas
+    MenuItemModel(
+      id: 'prod-inca-kola-15',
+      restaurantId: 'plaza4-express',
+      name: 'Inca Kola 1.5L No Retornable',
+      description:
+          'La bebida de sabor nacional. Bien helada, el acompañamiento perfecto para cualquier comida peruana.',
+      price: 7.50,
+      category: 'bebidas',
+      imageUrl:
+          'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+    MenuItemModel(
+      id: 'prod-cusquena-trigo',
+      restaurantId: 'plaza4-express',
+      name: 'Cerveza Cusqueña Trigo 310ml Pack x 6',
+      description:
+          'Cerveza premium de malta y trigo selecto de los Andes. Notas cítricas y cuerpo refrescante.',
+      price: 32.50,
+      category: 'bebidas',
+      imageUrl:
+          'https://images.unsplash.com/photo-1608270119293-1b058a55ce24?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+    MenuItemModel(
+      id: 'prod-chicha-morada',
+      restaurantId: 'plaza4-express',
+      name: 'Chicha Morada Artesanal 1L',
+      description:
+          'Hervida con maíz morado peruano, piña, manzana criolla, canela y clavo de olor, con toque de limón.',
+      price: 8.50,
+      category: 'bebidas',
+      imageUrl:
+          'https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+
+    // Panadería
+    MenuItemModel(
+      id: 'prod-pan-frances',
+      restaurantId: 'plaza4-express',
+      name: 'Pan Francés Artesanal x 10 und',
+      description:
+          'Recién horneado en Plaza 4. Crocante por fuera con miga suave y aireada. Listo para rellenar con palta o chicharrón.',
+      price: 4.50,
+      category: 'panaderia',
+      imageUrl:
+          'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+    MenuItemModel(
+      id: 'prod-pan-ciabatta',
+      restaurantId: 'plaza4-express',
+      name: 'Pan Ciabatta con Aceituna x 6 und',
+      description:
+          'Elaborado con masa madre y trozos de aceituna negra de Botija de Ica.',
+      price: 6.20,
+      category: 'panaderia',
+      imageUrl:
+          'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+
+    // Abarrotes
+    MenuItemModel(
+      id: 'prod-arroz-costeno',
+      restaurantId: 'plaza4-express',
+      name: 'Arroz Costeño Extra 1 kg',
+      description:
+          'Grano largo seleccionado, no se bate ni se quema. Rinde mucho más para toda la familia.',
+      price: 4.90,
+      category: 'abarrotes',
+      imageUrl:
+          'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+    MenuItemModel(
+      id: 'prod-aceite-primor',
+      restaurantId: 'plaza4-express',
+      name: 'Aceite Vegetal Primor Premium 1L',
+      description:
+          'Aceite 100% puro vegetal con vitamina E. Ideal para frituras crocantes y aderezos.',
+      price: 11.50,
+      category: 'abarrotes',
+      imageUrl:
+          'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+    MenuItemModel(
+      id: 'prod-fideos-don-vittorio',
+      restaurantId: 'plaza4-express',
+      name: 'Fideos Don Vittorio Spaghetti 500g',
+      description:
+          'Pasta de sémola de trigo durum, queda al dente siempre.',
+      price: 3.80,
+      category: 'abarrotes',
+      imageUrl:
+          'https://images.unsplash.com/photo-1612927601601-6638404737ce?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+
+    // Lácteos
+    MenuItemModel(
+      id: 'prod-leche-gloria',
+      restaurantId: 'plaza4-express',
+      name: 'Leche Evaporada Gloria Azul 400g',
+      description:
+          'La leche tradicional del Perú. Fortificada con vitaminas A y D para el desayuno.',
+      price: 4.20,
+      category: 'lacteos_embutidos',
+      imageUrl:
+          'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+    MenuItemModel(
+      id: 'prod-queso-andino',
+      restaurantId: 'plaza4-express',
+      name: 'Queso Andino Tradicional Tajado 250g',
+      description:
+          'Queso madurado de Cajamarca, sabor suave y textura mantecosa.',
+      price: 12.90,
+      category: 'lacteos_embutidos',
+      imageUrl:
+          'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+
+    // Snacks
+    MenuItemModel(
+      id: 'prod-galletas-casino',
+      restaurantId: 'plaza4-express',
+      name: 'Galletas Casino Menta x 6 paquetes',
+      description:
+          'Galletas peruanas de chocolate rellenas con crema de menta refrescante.',
+      price: 5.20,
+      category: 'snacks',
+      imageUrl:
+          'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+    MenuItemModel(
+      id: 'prod-piqueo-snax',
+      restaurantId: 'plaza4-express',
+      name: 'Piqueo Snax Familiar 160g',
+      description:
+          'Mix de chifles norteños, papas al hilo, tortees y chicharrones.',
+      price: 6.80,
+      category: 'snacks',
+      imageUrl:
+          'https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=600&auto=format&fit=crop&q=80',
+      isAvailable: true,
+    ),
+  ];
+
+  /// Flash Deals (Ofertas Relámpago) with countdown and deep discounts
+  static final List<FlashDealItem> flashDeals = [
+    FlashDealItem(
+      product: allProducts.firstWhere((p) => p.id == 'prod-lomo-saltado'),
+      discountPercent: 17,
+      originalPrice: 29.90,
+      dealPrice: 24.90,
+      badgeText: '¡Ahorras S/ 5.00!',
+      endsInHours: 2,
+    ),
+    FlashDealItem(
+      product: allProducts.firstWhere((p) => p.id == 'prod-palta-fuerte'),
+      discountPercent: 25,
+      originalPrice: 13.00,
+      dealPrice: 9.80,
+      badgeText: '¡25% DSCTO!',
+      endsInHours: 4,
+    ),
+    FlashDealItem(
+      product: allProducts.firstWhere((p) => p.id == 'prod-inca-kola-15'),
+      discountPercent: 21,
+      originalPrice: 9.50,
+      dealPrice: 7.50,
+      badgeText: 'Combo Express',
+      endsInHours: 1,
+    ),
+    FlashDealItem(
+      product: allProducts.firstWhere((p) => p.id == 'prod-pollo-brasa'),
+      discountPercent: 15,
+      originalPrice: 22.00,
+      dealPrice: 18.90,
+      badgeText: 'Brasa Caliente',
+      endsInHours: 3,
+    ),
+  ];
+}
+
+class PeruCategory {
+  final String id;
+  final String name;
+  final String subtitle;
+  final IconData icon;
+  final String? badge;
+  final Color color;
+
+  const PeruCategory({
+    required this.id,
+    required this.name,
+    required this.subtitle,
+    required this.icon,
+    this.badge,
+    required this.color,
+  });
+}
+
+class FlashDealItem {
+  final MenuItemModel product;
+  final int discountPercent;
+  final double originalPrice;
+  final double dealPrice;
+  final String badgeText;
+  final int endsInHours;
+
+  const FlashDealItem({
+    required this.product,
+    required this.discountPercent,
+    required this.originalPrice,
+    required this.dealPrice,
+    required this.badgeText,
+    required this.endsInHours,
+  });
+}

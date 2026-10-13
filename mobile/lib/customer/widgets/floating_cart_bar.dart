@@ -1,1 +1,208 @@
-aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyL3NlcnZpY2VzLmRhcnQnOwppbXBvcnQgJ3BhY2thZ2U6Zmx1dHRlcl9yaXZlcnBvZC9mbHV0dGVyX3JpdmVycG9kLmRhcnQnOwppbXBvcnQgJ3BhY2thZ2U6Z29fcm91dGVyL2dvX3JvdXRlci5kYXJ0JzsKaW1wb3J0ICcuLi8uLi9zaGFyZWQvcHJvdmlkZXJzL2NhcnRfcHJvdmlkZXIuZGFydCc7CmltcG9ydCAnLi4vLi4vc2hhcmVkL3V0aWxzL2N1cnJlbmN5X2Zvcm1hdHRlci5kYXJ0JzsKaW1wb3J0ICcuLi9yb3V0ZXIvcm91dGVfbmFtZXMuZGFydCc7CmltcG9ydCAnY2FydF9ib3R0b21fc2hlZXQuZGFydCc7CgovLy8gQmxpbmtpdC1zdHlsZSBwZXJzaXN0ZW50IGZsb2F0aW5nIGNhcnQgYmFyLgovLy8KLy8vIEFwcGVhcnMgc21vb3RobHkgYXQgdGhlIGJvdHRvbSBvZiBzY3JlZW5zIHdoZW4gaXRlbXMgZXhpc3QgaW4gdGhlIGNhcnQuCi8vLyBGZWF0dXJlcyBhIHNjYWxlIGJ1bXAgYW5pbWF0aW9uIHdoZW4gaXRlbXMgYXJlIGFkZGVkLCBzaG93cyBpdGVtIGNvdW50LAovLy8gc3VidG90YWwgaW4gUEVOLCBhbmQgcXVpY2sgYWNjZXNzIHRvIHRoZSBDYXJ0IEJvdHRvbSBTaGVldCBvciBDYXJ0IFNjcmVlbi4KY2xhc3MgRmxvYXRpbmdDYXJ0QmFyIGV4dGVuZHMgQ29uc3VtZXJTdGF0ZWZ1bFdpZGdldCB7CiAgZmluYWwgYm9vbCBvcGVuQXNTaGVldDsKCiAgY29uc3QgRmxvYXRpbmdDYXJ0QmFyKHtzdXBlci5rZXksIHRoaXMub3BlbkFzU2hlZXQgPSB0cnVlfSk7CgogIEBvdmVycmlkZQogIENvbnN1bWVyU3RhdGU8RmxvYXRpbmdDYXJ0QmFyPiBjcmVhdGVTdGF0ZSgpID0+IF9GbG9hdGluZ0NhcnRCYXJTdGF0ZSgpOwp9CgpjbGFzcyBfRmxvYXRpbmdDYXJ0QmFyU3RhdGUgZXh0ZW5kcyBDb25zdW1lclN0YXRlPEZsb2F0aW5nQ2FydEJhcj4KICAgIHdpdGggU2luZ2xlVGlja2VyUHJvdmlkZXJTdGF0ZU1peGluIHsKICBsYXRlIEFuaW1hdGlvbkNvbnRyb2xsZXIgX2J1bXBDb250cm9sbGVyOwogIGludCBfbGFzdEl0ZW1Db3VudCA9IDA7CgogIEBvdmVycmlkZQogIHZvaWQgaW5pdFN0YXRlKCkgewogICAgc3VwZXIuaW5pdFN0YXRlKCk7CiAgICBfYnVtcENvbnRyb2xsZXIgPSBBbmltYXRpb25Db250cm9sbGVyKAogICAgICB2c3luYzogdGhpcywKICAgICAgZHVyYXRpb246IGNvbnN0IER1cmF0aW9uKG1pbGxpc2Vjb25kczogMjIwKSwKICAgICAgbG93ZXJCb3VuZDogMC45NiwKICAgICAgdXBwZXJCb3VuZDogMS4wNCwKICAgICAgdmFsdWU6IDEuMCwKICAgICk7CiAgfQoKICBAb3ZlcnJpZGUKICB2b2lkIGRpc3Bvc2UoKSB7CiAgICBfYnVtcENvbnRyb2xsZXIuZGlzcG9zZSgpOwogICAgc3VwZXIuZGlzcG9zZSgpOwogIH0KCiAgdm9pZCBfdHJpZ2dlckJ1bXAoKSB7CiAgICBfYnVtcENvbnRyb2xsZXIuZm9yd2FyZCgpLnRoZW4oKF8pIHsKICAgICAgaWYgKG1vdW50ZWQpIF9idW1wQ29udHJvbGxlci5yZXZlcnNlKCk7CiAgICB9KTsKICAgIEhhcHRpY0ZlZWRiYWNrLnNlbGVjdGlvbkNsaWNrKCk7CiAgfQoKICBAb3ZlcnJpZGUKICBXaWRnZXQgYnVpbGQoQnVpbGRDb250ZXh0IGNvbnRleHQpIHsKICAgIGZpbmFsIGNhcnRTdGF0ZSA9IHJlZi53YXRjaChjYXJ0UHJvdmlkZXIpOwogICAgZmluYWwgY291bnQgPSBjYXJ0U3RhdGUudG90YWxJdGVtQ291bnQ7CgogICAgaWYgKGNvdW50ID4gX2xhc3RJdGVtQ291bnQgJiYgX2xhc3RJdGVtQ291bnQgIT0gMCkgewogICAgICBXaWRnZXRzQmluZGluZy5pbnN0YW5jZS5hZGRQb3N0RnJhbWVDYWxsYmFjaygoXykgPT4gX3RyaWdnZXJCdW1wKCkpOwogICAgfQogICAgX2xhc3RJdGVtQ291bnQgPSBjb3VudDsKCiAgICBpZiAoY291bnQgPT0gMCkgcmV0dXJuIGNvbnN0IFNpemVkQm94LnNocmluaygpOwoKICAgIHJldHVybiBQYWRkaW5nKAogICAgICBwYWRkaW5nOiBjb25zdCBFZGdlSW5zZXRzLmZyb21MVFJCKDE0LCAwLCAxNCwgMTQpLAogICAgICBjaGlsZDogU2NhbGVUcmFuc2l0aW9uKAogICAgICAgIHNjYWxlOiBfYnVtcENvbnRyb2xsZXIsCiAgICAgICAgY2hpbGQ6IENvbnRhaW5lcigKICAgICAgICAgIGRlY29yYXRpb246IEJveERlY29yYXRpb24oCiAgICAgICAgICAgIGdyYWRpZW50OiBjb25zdCBMaW5lYXJHcmFkaWVudCgKICAgICAgICAgICAgICBjb2xvcnM6IFtDb2xvcigweEZGMDA5NjZCKSwgQ29sb3IoMHhGRjAwN0E1NSldLAogICAgICAgICAgICAgIGJlZ2luOiBBbGlnbm1lbnQudG9wTGVmdCwKICAgICAgICAgICAgICBlbmQ6IEFsaWdubWVudC5ib3R0b21SaWdodCwKICAgICAgICAgICAgKSwKICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiBCb3JkZXJSYWRpdXMuY2lyY3VsYXIoMTYpLAogICAgICAgICAgICBib3hTaGFkb3c6IFsKICAgICAgICAgICAgICBCb3hTaGFkb3coCiAgICAgICAgICAgICAgICBjb2xvcjogY29uc3QgQ29sb3IoMHhGRjAwOTY2Qikud2l0aFZhbHVlcyhhbHBoYTogMC4zOCksCiAgICAgICAgICAgICAgICBibHVyUmFkaXVzOiAxNCwKICAgICAgICAgICAgICAgIG9mZnNldDogY29uc3QgT2Zmc2V0KDAsIDYpLAogICAgICAgICAgICAgICksCiAgICAgICAgICAgIF0sCiAgICAgICAgICApLAogICAgICAgICAgY2hpbGQ6IE1hdGVyaWFsKAogICAgICAgICAgICBjb2xvcjogQ29sb3JzLnRyYW5zcGFyZW50LAogICAgICAgICAgICBjaGlsZDogSW5rV2VsbCgKICAgICAgICAgICAgICBvblRhcDogKCkgewogICAgICAgICAgICAgICAgaWYgKHdpZGdldC5vcGVuQXNTaGVldCkgewogICAgICAgICAgICAgICAgICBzaG93TW9kYWxCb3R0b21TaGVldCgKICAgICAgICAgICAgICAgICAgICBjb250ZXh0OiBjb250ZXh0LAogICAgICAgICAgICAgICAgICAgIGlzU2Nyb2xsQ29udHJvbGxlZDogdHJ1ZSwKICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IENvbG9ycy50cmFuc3BhcmVudCwKICAgICAgICAgICAgICAgICAgICBidWlsZGVyOiAoY29udGV4dCkgPT4gY29uc3QgQ2FydEJvdHRvbVNoZWV0KCksCiAgICAgICAgICAgICAgICAgICk7CiAgICAgICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgICBjb250ZXh0LnB1c2goUm91dGVzLmNhcnQpOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiBCb3JkZXJSYWRpdXMuY2lyY3VsYXIoMTYpLAogICAgICAgICAgICAgIGNoaWxkOiBQYWRkaW5nKAogICAgICAgICAgICAgICAgcGFkZGluZzogY29uc3QgRWRnZUluc2V0cy5zeW1tZXRyaWMoCiAgICAgICAgICAgICAgICAgIGhvcml6b250YWw6IDE2LAogICAgICAgICAgICAgICAgICB2ZXJ0aWNhbDogMTIsCiAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgY2hpbGQ6IFJvdygKICAgICAgICAgICAgICAgICAgY2hpbGRyZW46IFsKICAgICAgICAgICAgICAgICAgICAvLyBCYWRnZSBhbmQgY291bnQKICAgICAgICAgICAgICAgICAgICBDb250YWluZXIoCiAgICAgICAgICAgICAgICAgICAgICBwYWRkaW5nOiBjb25zdCBFZGdlSW5zZXRzLnN5bW1ldHJpYygKICAgICAgICAgICAgICAgICAgICAgICAgaG9yaXpvbnRhbDogMTAsCiAgICAgICAgICAgICAgICAgICAgICAgIHZlcnRpY2FsOiA2LAogICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgIGRlY29yYXRpb246IEJveERlY29yYXRpb24oCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiBDb2xvcnMud2hpdGUud2l0aFZhbHVlcyhhbHBoYTogMC4yMiksCiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogQm9yZGVyUmFkaXVzLmNpcmN1bGFyKDEwKSwKICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICBjaGlsZDogUm93KAogICAgICAgICAgICAgICAgICAgICAgICBtYWluQXhpc1NpemU6IE1haW5BeGlzU2l6ZS5taW4sCiAgICAgICAgICAgICAgICAgICAgICAgIGNoaWxkcmVuOiBbCiAgICAgICAgICAgICAgICAgICAgICAgICAgY29uc3QgSWNvbigKICAgICAgICAgICAgICAgICAgICAgICAgICAgIEljb25zLnNob3BwaW5nX2JhZ19yb3VuZGVkLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc2l6ZTogMTYsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogQ29sb3JzLndoaXRlLAogICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgY29uc3QgU2l6ZWRCb3god2lkdGg6IDYpLAogICAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAnJGNvdW50ICR7Y291bnQgPT0gMSA/ICLDrXRlbSIgOiAiw610ZW1zIn0nLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU6IGNvbnN0IFRleHRTdHlsZSgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6IENvbG9ycy53aGl0ZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemU6IDEzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiBGb250V2VpZ2h0Lnc4MDAsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICksCgogICAgICAgICAgICAgICAgICAgIGNvbnN0IFNpemVkQm94KHdpZHRoOiAxMiksCgogICAgICAgICAgICAgICAgICAgIC8vIFN1YnRvdGFsIHByaWNlCiAgICAgICAgICAgICAgICAgICAgRXhwYW5kZWQoCiAgICAgICAgICAgICAgICAgICAgICBjaGlsZDogQ29sdW1uKAogICAgICAgICAgICAgICAgICAgICAgICBjcm9zc0F4aXNBbGlnbm1lbnQ6IENyb3NzQXhpc0FsaWdubWVudC5zdGFydCwKICAgICAgICAgICAgICAgICAgICAgICAgbWFpbkF4aXNTaXplOiBNYWluQXhpc1NpemUubWluLAogICAgICAgICAgICAgICAgICAgICAgICBjaGlsZHJlbjogWwogICAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb3JtYXRQZW4oY29udGV4dCwgY2FydFN0YXRlLnN1YnRvdGFsKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlOiBjb25zdCBUZXh0U3R5bGUoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiBDb2xvcnMud2hpdGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRTaXplOiAxNS41LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiBGb250V2VpZ2h0Lnc5MDAsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxldHRlclNwYWNpbmc6IC0wLjMsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgICAgY29uc3QgVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICdTLyA2LjAwIGVudsOtbyDigKIgMTUgbWluJywKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlOiBUZXh0U3R5bGUoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiBDb2xvcigweEZGRDRFRERBKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemU6IDExLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiBGb250V2VpZ2h0Lnc1MDAsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICksCgogICAgICAgICAgICAgICAgICAgIC8vICJWZXIgQ2Fycml0byIgYWN0aW9uCiAgICAgICAgICAgICAgICAgICAgQ29udGFpbmVyKAogICAgICAgICAgICAgICAgICAgICAgcGFkZGluZzogY29uc3QgRWRnZUluc2V0cy5zeW1tZXRyaWMoCiAgICAgICAgICAgICAgICAgICAgICAgIGhvcml6b250YWw6IDEyLAogICAgICAgICAgICAgICAgICAgICAgICB2ZXJ0aWNhbDogNywKICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgICBkZWNvcmF0aW9uOiBCb3hEZWNvcmF0aW9uKAogICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogQ29sb3JzLndoaXRlLAogICAgICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IEJvcmRlclJhZGl1cy5jaXJjdWxhcigxMCksCiAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgY2hpbGQ6IGNvbnN0IFJvdygKICAgICAgICAgICAgICAgICAgICAgICAgbWFpbkF4aXNTaXplOiBNYWluQXhpc1NpemUubWluLAogICAgICAgICAgICAgICAgICAgICAgICBjaGlsZHJlbjogWwogICAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAnVmVyIENhcnJpdG8nLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU6IFRleHRTdHlsZSgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6IENvbG9yKDB4RkYwMDdBNTUpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiBGb250V2VpZ2h0Lnc4MDAsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRTaXplOiAxMi41LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICAgICAgICAgIFNpemVkQm94KHdpZHRoOiA0KSwKICAgICAgICAgICAgICAgICAgICAgICAgICBJY29uKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgSWNvbnMuYXJyb3dfZm9yd2FyZF9yb3VuZGVkLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc2l6ZTogMTQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogQ29sb3IoMHhGRjAwN0E1NSksCiAgICAgICAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgKSwKICAgICAgICAgICksCiAgICAgICAgKSwKICAgICAgKSwKICAgICk7CiAgfQp9Cg==
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import '../../shared/providers/cart_provider.dart';
+import '../../shared/utils/currency_formatter.dart';
+import '../router/route_names.dart';
+import 'cart_bottom_sheet.dart';
+
+/// Blinkit-style persistent floating cart bar.
+///
+/// Appears smoothly at the bottom of screens when items exist in the cart.
+/// Features a scale bump animation when items are added, shows item count,
+/// subtotal in PEN, and quick access to the Cart Bottom Sheet or Cart Screen.
+class FloatingCartBar extends ConsumerStatefulWidget {
+  final bool openAsSheet;
+
+  const FloatingCartBar({super.key, this.openAsSheet = true});
+
+  @override
+  ConsumerState<FloatingCartBar> createState() => _FloatingCartBarState();
+}
+
+class _FloatingCartBarState extends ConsumerState<FloatingCartBar>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _bumpController;
+  int _lastItemCount = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _bumpController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 220),
+      lowerBound: 0.96,
+      upperBound: 1.04,
+      value: 1.0,
+    );
+  }
+
+  @override
+  void dispose() {
+    _bumpController.dispose();
+    super.dispose();
+  }
+
+  void _triggerBump() {
+    _bumpController.forward().then((_) {
+      if (mounted) _bumpController.reverse();
+    });
+    HapticFeedback.selectionClick();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final cartState = ref.watch(cartProvider);
+    final count = cartState.totalItemCount;
+
+    if (count > _lastItemCount && _lastItemCount != 0) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _triggerBump());
+    }
+    _lastItemCount = count;
+
+    if (count == 0) return const SizedBox.shrink();
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(14, 0, 14, 14),
+      child: ScaleTransition(
+        scale: _bumpController,
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [Color(0xFF00966B), Color(0xFF007A55)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(
+                color: const Color(0xFF00966B).withValues(alpha: 0.38),
+                blurRadius: 14,
+                offset: const Offset(0, 6),
+              ),
+            ],
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              onTap: () {
+                if (widget.openAsSheet) {
+                  showModalBottomSheet(
+                    context: context,
+                    isScrollControlled: true,
+                    backgroundColor: Colors.transparent,
+                    builder: (context) => const CartBottomSheet(),
+                  );
+                } else {
+                  context.push(Routes.cart);
+                }
+              },
+              borderRadius: BorderRadius.circular(16),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 12,
+                ),
+                child: Row(
+                  children: [
+                    // Badge and count
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 6,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.22),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Icon(
+                            Icons.shopping_bag_rounded,
+                            size: 16,
+                            color: Colors.white,
+                          ),
+                          const SizedBox(width: 6),
+                          Text(
+                            '$count ${count == 1 ? "ítem" : "ítems"}',
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 13,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+
+                    const SizedBox(width: 12),
+
+                    // Subtotal price
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            formatPen(context, cartState.subtotal),
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 15.5,
+                              fontWeight: FontWeight.w900,
+                              letterSpacing: -0.3,
+                            ),
+                          ),
+                          const Text(
+                            'S/ 6.00 envío • 15 min',
+                            style: TextStyle(
+                              color: Color(0xFFD4EDDA),
+                              fontSize: 11,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+
+                    // "Ver Carrito" action
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 7,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'Ver Carrito',
+                            style: TextStyle(
+                              color: Color(0xFF007A55),
+                              fontWeight: FontWeight.w800,
+                              fontSize: 12.5,
+                            ),
+                          ),
+                          SizedBox(width: 4),
+                          Icon(
+                            Icons.arrow_forward_rounded,
+                            size: 14,
+                            color: Color(0xFF007A55),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
