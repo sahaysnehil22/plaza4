@@ -32,7 +32,21 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Generate signing key
+        run: |
+          keytool -genkeypair -v \
+            -keystore /tmp/plaza4-upload.jks \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -alias plaza4-upload \
+            -storepass android -keypass android \
+            -dname "CN=Plaza4, OU=Plaza4, O=Plaza4, L=Lima, C=PE"
+
       - name: Build release APK
+        env:
+          PLAZA4_UPLOAD_STORE_FILE: /tmp/plaza4-upload.jks
+          PLAZA4_UPLOAD_STORE_PASSWORD: android
+          PLAZA4_UPLOAD_KEY_ALIAS: plaza4-upload
+          PLAZA4_UPLOAD_KEY_PASSWORD: android
         run: |
           flutter build apk --release \
             --dart-define=API_BASE_URL=https://plaza4-api.onrender.com/api \
