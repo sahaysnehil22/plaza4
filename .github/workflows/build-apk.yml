@@ -1,0 +1,48 @@
+name: Build Plaza 4 Customer APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'mobile/**'
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.7'
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build release APK
+        run: |
+          flutter build apk --release \
+            --dart-define=API_BASE_URL=https://plaza4-api.onrender.com/api \
+            --dart-define=REALTIME_PROVIDER=supabase \
+            --dart-define=SUPABASE_URL=https://njvktomekuoovczpglhq.supabase.co \
+            --dart-define=SUPABASE_PUBLISHABLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5qdmt0b21la3Vvb3ZjenBnbGhxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE4MTk5NDUsImV4cCI6MjEwNzM5NTk0NX0.z4nlRiQ8apD9rP0FLDR5mTxdd0Mw--NnXCO66jthZHM
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: plaza4-customer-apk
+          path: mobile/build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 30
